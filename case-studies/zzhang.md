@@ -141,15 +141,17 @@ It may be helpful to consider the following questions, where interesting, applic
 
 1) Why do you think that reproducibility in your domain is important?
 
-[Answer]
+As computer system researchers, we build systems assuming people will use them. So it is important that people can follow the instructions in the documents to reproduce the state in which the system works. And it is improtant that users can reproduce the improvements over existing systems we describe in the paper or documents so they are more likely to adopt our systems. As paper reviewers, it is more convincing if they can reproduce the results in the paper as these are the evidence of the paper's idea.
 
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
-[Answer]
+I learnt the reproducible practices since the first time I submitted my homework project in college and ever since. I need to write a README file along with my code so the TA can compile and run my code to test if my solution is right. The later research experience follows the same path. 
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
-[Answer]
+I used to design systems on supercomputers, where many people including paper reviewers have no access to. Thus, it is impossible for the research to be reproducible. 
+
+Another major pitfall is due to software version evolving. At the time of writing the paper, some features of a piece of software was working, and the researchers measured and published the numbers. But these numbers are no longer reproducible after a few versions.
 
 4) What do you view as the major incentives for doing reproducible research?
 
