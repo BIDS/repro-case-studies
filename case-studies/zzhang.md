@@ -62,63 +62,26 @@ The paper draft is kept in a private Github repository.
 
 The process begins with team brainstorming of how modern computer software and hardware can accelerate the astronomy image processing pipeline. This requires a wide and also deep understanding of the state-of-the-art research and technical solution. In this research, we gather domain expertise (astronomers), cloud computing expertise and high performance computing expertise. We review the existing work and we think using cloud computing software-hardware stack can improve the overall application performance, but we have no idea how much it can improve. The research is an exploratory process to implement the idea and quantitatively measure the improvements if there is any.
 
-Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Write this description in text. Don't forget to include "messy parts", loops, aborted efforts, and failures.
+The Team Brainstorming and Merit Evaluation phase happened back and forth as we keep asking why are we building such a project.
+Detail questions include: What are the existing solutions? How does the new project make difference in terms of performance and usability? Who are the potential users? This procedure lasts for about two weeks, all members of the Kira project are involved in the discussion. The pros and cons of each existing solution was documented, and later used in the paper.
 
-It may be helpful to consider the following questions, where interesting, applicable, and non-obvious from context.
+The System Design phase lays out the programming interface of Kira, the modules and interactions between the modules. In this phase, we also identify some technical barriers of this project. I am listing them below, feel free to contact me if this is hard to understand:
+1. Kira I/O, how to make Spark read FITS images
+2. Calling C library in Spark, how to make Spark work with existing C code in the SEP library
+3. Setting up compilation environment, set Maven to automatically build Kira
 
-* For each part of that workflow:
+As we progress with the code, we notice a few other technical barriers:
+4. Thread safety, neither the jFITS library nor the SEP library is thread safe
+5. Load imbalance, scheduler tuning for this particular workload
 
-    * How often does this step in the workflow happen?
+For each of these technical barriers, we seek solutions for them. The solutions come from three sources: colleague expertise, google, and documents. By isolating the barriers, we were able to focus on a single barrier each time and can quickly verify the solution. The resulting code is stored in Github, and later merged into the project. This process takes about two weeks. I was in charge of the coding, and Kyle, Frank, and Evan provide technical advise.
 
-    * How long does it take?
+The Software Coding and Testing phase takes about three weeks, we managed to integrate the SEP library through Java Native Interface with Spark, thus finally implement Kira. I implemented the code, and wrote the documents to make it convenient for my self to repeatedly run experiments. In the meantime, I prepared four datasets for performance measurements. A 24MB (4 files) dataset for sanity check, a 12GB (2,310 files) dataset for small scale test, a 65GB (111,50 files) for medium scale test and a 1TB (176,938 files) for large scale tests. The datasets were initially stored in NERSC shared file system, later I made a mirroring on EC2 S3 service, as most experiments were run on EC2 where S3 has a better transfer bandwidth to.
 
-    * Which members of your team participate (or not)?
+Performance Measurements and Performance Tuning come in pair and we go back and forth frequently. The key thing in these two steps is that we need a reasonable expected performance before the measurements. If the measurement does not match with our expectation, we need to analyze the reason and tune the system. Our methodology is like this: we started on 1 core on a single machine. We compare the Kira performance against the equivalent implementation to understand the slowdown introduced by Spark and JVM. Then we started to scale up with more cores on the same node, and observe the scaling curve. By doing that we understand the bounding factor of the performance on a single node. Later on, we scale out on multiple nodes by doubling the number of compute nodes in each step and observe the performance scaling. Since Spark hide the scalability complexity in the system, all we need to do here for different scale is to set relevant parameters in the configuration files. The code and documents are kept in Github, and the dataset is kept in Amazon S3 service.
 
-    * How much human intervention is involved?
+With all of the scripts from Merit Evaluation, System Design, and Source code, we put up together the paper. Writing the paper is a collaborative process. We used a private Github repository to host the paper, and using Pull Request to manage everybody's editing. 
 
-        * Is that human intervention recorded in some way?
-
-    * How much is scripted or otherwise automated?
-
-        * What records are kept about this automation process?
-
-    * Which software or online tools do you rely on?
-
-        * What are its key important uses and limitations?
-
-        * Does it make you more efficient or slow you down?
-
-        * Does this tool affect your ability to reproduce your results?
-
-        * Have you previously tried any other tools for this task?
-
-        * Are you aware of tools that might make this step more efficient? If so, why have those tools not made it into your workflow?
-
-    * How opaque is this step to a researcher external to your research group?
-
-        * Is the necessary code online?
-
-            * How is the documentation?
-
-            * Are there tests?
-
-            * Do you keep example input files alongside your code?
-
-        * Is your raw data online?
-
-            * Is it citeable?
-
-            * Does the license allow external researchers to publish a replication/confirmation of your published work?
-
-        * Is your data processing workflow online?
-
-            * Are the scripts documented?
-
-            * Would an external researcher know what order to run them in?
-
-            * Would they know what parameters to use?
-
-[Answer, 500-800 words]
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them?*
