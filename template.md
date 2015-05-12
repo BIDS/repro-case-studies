@@ -18,22 +18,15 @@ Begin by creating a diagrammatic sketch, which you are welcome to do by hand, th
 Think of this like a circuit diagram for your workflow. Boxes should represent individual steps in the process, with arrows showing how the inputs and outputs of each step relate to each other. Be sure to consider
 
 * specialized tools and where they enter your workflow
-
 * the "state" of the data at each stage
-
 * collaborators
-
 * version control repos
-
 * products produced at various stages (graphics, summaries, etc)
-
 * databases
-
 * whitepapers
-
 * customers (if any)
 
-There are two examples diagrams attached with this template for reference.
+Each of the two example case studies include a workflow diagram you can also use for guidance.
 
 Please save your diagram alongside this completed case study template.
 
@@ -41,59 +34,27 @@ Please save your diagram alongside this completed case study template.
 
 Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Write this description in text. Don't forget to include "messy parts", loops, aborted efforts, and failures.
 
-It may be helpful to consider the following questions, where interesting, applicable, and non-obvious from context.
+It may be helpful to consider the following questions, where interesting, applicable, and non-obvious from context. For each part of your workflow:
 
-* For each part of that workflow:
+* **Frequency:** How often does the step happen and how long does it take?
+* **Who:** Which members of your team participate (or not)?
+* **Manual/Automated:** Is the step automated or does it involve human intervention (if so, is it recorded)?
+* **Tools:** Which software or online tools are used in the step? How are they used?
 
-    * How often does this step in the workflow happen?
+In addition to detailing the steps of the workflow, you may wish to consider the following questions about the workflow as a whole:
 
-    * How long does it take?
+* **Data:** Is your raw data online?
+   * Is it citeable?
+   * Does the license allow external researchers to publish a replication/confirmation of your published work?
+* **Software:** Is the software online?
+   * Is there documentation?
+   * Are there tests?
+   * Are there example input files alongside the code?
+* **Processing:** Is your data processing workflow online?
+   * Are the scripts documented?
+   * Would an external researcher know what order to run them in?
+   * Would they know what parameters to use?
 
-    * Which members of your team participate (or not)?
-
-    * How much human intervention is involved?
-
-        * Is that human intervention recorded in some way?
-
-    * How much is scripted or otherwise automated?
-
-        * What records are kept about this automation process?
-
-    * Which software or online tools do you rely on?
-
-        * What are its key important uses and limitations?
-
-        * Does it make you more efficient or slow you down?
-
-        * Does this tool affect your ability to reproduce your results?
-
-        * Have you previously tried any other tools for this task?
-
-        * Are you aware of tools that might make this step more efficient? If so, why have those tools not made it into your workflow?
-
-    * How opaque is this step to a researcher external to your research group?
-
-        * Is the necessary code online?
-
-            * How is the documentation?
-
-            * Are there tests?
-
-            * Do you keep example input files alongside your code?
-
-        * Is your raw data online?
-
-            * Is it citeable?
-
-            * Does the license allow external researchers to publish a replication/confirmation of your published work?
-
-        * Is your data processing workflow online?
-
-            * Are the scripts documented?
-
-            * Would an external researcher know what order to run them in?
-
-            * Would they know what parameters to use?
 
 [Answer, 500-800 words]
 
