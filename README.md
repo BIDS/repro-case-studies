@@ -5,7 +5,7 @@ Thank you for volunteering to contribute to our reproducibility case study proje
 - [Project goal](#project-goal)
 - [What is a case study?](#what-is-a-case-study)
 - [Case study instructions](#case-study-instructions)
-- [How to submit you case study](#submitting-your-case-study)
+- [How to submit your case study](#submitting-your-case-study)
 
 ## Project goal
 
