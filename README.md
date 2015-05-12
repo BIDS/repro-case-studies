@@ -1,6 +1,13 @@
 # Reproducibility Case Study
 
-Thank you for volunteering to contribute to our reproducibility case study project.
+Thank you for volunteering to contribute to our reproducibility case study project. This document contains the following sections:
+
+- [Project goal](#project-goal)
+- [What is a case study?](#what-is-a-case-study)
+- [Case study instructions](#format)
+- [How to submit you case study](#submitting-your-case-study)
+
+## Project goal
 
 The overall goal of this project is to better understand and communicate existing practices surrounding reproducibility in academic research. Our strategy is to gather a collection of several dozen case studies, authored by individual researchers from across disciplines who volunteer to share their practices. Each case study will provide a single, concrete example of a workflow pipeline that embodies the principles of reproducible research. We do not intend to create another anecdotally-derived list of best practices or a discussion of the _why_ of reproducibility, but rather to gather and share examples of the _how_ of reproducibility practices in academia.
 
