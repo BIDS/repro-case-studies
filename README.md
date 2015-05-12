@@ -4,7 +4,7 @@ Thank you for volunteering to contribute to our reproducibility case study proje
 
 - [Project goal](#project-goal)
 - [What is a case study?](#what-is-a-case-study)
-- [Case study instructions](#format)
+- [Case study instructions](#case-study-instructions)
 - [How to submit you case study](#submitting-your-case-study)
 
 ## Project goal
@@ -25,7 +25,7 @@ Broadly, there are two types of topics that may be the subject of case studies. 
 
 When choosing a subject for your case study, __think small and concrete__. For a sense of scale, a case study should cover research representing approximately 6 months to 1 year of work for a single researcher. If your projects tend to be large or complex, you may choose to focus on only a portion of a larger project for your case study. If you do not have a single project that you feel would be useful to share, you can describe an "idealized" workflow that combines features of several different real projects, although we are particularly interested in hearing about projects that were partially successful or that involved significant difficulties.
 
-## Format
+## Case Study Instructions
 
 The case studies should be written using markdown. To help you complete your case study, we have provided a template that will guide you through a series of standard short answer questions. To complete your case study, simply open [this template](https://raw.githubusercontent.com/BIDS/repro-case-studies/master/template.md), save a copy of the template with a file name consisting of your first initial and last name (e.g. ``alovelace.md``), and replace the sections labeled ``[Answer]`` with your responses. Length suggestions are provided for each question. You may also wish to refer to the two sample case studies ([publication-based](case-studies/jkitzes.md) and [software-based](case-studies/dturek.md)) for guidance.
 
@@ -45,8 +45,6 @@ Here are the steps to submit a case study as a pull request:
 
 - Clone that repository onto your local machine using git. 
 
-- Check out the v.beta branch (``git checkout v.beta``).
-
 - Two examples are provided in the ``case-studies`` directory. These are at ``case-studies/jkitzes.md`` and ``case-studies/dturek.md``. Associated workflow diagrams are in the corresponding pdf files.
 
 - Copy the template.md file into the ``case-studies`` directory, and name this file with your first initial and last name (e.g. ``alovelace.md``) 
@@ -55,11 +53,9 @@ Here are the steps to submit a case study as a pull request:
 
 - Add an image file (preferably PDF) containing your workflow diagram.
 
-- Please do not modify any files outside of your named directory.
+- Please do not modify any files other than your case study.
 
-- Once you are ready to submit your case study, file a [pull request](https://help.github.com/articles/using-pull-requests/) on GitHub. Submit the pull request to our ``submissions`` branch.
-
-Pull requests are to be submitted by **May 8th**.
+- Once you are ready to submit your case study, file a [pull request](https://help.github.com/articles/using-pull-requests/) on GitHub.
 
 ## Previewing your Case Study
 
