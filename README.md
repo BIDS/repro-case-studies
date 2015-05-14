@@ -49,7 +49,7 @@ Here are the steps to submit a case study as a pull request:
 
 - Copy the template.md file into the ``case-studies`` directory, and name this file with your first initial and last name (e.g. ``alovelace.md``) 
 
-- Open the file and respond to the prompts in place of the ``[Answer]`` markers.
+- Open the file and respond to each question. Experience has shown that it is easiest to answer the questions in the order presented.
 
 - Add an image file (preferably PDF) containing your workflow diagram.
 
