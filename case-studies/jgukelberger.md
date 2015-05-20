@@ -3,6 +3,8 @@
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
+
+
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
 ##### Workflow diagram
@@ -53,6 +55,21 @@ In addition to detailing the steps of the workflow, you may wish to consider the
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
+
+During the project, the main pain points were connected to the facts that the data evaluation had to be done in the VisTrails GUI and the opaque-ish VisTrails workflow file format:
+
+   * Data evaluation (execution of VT workflows) could not be scripted at that time.
+   * The evaluation could not be run on a cluster/via ssh.
+   * Version management was harder because viewing differences between versions was not as easy as looking at the diff file for a Python script.
+   * This also made the synchronization of workflows between different machines (e.g. laptop and workstation) less straightforward.
+
+When now inspecting the "reproducible publication" on the APS server, three years after publication, some mid- to long-term issues become obvious, because both the used software and the publisher's infrastructure is evolving:
+   
+   * The instructions we provided in the supplementary materials section accompanying the article do not work with the current VisTrails version: In the most recent stable VisTrails release 2.2, the alps package seems to be broken and needs to be patched with the latest (not-yet-realeased) ALPS version. Otherwise initialization of the ALPS package fails and the workflow cannot be executed.
+   * The APS journals were not able to guarantee a long-term stable location for supplementary material. In fact, the URL has already changed, such that the workflows fail to fetch the raw data from the APS server, unless the URL is fixed manually in each workflow. For one specific example, the original location http://prb.aps.org/epaps/PRB/v85/i4/e045414/dyl_ladder_gap.zip has been changed to http://journals.aps.org/prb/supplemental/10.1103/PhysRevB.85.045414/dyl_ladder_gap.zip .
+     Also, the cause of the error is not easy to fix for the uninitiated, because the DownloadFile module actually succeeds (it downloads the html file shown at the old URL), but the subsequent UnzipDirectory module fails with the message "BadZipFile: File is not a zip file".
+	
+
 
 ##### Key benefits
 *Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
