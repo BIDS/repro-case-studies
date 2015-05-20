@@ -12,6 +12,10 @@ I consider a study to be computationally reproducible when my collaborators can 
 
 ##### Workflow diagram
 
+[Diagram](dushizima.pdf)
+
+##### Workflow diagram
+
 The core of your case study is a diagrammatic workflow sketch, which depicts your the entire pipeline of your workflow. Think of this like a circuit diagram: boxes represent steps, tools, or other disjoint components, and arrows show how outputs of particular steps feed as inputs to others. This diagram will be complemented by a textual narrative.
 
 We recommend the site draw.io for creating this diagram, or you are also welcome to sketch this by hand. While creating your diagram, be sure to consider:
