@@ -3,9 +3,13 @@
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
-My name is Daniela Ushizima
+My name is Daniela Ushizima, and my area of research is machine vision and pattern recognition, applied to scientific image analysis. I am currently a staff scientist at Lawrence Berkeley National Laboratory and a Data Science Fellow in the Institute for Data Science at the University of California, Berkeley. 
+The case study I describe illustrates the main steps in designing a machine vision algorithm that analyzes a set of digital images and separates them according to the desired criteria. There are several image processing and analysis algorithms, and this case study will use ImageJ, a popular image processing tool. ImageJ was developed by Wayne Rasband within NIH, originally focusing on medical imaging, however this software has been widely used in other applications, such as material sciences. 
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
+
+I consider a study to be (computationally) reproducible when my collaborators can crunch raw data files through the proposed code and obtain the same results from previous analysis. Because algorithmic parameters often change from a dataset to another, it can be challenging to get results with the same accuracy, given different datasets.
+
 
 ##### Workflow diagram
 
