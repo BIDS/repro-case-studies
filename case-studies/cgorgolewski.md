@@ -15,30 +15,19 @@ Reproducibility means an accurate description of experimental methodology and ac
 
 ##### Workflow narrative
 
-Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures.
+The goal of this study was to relate the content and the form of self generated thought (mind wandering) to the dynamics of brain activity at rest. It was based on a publicly available data collected at the Nathan Kline Institute in collaboration with Child Mind Institute (data is available [here](http://fcon_1000.projects.nitrc.org/indi/enhanced/)). Three major aspects of this study makes it reproducible
 
-It may be helpful to consider the following questions, where interesting, applicable, and non-obvious from context. For each part of your workflow:
+* Data is publicly available.
+* Scripts to run the analysis depend on freely available software and are also publicly available.
+* Results has not only been described in a [paper](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0097176), but are also available in a machine readable way.
 
-* **Frequency:** How often does the step happen and how long does it take?
-* **Who:** Which members of your team participate (or not)?
-* **Manual/Automated:** Is the step automated or does it involve human intervention (if so, is it recorded)?
-* **Tools:** Which software or online tools are used in the step? How are they used?
+Feature extraction (data preprocessing - everything done before fitting a model) in neuroimaging can be a complicated process involving many different components. We have written our pipelines using the [Nipype](http://nipy.org/nipype) framework that allows researchers to combine many different well tested neuroimaging tools into one pipeline. The pipeline was tested and developed on a single subjects and then run on all subjects using a local supercomputer. Neuroimaging pipelines have been deposited at [github.com](https://github.com/NeuroanatomyAndConnectivity/pipelines/tree/master/src/mindwandering).
 
-In addition to detailing the steps of the workflow, you may wish to consider the following questions about the workflow as a whole:
+Behavioral data have been analyzed using R and knitr package providing reproducible reports that include narrative, code and figures. The R code, input behavioral data, outputs of the analysis (factors extracted from the questionnaire) as well as the questionnaire used for the study have been deposited on [github.com](https://github.com/NeuroanatomyAndConnectivity/NYC-Q).
 
-* **Data:** Is your raw data online?
-   * Is it citeable?
-   * Does the license allow external researchers to publish a replication/confirmation of your published work?
-* **Software:** Is the software online?
-   * Is there documentation?
-   * Are there tests?
-   * Are there example input files alongside the code?
-* **Processing:** Is your data processing workflow online?
-   * Are the scripts documented?
-   * Would an external researcher know what order to run them in?
-   * Would they know what parameters to use?
+Final version of all the analyses were fully automated, but the data required semiautomated quality control. Analysis has been done by one person within 3 months. Three other researchers consulted on the project.
 
-*(500-800 words)*
+Unfortunately no tests have been written for the data analysis software. The documentation also did not extend beyond comments and knitr reports.
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
