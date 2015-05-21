@@ -8,26 +8,11 @@ My name is Jan Gukelberger, I am a computational condensed-matter physicist, who
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
-I consider a study to be reproducible if, for all results in the final publication
+In general, given a publication (in a refereed journal), source codes and raw data (which might be available publicly or in the institute's repositories), an expert from my field should be able to understand, and in principle repeat, every step of the study from the running of the correct version of the simulation code to the final results presented in the published paper.
 
 ##### Workflow diagram
 
-The core of your case study is a diagrammatic workflow sketch, which depicts your the entire pipeline of your workflow. Think of this like a circuit diagram: boxes represent steps, tools, or other disjoint components, and arrows show how outputs of particular steps feed as inputs to others. This diagram will be complemented by a textual narrative.
-
-We recommend the site draw.io for creating this diagram, or you are also welcome to sketch this by hand. While creating your diagram, be sure to consider:
-
-* specialized tools and where they enter your workflow
-* the "state" of the data at each stage
-* collaborators
-* version control repos
-* products produced at various stages (graphics, summaries, etc)
-* databases
-* whitepapers
-* customers
-
-Each of the two example case studies include a workflow diagram you can also use for guidance.
-
-Please save your diagram alongside this completed case study template.
+[Diagram](jgukelberger.pdf)
 
 ##### Workflow narrative
 
@@ -55,6 +40,13 @@ In addition to detailing the steps of the workflow, you may wish to consider the
    * Would they know what parameters to use?
 
 *(500-800 words)*
+
+
+Since the simulations may require a large amount of compute resources (on clusters or large workstations), it is usually not feasible or desirable to re-run the whole process in one go. We therefore usually adapt a two-step approach: The output of the simulation runs is treated as primary/raw data, which is archived along with log files containing detailed information about source code version, execution environment, and input parameters. The evaluation and transformation of this raw data to the final results (typically figures with plots) should then be as easily repeatable as possible, ideally with a single push of a button or script execution.
+
+In this study, we opted to publish the raw data as supplementary information on the publisher's (APS) web server and provide workflow files for the VisTrails system, which would retrieve the raw data from this server and recreate the figures contained in the paper. This way, any reader can inspect in detail all steps of our data analysis.
+
+
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
