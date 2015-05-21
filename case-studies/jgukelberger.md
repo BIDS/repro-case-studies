@@ -59,12 +59,15 @@ During the project, the main pain points were connected to the facts that the da
    * Version management was harder because viewing differences between versions was not as easy as looking at the diff file for a Python script.
    * This also made the synchronization of workflows between different machines (e.g. laptop and workstation) less straightforward.
 
+A separate painful process was, once the study was completed, working with the publisher to create a working "reproducible paper" on their servers. Here, the main problem was the need for cross-references between the manuscript, the VT workflows, and the raw data, because the final location of each component only becomes available in the last step of the production process, when the files cannot be changed anymore without manual intervention from the production team. Some aspects of this issue were explained in detail in our report https://www.usenix.org/event/tapp11/tech/final_files/Bauer.pdf .
+
 When now inspecting the "reproducible publication" on the APS server, three years after publication, some mid- to long-term issues become obvious, because both the used software and the publisher's infrastructure is evolving:
    
-   * The instructions we provided in the supplementary materials section accompanying the article do not work with the current VisTrails version: In the most recent stable VisTrails release 2.2, the alps package seems to be broken and needs to be patched with the latest (not-yet-realeased) ALPS version. Otherwise initialization of the ALPS package fails and the workflow cannot be executed.
+   * The instructions we provided in the supplementary materials section accompanying the article do not work with the current VisTrails version: In the most recent stable VisTrails release (2.2), the alps package seems to be broken and needs to be patched with the latest (not-yet-realeased) ALPS version. Otherwise initialization of the ALPS package fails and the workflow cannot be executed.
    * The APS journals were not able to guarantee a long-term stable location for supplementary material. In fact, the URL has already changed, such that the workflows fail to fetch the raw data from the APS server, unless the URL is fixed manually in each workflow. For one specific example, the original location http://prb.aps.org/epaps/PRB/v85/i4/e045414/dyl_ladder_gap.zip has been changed to http://journals.aps.org/prb/supplemental/10.1103/PhysRevB.85.045414/dyl_ladder_gap.zip .
      Also, the cause of the error is not easy to fix for the uninitiated, because the DownloadFile module actually succeeds (it downloads the html file shown at the old URL), but the subsequent UnzipDirectory module fails with the message "BadZipFile: File is not a zip file".
-	
+
+For these reasons I would now prefer to publish a self-contained archive containing the raw data and a  script in a wide-spread language, such as Python, which re-runs the analysis and re-produces the figures. This would be more robust with respect to changes in the publisher's infrastructure. Also, backwards compatibility issues can be expected to be solvable more easily in the long run for scripts in a wide-spread language, compared to special purpose solutions like VisTrails (no matter how professional and helpful the developers of the latter may be at the moment).
 
 
 ##### Key benefits
