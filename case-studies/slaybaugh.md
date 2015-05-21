@@ -19,7 +19,7 @@ However, such non-open-source codes are typically available at no cost to resear
 
 ##### Workflow diagram
 
-[Diagram](slaybaugh.png)
+<img src="slaybaugh.png" alt="Diagram"/>
 
 
 * specialized tools and where they enter your workflow
