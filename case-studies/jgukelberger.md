@@ -16,39 +16,13 @@ In general, given a publication (in a refereed journal), source codes and raw da
 
 ##### Workflow narrative
 
-Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures.
-
-It may be helpful to consider the following questions, where interesting, applicable, and non-obvious from context. For each part of your workflow:
-
-* **Frequency:** How often does the step happen and how long does it take?
-* **Who:** Which members of your team participate (or not)?
-* **Manual/Automated:** Is the step automated or does it involve human intervention (if so, is it recorded)?
-* **Tools:** Which software or online tools are used in the step? How are they used?
-
-In addition to detailing the steps of the workflow, you may wish to consider the following questions about the workflow as a whole:
-
-* **Data:** Is your raw data online?
-   * Is it citeable?
-   * Does the license allow external researchers to publish a replication/confirmation of your published work?
-* **Software:** Is the software online?
-   * Is there documentation?
-   * Are there tests?
-   * Are there example input files alongside the code?
-* **Processing:** Is your data processing workflow online?
-   * Are the scripts documented?
-   * Would an external researcher know what order to run them in?
-   * Would they know what parameters to use?
-
-*(500-800 words)*
-
-
 Since the simulations may require a large amount of compute resources (on clusters or large workstations), it is usually not feasible or desirable to re-run the whole process in one go. We therefore usually adopt a two-step approach: The output of the simulation runs is treated as primary/raw data, which is archived along with log files containing detailed information about source code version, execution environment, and input parameters. The evaluation and transformation of this raw data to the final results (typically figures with plots) should then be as easily repeatable as possible, ideally with a single push of a button or script execution.
 
-In this study, we opted to publish the raw data as supplementary information on the publisher's (APS) web server and provide workflow files for the VisTrails system, which would retrieve the raw data from this server and recreate the figures contained in the paper. This way, any reader can inspect in detail all steps of our data analysis.
+In this study, we opted to publish the raw data as supplementary information on the publisher's (APS) web server and provide workflow files for the VisTrails system, which would retrieve the raw data from the server and recreate the figures contained in the paper. This way, any reader can inspect in detail and rerun all steps of our data analysis.
 
 The study is published as Phys. Rev. B 85, 045414 (2012), DOI:10.1103/PhysRevB.85.045414 .
 
-At the beginning of the project is the development of a simulation code in C++. Once the code is ready, it is used to explore the properties of the physical model under study. For this purpose, it is compiled and run with different input parameters on different systems (workstations and clusters). As the simulation code is adapted and expanded continuously over the course of the study, it is essential to record what version of the code produced which results. To this end, we use a run script (Python), which records the code version (subversion revision), input parameters for the run, as well as details about the build configuration (compiler, libraries, etc.) and the system environment in which the code is run (host, datetime, dynamic libraries, etc.). All these details are written to a log file next to the data file that contains the results of the simulation. Both are semantically linked to each other by having the same file name, up to the extension (.dat and .log).
+At the beginning of the project is the development of a simulation code in C++. Once the code is ready, it is used to explore the properties of the physical model under study. For this purpose, it is compiled and run with different input parameters on different systems (workstations and clusters). Because the simulation code is adapted and expanded continuously over the course of the study, it is essential to record what version of the code produced which results. To this end, we use a run script (Python), which records the code version (subversion revision), input parameters for the run, as well as details about the build configuration (compiler, libraries, etc.) and the system environment in which the code is run (host, datetime, dynamic libraries, etc.). All these details are written to a log file next to the data file that contains the results of the simulation. Both are semantically linked to each other by having the same file name, up to the extension (.dat and .log).
 
 These output files constitute the raw data, which is collected on a desktop system for evaluation. The evaluation typically loads data files from several simulations (corresponding to different input parameters), computes some numerical transformations of the data, and finally produces one or more figures (pdf files) with data plots. We code the evaluation process in VisTrails workflows, making use of the alps package (delivered with VisTrails), which contains many utility routines for common processes like data transformations, fitting and plotting. We generally aim for a separate workflow (vt file) for each figure. This increases modularity and makes the development of the workflows easier, but implies that several vt files need to be opened and executed if all figures are to be recreated.
 
@@ -56,11 +30,13 @@ Finally, the manuscript of the paper is written in Latex, including the figure f
 
 Publishing the paper together with the raw data and workflows, such that readers could easily reproduce and inspect our data evaluation process turned out to be a challenge in its own and required intense interaction with the publisher. Here, the main problem was the need for cross-references between the manuscript, the VT workflows, and the raw data, because the final location of each component only becomes available in the last step of the production process, when the files cannot be changed anymore without manual intervention from the production team. Some aspects of this issue are explained in detail in our report https://www.usenix.org/event/tapp11/tech/final_files/Bauer.pdf . In the end, the publisher was not able to insert links from the figures in the paper to the corresponding workflow files, but only a general reference to the supplementary material section on their server, where all the workflows could be downloaded.
 
+[Side remark: One collaborator actually recreated the figures with a different plotting tool before publication in order to improve their visual appearance. For this purpose, we amended the vt workflows to export the preprocessed data to an external file before plotting. Therefore, the figures presented in the paper are equivalent, but not identical, with the ones created by the vt workflows.]
+
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
 
-Apart from the non-trivial publishing process, the main pain points during the study were connected to the facts that the data evaluation had to be done in the VisTrails GUI and the opaque-ish VisTrails workflow file format:
+Apart from the non-trivial publishing process, the main pain points during the study were connected to the fact that the data evaluation had to be done in the VisTrails GUI and to the opaque-ish VisTrails workflow file format:
 
    * Data evaluation (execution of VT workflows) could not be scripted at that time.
    * The evaluation could not be run on a cluster/via ssh.
@@ -95,9 +71,17 @@ A second point is the actual publishing of raw data and evaluation workflows, al
 
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
+Some basic principles are quite evident, but integrating them in an efficient workflow may require some programming/version control experience. I came into contact with the VisTrails software due to a collaboration between our group and the VisTrails developers, aimed at integrating the evaluation tools of the ALPS package (developed within our group) with VisTrails.
+
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
+The main challenge is probably making the recording of provenance data as easy as possible, so no-one has an excuse not to do it. 
+
+Another point is that simulation codes, raw data, and evaluation tools are rarely published. Most researchers are very reluctant to publish their codes, e.g. because they do not want competitors to publish results produced with their code before they can, or because they feel ashamed of the poor quality of their code. Raw data may be large and in non-standard format. And the evaluation may be performed by a chain of different tools, which makes publishing of the workflow hard.
+
 4) What do you view as the major incentives for doing reproducible research?
+
+Apart from research ethics and institutional requirements demanding this, the recording of provenance information can make a researcher's life significantly easier when he/she discovers a discrepancy between different sets of results produced during a single study or in studies by different researchers. (Are the discrepancies cause by differences in the code, different input parameters, or data evaluation?)
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
