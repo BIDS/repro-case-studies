@@ -3,9 +3,12 @@
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
+My name is Jan Gukelberger, I am a computational condensed-matter physicist, who recently completed his PhD at the Institute for Theoretical Physics, ETH Zurich. This case study describes a project I worked on during my first year as a PhD student (2010-2011).
 
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
+
+I consider a study to be reproducible if, for all results in the final publication
 
 ##### Workflow diagram
 
