@@ -46,6 +46,7 @@ Since the simulations may require a large amount of compute resources (on cluste
 
 In this study, we opted to publish the raw data as supplementary information on the publisher's (APS) web server and provide workflow files for the VisTrails system, which would retrieve the raw data from this server and recreate the figures contained in the paper. This way, any reader can inspect in detail all steps of our data analysis.
 
+The study is published as Phys. Rev. B 85, 045414 (2012), DOI:10.1103/PhysRevB.85.045414 .
 
 
 ##### Pain points
