@@ -16,6 +16,8 @@ I consider a study to be computationally reproducible when my collaborators can 
 
 ##### Workflow diagram
 
+The workflow follows a data model called SIPOC, which stands for suppliers, inputs, process, outputs, and customers which form the columns of the table. We adapt SIPOC to better represent our use-case, hence the first column is called sources and the final column repositories.
+
 The core of your case study is a diagrammatic workflow sketch, which depicts your the entire pipeline of your workflow. Think of this like a circuit diagram: boxes represent steps, tools, or other disjoint components, and arrows show how outputs of particular steps feed as inputs to others. This diagram will be complemented by a textual narrative.
 
 We recommend the site draw.io for creating this diagram, or you are also welcome to sketch this by hand. While creating your diagram, be sure to consider:
