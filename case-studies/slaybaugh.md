@@ -3,7 +3,7 @@
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
-My name is Rachel Slaybaugh, and I am an Assistant Professor in the Nuclear Engineering Department at the University of California, Berkeley.
+My name is Rachel Slaybaugh and I am an Assistant Professor in the Nuclear Engineering Department at the University of California, Berkeley.
 I study computational methods for neutron transport: numerical methods for solving the Boltzmann equation applied to neutral particle interactions. 
 The methods I study are both deterministic (e.g. finite difference, etc.) and stochastic (Monte Carlo).
 I develop these algorithms for reactor design and analysis, radiation shielding, and nuclear nonproliferation applications. 
@@ -12,9 +12,9 @@ Much of my work has an emphasis on high performance computing.
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
-The first way I think of reproducibility is that I can reproduce the results in my paper exactly and reproduce the paper itself. 
-More broadly I would like for independent researchers to be able to reproduce my results. 
-Nuclear engineering codes are often controlled, so depending on the project I am doing the code may not be open source. 
+The first way I think of reproducibility is "can reproduce the results in my paper exactly and reproduce the paper itself?" 
+More broadly, I would like for independent researchers to be able to reproduce my results. 
+Nuclear engineering codes are often controlled, so, depending on the project I am doing, the code may not be open source. 
 However, such non-open-source codes are typically available at no cost to researchers through a simple licensing process. 
 
 ##### Workflow diagram
@@ -32,6 +32,11 @@ However, such non-open-source codes are typically available at no cost to resear
 * customers
 
 ##### Workflow narrative
+
+The starting point of a new project (blue boxes) is the development of an algorithm.
+This comes from a combination of reviewing literature, discussion with colleagues, familiarity with challenges in the field, etc.
+The algorithm development and literature review feed in to one another.
+
 
 Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures.
 
