@@ -51,6 +51,7 @@ digraph G {
         label = "Publish";
     }
 
+    "Rate" -> "Do ratings mean anything?";
     "Do raters agree?" -> "Experimental design";
     "Discussion" -> "Design";
     "Do raters agree?" -> "Literature search";
