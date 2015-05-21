@@ -11,7 +11,7 @@ Reproducibility to me, is to generate the published/claimed results "as-is", giv
 
 ##### Workflow diagram
 
-[Diagram](https://github.com/dghoshal-lbl/repro-case-studies/dghoshal.pdf)
+[Diagram](https://github.com/dghoshal-lbl/repro-case-studies/blob/master/case-studies/dghoshal.pdf)
 
 ##### Workflow narrative
 The workflow described here describes the research underlying provenance capture from network logs in order to understand task distribution, allocation of network resources and diagnose reasons for failures. A tool was specifically developed for capturing provenance from network experiments running on PlanetLab. By capturing the provenance information, scientists could understand the source of their outputs and the resources used for generating them. The goal of the research was to minimize experiment overheads, and provide a rule-based mechanism to capture provenance without instrumenting the experiment code. The research also resulted in a viability study of using rule-based log mining for provenance capture (doi:10.1145/2457317.2457366). 
