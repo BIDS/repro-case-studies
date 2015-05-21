@@ -11,7 +11,7 @@ Reproducibility means an accurate description of experimental methodology and ac
 
 ##### Workflow diagram
 
-![](cgorgolewski_diagram.svg)
+![](cgorgolewski_diagram.png)
 
 ##### Workflow narrative
 
