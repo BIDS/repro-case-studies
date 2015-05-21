@@ -11,22 +11,7 @@ Reproducibility means an accurate description of experimental methodology and ac
 
 ##### Workflow diagram
 
-The core of your case study is a diagrammatic workflow sketch, which depicts your the entire pipeline of your workflow. Think of this like a circuit diagram: boxes represent steps, tools, or other disjoint components, and arrows show how outputs of particular steps feed as inputs to others. This diagram will be complemented by a textual narrative.
-
-We recommend the site draw.io for creating this diagram, or you are also welcome to sketch this by hand. While creating your diagram, be sure to consider:
-
-* specialized tools and where they enter your workflow
-* the "state" of the data at each stage
-* collaborators
-* version control repos
-* products produced at various stages (graphics, summaries, etc)
-* databases
-* whitepapers
-* customers
-
-Each of the two example case studies include a workflow diagram you can also use for guidance.
-
-Please save your diagram alongside this completed case study template.
+![](cgorgolewski_diagram.svg)
 
 ##### Workflow narrative
 
