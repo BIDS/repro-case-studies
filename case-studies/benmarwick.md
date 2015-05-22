@@ -23,41 +23,23 @@ The archaeological excavation was conducted with fairly standard modern techniqu
 
 At the conclusion of fieldwork, post-excavation analysis continued at the home institutions of each of the team members. The tools for data collections and analysis at this stage were according to the norms of each lab, but the final products from this stage were MS Word and Excel files. At this point work began on a manuscript for publication, which was a MS Word document that was circulated among the authors by email.
 
-As the specialist work concluded, the Excel and Word files were collected into an R Project using RStudio. The spreadsheets were converted to CSV files to ensure they could be accessed independent of any specific software. A research compendium was created, based on a custom R package. This package was written to contain custom functions used repeatedly in the R markdown file. The devtools package was used to develop the custom R package in RStudio. The testtools package was used to write tests to ensure the package functions performed as expected while they were being developed. An R markdown file was created as part of the compendium, and edited in RStudio to recompute and extend the analysis and visualizations from the specialist labs, and combine the key pieces of narrative text from the lab reports that contain statistical results. The code in the R markdown file used several R packages, including dplyr and reshape2 for data clearning and analysis, rioja and analogue for specialist environmental methods, and ggplot2 for visualization.
+As the specialist work concluded, the Excel and Word files were collected into an R Project using RStudio. The spreadsheets were converted to CSV files to ensure they could be accessed independent of any specific software. A research compendium was created, based on a custom R package. This package was written to contain custom functions used repeatedly in the analysis. The devtools package was used to develop the custom R package in RStudio. The testtools package was used to write tests to ensure the package functions performed as expected while they were being developed. An R markdown file was created as part of the compendium, and edited in RStudio to recompute and extend the analysis and visualizations from the specialist labs, and combine the key pieces of narrative text from the lab reports that contain statistical results. The R markdown file is a kind of lab note book where code and text are interwoven in a single document. It summarizes and extends the work of the team specialists using R script. The code in the R markdown file used several R packages, including dplyr and reshape2 for data cleaning and analysis, rioja and analogue for specialist environmental methods, and ggplot2 for visualization. The runtimes of the analyses are rarely longer than 30 min, so writing code and narrative, and testing are the most time consuming tasks here. 
 
-The R package knitr and the pandoc program was used to execute the R markdown file to inspect the output as the code was being written. A docker container was created to create an isolated computational and portable environment for writing the R markdown document and developing the package. The docker image was backed up on the Docker Hub server, and tested using continuous integration from circle-ci.com  All of these components, data files, R markdown file, package files, etc. were all version controlled using Git locally and backed-up on a private repository at GitHub.
+The R package knitr and the pandoc program was used to execute the R markdown file to inspect the output as the code was being written. A docker container was created to create an isolated computational and portable environment for writing the R markdown document and developing the package. The docker image was backed up on the Docker Hub server, and tested using continuous integration from circle-ci.com  All of these components, data files, R markdown file, package files, etc. were all version controlled using Git locally and backed-up on a private repository at GitHub. One of the downsides of using the compendium approach is that the work is done by just a few of the team members because not everyone is familiar with the tools. 
 
-While the analyses was being developed in the research compendium, a manuscript was being drafted in a MS Word document and circulated among the authors by email, and revised using track changes. 
+While the analysis was being developed in the research compendium, a manuscript was being drafted in a MS Word document and circulated among the authors by email, and revised using track changes. The rendered output of R markdown document is also circulated among the authors by email and the manusrcipt is updated, and new ideas are incorporated into the analysis, and additional code is written, some code abandoned, new plots produced, and others deleted, etc. This is probably the messiest part of the workflow as it involves manual updating of the MS Word document with new values and figures from the rendered R markdown document, and two unrelated version control systems (Git and track-changes in MS Word). The non-linearity of the process is also a challenge as the authors negotiate how the manuscript and analysis should take shape.
 
+As the review and updating cycle concludes, the manuscript is send for review by the Traditional Owners of the land where the archaeological site is located. After this review, which might involve some changes to the manuscript, the final draft is prepared for submission. At the same time, the GitHub repository that contains the research compendium is made public and continuous integration from travis-ci.com is added to monitor the effect of changes made during peer review. The compendium is also deposited at figshare.com and the persistent URL to the figshare repository is added to the text of the manuscript as a pointer to the data and code that generated the results and visualizations found in the paper. The MIT license is attached to the code, the CC0 license is attached to the data, and a CC-BY license is attached to the text. These licenses allow flexible reuse of our materials. The paper is then submitted for publication. At this point the data and software are openly available online for peer reviewers and others to inspect. The code includes the R package, which has documentation about installing the packages and using the functions, has unit tests, and has machine- and human- readable metadata about dependencies. We also make available the docker image that contains the compendium in an Linux environment so that all the dependencies external to R can be included in a single bundle. 
 
-
-Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures.
-
-It may be helpful to consider the following questions, where interesting, applicable, and non-obvious from context. For each part of your workflow:
-
-* **Frequency:** How often does the step happen and how long does it take?
-* **Who:** Which members of your team participate (or not)?
-* **Manual/Automated:** Is the step automated or does it involve human intervention (if so, is it recorded)?
-* **Tools:** Which software or online tools are used in the step? How are they used?
-
-In addition to detailing the steps of the workflow, you may wish to consider the following questions about the workflow as a whole:
-
-* **Data:** Is your raw data online?
-   * Is it citeable?
-   * Does the license allow external researchers to publish a replication/confirmation of your published work?
-* **Software:** Is the software online?
-   * Is there documentation?
-   * Are there tests?
-   * Are there example input files alongside the code?
-* **Processing:** Is your data processing workflow online?
-   * Are the scripts documented?
-   * Would an external researcher know what order to run them in?
-   * Would they know what parameters to use?
-
-*(500-800 words)*
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
+
+Some of the pain points include:
+
+- the inefficiencies of duplication of effort in translating the Excel-based analysis into R. This happens because only a few members of the team are familiar with R and related command line tools.
+
+- the complexities of working on the draft manuscript and updating the analysis as the team explores different options and research directions. This places a requires the team members working on the research compendium to iterate quickly, and dis-empowers the other team members who are not familiar with R. 
 
 ##### Key benefits
 *Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
