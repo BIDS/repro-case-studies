@@ -8,7 +8,7 @@ My name is You-Wei Cheah, and I am a computer systems engineer at Lawrence Berke
 In the context of my case study, reproducibility means that the decision process and the necessary data needed to reproduce a piece of software is sufficient to be executed by someone.
 
 ##### Workflow diagram
-![](https://github.com/yocheah/repro-case-studies/tree/master/case-studies/ycheah.pdf)
+[Workflow-diagram](https://github.com/yocheah/repro-case-studies/blob/master/case-studies/ycheah.pdf)
 
 ##### Workflow narrative
 This workflow describes the process to which the Carbon Capture Simulation Initiative (CCSI) Data Management Framework (DMF) was developed. CCSI is a large project that involves multiple national laboratories, academic institutions and industry partners to develop and deploy state-of-the-art computational modeling and simulation tools for accelerating commercialization of carbon capture technologies.
