@@ -41,7 +41,7 @@ digraph G {
         style=filled;
         color=lightgrey;
         "Write script" -> "Run" -> "Evaluate";
-        label = "Implementation";
+        label = "Results";
     }
     subgraph cluster5 {
         node [style=filled,color=white];
@@ -53,6 +53,7 @@ digraph G {
 
     "Rate" -> "Do ratings mean anything?";
     "Do raters agree?" -> "Experimental design";
+    "Experimental design" -> "Literature search";
     "Discussion" -> "Design";
     "Do raters agree?" -> "Literature search";
     "Test" -> "Write script";
