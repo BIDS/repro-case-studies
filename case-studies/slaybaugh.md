@@ -19,23 +19,32 @@ However, such non-open-source codes are typically available at no cost to resear
 
 ##### Workflow diagram
 
-<img src="slaybaugh.png" alt="Diagram"/>
+[Diagram](slaybaugh.pdf)
 
-
-* specialized tools and where they enter your workflow
-* the "state" of the data at each stage
-* collaborators
-* version control repos
-* products produced at various stages (graphics, summaries, etc)
-* databases
-* whitepapers
-* customers
 
 ##### Workflow narrative
 
+I tend to think of my workflow for code development as having three fundamental steps:
+  1) idea generation and refinement,
+  2) idea implementation and testing, and
+  3) large scale testing and publication.
+
+**Step 1**:
 The starting point of a new project (blue boxes) is the development of an algorithm.
 This comes from a combination of reviewing literature, discussion with colleagues, familiarity with challenges in the field, etc.
 The algorithm development and literature review feed in to one another.
+The algorithm development tends to be collaborative as it is based on discussions with others, but the lit review tends to just be me.
+I like to write the lit review in LaTeX and keep it in a repository with all of my other notes and reviews so I only have one place to look for things I have researched in the past.
+
+Next I start implementing a simplified version of the algorithm idea to make sure that it works at all. 
+For example, I would implement a 0D version of a code quickly and simply in Python to use for testing.
+In this step there can be iteration between the algorithm idea and the test code, informed by additional literature review as necessary. 
+Once satisfied with the experiments with the simple code, the algorithm is considered "final" (though of course it can be refined later if needed).
+
+**Step 2**:
+
+
+**Step 3**:
 
 
 Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures.
