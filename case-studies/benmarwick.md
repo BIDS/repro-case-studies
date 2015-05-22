@@ -27,7 +27,7 @@ As the specialist work concluded, the Excel and Word files were collected into a
 
 The R package knitr and the pandoc program was used to execute the R markdown file to inspect the output as the code was being written. A docker container was created to create an isolated computational and portable environment for writing the R markdown document and developing the package. The docker image was backed up on the Docker Hub server, and tested using continuous integration from circle-ci.com  All of these components, data files, R markdown file, package files, etc. were all version controlled using Git locally and backed-up on a private repository at GitHub.
 
-While 
+While the analyses was being developed in the research compendium, a manuscript was being drafted in a MS Word document and circulated among the authors by email, and revised using track changes. 
 
 
 
