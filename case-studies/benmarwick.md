@@ -15,8 +15,21 @@ My workflow diagram is enclosed as a PDF and also online here:
 
 https://drive.draw.io/#G0B06w3axv7XKTZW5UdksxMlZkYVU
 
-
 ##### Workflow narrative
+
+Our project aimed to excavate a well-known archaeological site in northern Australia in an attempt to reproduce the findings of previous excavations in the 1990s that uncovered  controversial early evidence for human occupation of Australia. The project was initiated with a grant application written in Microsoft Word and circulated among the team by email.
+
+The archaeological excavation was conducted with fairly standard modern techniques. These include a combination of direct digital capture of artefact and feature provenance with a total station, digital photography and GIS, and hand-written paper notes using structured site recording forms. These data from these forms was later entered into an Excel spreadsheet.
+
+At the conclusion of fieldwork, post-excavation analysis continued at the home institutions of each of the team members. The tools for data collections and analysis at this stage were according to the norms of each lab, but the final products from this stage were MS Word and Excel files. At this point work began on a manuscript for publication, which was a MS Word document that was circulated among the authors by email.
+
+As the specialist work concluded, the Excel and Word files were collected into an R Project using RStudio. The spreadsheets were converted to CSV files to ensure they could be accessed independent of any specific software. A research compendium was created, based on a custom R package. This package was written to contain custom functions used repeatedly in the R markdown file. The devtools package was used to develop the custom R package in RStudio. The testtools package was used to write tests to ensure the package functions performed as expected while they were being developed. An R markdown file was created as part of the compendium, and edited in RStudio to recompute and extend the analysis and visualizations from the specialist labs, and combine the key pieces of narrative text from the lab reports that contain statistical results. The code in the R markdown file used several R packages, including dplyr and reshape2 for data clearning and analysis, rioja and analogue for specialist environmental methods, and ggplot2 for visualization.
+
+The R package knitr and the pandoc program was used to execute the R markdown file to inspect the output as the code was being written. A docker container was created to create an isolated computational and portable environment for writing the R markdown document and developing the package. The docker image was backed up on the Docker Hub server, and tested using continuous integration from circle-ci.com  All of these components, data files, R markdown file, package files, etc. were all version controlled using Git locally and backed-up on a private repository at GitHub.
+
+While 
+
+
 
 Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures.
 
