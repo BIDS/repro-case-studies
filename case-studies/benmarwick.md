@@ -35,7 +35,7 @@ Some of the pain points include:
 - the complexities of working on the draft manuscript and updating the analysis as the team explores different options and research directions. This places a requires the team members working on the research compendium to iterate quickly, and dis-empowers the other team members who are not familiar with R. 
 
 ##### Key benefits
-XS
+
 Some of the advantages that motivate us to pursue that approach include:
 
 - A detailed human- and machine-readable record of all the steps in the analysis. This takes the methods out of Excel, where they are often invisible due to ephemeral point-and-click behaviours, and reconstructs them in R script where every step is explicit. This makes it a lot easier to engage with questions like "can we do that again, but change X a little bit?" and "what happens if we add/exclude X from the analysis?" This kind of exploratory work is most efficiently done using a scripting language because the equivalent work in a spreadsheet often requires redoing numerous manual steps of data manipulation in order to alter one small step. 
@@ -100,7 +100,7 @@ The generic practices I'd recommend for researchers in my field include:
 
 - Stodden, V and Miguez, S (2014). Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research. Journal of Open Research Software 2(1):e21, DOI: http://dx.doi.org/10.5334/jors.ay
 
-- Gandrud, C. (2013). Reproducible Research with R and R Studio. CRC Press.
+- Gandrud, C. (2013). [Reproducible Research with R and R Studio](https://github.com/christophergandrud/Rep-Res-Book). CRC Press.
 Chicago	
 
 
