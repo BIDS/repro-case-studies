@@ -31,9 +31,7 @@ While the analysis was being developed in the research compendium, a manuscript 
 
 As the review and updating cycle concludes, the manuscript is send for review by the Traditional Owners of the land where the archaeological site is located. After this review, which might involve some changes to the manuscript, the final draft is prepared for submission. At the same time, the GitHub repository that contains the research compendium is made public and continuous integration from travis-ci.com is added to monitor the effect of changes made during peer review. The compendium is also deposited at figshare.com and the persistent URL to the figshare repository is added to the text of the manuscript as a pointer to the data and code that generated the results and visualizations found in the paper. The MIT license is attached to the code, the CC0 license is attached to the data, and a CC-BY license is attached to the text. These licenses allow flexible reuse of our materials. The paper is then submitted for publication. At this point the data and software are openly available online for peer reviewers and others to inspect. The code includes the R package, which has documentation about installing the packages and using the functions, has unit tests, and has machine- and human- readable metadata about dependencies. We also make available the docker image that contains the compendium in an Linux environment so that all the dependencies external to R can be included in a single bundle. 
 
-
 ##### Pain points
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
 
 Some of the pain points include:
 
@@ -43,6 +41,13 @@ Some of the pain points include:
 
 ##### Key benefits
 *Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
+
+Some of the advantages that motivate us to pursue that approach include:
+
+- A detailed human- and machine-readable record of all the steps in the analysis. This takes the methods out of Excel, where they are often invisible due to ephemeral point-and-click behaviours, and reconstructs them in R script where every step is explicit. This makes it a lot easier to engage with requests like "can we do that again, but change X a little bit?" and "what happens if we add/exclude X from the analysis?"
+
+- 
+
 
 ##### Key tools
 *If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
