@@ -7,26 +7,14 @@ My name is Ben Marwick, and I am an Assistant Professor of archaeology in the De
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
-In the context of this case study, reproducibility refers to computational reproducibility, which means enabling other people to combine the code and data that we produce to obtain the same statistical and vif
+In the context of this case study, reproducibility refers to computational reproducibility, which means enabling other people to combine the code and data that we produce to obtain the same statistical results and data visualizations that we present in our publication. I also expect that the code could be used for empirical reproducibility, where our code is applied to a new dataset to generate substantively similar results to our published results. 
 
 ##### Workflow diagram
 
-The core of your case study is a diagrammatic workflow sketch, which depicts your the entire pipeline of your workflow. Think of this like a circuit diagram: boxes represent steps, tools, or other disjoint components, and arrows show how outputs of particular steps feed as inputs to others. This diagram will be complemented by a textual narrative.
+My workflow diagram is enclosed as a PDF and also online here: 
 
-We recommend the site draw.io for creating this diagram, or you are also welcome to sketch this by hand. While creating your diagram, be sure to consider:
+https://drive.draw.io/#G0B06w3axv7XKTZW5UdksxMlZkYVU
 
-* specialized tools and where they enter your workflow
-* the "state" of the data at each stage
-* collaborators
-* version control repos
-* products produced at various stages (graphics, summaries, etc)
-* databases
-* whitepapers
-* customers
-
-Each of the two example case studies include a workflow diagram you can also use for guidance.
-
-Please save your diagram alongside this completed case study template.
 
 ##### Workflow narrative
 
