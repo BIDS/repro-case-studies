@@ -1,0 +1,62 @@
+digraph G {
+    subgraph cluster0 {
+        node [style=filled,color=white];
+        style=filled;
+        color=lightgrey;
+        subgraph clusterA {
+          node [style="filled",color=lightgrey];
+          style="filled";
+          color=white;
+          "Develop taxonomy of interactions" -> "Record sessions" -> "Train raters" -> "Rate";
+        }
+        "Do ratings mean anything?" -> "Do raters agree?";
+        "Do raters agree?" -> "Do ratings mean anything?";
+        label = <Scientific question of interest<BR />
+        <FONT POINT-SIZE="10">What happens in therapy session with autistic kids?
+         </FONT>>;
+    }
+    subgraph cluster1 {
+        node [style=filled,color=white];
+        style=filled;
+        color=lightgrey;
+        "Experimental design" -> "Data collection" -> "Data cleaning";
+        label = "Data";
+    }
+    subgraph cluster2 {
+        node [style=filled,color=white];
+        style=filled;
+        color=lightgrey;
+        "Literature search" -> "White board" -> "Discussion";
+        label = "Algorithm";
+    }
+    subgraph cluster3 {
+        node [style=filled,color=white];
+        style=filled;
+        color=lightgrey;
+        "Design" -> "Prototype" -> "Test";
+        label = "Implementation";
+    }
+    subgraph cluster4 {
+        node [style=filled,color=white];
+        style=filled;
+        color=lightgrey;
+        "Write script" -> "Run" -> "Evaluate";
+        label = "Implementation";
+    }
+    subgraph cluster5 {
+        node [style=filled,color=white];
+        style=filled;
+        color=lightgrey;
+        "Write" -> "Proof" -> "Circulate";
+        label = "Publish";
+    }
+
+    "Rate" -> "Do ratings mean anything?";
+    "Do raters agree?" -> "Experimental design";
+    "Discussion" -> "Design";
+    "Do raters agree?" -> "Literature search";
+    "Test" -> "Write script";
+    "Data cleaning" -> "Write script";
+    "Evaluate" -> "Write";
+}
+
