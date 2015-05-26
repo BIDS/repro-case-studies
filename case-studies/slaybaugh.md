@@ -68,9 +68,20 @@ Thus, if you have access to the code you can rerun the calculations and process 
 This can either stay in the repo or be posted together of Figshare (or both).
 
 ##### Pain points
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
+There are a few pain points: 
+- Getting the documentation right. 
+It seems like just using Doxygen is not enough.
+To get something that really is user-manual-quality you have to write a lot of things twice, just slightly differently.
+I try to reuse as much as I can, but if things are replicated there is the challenge of maintaining consistency.
+- Ensuring that the version of what is released in the end is actually reproducible.
+This requires the extra step of documenting which version of the code was used (the results should not change in the future, but they might).
+Providing directions about how to run everything and which versions of third party libraries were used is also some extra work. 
+- A final pain point is re-implementing the algorithm from the simple case to the complex case, since the simple code is never really used for anything.
+However, I consider this to be a pretty small issue and I do not actually mind it.
 
 ##### Key benefits
+
+
 *Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
 
 ##### Key tools
