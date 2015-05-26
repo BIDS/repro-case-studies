@@ -40,37 +40,32 @@ Next I start implementing a simplified version of the algorithm idea to make sur
 For example, I would implement a 0D version of a code quickly and simply in Python to use for testing.
 In this step there can be iteration between the algorithm idea and the test code, informed by additional literature review as necessary. 
 Once satisfied with the experiments with the simple code, the algorithm is considered "final" (though of course it can be refined later if needed).
+I am not sure that this part of the workflow is reproducible in the sense that it can be exactly replicated, but version controlling everything at least makes it possible to recover intermediate steps and in some ways the idea refinement can be traced back. 
 
 **Step 2**:
+Once there is a finalized algorithm, it gets implemented in the "real" code that has multiple developers and is written in a compiled language like C+Once there is a finalized algorithm, it gets implemented in the "real" code that has multiple developers and is written in a compiled language like C++. 
+The repository for the code is typically private because, as mentioned, these codes are not completely open.
+It is often the case that one or a very few people are working on this idea, so we make a branch and do the development there.
+I add unit tests to a testing framework associated with the code as I go (for example GoogleTest); the tests reside in the same repository as the main code. 
+As the code becomes closer to complete I will use small test problems to investigate basic system functionality: does the code get the correct answer for analytical/known solutions? what does basic performance look like? etc. 
+The small tests are also version controlled - and that can be in the same repository or a separate one.
 
+Once the unit tests are deemed sufficient and, combined with the small tests, everything indicates that code is correct, I finalize documentation. 
+I use doxygen to comment the code, which is useful for creating an API that can be built with the code.
+However, some extra work is often required to get the theory down and provide cleare directions for using the new algorithm.
+All of that is written in LaTeX for incorporation into the user manual. 
+Again, all of these things are version controlled. 
+At this point the code will be reviewed and merged into the main code base.
+Once the code is finalized the unit test and small test results should all be reproducible by the other developers--the people who have access to the developer repository.
 
 **Step 3**:
-
-
-Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures.
-
-It may be helpful to consider the following questions, where interesting, applicable, and non-obvious from context. For each part of your workflow:
-
-* **Frequency:** How often does the step happen and how long does it take?
-* **Who:** Which members of your team participate (or not)?
-* **Manual/Automated:** Is the step automated or does it involve human intervention (if so, is it recorded)?
-* **Tools:** Which software or online tools are used in the step? How are they used?
-
-In addition to detailing the steps of the workflow, you may wish to consider the following questions about the workflow as a whole:
-
-* **Data:** Is your raw data online?
-   * Is it citeable?
-   * Does the license allow external researchers to publish a replication/confirmation of your published work?
-* **Software:** Is the software online?
-   * Is there documentation?
-   * Are there tests?
-   * Are there example input files alongside the code?
-* **Processing:** Is your data processing workflow online?
-   * Are the scripts documented?
-   * Would an external researcher know what order to run them in?
-   * Would they know what parameters to use?
-
-*(500-800 words)*
+Once there is "finalized" code, it is time to do the real demonstration testing for publication.
+This involves running large tests that demonstrate performance of the new algorithm for problems of interest as well as comparison to benchmarks to demonstrate correctness. 
+The literature review, algorithm descrtiption, and results of the large (and sometimes small) tests will go in the final LaTeX document for journal submission.
+This will also be version controlled, typically in a public GitHub repo.
+The idea is that the large test input files will be in the same repository along with any scripts required to process data and generate plots all with corresponding directions. 
+Thus, if you have access to the code you can rerun the calculations and process the data. 
+This can either stay in the repo or be posted together of Figshare (or both).
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
