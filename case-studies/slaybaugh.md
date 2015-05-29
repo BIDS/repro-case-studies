@@ -51,8 +51,8 @@ As the code becomes closer to complete I will use small test problems to investi
 The small tests are also version controlled - and that can be in the same repository or a separate one.
 
 Once the unit tests are deemed sufficient and, combined with the small tests, everything indicates that code is correct, I finalize documentation. 
-I use doxygen to comment the code, which is useful for creating an API that can be built with the code.
-However, some extra work is often required to get the theory down and provide cleare directions for using the new algorithm.
+I use Doxygen to comment the code, which is useful for creating an API that can be built with the code.
+However, some extra work is often required to get the theory down and provide clearer directions for using the new algorithm.
 All of that is written in LaTeX for incorporation into the user manual. 
 Again, all of these things are version controlled. 
 At this point the code will be reviewed and merged into the main code base.
@@ -61,7 +61,7 @@ Once the code is finalized the unit test and small test results should all be re
 **Step 3**:
 Once there is "finalized" code, it is time to do the real demonstration testing for publication.
 This involves running large tests that demonstrate performance of the new algorithm for problems of interest as well as comparison to benchmarks to demonstrate correctness. 
-The literature review, algorithm descrtiption, and results of the large (and sometimes small) tests will go in the final LaTeX document for journal submission.
+The literature review, algorithm description, and results of the large (and sometimes small) tests will go in the final LaTeX document for journal submission.
 This will also be version controlled, typically in a public GitHub repo.
 The idea is that the large test input files will be in the same repository along with any scripts required to process data and generate plots all with corresponding directions. 
 Thus, if you have access to the code you can rerun the calculations and process the data. 
@@ -93,12 +93,33 @@ However, I consider this to be a pretty small issue and I do not actually mind i
 
 1) Why do you think that reproducibility in your domain is important?
 
+The codes that we write are often used to investigate new nuclear systems and make long-term policy or design decisions based on the results. 
+They are also used to study existing nuclear systems. 
+This is important stuff; the codes need to be right and the results need to be verifiable. 
+
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+
+- Mentors: my PhD advisers valued reproducible practices and insisted that we used them
+- Student groups: the Hacker Within
+- Practice: taking on a project that used good practices was how I really learned many of these skills
+- Community exposure: spending time with others who value reproducible practices 
+- Self-study: looking up things I saw people do that looked helpful
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
+The biggest challenge is legal: only some people can access the codes and data required. 
+A secondary challenge is access: some of the work I do requires high-performance computing that is not readily available to many.
+
 4) What do you view as the major incentives for doing reproducible research?
+
+Ethical mandate: I want my work to be right and for others to be able to know that it is right. 
+
+Impact: My ideas and products might then be adopted and built upon. 
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
+Testing, testing, testing. 
+
 6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+
+Software Carpentry; the new Scopatz-Huff book.
