@@ -110,7 +110,7 @@ vetting for obvious errors (P. Stark) Time: approximately 1 hour
     i. export the Excel data to .csv format (P. Stark) Time: approximately 5 minutes.
     i. data anonymization: substitute unique numerical identifiers for raters' names.
 This step was performed using regular expressions in an interactive text editor, on
-the .csv file. It not performed reproducibly (i.e., not scripted), but it can be checked readily.
+the .csv file. It was not performed reproducibly (i.e., not scripted), but it can be checked readily.
 (P. Stark) Time: approximately 1 hour.
     i. screen the anonymized data for transcription errors, typos, etc.
 (J. Millman, P. Stark) Time: approximately 5 hours
