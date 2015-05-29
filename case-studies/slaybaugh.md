@@ -25,9 +25,9 @@ However, such non-open-source codes are typically available at no cost to resear
 ##### Workflow narrative
 
 I tend to think of my workflow for code development as having three fundamental steps:
-  1) idea generation and refinement,
-  2) idea implementation and testing, and
-  3) large scale testing and publication.
+  (1) idea generation and refinement,
+  (2) idea implementation and testing, and
+  (3) large scale testing and publication.
 
 **Step 1**:
 The starting point of a new project (blue boxes) is the development of an algorithm.
@@ -112,9 +112,9 @@ A secondary challenge is access: some of the work I do requires high-performance
 
 4) What do you view as the major incentives for doing reproducible research?
 
-Ethical mandate: I want my work to be right and for others to be able to know that it is right. 
+*Ethical mandate*: I want my work to be right and for others to be able to know that it is right. 
 
-Impact: My ideas and products might then be adopted and built upon. 
+*Impact*: My ideas and products might then be adopted and built upon. 
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
