@@ -16,7 +16,7 @@ In general, given a publication (in a refereed journal), source codes and raw da
 
 ##### Workflow narrative
 
-Since the simulations may require a large amount of compute resources (on clusters or large workstations), it is usually not feasible or desirable to re-run the whole process in one go. We therefore usually adopt a two-step approach: The output of the simulation runs is treated as primary/raw data, which is archived along with log files containing detailed information about source code version, execution environment, and input parameters. The evaluation and transformation of this raw data to the final results (typically figures with plots) should then be as easily repeatable as possible, ideally with a single push of a button or script execution.
+Since the simulations may require a large amount of compute resources (on clusters or large workstations), it is usually not feasible or desirable to re-run the whole process in one go. We therefore typically adopt a two-step approach: The output of the simulation runs is treated as primary/raw data, which is archived along with log files containing detailed information about source code version, execution environment, and input parameters. The evaluation and transformation of this raw data to the final results (typically figures with plots) should then be as easily repeatable as possible, ideally with a single push of a button or script execution.
 
 In this study, we opted to publish the raw data as supplementary information on the publisher's (APS) web server and provide workflow files for the VisTrails system, which would retrieve the raw data from the server and recreate the figures contained in the paper. This way, any reader can inspect in detail and rerun all steps of our data analysis.
 
@@ -28,9 +28,9 @@ These output files constitute the raw data, which is collected on a desktop syst
 
 Finally, the manuscript of the paper is written in Latex, including the figure files created by the vt workflows. Latex compilation produces the paper as pdf, which constitutes the central part of the publication.
 
-Publishing the paper together with the raw data and workflows, such that readers could easily reproduce and inspect our data evaluation process turned out to be a challenge in its own and required intense interaction with the publisher. Here, the main problem was the need for cross-references between the manuscript, the VT workflows, and the raw data, because the final location of each component only becomes available in the last step of the production process, when the files cannot be changed anymore without manual intervention from the production team. Some aspects of this issue are explained in detail in our report https://www.usenix.org/event/tapp11/tech/final_files/Bauer.pdf . In the end, the publisher was not able to insert links from the figures in the paper to the corresponding workflow files, but only a general reference to the supplementary material section on their server, where all the workflows could be downloaded.
+Publishing the paper together with the raw data and workflows, such that readers could easily inspect and reproduce our data evaluation process turned out to be a challenge in its own right and required intense interaction with the publisher. Here, the main problem was the need for cross-references between the manuscript, the VT workflows, and the raw data, because the final location of each component only becomes available in the last step of the production process, when the files cannot be changed anymore without manual intervention from the production team. Some aspects of this issue are explained in detail in our report https://www.usenix.org/event/tapp11/tech/final_files/Bauer.pdf . In the end, the publisher was not able to insert links from the figures in the paper to the corresponding workflow files, but only a general reference to the supplementary material section on their server, where all the workflows could be downloaded.
 
-[Side remark: One collaborator actually recreated the figures with a different plotting tool before publication in order to improve their visual appearance. For this purpose, we amended the vt workflows to export the preprocessed data to an external file before plotting. Therefore, the figures presented in the paper are equivalent, but not identical, with the ones created by the vt workflows.]
+[Side remark: One collaborator actually recreated the figures with a different plotting tool before publication in order to improve their visual appearance. For this purpose, we amended the vt workflows to export the preprocessed data to an external file before plotting. Therefore, the figures presented in the paper are equivalent, but not visually identical, with the ones created by the vt workflows.]
 
 
 ##### Pain points
@@ -75,13 +75,13 @@ Some basic principles are quite evident, but integrating them in an efficient wo
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
-The main challenge is probably making the recording of provenance data as easy as possible, so no-one has an excuse not to do it. 
+The main challenge is probably making the recording of provenance data as simple as possible, so no-one has an excuse not to do it. 
 
 Another point is that simulation codes, raw data, and evaluation tools are rarely published. Most researchers are very reluctant to publish their codes, e.g. because they do not want competitors to publish results produced with their code before they can, or because they feel ashamed of the poor quality of their code. Raw data may be large and in non-standard format. And the evaluation may be performed by a chain of different tools, which makes publishing of the workflow hard.
 
 4) What do you view as the major incentives for doing reproducible research?
 
-Apart from research ethics and institutional requirements demanding this, the recording of provenance information can make a researcher's life significantly easier when he/she discovers a discrepancy between different sets of results produced during a single study or in studies by different researchers. (Are the discrepancies cause by differences in the code, different input parameters, or data evaluation?)
+Apart from research ethics and institutional requirements demanding this, the recording of provenance information can make a researcher's life significantly easier when he/she discovers a discrepancy between different sets of results produced during a single study or in studies by different researchers. (Are the discrepancies caused by differences in the code, different input parameters, or data evaluation?)
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
