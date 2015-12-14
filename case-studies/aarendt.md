@@ -87,7 +87,7 @@ I learned these techniques through on-the-job training and classes.
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
-The inability of non-specialists to make full use of our tools requires us to revert back to non-reproducible methods in order to get things done in a timely fashion. For example, many researchers in our domain use Matlab, and cannot take the time to learn Python, which is the core of most of our scripts. We are working to solve this problem by building lightweight Application Programming Interfaces enabling collaborators to access some of the core elements of our workflow through simple web protocols.
+The inability of non-specialists to make full use of our tools requires us to revert back to non-reproducible methods in order to get things done in a timely fashion. We are working to solve this problem by building lightweight Application Programming Interfaces enabling collaborators to access some of the core elements of our workflow through simple web protocols.
 
 4) What do you view as the major incentives for doing reproducible research?
 
@@ -98,3 +98,5 @@ Within a research team, major incentives include: increased transparency in meth
 We recommend development and adherence to standards in geospatial data formats and distribution protocols. 
 
 6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+
+No specific recommendations.
