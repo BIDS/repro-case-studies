@@ -1,11 +1,10 @@
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 My name is Anthony Arendt and I hold a joint appointment as a Senior Research Scientist at the Applied Physics Laboratory, and a Research Fellow at the eScience Institute, University of Washington. I am part of a research team that studies the impact of glaciers on rising global sea levels, with a focus on the glaciers of Alaska and northwestern Canada. During the past 20 years my colleagues at the University of Alaska Fairbanks have been measuring the elevation changes of Alaska's glaciers using LiDAR data collected from a small aircraft. We use these data to estimate total changes in mass of each observed glacier, and then extrapolate these data to unmeasured glaciers based on information acquired from satellite imagery. From this we produce detailed maps of the spatial distribution of glacier mass change and the total contribution of these ice masses to global ocean change.
 
-During the 20 year duration of the project the data analysis has evolved from manual manipulation of text files, to a semi-automated workflow that integrates GIS, relational database and Python tools within a cloud computing framework. Here we describe the workflow which culminated in a recent publication (Larsen et al., 2015). Core developers of the software include Evan Burgess, Christian Kienholz, Justin Rich, Anthony Arendt and Christopher Larsen. 
+During the 20 year duration of the project the data analysis has evolved from manual manipulation of text files, to a semi-automated workflow that integrates GIS, relational database and Python tools within a cloud computing framework. Here we describe the workflow which culminated in a recent publication [(Larsen et al., 2015)](http://onlinelibrary.wiley.com/doi/10.1002/2015GL064349/full). Core developers of the software include Evan Burgess, Christian Kienholz, Justin Rich, Anthony Arendt, Christopher Larsen and Sai Nimmagadda. 
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
@@ -19,7 +18,7 @@ Reproducability is a crucial component of our workflow due to the dynamic nature
 
 ##### Workflow diagram
  
-See attached workflow diagram: altimetryReproducability.html
+![workflow][arendt.pdf]
 
 ##### Workflow narrative
 
@@ -92,7 +91,7 @@ The inability of non-specialists to make full use of our tools requires us to re
 
 4) What do you view as the major incentives for doing reproducible research?
 
-Within a research team, major incentives include: increased transparency in methods, increased accountability and ability to check for errors in processing, a reduction in spin-up time as new members join the team, and an ability to minimize duplication of effort. Between the team and other collaborators/stakeholders, we see major benefits in the ability to share and visualize results, and in our capactiy to perform cross-disciplinary research. 
+Within a research team, major incentives include: increased transparency in methods, increased accountability and ability to check for errors in processing, a reduction in spin-up time as new members join the team, and an ability to minimize duplication of effort. Between the team and other collaborators/stakeholders, we see major benefits in the ability to share and visualize results, and in our capacity to perform cross-disciplinary research. 
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
