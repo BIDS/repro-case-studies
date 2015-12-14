@@ -18,7 +18,7 @@ Reproducability is a crucial component of our workflow due to the dynamic nature
 
 ##### Workflow diagram
  
-![workflow][arendt.pdf]
+[workflow diagram](arendt.pdf)
 
 ##### Workflow narrative
 
