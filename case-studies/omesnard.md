@@ -3,13 +3,12 @@
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
-My name is Olivier Mesnard and I am a graduate student at the George Washington University in the Mechanical and Aerospace Engineering department. My advisor is Prof. Lorena Barba. In our lab, we do computational fluid dynamics with a focus on the immersed-boundary method and application to bio-locomotion problems. Part of our research consists in developing numerical code, doing our best to produce reproducible results.
+We are a Computational Fluid Dynamics research lab, lead by Prof. [Lorena Barba](http://lorenabarba.com) at the George Washington University in the Mechanical and Aerospace Engineering department. Part of research focuses on animal-flight, unsteady simulations at low/moderate Reynolds numbers, using immersed-boundary methods. On top of that, we do our best to accomplish reproducible research. The work we describe below was carried out by one of our graduate students, Olivier Mesnard, under the supervision of Prof. Lorena Barba.
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
-My definition of the term "reproducibility" is specific to my domain of interest (Computational Fluid Dynamics), and may not be applicable to others.
-Given a set of inputs and a set of instructions to solve a problem, if two independent researchers arrive to the same conclusions, the study can be tagged as "reproducible". There is also a concept of tolerance associated with reproducibility. For example, in Computational Fluid Dynamics, using a different method (and a different code) may leads a somewhat different solution without changing the overall conclusions of the study. The label "reproducibility" does not mean necessarily to obtain identical results.
-If the method and the code are parts of the inputs, once can replicate a study. Using a different method (i.e. an alternative way) to derive the same conclusions, once have reproduced the study. This distinction was made by Drummond (2009).
+We would like to mention that the term "reproducibility" may be specific to our research area and would not have the same connotation for others.
+Given a set of inputs and a set of instructions, if two independent researchers arrive to the same conclusions, the study deserves the tag "reproducible". There is also a concept of tolerance associated with reproducibility and a fine distinction to made with replicability (Drummond, 2009). In computational fluid dynamics, replicability can be achieved by using the same numerical code to re-generate the results, while reproducibility can be obtained using a different code (even a different method). We learned from experiences that reproducibility was more challenging than replicability.
 
 ##### Workflow diagram
 
@@ -59,29 +58,22 @@ In addition to detailing the steps of the workflow, you may wish to consider the
 
 *(500-800 words)*
 
-The aim of our numerical study is to reproduce and replicate published results from Krishnan et al. (2014) about the aerodynamics of an anatomically-accurate flying-snake cross-section, using various computational fluid dynamics software.
+Our research lab developed over the years a consistent workflow to do reproducible research. Our previous published study (Krishnan et al., 2014) already followed the PI Manifesto (Barba, 2012). We used an immersed-boundary projection method to compute the  flow around a flying-snake cross-section (a lifting bluff body) at moderate Reynolds numbers. The method requires to solve a modified Poisson system with an iterative algorithm provided by a external linear algebra library. The numerical code [cuIBM](https://github.com/barbagroup/cuIBM) is hosted on the version-control platform GitHub, the manuscript was first available on arXiv, and replicability instructions have been uploaded to figshare. We did our best to make that study replicable by others. Below, we describe the workflow we used attempting to reproduce, with various software, a highly unsteady flow dominated by vorticity.
 
-In South-East Asia, a certain species of snake, the *Chrysopelea paradisi*, possesses the remarkable skill to glide through the air. The so-called flying-snake jumps off tree branches and undulates (sending waves from head to tail) to generate enough upward force (lift) to drift over a dozen meters. During the gliding phase, the S-shaped body of the snake consists of two to three straight sections of high aspect-ratio (connected by curved tips) with a peculiar cross-section: the snake opens its ribcage to flatten its ventral side, morphing the circular section into a triangular one.
-
-Krishnan et al. (2014) numerically confirmed experimental results from Miklasz et al. (2010) about a lift-enhancement of the snake cross-section when placed in a freestream flow with a particular angle-of-attack. Krishnan et al. (2014) implemented the immersed-boundary projection method from Taira and Colonius (2007) to solve the Navier-Stokes equations on a GPU. Our project focused on reproducing/replicating the lift-enhancement feature of the bluff-body at moderate Reynolds numbers (ranging from 1000 to 2000) using different open-source software, including the one used to published the previous results. The overall question we tried to answer being: how difficult is it to reproduce highly unsteady flows around bluff-bodies at moderate Reynolds number?
-
-A key point of the project was to access data published by Krishnan et al. (2014), including the anatomically accurate cross-section of the snake and aerodynamic results from the previous study. Fortunately, the authors conscientiously version-controlled the input parameters on the GitHub repository of the code, while analysis were hosted on figshare.
-
-We used a total of four computational fluid dynamics software to reproduce their study:
-- [cuIBM](https://github.com/barbagroup/cuIBM), the GPU open-source code used by Krishnan et al. (2014),
+We used a total of four computational fluid dynamics software to replicate and reproduce the study:
+- [cuIBM](https://github.com/barbagroup/cuIBM), the GPU open-source code previously used,
 - [PetIBM](https://github.com/barbagroup/PetIBM), a multi-CPU version of cuIBM,
 - [IBAMR](https://github.com/ibamr/ibamr), an immersed-boundary method code that implements a different mathematical formulation,
-- IcoFOAM, the incompressible laminar solver of [OpenFOAM](http://www.openfoam.org/) with a body-conforming mesh approach.
+- IcoFOAM, the incompressible laminar solver of [OpenFOAM](http://www.openfoam.org/).
 
-We started with IcoFOAM to look at the possibility to capture the lift-enhancement feature of the snake using a more traditional approach: a body-conforming mesh (the computational mesh snapping on the surface of the snake). We chose IcoFOAM as it is open-source and documented -- both code- and users-documented -- and has an extended users-community. We wanted to use similar inputs than Krishnan et al. (2014), as much as possible, to reproduce their results. The mesh quality as well as proper boundary conditions were essential in capturing the flow features.
+We started with IcoFOAM to look at the possibility of capturing the lift characteristics of the geometry studied in our previous work (Krishnan et al., 2014) using a more traditional approach: a body-conforming mesh. We chose IcoFOAM as it is open-source and documented -- both code- and users-documented -- and has an extended users-community. We wanted to use similar inputs than Krishnan et al. (2014), as much as possible, to reproduce their results. The mesh quality as well as proper boundary conditions were essential in capturing the flow features.
 
 We moved on IBAMR, an open-source software hosted on GitHub, mainly developed by [Boyce Griffith](http://www.cims.nyu.edu/~griffith/), to investigate the possibility to derive the same conclusions than Krishnan et al. (2014) with a different immersed-boundary formulation. Bhalla et al. (2013) published a detailed validation of the method implemented in the software and various examples can be found on the code repository.
 
-cuIBM and PetIBM are both being developed in Prof. Barba's research lab and implement the same immersed-boundary projection method (Taira and Colonius, 2007). In cuIBM, we use [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on CUDA architecture GPUs. We used cuIBM to replicate the findings of Krishnan et al. (2014) on the aerodynamics of the snake cross-section. 
-PetIBM is the multi-CPUs version of cuIBM: the same method is implemented using the [PETSc](http://www.mcs.anl.gov/petsc/) library. This allowed us to investigate how different external algebra libraries could lead to different numerical solution of highly unsteady flows.
-As a matter of reproducibility, we intend to do our best to provide code-documentation (Doxygen), users documentation (GitHub wiki), as well as basic examples/tutorials.
+cuIBM and PetIBM are both being developed our research lab and implement the same immersed-boundary method. As a matter of reproducibility, we intend to do our best to provide code-documentation (Doxygen), users documentation (GitHub wiki), as well as basic examples/tutorials. In cuIBM, we use [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on CUDA architecture GPUs. We used cuIBM to confirm the replicability of our previous findings (Krishnan et al., 2014). It is important to note that we had to use the same version of the code with the same version of the algebra library to obtain the same numbers.
+In PetIBM, we implemented the same immersed-boundary method using this time the [PETSc](http://www.mcs.anl.gov/petsc/) library. We observed that using a different linear algebra library changed the conclusions about the snake aerodynamics.
 
-For each simulation, the objective is to compare the aerodynamic properties of the snake cross-section with what Krishnan et al. (2014) reported: instantaneous lift and drag forces acting on the bluff-body. We chose Python to automate pre- and post-processing steps -- the different scripts are version-controlled and code-documented and allow command-line arguments (to avoid as much as possible code-modification from users).  We also took advantage of the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to automate the post-processing part of OpenFOAM and IBAMR simulations. In addition to that, we used Jupyter Notebooks and Markdown files to present project advances during various meetings -- our group-meetings are version-controlled on GitHub.
+We chose Python to automate pre- and post-processing steps -- the different scripts are version-controlled and code-documented and allow command-line arguments (to avoid as much as possible code-modification from users).  We also took advantage of the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to automate the post-processing part of OpenFOAM and IBAMR simulations. In addition to that, we used Jupyter Notebooks and Markdown files to present project advances during various meetings -- our group-meetings are version-controlled on GitHub.
 
 Finally, once the results have been gathered and analyzed, the manuscript is written using LateX and version-controlled in its own GitHub repository to facilitate communication between collaborators. To advocate open-science, the manuscript will be available on arXiv and for each simulation and each figure reported in the manuscript, we will provide a reproducibility package as a warranty of the veracity of our results. This package includes the version of the software (as well as the one of each dependency), the input parameters (for both the simulation and the post-processing), information related to machine architecture, and the necessary scripts to run and post-process the simulation.
 
@@ -89,15 +81,13 @@ Finally, once the results have been gathered and analyzed, the manuscript is wri
 - Bhalla, A. P. S., Bale, R., Griffith, B. E., & Patankar, N. A. (2013). A unified mathematical framework and an adaptive numerical method for fluid–structure interaction with rigid, deforming, and elastic bodies. Journal of Computational Physics, 250, 446-476.
 - Drummond, C. (2009). Replicability is not reproducibility: nor is it good science.
 - Krishnan, A., Socha, J. J., Vlachos, P. P., & Barba, L. A. (2014). Lift and wakes of flying snakes. Physics of Fluids (1994-present), 26(3), 031901.
-- Miklasz, K., LaBarbera, M., Chen, X., & Socha, J. J. (2010). Effects of body cross-sectional shape on flying snake aerodynamics. Experimental Mechanics, 50(9), 1335-1348.
-- Taira, K., & Colonius, T. (2007). The immersed boundary method: a projection approach. Journal of Computational Physics, 225(2), 2118-2137.
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
 
-Throughout the project we faced several difficulties in reproducing the highly unsteady flow around the flying-snake cross-section. With IcoFOAM (body-conforming approach), the quality of the mesh as well as the use of non-reflecting boundary conditions were the keys to observe some kind of lift-enhancement on the body. We were able to replicate the results from Krishnan et al. (2014) by using the same version of cuIBM with the same CUSP version. Using a different linear algebra library (PetIBM using PETSc), we did not get the same amplitude in the mean lift coefficient. Finally, IBAMR was capable to reproduce the snake feature only after modification of the body mesh-discretization.
-We needed to compute about 80 time-units of flow simulation to gather enough data to average the aerodynamic coefficients in time. The duration of the simulations varies between one and three days on a super-computer and the numerical solution weights between 3.5 and 16G. Keeping a clean, up-to-date, and detailed lab notebook appeared to be vital to track all simulations.
-Most of the simulations were run on the HPC cluster of the George Washington University. As we moved data back and forth between different machines (to run the simulation or to store the solution on an external device), a lab notebook made it easier to remember the location of each simulation. 
+Throughout the project we faced several difficulties in reproducing the highly unsteady flow around the flying-snake cross-section. With IcoFOAM (body-conforming approach), the quality of the mesh as well as the use of non-reflecting boundary conditions were the keys to confirm previous findings about the snake aerodynamics. Although we were able to replicate the results using the same cuIBM version with the same version of the external library, our reproducibility attempt, with PetIBM, failed with a different linear algebra library. Finally, IBAMR was capable to reproduce the snake feature only after modification of the body mesh-discretization.
+For this study, we needed to compute about 80 time-units of flow simulation. The duration of the simulations varies between one and three days on a super-computer and the numerical solution weights between 3.5 and 16G. Keeping a clean, up-to-date, and detailed lab notebook appeared to be vital to track all simulations.
+Most of the simulations were run on a HPC cluster at the George Washington University. As we moved data back and forth between different machines (to run the simulation or to store the solution on an external device), a lab notebook made it easier to remember the location of each simulation. 
 Getting used to new computational fluid dynamics software was also time-consuming.  It took longer to familiarize with code with poor users-documentation.
 Finally, we also spent some time to develop automated scripts to analyze the numerical solution from different software (with different output format).
 
@@ -107,7 +97,7 @@ Finally, we also spent some time to develop automated scripts to analyze the num
 ##### Key tools
 *If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
 
-GitHub was the main tool we used to make our workflow reproducible. In addition to input parameters, it is also extremely important to provide the version number (or the SHA of the commit) of the software, as well as the one for each of its dependencies (external libraries)
+We use the version-controlled platform GitHub to achieve a reproducible workflow. GitHub facilitates collaboration when developing numerical codes. The platform allows to create wiki pages for users-documentation. We also use GitHub to write manuscripts, to record our group-meetings, and to store teaching materials.
 
 ##### General questions about reproducibility
 
@@ -119,16 +109,14 @@ Reproducibility is a chance to prove that you can be trusted as a scientific res
 
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
-My advisor , Prof. Lorena Barba, plays a major role in raising awareness of reproducible research among our research group. Back in 2012, she posted a "Reproducibility PI Manifesto" back in 2012. 
-I would also say that we develop reproducible skills to stop doing the same things over and over (automating processes to move faster).
+Our advisor , Prof. Lorena Barba, plays a major role in raising awareness about reproducible research. Back in 2012, she posted a "Reproducibility PI Manifesto" back in 2012 that we use along the studies.
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
-Reproducible research is time-consuming, it requires rigorous methods and organization. At various moments during the project, we had to pause and ask ourself if our research was currently reproducible.
+Reproducible research can be time-consuming; it requires rigorous methods and organization. At various moments during the project, we had to pause and ask ourself if our research was currently reproducible.
 
 4) What do you view as the major incentives for doing reproducible research?
 
-Reproducible research is your "vitrine" to the rest of a community. Reproducible research also prevent someone from re-inventing the wheel.
 Making your research reproducible -- providing reproducibility packages along with the manuscript -- is a way to showcase your skills, an excellent communications medium to convey ideas, and a fast way to get feedbacks on your work. If the research community  is inclined to put more effort in doing reproducible work, it would prevent scientists from re-inventing the wheel.
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
