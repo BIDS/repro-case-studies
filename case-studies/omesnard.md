@@ -3,12 +3,17 @@
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
-We are a Computational Fluid Dynamics research lab, lead by Prof. [Lorena Barba](http://lorenabarba.com) at the George Washington University in the Mechanical and Aerospace Engineering department. Part of research focuses on animal-flight, unsteady simulations at low/moderate Reynolds numbers, using immersed-boundary methods. On top of that, we do our best to accomplish reproducible research. The work we describe below was carried out by one of our graduate students, Olivier Mesnard, under the supervision of Prof. Lorena Barba.
+We are a Computational Fluid Dynamics research lab, lead by Prof. [Lorena Barba](http://lorenabarba.com) at the George Washington University in the Mechanical and Aerospace Engineering department. 
+Part of research focuses on animal-flight, unsteady simulations at low/moderate Reynolds numbers, using immersed-boundary methods. 
+On top of that, we do our best to accomplish reproducible research. The work we describe below was carried out by one of our graduate students, Olivier Mesnard, under the supervision of Prof. Lorena Barba.
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
 We would like to mention that the term "reproducibility" may be specific to our research area and would not have the same connotation for others.
-Given a set of inputs and a set of instructions, if two independent researchers arrive to the same conclusions, the study deserves the tag "reproducible". There is also a concept of tolerance associated with reproducibility and a fine distinction to made with replicability (Drummond, 2009). In computational fluid dynamics, replicability can be achieved by using the same numerical code to re-generate the results, while reproducibility can be obtained using a different code (even a different method). We learned from experiences that reproducibility was more challenging than replicability.
+Given a set of inputs and a set of instructions, if two independent researchers arrive to the same conclusions, the study deserves the tag "reproducible". 
+There is also a concept of tolerance associated with reproducibility and a fine distinction to made with replicability (Drummond, 2009). 
+In computational fluid dynamics, replicability can be achieved by using the same numerical code to re-generate the results, while reproducibility can be obtained using a different code (even a different method). 
+We learned from experiences that reproducibility was more challenging than replicability.
 
 ##### Workflow diagram
 
