@@ -15,11 +15,11 @@ This case study describes what happened when we tried to reproduce our previous 
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
-We would like to mention that the term "reproducibility" may be specific to our research area and would not have the same connotation for others.
-Given a set of inputs and a set of instructions, if two independent researchers arrive to the same conclusions, the study deserves the tag "reproducible". 
-There is also a concept of tolerance associated with reproducibility and a fine distinction to made with replicability (Drummond, 2009). 
-In computational fluid dynamics, replicability can be achieved by using the same numerical code to re-generate the results, while reproducibility can be obtained using a different code (even a different method). 
-We learned from experiences that reproducibility was more challenging than replicability.
+How we understand the term "reproducibility" may be particular to our research area and others may understand it differently. We view it in the following way.
+Given a set of inputs and a set of instructions, if two independent researchers can arrive at the same conclusions, the study deserves the tag "reproducible." 
+It thus is distinguished from *replicability*, and may also involve the idea of tolerance (Drummond, 2009). 
+In computational fluid dynamics, replication of a study can be achieved by using the same numerical code to re-generate the results, while reproducibility of the findings can involve using a different code (or even a different method). 
+We learned from our experiences that reproducibility can be more challenging than replicability.
 
 ##### Workflow diagram
 
