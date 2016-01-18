@@ -1,3 +1,5 @@
+*Authors: Olivier Mesnard, Lorena A. Barba*
+
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
 
@@ -15,10 +17,22 @@ This case study describes what happened when we tried to reproduce our previous 
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
-How we understand the term "reproducibility" may be particular to our research area and others may understand it differently. We view it in the following way.
-Given a set of inputs and a set of instructions, if two independent researchers can arrive at the same conclusions, the study deserves the tag "reproducible." 
-It thus is distinguished from *replicability*, and may also involve the idea of tolerance (Drummond, 2009). 
-In computational fluid dynamics, replication of a study can be achieved by using the same numerical code to re-generate the results, while reproducibility of the findings can involve using a different code (or even a different method). 
+The starting point for our understanding of reproducibility is contained in the pledge "Reproducibility PI Manifesto," which includes these steps: 
+(1) teaching group members about reproducibility;
+(2) maintaining all code and writing under version control;
+(3) carrying out verification and validation and publishing the results;
+(4) for main results in a publication, sharing data, plotting script and figure under CC-BY; 
+(5) uploading preprints to arXiv at the time of submission of a paper;
+(6) releasing code no later than the time of submission of a paper;
+(7) adding a "Reproducibility" declaration to each publication;
+(8) keeping an up-to-date web presence.
+Some of these items have to do with making our research materials open access and discoverable. 
+The core of this pledge is releasing the code, the data, and the analysis/visualization scripts. 
+Already this can be time consuming and demanding.
+Yet, we have come to consider the most basic level of reproducibility.
+On attempting to reproduce a previous study by our research group, we realize how much more rigor is required to achieve full replication. 
+By this, we mean: given a set of inputs and a set of instructions, if two researchers can independent arrive at the same conclusions.
+In computational fluid dynamics,full replication of the findings can involve using a different code (or even a different method). 
 We learned from our experiences that reproducibility can be more challenging than replicability.
 
 ##### Workflow diagram
