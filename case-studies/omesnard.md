@@ -17,23 +17,25 @@ This case study describes what happened when we tried to reproduce our previous 
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
-The starting point for our understanding of reproducibility is contained in the pledge "Reproducibility PI Manifesto," which includes these steps: 
-(1) teaching group members about reproducibility;
-(2) maintaining all code and writing under version control;
-(3) carrying out verification and validation and publishing the results;
-(4) for main results in a publication, sharing data, plotting script and figure under CC-BY; 
-(5) uploading preprints to arXiv at the time of submission of a paper;
-(6) releasing code no later than the time of submission of a paper;
-(7) adding a "Reproducibility" declaration to each publication;
-(8) keeping an up-to-date web presence.
+The starting point for our understanding of reproducibility is contained in the pledge "Reproducibility PI Manifesto," which includes these steps:
+
+1. teaching group members about reproducibility;
+2. maintaining all code and writing under version-control;
+3. carrying out verification and validation and publishing the results;
+4. for main results in a publication, sharing data, plotting scripts, and figures under CC-BY; 
+5. uploading preprints to arXiv at the time of submission of a paper;
+6. releasing code no later than the time of submission of a paper;
+7. adding a "Reproducibility" declaration to each publication;
+8. keeping an up-to-date web presence.
+
 Some of these items have to do with making our research materials open access and discoverable. 
 The core of this pledge is releasing the code, the data, and the analysis/visualization scripts. 
 Already this can be time consuming and demanding.
 Yet, we have come to consider the most basic level of reproducibility.
-On attempting to reproduce a previous study by our research group, we realize how much more rigor is required to achieve full replication. 
-By this, we mean: given a set of inputs and a set of instructions, if two researchers can independent arrive at the same conclusions.
-In computational fluid dynamics,full replication of the findings can involve using a different code (or even a different method). 
-We learned from our experiences that reproducibility can be more challenging than replicability.
+On attempting to reproduce a previous study by our research group, we realize how much more rigor is required to achieve full replication (Peng, 2011).
+By this, we mean that independent researchers, investigating the same scientific hypothesis should arrive to the same conclusions.
+In computational fluid dynamics, full replication of the findings can involve using a different code (or a different method).
+
 
 ##### Workflow diagram
 
@@ -83,38 +85,52 @@ In addition to detailing the steps of the workflow, you may wish to consider the
 
 *(500-800 words)*
 
-Our research lab developed over the years a consistent workflow to do reproducible research. Our previous published study (Krishnan et al., 2014) already followed the PI Manifesto (Barba, 2012). We used an immersed-boundary projection method to compute the  flow around a flying-snake cross-section (a lifting bluff body) at moderate Reynolds numbers. The method requires to solve a modified Poisson system with an iterative algorithm provided by a external linear algebra library. The numerical code [cuIBM](https://github.com/barbagroup/cuIBM) is hosted on the version-control platform GitHub, the manuscript was first available on arXiv, and replicability instructions have been uploaded to figshare. We did our best to make that study replicable by others. Below, we describe the workflow we used attempting to reproduce, with various software, a highly unsteady flow dominated by vorticity.
+Our research lab developed over the years a consistent workflow that, we believe, leads to reproducible research.
+Our previous published study (Krishnan et al., 2014) already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). [cuIBM](https://github.com/barbagroup/cuIBM), the code of the study is hosted on the version-control platform GitHub.
+We studied the aerodynamics of a flying-snake using an immersed-boundary projection method (Taira and Colonius, 2007) that requires to solve a modified Poisson system on a structured Cartesian grid with an iterative algorithm provided by an external linear-algebra library. We use the library [CUSP]([CUSP](https://github.com/cusplibrary/cusplibrary) to solve the problem on a single GPU.
 
-We used a total of four computational fluid dynamics software to replicate and reproduce the study:
-- [cuIBM](https://github.com/barbagroup/cuIBM), the GPU open-source code previously used,
-- [PetIBM](https://github.com/barbagroup/PetIBM), a multi-CPU version of cuIBM,
-- [IBAMR](https://github.com/ibamr/ibamr), an immersed-boundary method code that implements a different mathematical formulation,
-- IcoFOAM, the incompressible laminar solver of [OpenFOAM](http://www.openfoam.org/).
+Here, we describe our attempt in achieving a full replication of our previous conclusions about aerodynamic characteristics of the flying-snake.
+We used a total of four computational fluid dynamics software to reproduce and replicate our own findings on a case that involves a highly unsteady flow dominated by vorticity.
 
-We started with IcoFOAM to look at the possibility of capturing the lift characteristics of the geometry studied in our previous work (Krishnan et al., 2014) using a more traditional approach: a body-conforming mesh. We chose IcoFOAM as it is open-source and documented -- both code- and users-documented -- and has an extended users-community. We wanted to use similar inputs than Krishnan et al. (2014), as much as possible, to reproduce their results. The mesh quality as well as proper boundary conditions were essential in capturing the flow features.
+We started with IcoFOAM, the incompressible laminar solver of [OpenFOAM](http://www.openfoam.org/), that uses the finite-volume method on an unstructured body-conforming mesh.
+We chose IcoFOAM as it is widely used, open-source, and documented -- both code- and users-documented.
+We found that the mesh quality as well as proper non-reflective boundary conditions were primordial to capture the features of the wake generated by the snake.
 
-We moved on IBAMR, an open-source software hosted on GitHub, mainly developed by [Boyce Griffith](http://www.cims.nyu.edu/~griffith/), to investigate the possibility to derive the same conclusions than Krishnan et al. (2014) with a different immersed-boundary formulation. Bhalla et al. (2013) published a detailed validation of the method implemented in the software and various examples can be found on the code repository.
+We moved on [IBAMR](https://github.com/ibamr/ibamr), an open-source software hosted on GitHub, mainly developed by [Boyce Griffith](http://www.cims.nyu.edu/~griffith/), to investigate the possibility to retrieve our conclusions using a different immersed-boundary formulation. 
+IBAMR implements an immersed-boundary method on a Cartesian grid that allows adaptive mesh refinement and relies on the libraries [SAMRAI](https://computation.llnl.gov/project/SAMRAI) and [PETSc](http://www.mcs.anl.gov/petsc).
+Bhalla et al. (2013) published a detailed validation of the software, while various examples can be found on the code repository.
 
-cuIBM and PetIBM are both being developed our research lab and implement the same immersed-boundary method. As a matter of reproducibility, we intend to do our best to provide code-documentation (Doxygen), users documentation (GitHub wiki), as well as basic examples/tutorials. In cuIBM, we use [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on CUDA architecture GPUs. We used cuIBM to confirm the replicability of our previous findings (Krishnan et al., 2014). It is important to note that we had to use the same version of the code with the same version of the algebra library to obtain the same numbers.
-In PetIBM, we implemented the same immersed-boundary method using this time the [PETSc](http://www.mcs.anl.gov/petsc/) library. We observed that using a different linear algebra library changed the conclusions about the snake aerodynamics.
+The codes [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) are both being developed our research lab and implement the same immersed-boundary method (Taira and Colonius, 2007).
+The GitHub code repositories includes code-documentation ([Doxygen](www.doxygen.org)), users-documentation (GitHub wiki), as well as basic examples/tutorials.
+In cuIBM, we use [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on CUDA architecture GPUs. We used cuIBM again to confirm the reproducibility of our published findings.
+The input parameters are available on the code repository while reproducibility packages can be downloaded from figshare. 
+Interestingly, we had to use the same version of the code with the same version of the algebra library to obtain re-compute the same numbers.
+In PetIBM, we implemented the same immersed-boundary method using the the [PETSc](http://www.mcs.anl.gov/petsc/) library to solve the problem on a distributed-memory machine. 
+Although the mathematical formulation is the same, we observed that using a different linear algebra library changed the conclusions about the snake aerodynamics.
 
-We chose Python to automate pre- and post-processing steps -- the different scripts are version-controlled and code-documented and allow command-line arguments (to avoid as much as possible code-modification from users).  We also took advantage of the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to automate the post-processing part of OpenFOAM and IBAMR simulations. In addition to that, we used Jupyter Notebooks and Markdown files to present project advances during various meetings -- our group-meetings are version-controlled on GitHub.
+We chose the high-level language Python to automate pre- and post-processing steps -- all scripts are version-controlled and code-documented and allow command-line arguments (to avoid code-modification from users). 
+We also took advantage of the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to automate the post-processing part of the numerical solution from OpenFOAM and IBAMR. 
+In addition to that, we used Jupyter Notebooks and Markdown files to present project advances during regular meetings -- our group-meetings are version-controlled on GitHub.
 
-Finally, once the results have been gathered and analyzed, the manuscript is written using LateX and version-controlled in its own GitHub repository to facilitate communication between collaborators. To advocate open-science, the manuscript will be available on arXiv and for each simulation and each figure reported in the manuscript, we will provide a reproducibility package as a warranty of the veracity of our results. This package includes the version of the software (as well as the one of each dependency), the input parameters (for both the simulation and the post-processing), information related to machine architecture, and the necessary scripts to run and post-process the simulation.
+Finally, the manuscript is written using LateX and version-controlled in its own GitHub repository to facilitate communication between collaborators. 
+To advocate open-science, the manuscript will be first available on arXiv. We will also provide a reproducibility package for all simulations and figures reported in the manuscript. 
+This package includes the version of the software (as well as the one of its dependencies), the input parameters (for both the simulation and the post-processing), information related to machine architecture, and the necessary scripts to run and post-process the simulation.
 
 *References*:
 - Bhalla, A. P. S., Bale, R., Griffith, B. E., & Patankar, N. A. (2013). A unified mathematical framework and an adaptive numerical method for fluid–structure interaction with rigid, deforming, and elastic bodies. Journal of Computational Physics, 250, 446-476.
-- Drummond, C. (2009). Replicability is not reproducibility: nor is it good science.
 - Krishnan, A., Socha, J. J., Vlachos, P. P., & Barba, L. A. (2014). Lift and wakes of flying snakes. Physics of Fluids (1994-present), 26(3), 031901.
+- Taira, K., & Colonius, T. (2007). The immersed boundary method: a projection approach. Journal of Computational Physics, 225(2), 2118-2137.
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
 
-Throughout the project we faced several difficulties in reproducing the highly unsteady flow around the flying-snake cross-section. With IcoFOAM (body-conforming approach), the quality of the mesh as well as the use of non-reflecting boundary conditions were the keys to confirm previous findings about the snake aerodynamics. Although we were able to replicate the results using the same cuIBM version with the same version of the external library, our reproducibility attempt, with PetIBM, failed with a different linear algebra library. Finally, IBAMR was capable to reproduce the snake feature only after modification of the body mesh-discretization.
-For this study, we needed to compute about 80 time-units of flow simulation. The duration of the simulations varies between one and three days on a super-computer and the numerical solution weights between 3.5 and 16G. Keeping a clean, up-to-date, and detailed lab notebook appeared to be vital to track all simulations.
-Most of the simulations were run on a HPC cluster at the George Washington University. As we moved data back and forth between different machines (to run the simulation or to store the solution on an external device), a lab notebook made it easier to remember the location of each simulation. 
-Getting used to new computational fluid dynamics software was also time-consuming.  It took longer to familiarize with code with poor users-documentation.
+We used four different software in our attempt to fully replicate our own previous findings, dealing with hundreds of simulations.
+For each simulation, we computed the flow over 80 non-dimensional time-units -- the run-time varies between 1 and 3 days and the numerical solutions weights between 3.5 and 16 gigabytes.
+Most of the simulations were run on a HPC cluster at the George Washington University, then moved to several different local desktop machines for storage.
+Keeping a detailed, up-to-date, and version-controlled lab notebook appeared to be vital to track all simulations.
+Getting familiar to new software required a non-negligible amount of time -- it took longer to familiarize to codes with poor users-documentation.
 Finally, we also spent some time to develop automated scripts to analyze the numerical solution from different software (with different output format).
+
 
 ##### Key benefits
 *Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
@@ -122,7 +138,11 @@ Finally, we also spent some time to develop automated scripts to analyze the num
 ##### Key tools
 *If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
 
-We use the version-controlled platform GitHub to achieve a reproducible workflow. GitHub facilitates collaboration when developing numerical codes. The platform allows to create wiki pages for users-documentation. We also use GitHub to write manuscripts, to record our group-meetings, and to store teaching materials.
+We use the version-controlled platform GitHub to achieve a reproducible workflow. 
+GitHub greatly facilitates collaboration when developing numerical codes. 
+The platform allows to create wiki pages for users-documentation. 
+We also use GitHub to write manuscripts, to record our group-meetings, and to store teaching materials.
+We extensively used Python to automate post-processing analysis.
 
 ##### General questions about reproducibility
 
@@ -130,28 +150,45 @@ We use the version-controlled platform GitHub to achieve a reproducible workflow
 
 1) Why do you think that reproducibility in your domain is important?
 
-Reproducibility is a chance to prove that you can be trusted as a scientific researcher. Ensuring that a manuscript (along with the data used to generate the figures) is reproducible makes it easier for others to corroborate (but reject) your research hypothesis. We believe that reproducible research would prevent scientists to reinvent the wheel.
+In computational science, codes and data used to publish results should be version-controlled and open-source to facilitate reproducibility.
+Reproducibility is a chance to prove that you can be trusted as a scientific researcher. 
+Ensuring that a manuscript (along with the data used to generate the figures) is reproducible makes it easier for others to corroborate (or reject) a scientific hypothesis. 
+Donoho and co-authors (2009) mentioned that we develop codes so that they can be used again by strangers and defined strangers as "anyone who doesn't possess our current short-term memory" (including ourself in some years).
+We believe that reproducible research would prevent scientists to reinvent the wheel.
 
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
-Our advisor , Prof. Lorena Barba, plays a major role in raising awareness about reproducible research. Back in 2012, she posted a "Reproducibility PI Manifesto" back in 2012 that we use along the studies.
+Our advisor , Prof. Lorena Barba, plays a major role in raising awareness about reproducible research. Incoming students joining our research lab must start by learning the different tools mentioned in the "Reproducibility PI Manifesto".
+The [Software Carpentry Foundation](http://software-carpentry.org/) (through workshops and online ressources) also contributed to improve our workflow to achieve reproducible research.
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
-Reproducible research can be time-consuming; it requires rigorous methods and organization. At various moments during the project, we had to pause and ask ourself if our research was currently reproducible.
+Reproducible research can be time-consuming, requires rigorous methods and organization.
+At various moments during the project, we had to pause and ask ourself if our research was currently reproducible.
 
 4) What do you view as the major incentives for doing reproducible research?
 
-Making your research reproducible -- providing reproducibility packages along with the manuscript -- is a way to showcase your skills, an excellent communications medium to convey ideas, and a fast way to get feedbacks on your work. If the research community  is inclined to put more effort in doing reproducible work, it would prevent scientists from re-inventing the wheel.
+Making your research reproducible -- providing reproducibility packages along with the manuscript -- is a way to showcase your skills, an excellent communications medium to convey ideas, and a fast way to get feedbacks on your work. 
+If the research community is inclined to put more effort in doing reproducible work, it would prevent scientists from re-inventing the wheel.
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
+Again, we insist that a proper lab notebook is fundamental to record your research.
+We also tend to avoid GUIs as much as possible and prefer to script everything so that analysis can be automated, reproducible, and recorded.
+This kind be time-consuming but surely beneficial in the term of a research project.
+
 6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
 
-* Drummond, C. (2009). Replicability is not reproducibility: nor is it good science.
-* "Reproducibility PI Manifesto", L. A. Barba. (13 December 2012). 10.6084/m9.figshare.104539
+* Barba, L. A. (13 December 2012). "Reproducibility PI Manifesto", 10.6084/m9.figshare.104539.
+* Donoho, D. L., Maleki, A., Rahman, I. U., Shahram, M., & Stodden, V. (2009). Reproducible research in computational harmonic analysis. Computing in Science & Engineering, 11(1), 8-18.
+* Leek, J. T., & Peng, R. D. (2015). Opinion: Reproducible research can still be wrong: Adopting a prevention approach. Proceedings of the National Academy of Sciences, 112(6), 1645-1646.
+* Madeyski, L., & Kitchenham, B. A. (2015). Reproducible Research–What, Why and How. Wroclaw University of Technology, PRE W, 8.
+* Peng, R. D. (2011). Reproducible research in computational science. Science (New York, Ny), 334(6060), 1226.
 Presentation for a talk given at the ICERM workshop "Reproducibility in Computational and Experimental Mathematics". Published on figshare under CC-BY.
-* [Software Carpentry](http://software-carpentry.org)
+* [Reproducible Research -- Coursera MOOC](https://www.coursera.org/learn/reproducible-research).
+* Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten simple rules for reproducible computational research.
+* [Software Carpentry](http://software-carpentry.org).
 * Software Testing -- Udacity MOOC (https://www.udacity.com/).
-* P.B. Stark (2015). Science is "show me", not "trust me". [Blog post](http://www.bitss.org/2015/12/31/science-is-show-me-not-trust-me)
+* Stark, P. B. (2015). Science is "show me", not "trust me". [Blog post](http://www.bitss.org/2015/12/31/science-is-show-me-not-trust-me)
+* Vitek, J., & Kalibera, T. (2011, October). Repeatability, reproducibility, and rigor in systems research. In Proceedings of the ninth ACM international conference on Embedded software (pp. 33-38). ACM.
 
