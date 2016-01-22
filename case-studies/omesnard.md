@@ -129,12 +129,12 @@ This package includes the version of the software (as well as the one of its dep
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
 
-We used four different software in our attempt to fully replicate our own previous findings, dealing with hundreds of simulations.
-For each simulation, we computed the flow over 80 non-dimensional time-units -- the run-time varies between 1 and 3 days and the numerical solutions weights between 3.5 and 16 gigabytes.
-Most of the simulations were run on a HPC cluster at the George Washington University, then moved to several different local desktop machines for storage.
-Keeping a detailed, up-to-date, and version-controlled lab notebook appeared to be vital to track all simulations.
-Getting familiar to new software required a non-negligible amount of time -- it took longer to familiarize to codes with poor users-documentation.
-Finally, we also spent some time to develop automated scripts to analyze the numerical solution from different software (with different output format).
+We used four different codes in our endeavor to fully replicate our own previous findings, dealing with hundreds of simulations.
+For each simulation, we computed the flow over 80 non-dimensional time-units. The run-time varies between 1 and 3 days and the numerical solutions each generate between 3.5 and 16 gigabytes of data.
+Most of the simulations were run on an HPC cluster at the George Washington University, and the solutions were then moved to several different local desktop machines for post-processing and storage.
+Keeping a detailed, up-to-date, and version-controlled lab notebook proved to be vital to track all simulations.
+Becoming familiar with new software required a substantial amount of time—it took longer to familiarize ourselves with codes with poor users' documentation.
+Finally, we also spent considerable time to develop automated scripts for analyzing the numerical solutions resulting from different codes (producing different output formats).
 
 
 ##### Key benefits
