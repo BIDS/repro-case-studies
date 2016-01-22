@@ -143,11 +143,11 @@ Finally, we also spent considerable time to develop automated scripts for analyz
 ##### Key tools
 *If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
 
-We use the version-controlled platform GitHub to achieve a reproducible workflow. 
-GitHub greatly facilitates collaboration when developing numerical codes. 
-The platform allows to create wiki pages for users-documentation. 
-We also use GitHub to write manuscripts, to record our group-meetings, and to store teaching materials.
-We extensively used Python to automate post-processing analysis.
+We use the version-control hosting platform GitHub to support our reproducible workflow. 
+GitHub greatly facilitates collaboration when developing numerical codes and documentation. 
+The platform also allows creating wiki pages for users' documentation. 
+We use GitHub to write manuscripts, to record our group-meetings, and to store teaching materials.
+We also extensively use Python to automate analysis and post-processing.
 
 ##### General questions about reproducibility
 
