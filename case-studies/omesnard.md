@@ -12,12 +12,12 @@ We do our best to accomplish reproducible research and have for years worked to 
 According to the "Reproducibility PI Manifesto," pledged by Barba in 2012, all research code written in the group is under version control and open source, our data is open, and we publish open pre-prints of all our publications.
 For the main results in a paper, we prepare file bundles with input and output data, plotting scripts and figure, and deposit them in the [figshare](https://figshare.com/authors/Lorena_A_Barba/97553) repository.
 These conditions all apply to our previously published work in Krishnan et al. (2014), studying the aerodynamics of flying snakes.
-This case study describes what happened when we tried to reproduce our previous results, using different computational fluid dynamics (CFD) codes, including our own.
+This case study describes what happened when we set out to not just reproduce our previous results in Krishnan et al. (2014), but complete a full replication using different computational fluid dynamics (CFD) codes: a new code developed in our group, an open-source code developed by another group, and an open-source CFD library.
 
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
-The starting point for our understanding of reproducibility is contained in the pledge "Reproducibility PI Manifesto," which includes these steps:
+The starting point for our understanding of reproducibility is contained in the pledge "Reproducibility PI Manifesto" (Barba, 2012) which includes these steps:
 
 1. teaching group members about reproducibility;
 2. maintaining all code and writing under version-control;
@@ -25,17 +25,17 @@ The starting point for our understanding of reproducibility is contained in the 
 4. for main results in a publication, sharing data, plotting scripts, and figures under CC-BY; 
 5. uploading preprints to arXiv at the time of submission of a paper;
 6. releasing code no later than the time of submission of a paper;
-7. adding a "Reproducibility" declaration to each publication;
+7. adding a "Reproducibility" statement to each publication;
 8. keeping an up-to-date web presence.
 
-Some of these items have to do with making our research materials open access and discoverable. 
+Some of these items have to do with making our research materials and methods open access and discoverable. 
 The core of this pledge is releasing the code, the data, and the analysis/visualization scripts. 
 Already this can be time consuming and demanding.
-Yet, we have come to consider the most basic level of reproducibility.
-On attempting to reproduce a previous study by our research group, we realize how much more rigor is required to achieve full replication (Peng, 2011).
-By this, we mean that independent researchers, investigating the same scientific hypothesis should arrive to the same conclusions.
-In computational fluid dynamics, full replication of the findings can involve using a different code (or a different method).
-
+Yet, we have come to consider these steps the most basic level of reproducible research.
+On undertaking a full replication study of a previous publication by our research group, we came to realize how much more rigor is required to achieve this, in the context of computational fluid dynamics of unsteady flows.
+We use the term "full replication" in the sense presented by Peng (2011), that is, completing an independent study using new methods to collect new data, arriving in the end at the same scientific findings.
+In computational fluid dynamics, full replication of the findings can involve using a different code that implements the same numerical method, or a code that implements a different numerical method altogether but solves the same mathematical model.
+Because we are solving the Navier-Stokes equations—an unsteady and nonlinear model—certain problem scenarios can present particular challenges to replication.
 
 ##### Workflow diagram
 
