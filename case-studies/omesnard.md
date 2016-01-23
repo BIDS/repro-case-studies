@@ -174,12 +174,15 @@ These packages include the version of the software (as well as that of its depen
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
 
-We used four different codes in our endeavor to fully replicate our own previous findings, dealing with hundreds of simulations.
-For each simulation, we computed the flow over 80 non-dimensional time-units. The run-time varies between 1 and 3 days and the numerical solutions each generate between 3.5 and 16 gigabytes of data.
-Most of the simulations were run on an HPC cluster at the George Washington University, and the solutions were then moved to several different local desktop machines for post-processing and storage.
-Keeping a detailed, up-to-date, and version-controlled lab notebook proved to be vital to track all simulations.
-Becoming familiar with new software required a substantial amount of time—it took longer to familiarize ourselves with codes with poor users' documentation.
-Finally, we also spent considerable time to develop automated scripts for analyzing the numerical solutions resulting from different codes (producing different output formats).
+A critical ingredient in a reproducible workflow is keeping a detailed, up-to-date, and version-controlled lab notebook.
+It is nearly unthinkable that a proper lab notebook for recording computational experiments could be kept without scripting all steps— pre-processing, running, post-processing—and automaticaly saving command-line inputs. 
+In the project of this case study, we used four different CFD codes in batches of simulations spanning many parameter combinations, resulting in hundreds of runs.
+The run times varied between 1 and 3 days and the numerical solutions each generated between 3.5 and 16 gigabytes of data.
+Most of the simulations were run remotely on an HPC cluster at the George Washington University, and the solutions were then moved to several different local desktop machines for post-processing and storage.
+The lab notebook proved to be vital for tracking all simulations and data.
+Another aspect of this project that was very time consuming was becoming familiar with new software—it took even longer to familiarize ourselves with codes that offer poor users' documentation.
+Finally, we also spent considerable time developing automated scripts for analyzing the numerical solutions resulting from different codes (producing different output formats).
+These scripts, however, are vital to deliver reproducible computational experiments.
 
 
 ##### Key benefits
