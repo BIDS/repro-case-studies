@@ -121,8 +121,14 @@ After a few weeks of this preparation, we ran a batch of simulations for varying
 They all matched the published results in Krishnan et al. (2014), except for one: the case with Reynolds number 2000 and angle of attack 35 degrees. 
 This is the key case of the batch, which in the original work exhibits an enhanced lift coefficient: the crux of our previous study.
 In the end, we were able to match the results with this combination of parameters by running IBAMR imposing "no slip" in all mesh points lying _inside_ the body (not just the boundary).
-Not an intuitive option, since all immersed boundary methods work by imposing no slip at the boundary nodes.
+This is not an intuitive option, since all immersed boundary methods work by imposing no slip at the boundary nodes.
+Although publications using IBAMR report on using this scheme of imposing a constraint on interior mesh points, no discussion is offered on why this is necessary.
 
+In view of the experience described above, we cannot help but speculate that if researchers were using either IcoFOAM or IBAMR in an original study (instead of attempting a full replication of a previous study), they may not have continued as far as we did, and could have ended up publishing wrong results.
+The characteristic feature of the flying-snake cross-section is that it exhibits lift enhancement at 35 degrees angle of attack.
+This precise feature was inhibited by the challenges with boundary conditions in simulations of unsteady vortical flows.
+It simply does not appear if the simulations are not very carefully set up.
+The difficulty of reproducibility here comes from the application scenario: unsteady, vortex-dominated flows are just very hard to compute correctly.
 
 The [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) codes are both being developed in our research lab and implement the same immersed-boundary method (Taira and Colonius, 2007).
 The GitHub code repositories include code documentation with [Doxygen](www.doxygen.org), users' documentation (on the GitHub wiki), as well as basic examples/tutorials.
