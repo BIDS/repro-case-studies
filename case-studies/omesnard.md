@@ -93,7 +93,7 @@ We used a total of four CFD codes to reproduce and replicate our own findings on
 
 Krishnan et al. (2014) studies the aerodynamics of flying snakes using an in-house solver for the incompressible Navier-Stokes equations.
 The solver applies an immersed-boundary projection method (Taira and Colonius, 2007) that requires the solution of a modified Poisson system on a structured Cartesian grid. 
-It uses an iterative algorithm provided by an external linear-algebra library: the [CUSP]([CUSP](https://github.com/cusplibrary/cusplibrary) library to solve a linear system on a single GPU.
+It uses an iterative algorithm provided by an external linear-algebra library: the [CUSP](https://github.com/cusplibrary/cusplibrary) library to solve a linear system on a single GPU.
 
 
 
