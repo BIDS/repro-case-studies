@@ -151,13 +151,17 @@ Here, we are working with the Navier-Stokes equations applied to highly unsteady
 Third, extra care is needed when using external libraries for iterative solution of linear systems.
 Even if everything else is reproduced, the linear-algebra library may introduce uncertainties.
 
-We use Python to automate pre- and post-processing steps. All scripts are version-controlled, the code is documented and allows command-line arguments (to avoid code modification from users). 
-We also took advantage of the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to automate the post-processing part of the numerical solution from OpenFOAM and IBAMR. 
-In addition to that, we used Jupyter Notebooks and Markdown files to present project advances during regular meetings—and our group-meetings notes are version-controlled and hosted on GitHub.
+Our reproducibility practies have tightened up substantially after this project.
+We now use Python to automate every pre- and post-processing step.
+All scripts are version-controlled, the code is documented and allows command-line arguments (to avoid code modification from users). 
+We also take advantage of the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to automate the post-processing part of the numerical solution from OpenFOAM and IBAMR. 
+In addition to that, we use Jupyter Notebooks and Markdown files to present project advances during regular meetings—and our group-meeting notes are version-controlled and hosted on GitHub.
 
-Finally, the manuscript is written using LaTeX and version-controlled in its own GitHub repository to facilitate collaboration between authors. 
+As we now prepare a manuscript to publish the results of this project, it is being written using LaTeX and is version-controlled in its own GitHub repository to facilitate collaboration between authors. 
 To advocate open-science, the manuscript will be first available on arXiv. We will also provide a reproducibility package for all simulations and figures reported in the manuscript. 
-This package includes the version of the software (as well as the one of its dependencies), the input parameters (for both the simulation and the post-processing), information related to machine architecture, and the necessary scripts to run and post-process the simulation.
+These packages include the version of the software (as well as that of its dependencies), the input parameters (for both the simulation and the post-processing), information related to machine architecture, and the necessary scripts to run and post-process the simulation.
+
+
 
 *References*:
 - Bhalla, A. P. S., Bale, R., Griffith, B. E., & Patankar, N. A. (2013). A unified mathematical framework and an adaptive numerical method for fluid–structure interaction with rigid, deforming, and elastic bodies. Journal of Computational Physics, 250, 446-476.
