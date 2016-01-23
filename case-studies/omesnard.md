@@ -89,7 +89,7 @@ Our research lab has developed over the years a consistent workflow that, we bel
 A previous study coming out of our lab, published in Krishnan et al. (2014), already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
 [cuIBM](https://github.com/barbagroup/cuIBM), the code used for that study, is version-controled and open source (hosted on GitHub); we completed a [Validation & Verification study](http://dx.doi.org/10.6084/m9.figshare.92789) that is published openly on figshare; the data and main figures of the paper are also available on figshare under CC-BY, and the paper [pre-print](http://arxiv.org/abs/1309.2969) is available on arXiv (revised post peer review).
 Here, we describe our effort to achieve full replication of our previous conclusions in Krishnan et al. (2014) about the aerodynamic characteristics of the flying snakes' body cross-section.
-We used a total of four CFD codes to reproduce and replicate our own findings on a scenario of a highly unsteady flow, dominated by vorticity. In every case, there were failures and difficulties, leading to improvements in our workflow and conclusions about the special challenges for reproducibility in our application scenario.
+We used a total of four CFD codes to reproduce and replicate our own findings in a scenario of highly unsteady flow, dominated by vorticity. In every case, there were failures and difficulties, leading to improvements in our workflow and conclusions about the special challenges for reproducibility in our application scenario.
 
 Krishnan et al. (2014) studies the aerodynamics of flying snakes using an in-house solver for the incompressible Navier-Stokes equations.
 The solver applies an immersed-boundary projection method (Taira and Colonius, 2007) that requires the solution of a modified Poisson system on a structured Cartesian grid. 
@@ -101,7 +101,7 @@ We chose IcoFOAM because it is widely used, open-source, and documented—both c
 After a period of several weeks required to learn to use the software, the first batch of simulations with IcoFOAM were a failure.
 With unstructured-mesh finite-volume solvers, the mesh generation step is most often what determines the quality of the solution, and some meshes would result in unphysical results.
 Visualizations of the vorticity field often showed spurious spots of spontaneously generated vorticity at random locations, due to "bad triangles."
-The problem only disappeared when we replaced the mesh generation method altogether: we moved from `gmesh` to `snappyhexmesh`.
+The problem only disappeared when we replaced the mesh generation method altogether: we moved from `GMSH` to `snappyHexMesh`.
 Visualizations of the pressure revealed in some cases a wave of back-pressure coming from the downstream domain boundary.
 This affected the measured quantity (lift coefficient of the cross section) in just _some_ cases, while in others we matched our previous results.
 After going back to documentation, published examples, and various user discussion forums, we could not find a way to modify the boundary condition (BC) at the outflow to fix this problem.
@@ -109,7 +109,7 @@ In the end, a fortuitous look at the error message when boundary conditions are 
 This option was absent from the volumes of documentation, examples and user posts we had studied.
 Overall, it would be a full year of failed yet persistent attempts before simulations with IcoFOAM replicated the findings of Krishnan et al. (2014). 
 
-We moved on to [IBAMR](https://github.com/ibamr/ibamr), an open-source software hosted on GitHub, mainly developed by [Boyce Griffith](http://www.cims.nyu.edu/~griffith/), aiming to reproduce our previous results wtih a different immersed-boundary formulation. 
+We moved on to [IBAMR](https://github.com/ibamr/ibamr), an open-source software hosted on GitHub by [Boyce Griffith](http://www.cims.nyu.edu/~griffith/), aiming to reproduce our previous results with another immersed-boundary (in contrast to body-conforming) solver. 
 IBAMR implements an immersed-boundary method on a Cartesian grid, allowing adaptive mesh refinement by means of the [SAMRAI](https://computation.llnl.gov/project/SAMRAI) library, and solving the linear systems of equations by means of the [PETSc](http://www.mcs.anl.gov/petsc) library.
 Bhalla et al. (2013) published a detailed validation of the software, while various examples can be found included in the code repository.
 
