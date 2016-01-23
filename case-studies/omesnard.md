@@ -132,11 +132,24 @@ The difficulty of reproducibility here comes from the application scenario: unst
 
 The [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) codes are both being developed in our research lab and implement the same immersed-boundary method (Taira and Colonius, 2007).
 The GitHub code repositories include code documentation with [Doxygen](www.doxygen.org), users' documentation (on the GitHub wiki), as well as basic examples/tutorials.
-cuIBM uses [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on CUDA architecture GPUs. We used cuIBM again to confirm the reproducibility of our published findings.
+cuIBM uses [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on CUDA-architecture GPUs. 
+We used cuIBM again to confirm the reproducibility of the published findings in Krishnan et al. (2014)
 The input parameters are available in the code repository while reproducibility packages can be downloaded from figshare. 
-But it's important to remark that we had to use the _same version_ of the code, with the _same version_ of the linear-algebra library to re-obtain the same numeric answers.
-In PetIBM, we implemented the same immersed-boundary method, but using the [PETSc](http://www.mcs.anl.gov/petsc/) library to solve the problem on a distributed-memory machine. 
-Although the mathematical formulation is exactly the same in cuIBM and PetIBM, we observed that using a different linear algebra library changed the conclusions about the snake aerodynamics.
+It's important to remark that we had to use the _same version_ of the code, with the _same version_ of the linear-algebra library to re-obtain the same numeric answers.
+In fact, our first attempts used the latest version of the CUSP library, and failed to replicate the findings!
+In PetIBM, we implemented the same immersed-boundary method, but using the [PETSc](http://www.mcs.anl.gov/petsc/) library to solve the modified Poisson system on a distributed-memory machine. 
+Even though the mathematical formulation in cuIBM and PetIBM is exactly the same, we observed that a different linear-algebra library could change the results.
+As of this writing, we have been unable to replicate the findings of Krishnan et al. (2014) with PetIBM—again, despite the fact that this code use the _same_ numerical scheme as cuIBM, was written by the same resarchers and both codes have been verified and validated on the same benchmarks.
+The only algorithmic difference between the two is contained in the linear solvers (provided by libraries).
+In addition, the two codes run on different hardware, exploiting different parallelism modes (many-core on one hand, distributed message-passing on the other).
+
+The lessons learned from this case study are sobering.
+First, the vigilant practice of reproducible research must go beyond the open sharing of data and code:
+automation of every pre- and post-processing step and digital logging of all actions are also needed.
+Second, certain application scenarios pose special challenges.
+Here, we are working with the Navier-Stokes equations applied to highly unsteady flows dominted by vorticity, a particularly tough application for reproducibility.
+Third, extra care is needed when using external libraries for iterative solution of linear systems.
+Even if everything else is reproduced, the linear-algebra library may introduce uncertainties.
 
 We use Python to automate pre- and post-processing steps. All scripts are version-controlled, the code is documented and allows command-line arguments (to avoid code modification from users). 
 We also took advantage of the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to automate the post-processing part of the numerical solution from OpenFOAM and IBAMR. 
