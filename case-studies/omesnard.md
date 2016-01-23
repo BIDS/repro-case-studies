@@ -85,15 +85,17 @@ In addition to detailing the steps of the workflow, you may wish to consider the
 
 *(500-800 words)*
 
-Our research lab developed over the years a consistent workflow that, we believe, leads to reproducible research.
-Our previous published study in Krishnan et al. (2014) already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
-[cuIBM](https://github.com/barbagroup/cuIBM), the code used for that study, is version-controled and open source (hosted on GitHub); we completed a Validation & Verification study that is published openly on figshare; the data and main figures of the paper are also available on figshare under CC-BY.
+Our research lab has developed over the years a consistent workflow that, we believe, leads to reproducible research.
+A previous study coming out of our lab, published in Krishnan et al. (2014), already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
+[cuIBM](https://github.com/barbagroup/cuIBM), the code used for that study, is version-controled and open source (hosted on GitHub); we completed a [Validation & Verification study](http://dx.doi.org/10.6084/m9.figshare.92789) that is published openly on figshare; the data and main figures of the paper are also available on figshare under CC-BY, and the paper [pre-print](http://arxiv.org/abs/1309.2969) is available on arXiv (revised post peer review).
+Here, we describe our effort to achieve full replication of our previous conclusions in Krishnan et al. (2014) about the aerodynamic characteristics of the flying snakes' body cross-section.
+We used a total of four CFD codes to reproduce and replicate our own findings on a scenario of a highly unsteady flow, dominated by vorticity. In every case, there were failures and difficulties, leading to improvements in our workflow and conclusions about the special challenges for reproducibility in our application scenario.
+
 Krishnan et al. (2014) studies the aerodynamics of flying snakes using an in-house solver for the incompressible Navier-Stokes equations.
 The solver applies an immersed-boundary projection method (Taira and Colonius, 2007) that requires the solution of a modified Poisson system on a structured Cartesian grid. 
 It uses an iterative algorithm provided by an external linear-algebra library: the [CUSP]([CUSP](https://github.com/cusplibrary/cusplibrary) library to solve a linear system on a single GPU.
 
-Here, we describe our effort to achieve full replication of our previous conclusions about the aerodynamic characteristics of the flying snakes' body cross-section.
-We used a total of four CFD codes to reproduce and replicate our own findings on a case that involves a highly unsteady flow, dominated by vorticity.
+
 
 The first code is a component of the well-known open-source CFD library, [OpenFOAM](http://www.openfoam.org/).
 IcoFOAM is the incompressible laminar solver, applying the finite-volume method on an unstructured body-conforming mesh.
