@@ -107,6 +107,7 @@ This affected the measured quantity (lift coefficient of the cross section) in j
 After going back to documentation, published examples, and various user discussion forums, we tried several ways to modify the boundary condition (BC) at the outflow, but none could fix this problem.
 In the end, a fortuitous look at the error message when boundary conditions are specified wrong revealed one option, _advective BC_, which is just what we needed.
 This option was absent from the volumes of documentation, examples and user posts we had studied.
+And on looking for an option like it, we had searched with the term _convective BC_, a synonym that we're more used to.
 Overall, it would be a full year of failed yet persistent efforts before simulations with IcoFOAM replicated the findings of Krishnan et al. (2014) in terms of the lift characteristics of the snake cross-section. 
 
 In the process of working with IcoFOAM, we improved and developed new diligent reproducibility practices. The "top three" of these practices are: automating all post-processing steps with ParaView to use in batch mode and avoid interaction with the GUI; storing the command-line input in scripts for mesh generation and running of the solver; recording the log files and extracting data from them to update the lab notebook.
