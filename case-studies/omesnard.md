@@ -111,9 +111,17 @@ Overall, it would be a full year of failed yet persistent efforts before simulat
 
 In the process of working with IcoFOAM, we improved and developed new diligent reproducibility practices. The "top three" of these practices are: automating all post-processing steps with ParaView to use in batch mode and avoid interaction with the GUI; storing the command-line input in scripts for mesh generation and running of the solver; recording the log files and extracting data from them to update the lab notebook.
 
-We moved on to [IBAMR](https://github.com/ibamr/ibamr), an open-source software hosted on GitHub by [Boyce Griffith](http://www.cims.nyu.edu/~griffith/), aiming to reproduce our previous results with another immersed-boundary (in contrast to body-conforming) solver. 
+We then moved on to [IBAMR](https://github.com/ibamr/ibamr), an open-source software by [Boyce Griffith](http://www.cims.nyu.edu/~griffith/), hosted on GitHub. The aim was to reproduce our previous results with another immersed-boundary (in contrast to body-conforming) solver, but one that uses a different formulation. 
 IBAMR implements an immersed-boundary method on a Cartesian grid, allowing adaptive mesh refinement by means of the [SAMRAI](https://computation.llnl.gov/project/SAMRAI) library, and solving the linear systems of equations by means of the [PETSc](http://www.mcs.anl.gov/petsc) library.
-Bhalla et al. (2013) published a detailed validation of the software, while various examples can be found included in the code repository.
+Bhalla et al. (2013) published a detailed validation of the software, while various examples are included in the code repository.
+IBAMR is written as a library that requires the user to write a driver program to call it.
+We also needed to write post-processing scripts for the output of IBMAR, in this case using VisIt. 
+After a few weeks of this preparation, we ran a batch of simulations for varying values of the Reynolds number and angle of attack (as before). 
+They all matched the published results in Krishnan et al. (2014), except for one: the case with Reynolds number 2000 and angle of attack 35 degrees. 
+This is the key case of the batch, which in the original work exhibits an enhanced lift coefficient: the crux of our previous study.
+In the end, we were able to match the results with this combination of parameters by running IBAMR imposing "no slip" in all mesh points lying _inside_ the body (not just the boundary).
+Not an intuitive option, since all immersed boundary methods work by imposing no slip at the boundary nodes.
+
 
 The [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) codes are both being developed in our research lab and implement the same immersed-boundary method (Taira and Colonius, 2007).
 The GitHub code repositories include code documentation with [Doxygen](www.doxygen.org), users' documentation (on the GitHub wiki), as well as basic examples/tutorials.
