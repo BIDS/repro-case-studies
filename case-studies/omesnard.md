@@ -107,7 +107,9 @@ This affected the measured quantity (lift coefficient of the cross section) in j
 After going back to documentation, published examples, and various user discussion forums, we could not find a way to modify the boundary condition (BC) at the outflow to fix this problem.
 In the end, a fortuitous look at the error message when boundary conditions are specified wrong revealed one option, _advective BC_, which is just what we needed.
 This option was absent from the volumes of documentation, examples and user posts we had studied.
-Overall, it would be a full year of failed yet persistent attempts before simulations with IcoFOAM replicated the findings of Krishnan et al. (2014). 
+Overall, it would be a full year of failed yet persistent efforts before simulations with IcoFOAM replicated the findings of Krishnan et al. (2014). 
+
+In the process of working with IcoFOAM, we improved and developed new diligent reproducibility practices. The "top three" of these practices are: automating all post-processing steps with ParaView to use in batch mode and avoid interaction with the GUI; storing the command-line input in scripts for mesh generation and running of the solver; recording the log files and extracting data from them to update the lab notebook.
 
 We moved on to [IBAMR](https://github.com/ibamr/ibamr), an open-source software hosted on GitHub by [Boyce Griffith](http://www.cims.nyu.edu/~griffith/), aiming to reproduce our previous results with another immersed-boundary (in contrast to body-conforming) solver. 
 IBAMR implements an immersed-boundary method on a Cartesian grid, allowing adaptive mesh refinement by means of the [SAMRAI](https://computation.llnl.gov/project/SAMRAI) library, and solving the linear systems of equations by means of the [PETSc](http://www.mcs.anl.gov/petsc) library.
