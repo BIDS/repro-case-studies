@@ -139,7 +139,7 @@ cuIBM uses [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source li
 We used cuIBM again to confirm the reproducibility of the published findings in Krishnan et al. (2014)
 The input parameters are available in the code repository while reproducibility packages can be downloaded from figshare. 
 It's important to remark that we had to use the _same version_ of the code, with the _same version_ of the linear-algebra library to re-obtain the same numeric answers.
-In fact, our first attempts used the latest version of the CUSP library, and failed to replicate the findings!
+In fact, our first attempts used a newer version of the CUSP library, and failed to replicate the findings!
 In PetIBM, we implemented the same immersed-boundary method, but using the [PETSc](http://www.mcs.anl.gov/petsc/) library to solve the modified Poisson system on a distributed-memory machine. 
 Even though the mathematical formulation in cuIBM and PetIBM is exactly the same, we observed that a different linear-algebra library could change the results.
 As of this writing, we have been unable to replicate the findings of Krishnan et al. (2014) with PetIBM—again, despite the fact that this code use the _same_ numerical scheme as cuIBM, was written by the same researchers and both codes have been verified and validated on the same benchmarks.
