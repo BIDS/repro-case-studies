@@ -87,7 +87,7 @@ In addition to detailing the steps of the workflow, you may wish to consider the
 
 Our research lab has developed over the years a consistent workflow that, we believe, leads to reproducible research.
 A previous study coming out of our lab, published in Krishnan et al. (2014), already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
-[cuIBM](https://github.com/barbagroup/cuIBM), the code used for that study, is version-controled and open source (hosted on GitHub); we completed a [Validation & Verification study](http://dx.doi.org/10.6084/m9.figshare.92789) that is published openly on figshare; the data and main figures of the paper are also available on figshare under CC-BY, and the paper [pre-print](http://arxiv.org/abs/1309.2969) is available on arXiv (revised post peer review).
+[cuIBM](https://github.com/barbagroup/cuIBM), the code used for that study, is version-controlled and open source (hosted on GitHub); we completed a [Validation & Verification study](http://dx.doi.org/10.6084/m9.figshare.92789) that is published openly on figshare; the data and main figures of the paper are also available on figshare under CC-BY, and the paper [pre-print](http://arxiv.org/abs/1309.2969) is available on arXiv (revised post peer review).
 Here, we describe our effort to achieve full replication of our previous conclusions in Krishnan et al. (2014) about the aerodynamic characteristics of the flying snakes' body cross-section.
 We used a total of four CFD codes to reproduce and replicate our own findings in a scenario of highly unsteady flow, dominated by vorticity. In every case, there were failures and difficulties, leading to improvements in our workflow and conclusions about the special challenges for reproducibility in our application scenario.
 
@@ -116,7 +116,7 @@ We then moved on to [IBAMR](https://github.com/ibamr/ibamr), an open-source soft
 IBAMR implements an immersed-boundary method on a Cartesian grid, allowing adaptive mesh refinement by means of the [SAMRAI](https://computation.llnl.gov/project/SAMRAI) library, and solving the linear systems of equations by means of the [PETSc](http://www.mcs.anl.gov/petsc) library.
 Bhalla et al. (2013) published a detailed validation of the software, while various examples are included in the code repository.
 IBAMR is written as a library that requires the user to write a driver program to call it.
-We also needed to write post-processing scripts for the output of IBMAR, in this case using VisIt. 
+We also needed to write post-processing scripts for the output of IBAMR, in this case using VisIt. 
 After a few weeks of this preparation, we ran a batch of simulations for varying values of the Reynolds number and angle of attack (as before). 
 They all matched the published results in Krishnan et al. (2014), except for one: the case with Reynolds number 2000 and angle of attack 35 degrees. 
 This is the key case of the batch, which in the original work exhibits an enhanced lift coefficient: the crux of our previous study.
@@ -139,7 +139,7 @@ It's important to remark that we had to use the _same version_ of the code, with
 In fact, our first attempts used the latest version of the CUSP library, and failed to replicate the findings!
 In PetIBM, we implemented the same immersed-boundary method, but using the [PETSc](http://www.mcs.anl.gov/petsc/) library to solve the modified Poisson system on a distributed-memory machine. 
 Even though the mathematical formulation in cuIBM and PetIBM is exactly the same, we observed that a different linear-algebra library could change the results.
-As of this writing, we have been unable to replicate the findings of Krishnan et al. (2014) with PetIBM—again, despite the fact that this code use the _same_ numerical scheme as cuIBM, was written by the same resarchers and both codes have been verified and validated on the same benchmarks.
+As of this writing, we have been unable to replicate the findings of Krishnan et al. (2014) with PetIBM—again, despite the fact that this code use the _same_ numerical scheme as cuIBM, was written by the same researchers and both codes have been verified and validated on the same benchmarks.
 The only algorithmic difference between the two is contained in the linear solvers (provided by libraries).
 In addition, the two codes run on different hardware, exploiting different parallelism modes (many-core on one hand, distributed message-passing on the other).
 
@@ -147,11 +147,11 @@ The lessons learned from this case study are sobering.
 First, the vigilant practice of reproducible research must go beyond the open sharing of data and code:
 automation of every pre- and post-processing step and digital logging of all actions are also needed.
 Second, certain application scenarios pose special challenges.
-Here, we are working with the Navier-Stokes equations applied to highly unsteady flows dominted by vorticity, a particularly tough application for reproducibility.
+Here, we are working with the Navier-Stokes equations applied to highly unsteady flows dominated by vorticity, a particularly tough application for reproducibility.
 Third, extra care is needed when using external libraries for iterative solution of linear systems.
 Even if everything else is reproduced, the linear-algebra library may introduce uncertainties.
 
-Our reproducibility practies have tightened up substantially after this project.
+Our reproducibility practices have tightened up substantially after this project.
 We now use Python to automate every pre- and post-processing step.
 All scripts are version-controlled, the code is documented and allows command-line arguments (to avoid code modification from users). 
 We also take advantage of the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to automate the post-processing part of the numerical solution from OpenFOAM and IBAMR. 
