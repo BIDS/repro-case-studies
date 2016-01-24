@@ -215,11 +215,13 @@ We also use Travis CI for running automated testing of the codes whenever a chan
 
 1) Why do you think that reproducibility in your domain is important?
 
-In computational science, codes and data used to publish results should be version-controlled and open-source to facilitate reproducibility.
-Reproducibility is a chance to prove that you can be trusted as a scientific researcher. 
-Ensuring that a manuscript (along with the data used to generate the figures) is reproducible makes it easier for others to corroborate (or reject) a scientific hypothesis. 
+In computational science, we use simulations and data analysis as tools for the creation and justification of scientific knowledge.
+This process of knowledge creation, as in all science, must also produce evidence to justify itself.
+Reproducibility is a way to provide grounds for trusting the scientific findings obtained computationally. 
+Ensuring that a publication (along with the data used to generate the figures) is reproducible makes it easier for others to corroborate (or reject) a scientific hypothesis. 
+Codes and data used to publish results should be version-controlled and open-source to facilitate reproducibility.
 Donoho and co-authors (2009) mentioned that we develop codes so that they can be used again by strangers and defined strangers as "anyone who doesn't possess our current short-term memory" (including ourself in some years).
-We believe that reproducible research would prevent scientists to reinvent the wheel.
+We believe that reproducible research can also prevent scientists from "reinventing the wheel" by having to re-create complete software stacks to build from previously published work.
 
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
