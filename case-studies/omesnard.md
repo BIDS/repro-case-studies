@@ -220,29 +220,33 @@ This process of knowledge creation, as in all science, must also produce evidenc
 Reproducibility is a way to provide grounds for trusting the scientific findings obtained computationally. 
 Ensuring that a publication (along with the data used to generate the figures) is reproducible makes it easier for others to corroborate (or reject) a scientific hypothesis. 
 Codes and data used to publish results should be version-controlled and open-source to facilitate reproducibility.
-Donoho and co-authors (2009) mentioned that we develop codes so that they can be used again by strangers and defined strangers as "anyone who doesn't possess our current short-term memory" (including ourself in some years).
+Donoho and co-authors (2009) mentioned that we develop codes so that they can be used again by strangers and defined strangers as "anyone who doesn't possess our current short-term memory" (including ourselves in some years).
 We believe that reproducible research can also prevent scientists from "reinventing the wheel" by having to re-create complete software stacks to build from previously published work.
 
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
-Our advisor , Prof. Lorena Barba, plays a major role in raising awareness about reproducible research. Incoming students joining our research lab must start by learning the different tools mentioned in the "Reproducibility PI Manifesto".
-The [Software Carpentry Foundation](http://software-carpentry.org/) (through workshops and online ressources) also contributed to improve our workflow to achieve reproducible research.
+The group's PI, Prof. Lorena Barba, plays an active role in raising awareness about reproducible research. Incoming students joining our research lab must start by learning the different tools mentioned in the "Reproducibility PI Manifesto".
+The [Software Carpentry Foundation](http://software-carpentry.org/) (through workshops and online ressources) also contributes to educate our group members and improve our workflow to achieve reproducible research.
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
-Reproducible research can be time-consuming, requires rigorous methods and organization.
+Reproducible research can be time-consuming, requiring rigorous methods and organization.
 At various moments during the project, we had to pause and ask ourself if our research was currently reproducible.
+Often, this was prompted by a conversation or questioning during group meetings.
+In that sense, a strong collaborative culture in the research group, and beyond in the wider community of the discipline, are vital to instill reproducibility practices in computational researchers.
+Lack of systematic and widespread educational programs that emphasize reproducible research is a serious obstacle.
 
 4) What do you view as the major incentives for doing reproducible research?
 
-Making your research reproducible -- providing reproducibility packages along with the manuscript -- is a way to showcase your skills, an excellent communications medium to convey ideas, and a fast way to get feedbacks on your work. 
-If the research community is inclined to put more effort in doing reproducible work, it would prevent scientists from re-inventing the wheel.
+Making your research more reproducible—e.g., providing reproducibility packages along with the manuscript—is a way of showcasing your skills, a medium for communicating research more transparently, and an invitation to give feedback on your work. 
+If the research community is inclined to put more effort in doing reproducible research, it would prevent scientists from reinventing the wheel by rewriting software in order to build from your work.
+In the long run, it saves resources to achive scientific knowledge growth, both at the level of a community and within a research group.
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
-Again, we insist that a proper lab notebook is fundamental to record your research.
-We also tend to avoid GUIs as much as possible and prefer to script everything so that analysis can be automated, reproducible, and recorded.
-This kind be time-consuming but surely beneficial in the term of a research project.
+Again, we insist that automating all the computational workflow and diligently maintaining a lab notebook are fundamental to record your research.
+We try to avoid GUIs as much as possible and prefer to script everything so that analysis can be automated, reproducible, and recorded.
+This may be time-consuming but surely beneficial in the longer term of a research project.
 
 6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
 
