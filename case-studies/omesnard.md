@@ -56,7 +56,7 @@ Each of the two example case studies include a workflow diagram you can also use
 
 Please save your diagram alongside this completed case study template.
 
-![workflow_diagram](omesnard.png)
+[workflow diagram](omesnard.pdf)
 
 ##### Workflow narrative
 
