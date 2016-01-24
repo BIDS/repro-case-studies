@@ -205,6 +205,9 @@ GitHub greatly facilitates collaboration when developing numerical codes and doc
 The platform also allows creating wiki pages for users' documentation. 
 We use GitHub to write manuscripts, to record our group-meetings, and to store teaching materials.
 We also extensively use Python to automate analysis and post-processing.
+Progress reports and summaries for discussion in group meetings are best presented using Jupyter notebooks, where textual media is combined with code and visualizations.
+For a digital record of all steps taken in preparing a simulation and running it, bash scripting is essential.
+We also use Travis CI for running automated testing of the codes whenever a change is to be merged into the main repository.
 
 ##### General questions about reproducibility
 
