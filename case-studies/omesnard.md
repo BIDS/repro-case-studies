@@ -193,8 +193,9 @@ On publishing the results, if the authors do not release the code and data used 
 Not surprisingly, studies attempting to reproduce previously published findings are rare.
 As we have illustrated with our campaign to achieve full replication of our own previous study, there are severe pitfalls and challenges in fluid-flow simulations under unsteady, highly vortical regimes.
 It is a distinct possibility that many published studies report wrong results.
+As noted by Leek and Peng (2015), increasing the level of reproducibility of published studies will help uncover flawed research findings.
 For this reason, the minimum level of reproducibility—making code and data available—is essential for increasing the confidence on any new scientific claims to knowledge generated computationally.
-Going beyond sharing code and data, full automation and digital recording of experimental campaigns offer the best guarantee of being able to extract scientific value from compuatational experiments.
+Going beyond sharing code and data, full automation and digital recording of experimental campaigns offer the best guarantee of being able to extract scientific value from computational experiments.
 
 ##### Key tools
 *If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
