@@ -19,7 +19,7 @@ Reproducibility does not guarantee replicability [Leek and Peng, 2015]. Some may
 
 ##### Workflow diagram
 
-[Diagram](arokem.pdf)
+[Diagram](arokem_edited.pdf)
 
 ##### Workflow narrative
 
