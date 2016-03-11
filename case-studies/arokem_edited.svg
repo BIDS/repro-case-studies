@@ -86,16 +86,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.58583616"
-     inkscape:cx="555.462"
+     inkscape:zoom="1.3021124"
+     inkscape:cx="444.85432"
      inkscape:cy="350.2897"
      inkscape:current-layer="layer1"
      id="namedview2989"
      showgrid="false"
      inkscape:window-width="1280"
      inkscape:window-height="751"
-     inkscape:window-x="-4"
-     inkscape:window-y="0"
+     inkscape:window-x="1"
+     inkscape:window-y="24"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata2991">
@@ -105,7 +105,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -123,61 +123,68 @@
          sodipodi:role="line"
          x="52.036079"
          y="89.094482"
-         id="tspan3815">DATA </tspan></text>
+         id="tspan3815"
+         style="font-size:13.75px">DATA </tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="36.556587"
+       x="52.534126"
        y="233.26527"
        id="text3842"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3844"
-         x="36.556587"
-         y="233.26527">COMPUTE</tspan></text>
+         x="52.534126"
+         y="233.26527"
+         style="font-size:13.75px">COMPUTE</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="34.841743"
+       x="52.422798"
        y="433.43604"
        id="text3846"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3848"
-         x="34.841743"
-         y="433.43604">SOFTWARE</tspan></text>
+         x="52.422798"
+         y="433.43604"
+         style="font-size:13.75px">SOFTWARE</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="68.0644"
+       x="113.98139"
        y="572.10687"
        id="text3850"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3852"
-         x="68.0644"
+         x="113.98139"
          y="572.10687"
-         style="text-align:center;text-anchor:middle">VERSION CONTROL</tspan><tspan
+         style="text-align:center;text-anchor:middle"><tspan
+           style="font-size:13.75px"
+           id="tspan3480">VERSION CONTROL</tspan></tspan><tspan
          sodipodi:role="line"
-         x="68.0644"
+         x="113.98139"
          y="587.10687"
          id="tspan3854"
-         style="text-align:center;text-anchor:middle">AND DISTRIBUTION</tspan></text>
+         style="text-align:center;text-anchor:middle;font-size:13.75px">AND DISTRIBUTION</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
-       x="68.62397"
+       x="110.1142"
        y="678.27765"
        id="text3856"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3858"
-         x="70.733345"
-         y="678.27765">AUTHORING </tspan><tspan
+         x="114.94818"
+         y="678.27765"
+         style="font-size:13.75px;text-align:center;text-anchor:middle">AUTHORING </tspan><tspan
          sodipodi:role="line"
-         x="68.62397"
-         y="693.27765"
-         id="tspan3860">AND PUBLICATION</tspan></text>
+         x="110.1142"
+         y="695.46515"
+         id="tspan3860"
+         style="font-size:13.75px;text-align:center;text-anchor:middle">AND PUBLICATION</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.63409513px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="rect3031"
@@ -188,7 +195,7 @@
        ry="17.398638" />
     <g
        id="g3866"
-       transform="translate(-76,0)">
+       transform="translate(-80,0)">
       <text
          sodipodi:linespacing="125%"
          id="text3862"
@@ -199,7 +206,8 @@
            y="88.939156"
            x="196.21263"
            id="tspan3864"
-           sodipodi:role="line">MRI scanner</tspan></text>
+           sodipodi:role="line"
+           style="font-size:13.75px">MRI scanner</tspan></text>
     </g>
     <rect
        ry="17.398638"
@@ -213,12 +221,12 @@
        sodipodi:linespacing="125%"
        id="text3981"
        y="88.939156"
-       x="329.46655"
+       x="327.46655"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle"
+         style="font-size:13.75px;text-align:center;text-anchor:middle"
          y="88.939156"
-         x="329.46655"
+         x="327.46655"
          id="tspan3983"
          sodipodi:role="line">NIMS</tspan></text>
     <text
@@ -232,16 +240,16 @@
          id="tspan4002"
          x="511.46655"
          y="88.939156"
-         style="text-align:center;text-anchor:middle">Lab RAID</tspan></text>
+         style="text-align:center;text-anchor:middle;font-size:13.75px">Lab RAID</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4006"
-       y="204.93916"
+       y="206.93916"
        x="739.02905"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle"
-         y="204.93916"
+         style="font-size:13.75px;text-align:center;text-anchor:middle"
+         y="206.93916"
          x="739.02905"
          id="tspan4008"
          sodipodi:role="line">HPC Cluster</tspan></text>
@@ -256,19 +264,19 @@
          id="tspan4038"
          x="743.46655"
          y="82.939156"
-         style="font-size:10px;text-align:center;text-anchor:middle">Stanford Libraries</tspan><tspan
+         style="font-size:13.75px;text-align:center;text-anchor:middle">Stanford Libraries</tspan><tspan
          id="tspan4042"
          sodipodi:role="line"
          x="743.46655"
          y="95.439156"
-         style="font-size:10px;text-align:center;text-anchor:middle">Data Repository</tspan></text>
+         style="font-size:13.75px;text-align:center;text-anchor:middle">Data Repository</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.63409513px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="rect3985"
        width="104.27291"
        height="45.107578"
        x="275.37524"
-       y="60.991451"
+       y="62.096306"
        ry="17.398638" />
     <rect
        ry="17.398638"
@@ -284,26 +292,26 @@
        width="104.27291"
        height="45.107578"
        x="685.58496"
-       y="178.09631"
+       y="180.51361"
        ry="17.398638" />
     <rect
-       ry="17.398638"
-       y="62.096306"
-       x="691.58496"
-       height="45.107578"
-       width="104.27291"
+       ry="17.36529"
+       y="62.139534"
+       x="676.26855"
+       height="45.021118"
+       width="134.90576"
        id="rect4040"
-       style="fill:none;stroke:#000000;stroke-width:0.63409513px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:0.72055525px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
        sodipodi:linespacing="125%"
        id="text4053"
-       y="279.93915"
-       x="247.46655"
+       y="281.93915"
+       x="249.46655"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle"
-         y="279.93915"
-         x="247.46655"
+         style="font-size:13.75px;text-align:center;text-anchor:middle"
+         y="281.93915"
+         x="249.46655"
          sodipodi:role="line"
          id="tspan4059">Preprocessing</tspan></text>
     <rect
@@ -325,7 +333,7 @@
          sodipodi:role="line"
          x="322.61801"
          y="437.31195"
-         style="text-align:center;text-anchor:middle">Analysis</tspan></text>
+         style="text-align:center;text-anchor:middle;font-size:13.75px">Analysis</tspan></text>
     <rect
        ry="17.398638"
        y="412.46912"
@@ -337,12 +345,12 @@
     <text
        sodipodi:linespacing="125%"
        id="text4143"
-       y="438.75467"
+       y="438.59094"
        x="444.15198"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle"
-         y="438.75467"
+         style="font-size:13.75px;text-align:center;text-anchor:middle"
+         y="438.59094"
          x="444.15198"
          sodipodi:role="line"
          id="tspan4145">Visualization</tspan></text>
@@ -352,23 +360,23 @@
        width="104.27291"
        height="45.107578"
        x="392.27039"
-       y="413.91183"
+       y="412.46912"
        ry="17.398638" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="560.16168"
-       y="436.88284"
+       y="438.59094"
        id="text4149"
        sodipodi:linespacing="125%"><tspan
          id="tspan4151"
          sodipodi:role="line"
          x="560.16168"
-         y="436.88284"
-         style="text-align:center;text-anchor:middle">Simulation</tspan></text>
+         y="438.59094"
+         style="font-size:13.75px;text-align:center;text-anchor:middle">Simulation</tspan></text>
     <rect
        ry="17.398638"
-       y="412.04001"
+       y="412.46912"
        x="508.28009"
        height="45.107578"
        width="104.27291"
@@ -385,7 +393,7 @@
          sodipodi:role="line"
          x="407.46655"
          y="588.93915"
-         style="text-align:center;text-anchor:middle">Git and github</tspan></text>
+         style="text-align:center;text-anchor:middle;font-size:13.75px">Git and github</tspan></text>
     <rect
        ry="17.398638"
        y="562.09631"
@@ -401,7 +409,7 @@
        x="727.46655"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle"
+         style="text-align:center;text-anchor:middle;font-size:13.75px"
          y="590.93915"
          x="727.46655"
          sodipodi:role="line"
@@ -421,7 +429,7 @@
        x="563.46655"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle"
+         style="text-align:center;text-anchor:middle;font-size:13.75px"
          y="682.93915"
          x="563.46655"
          sodipodi:role="line"
@@ -445,7 +453,7 @@
          sodipodi:role="line"
          x="729.46655"
          y="658.93915"
-         style="text-align:center;text-anchor:middle">ArXiv</tspan></text>
+         style="text-align:center;text-anchor:middle;font-size:13.75px">ArXiv</tspan></text>
     <rect
        ry="17.398638"
        y="632.09631"
@@ -461,7 +469,7 @@
        x="729.46655"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="text-align:center;text-anchor:middle"
+         style="text-align:center;text-anchor:middle;font-size:13.75px"
          y="712.93915"
          x="729.46655"
          sodipodi:role="line"
@@ -485,16 +493,16 @@
          sodipodi:role="line"
          x="334.16946"
          y="275.53528"
-         style="text-align:center;text-anchor:middle">Vistasoft</tspan><tspan
+         style="text-align:center;text-anchor:middle;font-size:12.5px">Vistasoft</tspan><tspan
          sodipodi:role="line"
          x="334.16946"
          y="290.53528"
-         style="text-align:center;text-anchor:middle"
+         style="text-align:center;text-anchor:middle;font-size:12.5px"
          id="tspan4201">(Matlab)</tspan></text>
     <rect
        ry="17.398638"
        y="344.09631"
-       x="669.58496"
+       x="685.58496"
        height="45.107578"
        width="104.27291"
        id="rect4199"
@@ -507,11 +515,11 @@
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          id="tspan4207"
-         style="text-align:center;text-anchor:middle"
+         style="text-align:center;text-anchor:middle;font-size:12.5px"
          y="473.44788"
          x="446.4277"
          sodipodi:role="line">Osmosis</tspan><tspan
-         style="text-align:center;text-anchor:middle"
+         style="text-align:center;text-anchor:middle;font-size:12.5px"
          y="488.44788"
          x="446.4277"
          sodipodi:role="line"
@@ -519,39 +527,40 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="705"
+       x="723.70465"
        y="371.09448"
        id="text4219"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4221"
-         x="705"
-         y="371.09448">Dipy</tspan></text>
+         x="723.70465"
+         y="371.09448"
+         style="font-size:13.75px">Dipy</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="411.46655"
+       x="387.46655"
        y="674.93915"
        id="text4235"
        sodipodi:linespacing="125%"><tspan
          id="tspan4237"
          sodipodi:role="line"
-         x="411.46655"
+         x="387.46655"
          y="674.93915"
-         style="font-size:10px;text-align:center;text-anchor:middle">Figures</tspan><tspan
+         style="font-size:13.75px;text-align:center;text-anchor:middle">Figures</tspan><tspan
          sodipodi:role="line"
-         x="411.46655"
-         y="687.43915"
-         style="font-size:10px;text-align:center;text-anchor:middle"
+         x="387.46655"
+         y="692.12665"
+         style="font-size:13.75px;text-align:center;text-anchor:middle"
          id="tspan4241">(IPython notebooks)</tspan></text>
     <rect
-       ry="17.398638"
-       y="656.09631"
-       x="359.58496"
-       height="45.107578"
-       width="104.27291"
+       ry="17.352291"
+       y="656.15637"
+       x="312.90952"
+       height="44.987423"
+       width="147.92778"
        id="rect4239"
-       style="fill:none;stroke:#000000;stroke-width:0.63409513px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:0.75424826px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -563,7 +572,7 @@
          id="tspan5509"
          x="286.4512"
          y="185.19728"
-         style="font-size:12px">IPython nbserver</tspan></text>
+         style="font-size:12.5px">IPython nbserver</tspan></text>
     <image
        y="523.72253"
        x="6.2971077"
@@ -596,23 +605,24 @@
          id="tspan5846"
          x="478.08984"
          y="199.21948"
-         style="text-align:center;text-anchor:middle">Lab compute</tspan><tspan
+         style="text-align:center;text-anchor:middle;font-size:13.75px">Lab compute</tspan><tspan
          sodipodi:role="line"
          x="478.08984"
          y="214.21948"
          id="tspan5848"
-         style="text-align:center;text-anchor:middle">server</tspan></text>
+         style="text-align:center;text-anchor:middle;font-size:13.75px">server</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="181.75"
-       y="204.25073"
+       x="179.75"
+       y="206.25073"
        id="text5850"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5852"
-         x="181.75"
-         y="204.25073">Laptop</tspan></text>
+         x="179.75"
+         y="206.25073"
+         style="font-size:13.75px">Laptop</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-mid:none;marker-end:url(#Arrow1Lend)"
        d="m 274,201.90698 c 121.875,0 121.875,0 121.875,0"
@@ -628,7 +638,8 @@
          sodipodi:role="line"
          id="tspan6808"
          x="555.75"
-         y="188.56323">osmosis.parallel</tspan></text>
+         y="188.56323"
+         style="font-size:12.5px">osmosis.parallel</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow1Lend)"
        d="m 292.03633,248.30122 c 19.89747,-13.43224 94.15093,-22.0975 116.59685,-23.57935"
@@ -702,13 +713,13 @@
        id="path9810"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 223.69708,83.391582 c 34.51252,0 37.96376,0 37.96376,0"
+       style="fill:none;stroke:#000000;stroke-width:1.07444465px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 217.55322,83.391582 c 39.84233,0 43.82655,0 43.82655,0"
        id="path9996"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 397.31261,83.181873 c 55.24272,0 55.24272,0 55.24272,0"
+       d="m 397.31261,83.764613 c 55.24272,0 55.24272,0 55.24272,0"
        id="path10182"
        inkscape:connector-curvature="0" />
     <path
@@ -806,5 +817,26 @@
          id="flowPara3628-3-0"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">Stage III:</flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.5px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="flowPara3672-8">Data Analysis</flowPara></flowRoot>  </g>
+         id="flowPara3672-8">Data Analysis</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="459.25375"
+       y="204.97052"
+       id="text3466"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3468"
+         x="459.25375"
+         y="204.97052"></tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3470"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:9px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3472"><rect
+           id="rect3474"
+           width="60.670647"
+           height="21.503519"
+           x="438.51822"
+           y="188.07491" /></flowRegion><flowPara
+         id="flowPara3476"></flowPara></flowRoot>  </g>
 </svg>
