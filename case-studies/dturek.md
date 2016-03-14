@@ -1,6 +1,6 @@
 ##### Title
 
-Developing, testing, and deploying efficient MCMC algorithms for hierarchical models using R"
+Developing, testing, and deploying efficient MCMC algorithms for hierarchical models using R
 
 ##### Introduction
 
