@@ -1,12 +1,16 @@
+##### Title
+
+Using R and related tools for reproducible research in archaeology
+
 ##### Introduction
 
-My name is Ben Marwick, and I am an Assistant Professor of archaeology in the Department of Anthropology at the University of Washington. My research interests include human-environment adaptations during the Pleistocene in Southeast Asia and Australia. My colleagues and I work with stone artefacts, organic and geological remains to understand past human behaviours and their environmental contexts. My narrative here is an amalgam of several recent projects focused on understanding prehistoric hunter-gatherer behaviour. 
+My name is Ben Marwick, and I am an Associate Professor of archaeology in the Department of Anthropology at the University of Washington, and a Senoir Research Scientist at the University of Wollongong. My research interests include human-environment adaptations during the Pleistocene in Southeast Asia and Australia. My colleagues and I work with stone artefacts, organic and geological remains to understand past human behaviours and their environmental contexts. My narrative here is an amalgam of several recent projects focused on understanding prehistoric hunter-gatherer behaviour. 
 
-In the context of this case study, reproducibility refers to computational reproducibility, which means enabling other people to combine the code and data that we produce to obtain the same statistical results and data visualizations that we present in our publication. I also expect that the code could be used for empirical reproducibility, where our code is applied to a new dataset to generate substantively similar results to our published results. 
+In the context of this case study, reproducibility refers to computational reproducibility, which means enabling other researchers and students to combine the code and data that we produce to obtain the same statistical results and data visualizations that we present in our publication. I also expect that the code could be used for empirical reproducibility, where our code is applied to a new dataset to generate substantively similar results to our published results. 
 
 ##### Workflow diagram
 
-My workflow diagram is enclosed as a PDF and also online here: 
+My workflow diagram is enclosed as a PDF and the editable source file can be found online here: 
 
 https://drive.draw.io/#G0B06w3axv7XKTZW5UdksxMlZkYVU
 
@@ -14,7 +18,7 @@ https://drive.draw.io/#G0B06w3axv7XKTZW5UdksxMlZkYVU
 
 Our project aimed to excavate a well-known archaeological site in northern Australia in an attempt to reproduce the findings of previous excavations in the 1990s that uncovered  controversial early evidence for human occupation of Australia. The project was initiated with a grant application written in Microsoft Word and circulated among the team by email.
 
-The archaeological excavation was conducted with fairly standard modern techniques. These include a combination of direct digital capture of artefact and feature provenance with a total station, digital photography and GIS, and hand-written paper notes using structured site recording forms. These data from these forms was later entered into an Excel spreadsheet.
+The archaeological excavation was conducted with standard modern techniques. These include a combination of direct digital capture of artefact and feature provenance with a total station, digital photography and GIS, and hand-written paper notes using structured site recording forms. These data from these forms was later entered into an Excel spreadsheet.
 
 At the conclusion of fieldwork, post-excavation analysis continued at the home institutions of each of the team members. The tools for data collections and analysis at this stage were according to the norms of each lab, but the final products from this stage were MS Word and Excel files. At this point work began on a manuscript for publication, which was a MS Word document that was circulated among the authors by email.
 
@@ -24,7 +28,7 @@ The R package knitr and the pandoc program was used to execute the R markdown fi
 
 While the analysis was being developed in the research compendium, a manuscript was being drafted in a MS Word document and circulated among the authors by email, and revised using track changes. The rendered output of R markdown document is also circulated among the authors by email and the manusrcipt is updated, and new ideas are incorporated into the analysis, and additional code is written, some code abandoned, new plots produced, and others deleted, etc. This is probably the messiest part of the workflow as it involves manual updating of the MS Word document with new values and figures from the rendered R markdown document, and two unrelated version control systems (Git and track-changes in MS Word). The non-linearity of the process is also a challenge as the authors negotiate how the manuscript and analysis should take shape.
 
-As the review and updating cycle concludes, the manuscript is send for review by the Traditional Owners of the land where the archaeological site is located. After this review, which might involve some changes to the manuscript, the final draft is prepared for submission. At the same time, the GitHub repository that contains the research compendium is made public and continuous integration from travis-ci.com is added to monitor the effect of changes made during peer review. The compendium is also deposited at figshare.com and the persistent URL to the figshare repository is added to the text of the manuscript as a pointer to the data and code that generated the results and visualizations found in the paper. The MIT license is attached to the code, the CC0 license is attached to the data, and a CC-BY license is attached to the text. These licenses allow flexible reuse of our materials. The paper is then submitted for publication. At this point the data and software are openly available online for peer reviewers and others to inspect. The code includes the R package, which has documentation about installing the packages and using the functions, has unit tests, and has machine- and human- readable metadata about dependencies. We also make available the docker image that contains the compendium in an Linux environment so that all the dependencies external to R can be included in a single bundle. 
+As the review and updating cycle concludes, the manuscript is send for review by the Traditional Owners of the land where the archaeological site is located. After this review, which might involve some changes to the manuscript, the final draft is prepared for submission. At the same time, the GitHub repository that contains the research compendium is made public and continuous integration from travis-ci.com is added to monitor the effect of changes made during peer review. The compendium is also deposited at figshare.com and the persistent URL to the figshare repository is added to the text of the manuscript as a pointer to the data and code that generated the results and visualizations found in the paper. The MIT license is attached to the code, the CC0 license  is attached to the data (meaning that the data are in the public domain), and a CC-BY license is attached to the text (meaning that the text is free to use with proper attribution to the original authors). These licenses allow flexible reuse of our materials. The paper is then submitted for publication. At this point the data and software are openly available online for peer reviewers and others to inspect. The code includes the R package, which has documentation about installing the packages and using the functions, has unit tests, and has machine- and human- readable metadata about dependencies. We also make available the Docker image that contains the compendium in an Linux environment so that all the dependencies external to R can be included in a single bundle. 
 
 ##### Pain points
 
@@ -44,7 +48,7 @@ Some of the advantages that motivate us to pursue that approach include:
 
 - We have a high degree of confidence that our results are correct. We can rerun the analyses repeatedly in an isolated and well-defined environment and get the same result each time.
 
-- Our data and methods are available for reuse and application to new projects and contexts by us, and by other people. This saves time for us in the future, and has the potential to increase the impact of our work.
+- Our data and methods are available for reuse and application to new projects and contexts by us, and by other researchers and students. This saves time for us in the future, and has the potential to increase the impact of our work.
 
 - The uniqueness of our workflow is a double-edged sword because it attracts attention to our project because of its exoticness, but because it's so unfamiliar few people can engage with it or use it in the ways we're hoping. 
 
