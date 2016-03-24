@@ -1,10 +1,14 @@
+##### Title
+
+Problem-specific analysis of Molecular Dynamics trajectories for biomolecules
+
 ##### Introduction
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 My name is [Konrad Hinsen](http://dirac.cnrs-orleans.fr/~hinsen/), and I am a researcher at the [Centre de Biophysique Moléculaire](http://cbm.cnrs-orleans.fr/?lang=en) in Orléans, France. My field of research is molecular biophysics, and in particular the study of the flexibility and dynamics of proteins. All of my work is based on computational approaches, of which the most important ones are [elastic network models](http://dirac.cnrs-orleans.fr/plone/Members/hinsen/elastic-network-models-for-proteins) and [Molecular Dynamics](https://en.wikipedia.org/wiki/Molecular_dynamics) (MD) simulations. Moreover, most of my work concerns the development of computational methods rather than the application of already established methods.
 
-This case study is about the extraction of information from MD simulation trajectories, a very common type of work in my field. MD simulations themselves are relatively standard procedures, performed using one of a handful of well-known software packages. They take a few days to a few weeks on a small parallel computer with a few tens of processors, and produce a so-called trajectory file that is one to ten GB in size. Analyzing these trajectories in order to actually learn something about the system that was simulated is a separate step that is much less standardized, meaning that there is a lot of problem-specific code involved.
+This case study is about the extraction of information from MD simulation trajectories, a very common type of work in my field. MD simulations themselves are relatively standard procedures, performed using one of a handful of well-known software packages. They take a few days to a few weeks on a small parallel computer with a few tens of processors, and produce a so-called trajectory file that is one to ten GB in size. Analyzing these trajectories in order to actually learn something about the system that was simulated is a separate step that is much less standardized, meaning that there is a lot of problem-specific code involved. This code is as much a result of the workflow as the plots of the computed quantities.
 
 For reproducible and publishable workflows, there are three specific challenges in this situation:
 
@@ -28,18 +32,20 @@ For this reason, I have been setting myself a more modest goal for this case stu
 
 A published example of the workflow described below can be consulted in the form of two code/data packages ([package 1](https://dx.doi.org/10.6084/m9.figshare.808594), [package 2](https://dx.doi.org/10.6084/m9.figshare.808595)) and the [article](http://dx.doi.org/10.1063/1.4823996) describing the study.
 
-The workflow diagram is actually mainly a dataflow graph (left part) with attached workflow information. Compared to most approaches to workflow, which place the tools (workflow manager, software packages, Web services, ...) in the center of attention, the approach I describe here focuses on the data and on the way scientists interact with the data. The workflow below is not about "getting a job done" but about "developping and fine-tuning a scientific model".
+The workflow diagram is actually a dataflow graph with attached workflow information. Compared to most approaches to workflow, which place the tools (workflow manager, software packages, Web services, ...) in the center of attention, the approach I describe here focuses on the data and on the way scientists interact with the data. The workflow below is not about "getting a job done" but about "developping and fine-tuning a scientific model".
 
-There are two ways to classify the data in the diagram. The first is "human input" (green background") vs. "computed data" (blue background). The second, more pragmatic than fundamental, is "code" (rectangles) vs. "passive data" (rounded boxes). It's the human input that represents the scientific model, and thus the main output of this workflow. It consists of code (Python scripts and Python libraries) and numerical parameters, though that distinction is rather arbitrary: every parameter could also be a line in a script. Computed data includes the plots that go into the journal article, but also intermediate results, which can be inspected by scientists who want to gain a better understanding of the method. The black arrows represent the flow of data into and out of the scripts.
+The dataflow graph shows code in rectangles, and "passive" data in rounded boxes. Code consists of a small number of Python scripts, of which four are shown in the diagram. Data flows from top to bottom, as shown by the arrows, starting with the MD trajectory that is the overall input, and ending in plots showing computed quantities. The three rounded boxes labelled "computed results" are intermediate results, computed by Python scripts 1 and 2 and consumed by Python scripts 3 and 4.
 
-The workflow consists of the iterative refinement of the models and methods, i.e. the green-background human input. Their modification is indicated by the red circular arrows on the left of the Python scripts and parameters. The two key tools in the workflow are
+From the point of view of workflow management and reproducibility, the most important distinction among the data items is "human input" (solid outline) vs. "computed data" (dotted outline). It's the human input that represents the scientific model, and thus the main output of this workflow. It consists of code (Python scripts 1 to 4) and numerical parameters (a single one in the diagram), though that distinction is rather arbitrary: every parameter could be turned into a line in a script. Computed data includes the plots that go into the journal article, but also intermediate results. In a fully reproducible workflow, the computed data need not be stored, because it can be recomputed at any time. Nevertheless, it is often preferable to store it explicitly, in particular if recomputation takes a long time. Stored computed data is also more readily available for exploration by scientists who want to gain a better understanding of the method.
+
+The workflow consists of the iterative refinement of the models and methods, which are emphasized by a gray background and a bold outline. The two key tools in processing the workflow are
 
  - a version control system such as [git](https://git-scm.com/) for keeping track of the changes
  - the [ActivePapers](http://www.activepapers.org/) dependency manager for coordinating the computations
 
 Correspondingly, the state of the project consists of
 
- - a repository under version control, which tracks the changes to the green items as the project advances
+ - a repository under version control, which tracks the changes to the items shown with a gray background as the project advances
  - an ActivePaper file, which stores the current state of all data items and the dependency graph
 
 There are two variants of a refinement step: adding a new script or parameter, and modifying existing scripts and parameters. The first kind, which extends the data flow graph, consists of the following user actions:
@@ -56,7 +62,7 @@ The second kind, which preserves the data flow graph, differs only slightly:
  3. Check in the modified versions to the ActivePaper.
  4. Update the ActivePaper.
 
-The fourth step recomputes all data that is affected by the changes made in step 1. The recomputation is steered by the *dependency graph*, which is shown in the right part of the diagram. The dependency graph is obtained from the data flow graph by redirecting arrows that point into a script to the outputs of the script. The ActivePapers dependency manager computes the dependency graph automatically during the execution of the scripts. Users do not have to deal with either graph explicitly. They write and run scripts as they did before reproducibility became an issue.
+The fourth step recomputes all data that is affected by the changes made in step 1. The recomputation is steered by the *dependency graph*, which is obtained from the data flow graph by redirecting arrows that point into a script to point instead to the outputs of the script. The ActivePapers dependency manager computes the dependency graph automatically during the execution of the scripts. Users do not have to deal with (or even know about) either graph explicitly. They write and run scripts as they did before reproducibility became an issue. Similar approaches are used in [Sumatra](http://neuralensemble.org/sumatra/) and [noWorkflow](https://github.com/gems-uff/noworkflow), but most workflow managers adopt the opposite strategy of letting the user construct a workflow explicitly and then execute it.
 
 A project can be transferred from one computer to another by copying the ActivePaper file and the version control repository. For the common situation in molecular simulations that lengthy computations are off-loaded to a cluster, step 4 in the above procedure is slightly modified: The ActivePaper is sent to the cluster, the "run new script" or "update" operation is performed on the cluster, and the modified ActivePaper file is transferred back to the user's desktop machine. All the tools have a command-line interface, making it easy to use them over an ssh connection.
 
@@ -70,9 +76,9 @@ The main practical difficulty is that most of today's computational scientists g
 
 The immaturity of current workflow tools for reproducible research adds another layer of cognitive overhead. In the workflow described above, this is mainly the use of separate tools for tracking history and dependencies. Today's version control systems, designed for software development rather than computational science, cannot easily be extended by the kind of dependency management required for research. On the other hand, writing new version control software integrated with depenency management represents an effort that is hard to justify at this time.
 
-A major constraint imposed by the ActivePapers systes is that all code must be written in Python and all data must be stored in HDF5 datasets. While Python is popular enough for molecular simulation to make the first constraint very acceptable, HDF5 is still a rare choice for data storage, although this is changing thanks to initiatives such as [H5MD](http://nongnu.org/h5md/).
+A major constraint imposed by the ActivePapers system is that all code must be written in Python and all data must be stored in HDF5 datasets. While Python is popular enough for molecular simulation to make the first constraint very acceptable, HDF5 is still a rare choice for data storage, although this is changing thanks to initiatives such as [H5MD](http://nongnu.org/h5md/).
 
-The use of specific tools is rarely sufficient to ensure reproducibility. Tools can only take care of *replicability*, i.e. the technical aspect of tracking all computational dependencies. Reproducibility at the scientific level requires that all steps can easily be understood and verified by fellow scientists. Best practices for reaching this goal remain to be developed. One observation from the applications of the above workflow is the importance of access to intermediate results for human inspection. This suggests an overall structure of many small scripts that each do a well-defined job and communicate via explicitly stored datasets.
+The use of specific tools is rarely sufficient to ensure reproducibility. Tools can only take care of *replicability*, i.e. the technical aspect of tracking all computational dependencies such that a computation can be re-run identically. Reproducibility at the scientific level requires that all steps can easily be understood and verified by fellow scientists. Best practices for reaching this goal remain to be developed. One observation from the applications of the above workflow is the importance of access to intermediate results for human inspection. This suggests an overall structure of many small scripts that each do a well-defined job and communicate via explicitly stored datasets.
 
 ##### Key benefits
 
