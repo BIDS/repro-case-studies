@@ -1,6 +1,6 @@
 ##### Title
 
-Developing and analyzing exact-diagonalization simulations for quantum many-body systems and creating a provenance-rich publication
+Developing and analyzing exact-diagonalization simulations for quantum many-body systems and creating a provenance-rich publication from the results
 
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
@@ -8,6 +8,7 @@ Developing and analyzing exact-diagonalization simulations for quantum many-body
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 My name is Jan Gukelberger, I am a computational condensed-matter physicist, who recently completed his PhD at the Institute for Theoretical Physics, ETH Zurich. This case study describes a project I worked on during my first year as a PhD student (2010-2011). This case study was conducted together with my advisor, Matthias Troyer.
+
 Broadly speaking, the project's goal was to characterize a family of quantum many-body model systems. A specific model is described by a large matrix, the Hamiltonian, and its physical properties can be deduced from the lowest-lying eigenvalues (energies) and the corresponding eigenvectors (quantum states). Therefore I wrote a C++ program that would build the Hamiltonian matrix for a given set of model parameters, run an iterative diagonalization algorithm, and output the corresponding properties. Analysis of the results produced by this program for different parameters yielded a deeper understanding of studied model family and corroborated analytical results obtained by colleagues. The analytical and numerical results were finally published together in [Phys. Rev. B 85, 045414 (2012)](dx.doi.org/10.1103/PhysRevB.85.045414).
 
 
@@ -33,7 +34,7 @@ Finally, the manuscript of the paper is written in Latex, including the figure f
 
 Publishing the paper together with the raw data and workflows, such that readers could easily inspect and reproduce our data evaluation process turned out to be a challenge in its own right and required intense interaction with the publisher. Here, the main problem was the need for cross-references between the manuscript, the VT workflows, and the raw data, because the final location of each component only becomes available in the last step of the production process, when the files cannot be changed anymore without manual intervention from the production team. Some aspects of this issue are explained in detail in our report [Publishing provenance-rich scientific papers, Procs. TAPP'11](https://www.usenix.org/event/tapp11/tech/final_files/Bauer.pdf). In the end, the publisher was not able to insert links from the figures in the paper to the corresponding workflow files, but only a general reference to the supplementary material section on their server, where all the workflows could be downloaded.
 
-Note: One collaborator actually recreated the figures with a different plotting tool before publication in order to improve their visual appearance. For this purpose, we amended the VT workflows to export the preprocessed data to an external file before plotting. Therefore, the figures presented in the paper are equivalent, but not identical, with the ones created by the VT workflows.
+Note: One collaborator actually recreated the figures with a different plotting tool before publication in order to improve their visual appearance. For this purpose, we amended the VT workflows to export the preprocessed data to an external file before plotting. Therefore, the figures presented in the paper are equivalent, but not identical, to the ones created by the VT workflows.
 
 
 ##### Pain points
