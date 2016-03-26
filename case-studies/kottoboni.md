@@ -1,6 +1,6 @@
 ##### Title
 
-A Statistial Analysis of the Effect of Salt on Mortality at the Level of Nations
+A Statistical Analysis of Salt and Mortality at the Level of Nations
 
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
