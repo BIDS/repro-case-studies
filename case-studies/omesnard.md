@@ -1,5 +1,7 @@
 *Authors: Olivier Mesnard, Lorena A. Barba*
 
+*Title: Achieving full-replication of a previously published CFD problem*
+
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
 
@@ -12,7 +14,7 @@ We do our best to accomplish reproducible research and have for years worked to 
 According to the "Reproducibility PI Manifesto," pledged by Barba in 2012, all research code written in the group is under version control and open source, our data is open, and we publish open pre-prints of all our publications.
 For the main results in a paper, we prepare file bundles with input and output data, plotting scripts and figure, and deposit them in the [figshare](https://figshare.com/authors/Lorena_A_Barba/97553) repository.
 These conditions all apply to our previously published work in Krishnan et al. (2014), studying the aerodynamics of flying snakes.
-This case study describes what happened when we set out to not just reproduce our previous results in Krishnan et al. (2014), but complete a full replication using different computational fluid dynamics (CFD) codes: a new code developed in our group, an open-source code developed by another group, and an open-source CFD library.
+This case study describes what happened when we set out to not just reproduce our previous results in Krishnan et al. (2014), but complete a full replication using different Computational Fluid Dynamics (CFD) codes: a new code developed in our group, an open-source code developed by another group, and an open-source CFD library.
 
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
@@ -89,14 +91,14 @@ Our research lab has developed over the years a consistent workflow that, we bel
 A previous study coming out of our lab, published in Krishnan et al. (2014), already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
 [cuIBM](https://github.com/barbagroup/cuIBM), the code used for that study, is version-controlled and open source (hosted on GitHub); we completed a [Validation & Verification study](http://dx.doi.org/10.6084/m9.figshare.92789) that is published openly on figshare; the data and main figures of the paper are also available on figshare under CC-BY, and the paper [pre-print](http://arxiv.org/abs/1309.2969) is available on arXiv (revised post peer review).
 Here, we describe our effort to achieve full replication of our previous conclusions in Krishnan et al. (2014) about the aerodynamic characteristics of the flying snakes' body cross-section.
-We used a total of four CFD codes to reproduce and replicate our own findings in a scenario of highly unsteady flow, dominated by vorticity. In every case, there were failures and difficulties, leading to improvements in our workflow and conclusions about the special challenges for reproducibility in our application scenario.
+We used a total of four Computational Fluid Dynamics (CFD) codes to reproduce and replicate our own findings in a scenario of highly unsteady flow, dominated by vorticity (the local spinning of the flow defined as the rotational of the velocity field). 
+In every case, there were failures and difficulties, leading to improvements in our workflow and conclusions about the special challenges for reproducibility in our application scenario.
 
 Krishnan et al. (2014) studies the aerodynamics of flying snakes using an in-house solver for the incompressible Navier-Stokes equations.
 The solver applies an immersed-boundary projection method (Taira and Colonius, 2007) that requires the solution of a modified Poisson system on a structured Cartesian grid. 
-It uses an iterative algorithm provided by an external linear-algebra library: the [CUSP](https://github.com/cusplibrary/cusplibrary) library to solve a linear system on a single GPU.
+It uses an iterative algorithm provided by an external linear-algebra library, [CUSP](https://github.com/cusplibrary/cusplibrary) (an open-source project by NVidia Research) to solve a linear system on a single Graphical Processing Unit (GPU).
 
-The first code we used to attempt replication is a component of the well-known open-source CFD library, [OpenFOAM](http://www.openfoam.org/).
-IcoFOAM is the incompressible laminar solver, applying the finite-volume method on an unstructured body-conforming mesh.
+The first code we used to attempt replication is a component of the well-known open-source CFD library [OpenFOAM](http://www.openfoam.org/): IcoFOAM, the incompressible laminar solver, applying the finite-volume method on an unstructured body-conforming mesh.
 We chose IcoFOAM because it is widely used, open-source, and documented—both code documentation and a users' guide are available.
 After a period of several weeks required to learn to use the software, the first batch of simulations with IcoFOAM were a failure.
 With unstructured-mesh finite-volume solvers, the mesh generation step is most often what determines the quality of the solution, and some meshes would result in unphysical results.
@@ -167,6 +169,7 @@ These packages include the version of the software (as well as that of its depen
 
 
 *References*:
+- Barba, L. A. (13 December 2012). "Reproducibility PI Manifesto", 10.6084/m9.figshare.104539. Presentation for a talk given at the ICERM workshop "Reproducibility in Computational and Experimental Mathematics". Published on figshare under CC-BY.
 - Bhalla, A. P. S., Bale, R., Griffith, B. E., & Patankar, N. A. (2013). A unified mathematical framework and an adaptive numerical method for fluid–structure interaction with rigid, deforming, and elastic bodies. Journal of Computational Physics, 250, 446-476.
 - Krishnan, A., Socha, J. J., Vlachos, P. P., & Barba, L. A. (2014). Lift and wakes of flying snakes. Physics of Fluids, 26(3), 031901.
 - Taira, K., & Colonius, T. (2007). The immersed boundary method: a projection approach. Journal of Computational Physics, 225(2), 2118-2137.
