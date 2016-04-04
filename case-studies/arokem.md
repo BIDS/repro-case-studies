@@ -33,7 +33,7 @@ experiments, and implement the same ideas in their analysis.
 Reproducibility does not guarantee replicability [Leek and Peng, 2015]. Some may
 even argue that reproducibility and replicability may sometimes be in conflict,
 because implementation errors can be propagated in reproduction, but not in
-replication [citation needed].
+replication [Peng2009, Baggerly2005].
 
 ##### Workflow diagram
 
@@ -239,10 +239,22 @@ learning more about reproducibility?
 
 ##### References
 
-J.T. Leek and R.D. Peng (2015). Opinion: Reproducible research can still be wrong: Adopting a prevention approach. PNAS 112: 1645-1646
+J.T. Leek and R.D. Peng (2015). Opinion: Reproducible research can still be
+wrong: Adopting a prevention approach. PNAS 112: 1645-1646
 
-B. A. Wandell, A. Rokem, L. M. Perry, G. Schaefer, R. F. Dougherty (2015). Data management to support reproducible research. arXiv:1502.06900v1
+B. A. Wandell, A. Rokem, L. M. Perry, G. Schaefer, R. F. Dougherty (2015). Data
+management to support reproducible research. arXiv:1502.06900v1
 
-A. Rokem, J. Yeatman, F. Pestilli, K.N. Kay, A. Mezer, S. van der Walt, B.A. Wandell (2015). Evaluating the accuracy of diffusion MRI models in white matter. PLoS One, DOI: 10.1371/journal.pone.0123272.
+A. Rokem, J. Yeatman, F. Pestilli, K.N. Kay, A. Mezer, S. van der Walt, B.A.
+Wandell (2015). Evaluating the accuracy of diffusion MRI models in white matter.
+PLoS One, DOI: 10.1371/journal.pone.0123272.
 
-Ioannidis, J.P.A. (2005). Why Most Published Research Findings Are False. PLoS Medicine 2: e124-
+Ioannidis, J.P.A. (2005). Why Most Published Research Findings Are False. PLoS
+Medicine 2: e124-
+
+Roger D. Peng (2009) Reproducible research and *Biostatistics*. Biostat 10:
+405-408
+
+K. A. Baggerly, J. S. Morris, S. R. Edmonson and K. R. Coombes (2005). Signal in
+Noise: Evaluating Reported Reproducibility of Serum Proteomic Tests for Ovarian
+Cancer. J Natl Cancer Inst (2005) 97: 307-309.
