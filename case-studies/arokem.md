@@ -9,11 +9,11 @@ necessary specifically to introduce your specific case study.
 My name is Ariel Rokem. I am a Data Scientist at the University of Washington
 eScience Institute. My research training and experience have been mostly in the
 field of human cognitive neuroscience. During my postdoctoral training
-(2011-2015) in Brian Wandell's group, in the Department of Psychology at
+(2011-2015) in Prof. Brian Wandell's group, at the Department of Psychology at
 Stanford University, I conducted studies of human brain structure and function,
-using quantitative MRI. A focus of my research during that time was the
-application of ideas from statistical learning theory to measurements of human
-white matter with diffusion MRI (dMRI).
+using quantitative MRI. A focus of the research program that I started in
+Brian's lab is the application of ideas from statistical learning theory to
+measurements of human white matter with diffusion MRI (dMRI).
 
 2) Define what the term "reproducibility" means to you generally and/or in the
 particular context of your case study.
@@ -52,8 +52,7 @@ properties, but there was no extensive study of the fits of these models to the
 data, and no assessment of the effects of measurement parameters on the model
 fits. In the study described here, we used cross-validation to evaluate two
 commonly-used models in a variety of measurement conditions. The work was
-published in [PLoS
-One](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272)
+published in [PLoS One](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272)
 
 The project started with the collection of MRI data. Six participants were
 scanned in different experimental conditions. The data were collected in the
@@ -83,13 +82,13 @@ Subsequent analysis was conducted on these preprocessed data, using a Python
 library: [`osmosis`](https://github.com/vistalab/osmosis). This includes
 implementations of methods for fitting the data, statistical analysis,
 simulations and visualization, as well as utility functions  to handle parallel
-execution on an HPC cluster. The library depends on many components of the scipy
-stack, including `numpy`, `scipy`, `matplotlib`, `scikit-learn`. In addition,
-the code depends on components of the [neuroimaging in Python](https://nipy.org) libraries. Approximately 30% of the module code was covered
-by unit tests, with a particular emphasis on core modules and utility functions
-that were reused. A few end-to-end tests were implemented to track regressions.
-Development of the software was done openly on Github, and it was also released
-under an attribution license.
+execution on an HPC (high-performance computing) cluster. The library depends on
+many components of the scipy stack, including `numpy`, `scipy`, `matplotlib`,
+`scikit-learn`. In addition, the code depends on components of the [neuroimaging in Python](https://nipy.org) libraries. Approximately 30% of the module code was
+covered by unit tests, with a particular emphasis on core modules and utility
+functions that were reused. A few end-to-end tests were implemented to track
+regressions. Development of the software was done openly on Github, and it was
+also released under an attribution license.
 
 Scripts using the module code were developed using the IPython notebook. These
 scripts were run and edited many times, and as the project evolved a few of
@@ -97,28 +96,29 @@ these were copied into a [documentation folder](https://github.com/vistalab/osmo
 notebooks named "Figure1.ipynb", "Figure2.ipynb", etc, each corresponding to a
 figure in the paper. In writing the paper, these figures were saved and
 additionally manually edited by hand to add labels and annotation, and then
-integrated into a Word file, which was used to collaborate on writing with the
-other authors. The writing process was not versioned throughout, but several
-versions of the article were submitted to the arXiv preprint server, while the
-article underwent peer review.
+integrated into a Word document file, which was used to collaborate on writing
+with the other authors. The writing process was not versioned throughout, but
+several versions of the article were submitted to the arXiv preprint server,
+while the article underwent peer review.
 
 Most of the computations during the development of the project were conducted on
-a lab compute server, running an IPython notebook server. Thus, much of the
-development of the code was done on a laptop, over a web browser, connected to
-the server. However, some procedures described in the paper would require an
-inordinate amount of time, without the access that we had to an HPC cluster. For
-example, testing different settings of model regularization parameters required
-fitting the models hundreds of times. Data was accesible to the cluster through
-a mount of the lab RAID. Tasks run on the cluster were managed through a queue
-system (Sun Grid Engine), and a module was developed (`osmosis.parallel`) to
-facilitate submission of code to the cluster. These scripts could not be used as
-`ipynb` files, and were separately invoked on the command line, but they are
-included as part of the code distribution, recording these steps.
+a lab multi-core compute server, that was running an IPython notebook server.
+Thus, much of the development of the code was done on a laptop, over a web
+browser, connected to the server. Some procedures described in the paper would
+require an inordinate amount of time, without the access that we had to an HPC
+cluster. For example, testing different settings of model regularization
+parameters required fitting the models hundreds of times. Data was accesible to
+the cluster through a mount of the lab RAID. Tasks run on the cluster were
+managed through a queue system (Sun Grid Engine), and a module was developed
+(`osmosis.parallel`) to facilitate submission of code to the cluster. These
+scripts could not be used as IPython `ipynb` files, and were separately invoked
+on the command line, but they are included as part of the code distribution,
+recording these steps.
 
-The notebook for the steps that required parallel execution includes both a
-'precomputed' version (where parameters of the analysis are read from
-precomputed files), and 'complete' versions, which include the code that would
-have to be run to reproduce these results entirely on a single machine.
+The IPython notebook documenting the steps that required parallel execution
+includes both a 'precomputed' version (where parameters of the analysis are read
+from precomputed files), and 'complete' versions, which include the code that
+would have to be run to reproduce these results entirely on a single machine.
 Precomputed parameter files were not made publicly available, and would have to
 be recomputed to reproduce the results in these notebooks.
 
@@ -130,8 +130,9 @@ Python software for the analysis of dMRI data: [Dipy](http://dipy.org). The main
 ideas in `osmosis` were eventually ported into Dipy, accomodating the
 application programming interfact (API), documentation and testing requirements
 of that project. Furthermore, the prediction and cross-validation API
-implemented in Dipy is designed to be sufficiently general to accomodate new
-models, and mechanisms to evaluate their performance in fitting dMRI data.
+implemented in Dipy that I implemented in `Dipy` is designed to be sufficiently
+general to accomodate new models, and mechanisms to evaluate their performance
+in fitting dMRI data.
 
 Through Dipy, the code in this project is now also distributed widely through
 both Github and the Python Package Index (PYPI), under the permissive BSD
@@ -158,7 +159,8 @@ Furthermore, as the writing and review of the article proceeded, figures were
 moved around in the article, and other figures got added; Figures that had
 started as appendices were integrated into the body of the article, etc. Thus,
 it might have been better to wait until the end result was an accepted article,
-and only then organize the reproducible workflow that led to this result.
+and only then organize the entiree reproducible workflow that led to this
+result.
 
 ##### Key benefits
 
@@ -174,10 +176,9 @@ A specific module (`osmosis.parallel`) was developed to deal with submission of
 jobs to parallel execution on the HPC cluster. This module would read in a
 'template' script, and then create from this template, Python script files that
 contained the instructions to run the fitting process with different conditions,
-or on different parts of the same brain. The creation of this module created a
-highly reproducible process. Reuse of elements of this module was very
-time-saving during the development of the analysis methods.      [Answer,
-200-400 words]
+or on different parts of the same brain. The creation of this module resulted in
+a highly reproducible process. Consequently reuse of elements of this module
+produced benefits in time-saving during the development of the analysis methods.
 
 ##### General questions about reproducibility [Optional]
 
@@ -189,13 +190,14 @@ in MRI, which is an expensive experimental technique. The standards of the field
 focus on statistical significance of effects, rather than effect sizes, which
 tend to be small. Though standards limiting the selection of tested
 relationships, and limiting the flexibility of experimental and analytic designs
-are starting to emerge, in practice these are not limited. Some of the aspects
-of the field that make it interesting and important, are also pernicious in this
-regard: the direct application to human health means that there is a perception
-of potential financial incentives. Finally, it is a burgeoning field, with many
-groups working on similar questions. Higher standards of reproducibility in this
-case would mean less false findings, because at least some of these factors
-would be ameliorated by a full "chain of evidence" to support every finding.
+are starting to emerge, in practice these are not very strictly limited. Some of
+the aspects of the field that make it interesting and important, are also
+pernicious in this regard: the direct application to human health means that
+there is a perception of potential financial incentives. Finally, it is a
+burgeoning field, with many groups working on similar questions. Higher
+standards of reproducibility in this case would mean less false findings,
+because at least some of these factors would be ameliorated by a full "chain of
+evidence" to support every finding.
 
 2) How or where did you learn the reproducible practices described in your case
 study? Mentors, classes, workshops, etc.
@@ -209,9 +211,9 @@ would need programs, and eventually IPython notebooks, just to remember what I
 did to get from the data to the conclusions.
 
 A huge impact was the mentorship I got from Fernando Perez during graduate
-school. He was not shy about how little of the research in our field he
-believed, and this skepticism inspired me to struggle to be more confident in my
-own research conclusions.
+school. He was not shy about how little of the research in our field he believed
+to be true, and this skepticism inspired me to struggle to be more confident in
+my own research conclusions.
 
 3) What do you see as the major pitfalls to doing reproducible research in your
 domain, and do you have any suggestions for working around these? Examples could
@@ -222,8 +224,7 @@ in human neuroscience. The first is that there is very little practical cost to
 not being reproducible. As mentioned above, there is likely to be a large
 proportion of false results in the neuroscience literature, and it's more likely
 to be false if it's not reproducible. Since a false positive result is more
-likely to result in a publishable unit of CV-crafting, there seems to be
-incentive to be non-reproducible, as long as no one calls you out on it.
+likely to result in a publishable unit, there seem to be incentives in place to not be reproducible, slowing down the progress of the entire field.
 
 4) What do you view as the major incentives for doing reproducible research?
 
@@ -231,14 +232,12 @@ The level of confidence that I have in my results is quite high. That helps me
 sleep well at night.
 
 5) Are there any broad reproducibility best practices that you'd recommend for
-researchers in your field?
+researchers in your field? + 6) Would you recommend any specific websites,
+training courses, or books for learning more about reproducibility?
 
-[Answer]
-
-6) Would you recommend any specific websites, training courses, or books for
-learning more about reproducibility?
-
-[Answer]
+There are several papers that provide guidelines for reproducibility with a
+specific focus on neuroimaging. Two recent examples include [Gorgolewski2016]
+and [Pernet2015].
 
 
 ##### References
@@ -262,3 +261,10 @@ Roger D. Peng (2009) Reproducible research and *Biostatistics*. Biostat 10:
 K. A. Baggerly, J. S. Morris, S. R. Edmonson and K. R. Coombes (2005). Signal in
 Noise: Evaluating Reported Reproducibility of Serum Proteomic Tests for Ovarian
 Cancer. J Natl Cancer Inst (2005) 97: 307-309.
+
+K.J. Gorgoloewksi and R. Poldrack (2016) A practical guide for improving
+transparency and reproducibility in neuroimaging research.
+http://dx.doi.org/10.1101/039354
+
+Pernet C and Poline, J. B. (2015). Improving functional magnetic resonance
+imaging reproducibility. Gigascience 4: 15. DOI: 10.1186/s13742-015-0055-8
