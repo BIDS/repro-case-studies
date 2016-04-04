@@ -44,12 +44,13 @@ replication [Peng2009, Baggerly2005].
 Measurements of dMRI are used as a way to assess the structure of the human
 brain and its connectivity *in vivo*. Many parameters of the measurement are
 determined by the experimenter, and incur trade-offs between sensitivity and
-SNR. Models of the white matter based on different measurements are commonly
-used to make inferences about connectivity and tissue properties, but there was
-no extensive study of the fits of these models to the data, and no assessment of
-the effects of measurement parameters on the model fits. In the study described
-here, we used cross-validation to evaluate two commonly-used models in a variety
-of measurement conditions. The work was published in [PLoS
+signal-to-noise ratio (SNR). Models of the white matter based on different
+measurements are commonly used to make inferences about connectivity and tissue
+properties, but there was no extensive study of the fits of these models to the
+data, and no assessment of the effects of measurement parameters on the model
+fits. In the study described here, we used cross-validation to evaluate two
+commonly-used models in a variety of measurement conditions. The work was
+published in [PLoS
 One](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272)
 
 The project started with the collection of MRI data. Six participants were
@@ -70,11 +71,11 @@ available through Github. Preprocessing also relied on freely available software
 from other labs.
 
 These preprocessed data are publicly available through the Stanford Libraries
-SDR, as two [different](http://purl.stanford.edu/ng782rw8378)
-[collections](http://purl.stanford.edu/rt034xr8593). Most of the data was
-licensed under the Creative Commons Atttribution license, and a small subset was
-also released under the Public Domain Dedication License, for unencumbered use
-in methods development.
+Stanford Digital Repository (SDR), as two different collections:
+http://purl.stanford.edu/ng782rw8378 and http://purl.stanford.edu/rt034xr8593.
+Most of the data was licensed under the Creative Commons Atttribution license,
+and a small subset was also released under the Public Domain Dedication License,
+for unencumbered use in methods development.
 
 Subsequent analysis was conducted on these preprocessed data, using a Python
 library: [`osmosis`](https://github.com/vistalab/osmosis). This includes
@@ -124,11 +125,11 @@ using this library, it is not neccesarily useful as a tool for others to work
 with, and not easy to extend beyond the models that we tested. During the work
 on this project, I became involved in an open-source project, which develops
 Python software for the analysis of dMRI data: [Dipy](http://dipy.org). The main
-ideas in `osmosis` were eventually ported into Dipy, accomodating the API,
-documentation and testing requirements of that project. Furthermore, the
-prediction and cross-validation API implemented in Dipy is designed to be
-sufficiently general to accomodate new models, and mechanisms to evaluate their
-performance in fitting dMRI data.
+ideas in `osmosis` were eventually ported into Dipy, accomodating the
+application programming interfact (API), documentation and testing requirements
+of that project. Furthermore, the prediction and cross-validation API
+implemented in Dipy is designed to be sufficiently general to accomodate new
+models, and mechanisms to evaluate their performance in fitting dMRI data.
 
 Through Dipy, the code in this project is now also distributed widely through
 both Github and the Python Package Index (PYPI), under the permissive BSD
@@ -227,7 +228,8 @@ incentive to be non-reproducible, as long as no one calls you out on it.
 The level of confidence that I have in my results is quite high. That helps me
 sleep well at night.
 
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+5) Are there any broad reproducibility best practices that you'd recommend for
+researchers in your field?
 
 [Answer]
 
