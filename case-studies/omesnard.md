@@ -1,6 +1,6 @@
 *Authors: Olivier Mesnard, Lorena A. Barba*
 
-*Title: Achieving full-replication of a previously published CFD problem*
+*Title: Full-replication attempt of our own findings*
 
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
