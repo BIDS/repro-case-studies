@@ -1,3 +1,5 @@
+# Reproducibility in human neuroimaging research : a practical example from the analysis of diffusion MRI.
+
 ##### Introduction
 
 1) Who are you and what is your research field? Include your name, affiliation,
