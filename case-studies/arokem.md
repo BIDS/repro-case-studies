@@ -23,8 +23,8 @@ availability of code and data from a scientific study, such that only a
 reasonable effort would be required to generate the evidence (numbers and
 visuals) used to support a scientific finding.  
 
-Ideally, a small number of commands at a shell prompt would suffice, but in some
-complex cases, more work could be required. A reasonable amount of effort
+Ideally, a small number of commands at the command line would suffice, but in
+some complex cases, more work could be required. A reasonable amount of effort
 required might be rather extensive, when large amounts of data storage, or large
 amounts of computation are needed.
 
@@ -60,7 +60,7 @@ Stanford Center for Neurobiological Imaging (CNI). The CNI has developed the
 Neurobiological Image Management System [Wandell et al. 2015], which captures
 the data from the scanner, archives it, and exposes a web interface that allows
 researchers to control access to the data, and copy it into the lab's data
-storage, a RAID system.
+storage, a RAID (redundant array of independent disks) system.
 
 The data were preprocessed using standard procedures (in the sense that any
 practitioner of MRI would perform these steps on his or her data). This includes
