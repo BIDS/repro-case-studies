@@ -1,39 +1,43 @@
-##### Introduction
+### Title for Case Study
 
-K.A.S. Mislan
-Postdoctoral Associate
+K.A.S. Mislan  
+Postdoctoral Associate  
 eScience Institute  
 School of Oceanography  
 University of Washington
 
-I am an ecophysiologist and my research focuses organism-environment interactions in the ocean.  In particular, I am interested in forecasting the effects of climate change on marine ecosystems.
+##### Introduction
 
+I am an ecophysiologist and my research focuses organism-environment interactions in the ocean.  In particular, I am interested in forecasting the effects of climate change on marine ecosystems.
 
 Reproducibility means that sufficient descriptive information and resources are provided for someone to be able to repeat the same study. As part of my research as a scientist, I write code to manipulate and visualize large quantities of data to obtain results. I believe that my code should be adapted and made available so that it is usable by others in my field.
 
-##### Research workflow diagram
+<!---- Description of case study... -->
+I recently completed a project on blood-oxygen binding in the global pelagic ocean.  
 
-![Research Workflow](kasmislan_researchworkflow.pdf)
+**Research Paper**:  
+Mislan, K. A. S., Dunne, J. P. and Sarmiento, J. L. (2016), The fundamental niche of blood oxygen binding in the pelagic ocean. Oikos. doi: [https://doi.org/10.1111/oik.02650](https://doi.org/10.1111/oik.02650)
 
-##### Research workflow narrative
+**Code Archive**:  
+Mislan, K. A. S., Dunne, J. P. and Sarmiento, J. L. (2015). P50 Depth Analysis v1.0. Zenodo. [http://dx.doi.org/10.5281/zenodo.31951](http://dx.doi.org/10.5281/zenodo.31951)
 
-I recently completed a project on blood-oxygen binding  in the global pelagic ocean. In this narrative, I use the project as an example to explain my research and reproducibility workflows. The data for the project came from existing resources. Obtaining the data from the existing resources is the first step in my research workflow.
+##### Workflow diagram
 
-World Ocean Atlas 2009 (WOA09) data is publicly available through the National Oceanic and Atmospheric Administration (NOAA) National Centers for Environmental Information. The WOA09 data is on a geographic grid and available in several different file formats. I downloaded the netCDF (.nc) file format because the netCDF files are relatively small in size and tools are available to read and manipulate the files. NOAA Ferret is publicly available software for visualization and analysis and has built-in functions designed for efficient processing of gridded data. One of the objectives of the analysis was to vary two input parameters and determine the effect on a geographic characteristics. I automated the process of creating ferret scripts with different input parameters by writing a shell script that generated and processed ferret scripts (.jnl files).  The processed files were saved as netCDF files.  
+![Research Workflow](kasmislan_workflow_v5.pdf)
+
+##### Workflow narrative
+
+Obtaining data from existing resources was the first step in my research workflow for this study.  World Ocean Atlas 2009 (WOA09) data is publicly available through the National Oceanic and Atmospheric Administration (NOAA) National Centers for Environmental Information. The WOA09 data is on a geographic grid and available in several different file formats. I downloaded the netCDF (.nc) file format because the netCDF files are relatively small in size and tools are available to read and manipulate the files. NOAA Ferret is publicly available software for visualization and analysis and has built-in functions designed for efficient processing of gridded data. One of the objectives of the analysis was to vary two input parameters and determine the effect on geographic characteristics. I automated the process of creating ferret scripts with different input parameters by writing a shell script that generated and processed ferret scripts (.jnl files).  The processed files were saved as netCDF files.  
 
 R and Python were used to create the figures although it would have been possible to create all the figures in one or the other of these software packages. I learned R before Python so I tend to do most of my analysis in R because I am most familiar with it.  However, I like the tools for making geographic plots in Python so I used Python to make the geographic plots.  
 
-The physiological data was gleaned from published studies found through Google Scholar searches for key words. As the data was extracted from the papers, it was put into a spreadsheet. The data of interest was often available in tables and the text of the papers. In some cases, the data was only available in scatter plots.  The ruler tool in Adobe Photoshop was used to manually extract the data from plots. Once all the information from the studies was entered into the spreadsheet, the data from the spreadsheet was saved as a tab-delimited text file. The data was then read into R to determine parameters for the analysis of the oceanographic data.  Additionally, the data was plotted in a scatter plot in R and each point in the plot had a number assigned to it. Information about the individual points was put into two tables. However, it was inefficient to obtain the information by looking between the numbers on the plot and the two tables.  Therefore, an interactive plot that includes the information from the tables was created using D3.
+The physiological data was gleaned from published studies found through Google Scholar searches for key words. As the data was extracted from the papers, it was put into a spreadsheet. The data of interest was often available in tables and the text of the papers. In some cases, the data was only available in scatter plots.  The ruler tool in Adobe Photoshop was used to manually extract the data from plots. Once all the information from the studies was entered into the spreadsheet, the data from the spreadsheet was saved as a tab-delimited text file. The data was then read into R to determine parameters for the analysis of the oceanographic data.  Additionally, the data was plotted in a scatter plot in R and each point in the plot had a number assigned to it. Information about the individual points was put into two tables. However, it was inefficient to obtain the information by looking between the numbers on the plot and the two tables.  Therefore, an interactive plot that includes the information from the tables was created using a javascript library called Data-Driven Documents (D3).
 
 I created figures and wrote the paper.  It was not possible to include the steps associated with the code in the methods section of the paper due to space and formatting constraints. However, the code tells a much more complete story of my analyses.  I adapted the code and provided documentation so that the code could be used by someone else in the same way that I used it in my study. Therefore, I changed as little of the code as possible when adapting it to be independent of my operating system.
 
+ I made some modifications to the code at the time
 
-##### Reproducibility workflow diagram
-
-![Reproducibility Workflow](kasmislan_reproducibilityworkflow.pdf)
-
-##### Reproducibility workflow narrative
-I have developed a workflow for converting my research workflow to be reproducible.  My projects tend to involve large quantities of data which can take hours or days to analyze and/or produce thousands output files that then need to be stored. There is a lot of repetition in my use of code during projects. My goals in providing code is that someone can get the code working in a short period of time and understand the code under the simplest conditions.  Therefore, my first step is to select example data files for analysis and/or a small set of parameters for model simulations. In other words, I stray from exact reproducibility at the level of the project but not at the level of the code in order to make my code more "user-friendly".
+ In this study, projects tend to involve large quantities of data which can take hours or days to analyze There is a lot of repetition in my use of code during projects. My goals in providing code is that someone can get the code working in a short period of time and understand the code under the simplest conditions.  Therefore, my first step is to select example data files for analysis and/or a small set of parameters for model simulations. In other words, I stray from exact reproducibility at the level of the project but not at the level of the code in order to make my code more "user-friendly".
 
 The next step is to create (or modify) a folder structure. The folder structure needs to include a folder for code and folders for any additional auxiliary files including input files to run the code and output files produced by the code.  There also needs to be a folder for test files to determine if the code worked.  This organization of folders helps me because I am able to refer users of the code to file locations when I write documentation for the code.  
 
@@ -43,7 +47,7 @@ My code works on my computer, but it might not work the same way on a different 
 
 My code depends on the installation of software programs including R and Python. Creating a list of these dependencies is necessary because they need to be installed for someone else to use the code.  These programs are updated so it is important to find out the versions.
 
-In my opinion, the most critical step in my reproducibility workflow for making my code reproducible is writing the documentation (README file).  The documentation needs to include a description of the purpose of the code, references to research articles, a list of software dependencies, clear step-by-step instructions on how to use the code, and clear step-by-step instructions on how to use the test files.  If the data or parameters have been reduced in size or number, I indicate that these reductions have been made at appropriate points in the documentation.
+In my opinion, the most critical step in my reproducibility workflow for making my code reproducible is writing the documentation (README file).  The documentation needs to include a description of the purpose of the code, references to research articles, a list of software dependencies, clear step-by-step instructions on how to use the code, and clear step-by-step instructions on how to use the test files.  When the data or parameters were reduced in size or number, I indicated that reductions have been made at appropriate points in the documentation.
 
 The documentation can include additional components which are worth mentioning but not necessary for making research reproducible.  I include a section to acknowledge my funding sources and others who helped with the project.  In some cases, the code can be adapted for other applications so I often include instructions for modifying the code.
 
