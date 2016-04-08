@@ -18,9 +18,16 @@ Improving the safety and sustainability of nuclear power requires improved
 nuclear reactor designs, fuel cycle strategies, and waste-disposal concepts.
 The systems are sufficiently complex that breakthrough advancements may emerge
 when modern data methodologies are applied to their simulation. In particular,
-faithful assessments of nuclear reactor response in hypothetical accident
-scenarios require high-fidelity, tightly coupled, time-dependent simulation of
-neutronics, thermal hydraulics, and structural performance.
+faithful assessments of potential nuclear fuel cycles require dynamic, discrete 
+facility, discrete-material simulations of the mining, milling, transmutation, 
+reprocessing, and disposal of nuclear materials as well as the production of 
+energy and movement of capital. 
+
+This case study is an overview of the workflow behind the Cyclus nuclear fuel 
+cycle simulation framework -- a tool for exactly that kind of modeling, 
+simulation, and analysis. The workflow described used to create a software tool 
+that other nuclear engineers can use easily, modify quickly, and contribute to 
+when they need to customize behavior or model a different technology.
 
 **2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.**
 
@@ -121,7 +128,7 @@ steps :
 - A simulation is defined in json or xml
 - The input file is run and an HDF5 or SQL database results
 - The database is analyzed with a separate GUI, python scripts, or a Go library
-- A collaborative paper is created in LaTeX on github
+- A collaborative paper is created in LaTeX on GitHub
 - All input files contributing to the analysis are contained in the repository holding the document
 
 
@@ -149,7 +156,7 @@ scripts that build, install, and test Cyclus. For this, we use a set of servers
 at the University of Wisconsin called the BatLab. Unfortunately, BatLab has a
 few problems. Because of the proprietary nature of MacOSX, it cannot run truly
 MacOSX instances. It runs, instead, darwin servers that mimic the behavior of
-MacOSX. For this reason, idosyncratic failures apparent in Mavericks and
+MacOSX. For this reason, idiosyncratic failures apparent in Mavericks and
 Yosemite but not Darwin cannot be caught before entering the code-base.
 Additionally, BatLab is somewhat unpredictable and inflexible. Since the
 behavior of BatLab undergoes a lot of churn, our continuous integration suite
@@ -162,19 +169,19 @@ The [Cyclus Enhancement Proposal (CEP)
 strategy](http://fuelcycle.org/cep/cep0.html) was a bright workflow choice
 that was inspired by the analogous strategy in the Python community (PEPs). I
 recommend this to any research group that values strategic planning, consensus,
-and thoughtful development. A discussion of our workflow around these proposals
-[here](http://fuelcycle.org/cep/cep1.html).
+and thoughtful development. A discussion of our workflow around these 
+proposals can be found [here](http://fuelcycle.org/cep/cep1.html).
 
 Fundamentally, a CEP is :
 
 > a design document providing information to the Cyclus community, or describing a new
-> feature or process for Cyclus and related prjects in its ecosystem. The CEP
+> feature or process for Cyclus and related projects in its ecosystem. The CEP
 > should provide a concise technical specification of the feature and a rationale
 > for the feature.
 
 CEPs document major new features, community discussions, and documentation of theory or
 design not captured by the in-code documentation. Because they are maintained
-alongside the webiste source code in a version controlled repository,
+alongside the website source code in a version controlled repository,
 provenance of the discussion surrounding their acceptance is maintained.
 
 ### TOOLBOX [OPTIONAL]
