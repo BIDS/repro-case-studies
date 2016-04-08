@@ -1,8 +1,8 @@
-# Kathryn Huff
+# Developing an Open, Modular Simulation Framework for Nuclear Fuel Cycle Analysis
+
+Author: Kathryn Huff
 
 ## Reproducibility Case Study
-
-## Alpha Stage
 
 ### BACKGROUND
 
