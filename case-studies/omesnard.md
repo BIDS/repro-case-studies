@@ -86,41 +86,41 @@ In addition to detailing the steps of the workflow, you may wish to consider the
 
 Our research lab has developed over the years a consistent workflow that, we believe, leads to reproducible research.
 A previous study coming out of our lab, published in Krishnan et al. (2014), already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
-Krishnan et al. (2014) studies the aerodynamics of flying snakes using the code [cuIBM](https://github.com/barbagroup/cuIBM) that solves the Navier-Stokes equations with an immersed-boundary method. 
+That work studied the aerodynamics of flying snakes using our code [cuIBM](https://github.com/barbagroup/cuIBM) for solving the Navier-Stokes equations with an immersed-boundary method. 
 The crux of the study was that, for a particular configuration, the snake's cross-section experiences a lift-enhancement.
-Here, we describe our effort to achieve full-replication of our previous conclusions in Krishnan et al. (2014), using a total of four Computational Fluid Dynamics (CFD) codes, including cuIBM.
-In every case, we encountered failures and difficulties, leading to improvements in our workflow and conclusions about the challenges for reproducibility in a scenario of highly unsteady flow dominated by vorticity (local spinning of the flow).
+Here, we describe our effort to achieve full-replication of the main results, using four different Computational Fluid Dynamics (CFD) codes, including cuIBM.
+We encountered failures and difficulties, leading to improvements in our workflow and conclusions about the challenges for reproducibility in a scenario of highly unsteady flow dominated by vorticity (local spinning of the flow).
 
-The first code we used to attempt replication is IcoFOAM, the unsteady laminar solver of the well-known CFD package [OpenFOAM](http://www.openfoam.org/).
-We chose OpenFOAM because it is widely used, open-source, and documented—both code documentation and users' guide are available.
-With unstructured-mesh finite-volume solvers like IcoFOAM, the mesh generation step is most often what determines the quality of the solution, and some meshes would result in unphysical results.
-The first tries led to inconsistent results and we had to enhance the mesh quality by replacing the mesh generation tool.
-Besides, we used a particular outlet boundary condition, to advect the wake vortices outside the computational domain.
-With persistent efforts, simulations with IcoFOAM replicated our previous findings in terms of the lift characteristics. 
+The first code we used to attempt replication is IcoFOAM: the unsteady laminar solver of the well-known CFD package [OpenFOAM](http://www.openfoam.org/).
+We chose OpenFOAM because it is widely used, open-source, and documented: both code documentation and users' guide are available.
+With unstructured-mesh finite-volume solvers like IcoFOAM, the mesh generation step is most often what determines the quality of the solution, and we experienced that some meshes resulted in unphysical results.
+Our first tries led to inconsistent results and we had to replace the mesh-generation tool to get acceptable mesh quality.
+Setting the boundary condition at the domain outlet was particularly problematic, and made more difficult by lack of documentation for the type of boundary condition we needed.
+We invested several months of persistent efforts before finally replicating our previous findings (in terms of the lift characteristics) with IcoFOAM. 
 
-We then moved on to [IBAMR](https://github.com/ibamr/ibamr), an open-source software available on GitHub that implements a different immersed-boundary method than cuIBM.
+We then used [IBAMR](https://github.com/ibamr/ibamr), an open-source software available on GitHub that implements a different immersed-boundary method than cuIBM.
 Bhalla et al. (2013) published a detailed validation of the software, and various examples are included in the code repository.
-To confirm our findings, we had to bring the fluid to rest everywhere inside the immersed-body, not just at the boundary—this is not an intuitive option with immersed-boundary methods.
-In the end, we can say that the _scientific findings_ of Krishnan et al. (2014) have been fully replicated, but we see noticeable differences in the details of the flow characteristics.
+After many failed attempts, we found that we had to force the fluid to rest everywhere _inside_ the immersed-body, not just at the boundary—this is not an intuitive option with immersed-boundary methods.
+In the end, we can say that the _scientific findings_ of Krishnan et al. (2014) have been replicated, but we still see noticeable differences in the details of the flow characteristics.
 
 The [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) codes are both being developed in our research lab and implement the same immersed-boundary method (Taira and Colonius, 2007).
 The GitHub code repositories include code documentation with [Doxygen](www.doxygen.org), users' documentation (on the GitHub wiki), as well as basic examples and tutorials.
 cuIBM uses [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on a single CUDA-architecture Graphical Processing Unit (GPU).
 We used cuIBM again to confirm the reproducibility of the published findings in Krishnan et al. (2014).
-It is important to remark that we had to use the _same version_ of the code, with the _same version_ of the linear-algebra library to re-obtain the same numeric answers.
+It is important to remark that we had to use the _same version_ of the code, with the _same version_ of the linear-algebra library to obtain the same numeric answers as before.
 In fact, our first attempts used a newer version of the CUSP library, and failed to replicate the findings!
 In PetIBM, we use the [PETSc](http://www.mcs.anl.gov/petsc/) library to solve the linear systems on a distributed-memory machine.
 Even though the mathematical formulation in cuIBM and PetIBM is exactly the same, we observed that a different linear-algebra library could change the results.
-As of this writing, we have been unable with PetIBM to replicate the lift-enhancement feature of the flying snake.
+As of this writing, we have been unable to replicate with PetIBM the lift-enhancement feature of the flying snake.
 
 The lessons learned from this case study are sobering.
 First, the vigilant practice of reproducible research must go beyond the open sharing of data and code.
 We now use Python scripts to automate our workflow—all scripts are version-controlled, code-documented and accept command-line arguments (to avoid code modification from users). 
-We call the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to plot the numerical solution.
-In addition, Jupyter Notebooks and Markdown files are convenient to showcase project advances.
+Instead of using GUIs, we call the Python interpreter included in the visualization tools [Paraview](http://www.paraview.org/) and [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/) to plot the numerical solution.
+Throughout, Jupyter Notebooks and Markdown files document partial project advances.
 Second, certain application scenarios pose special challenges.
 Here, we are working with the Navier-Stokes equations applied to highly unsteady flows dominated by vorticity, a particularly tough application for reproducibility.
-Third, extra care is needed when using external libraries for iterative solution of linear systems; they may introduce uncertainties.
+Third, extra care is needed when using external libraries for iterative solution of linear systems: they may introduce uncertainties.
 
 As we now prepare a manuscript to publish the results of this project, it is being written using LaTeX and version-controlled in its own GitHub repository to facilitate collaboration between authors. 
 To advocate open-science, the manuscript will be first available on arXiv. 
