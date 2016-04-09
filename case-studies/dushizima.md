@@ -40,13 +40,13 @@ The software tool design and testing require intense communication among the tea
 ##### Key benefits
 *Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
 
-The most reproducible part of this project has been the use of code applied to simulated datasets. This task improved among the team particularly due to participation in code competitions, which forced the whole team to organize data sources and code for easy re-run by reviewers. Keeping track of advancements in a common digital lab book helped considerably in preparing manuscripts and other technical reports.
+The most reproducible part of this project has been the development of code allied to simulated datasets. This activity improved across the team, particularly due to participation in code competitions organized by our consortium, which forced the whole team to organize data sources and code with eyes on easy re-run by reviewers. Keeping track of advancements in a common digital lab book helped considerably in preparing manuscripts and other technical reports.
 
 
 ##### Key tools
 *If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
 
-An important tool that we started using is Overleaf for latex-text collaboration over the internet, which improved our ability to quickly edited our manuscripts as a group.
+An important tool has been ImageJ, a Java-based image processing software program, which was originally developed by Wayne Rasband within NIH circa 1997. Although most of the enclosed plug-ins focus on medical imaging, this framework has been widely used in other applications, such as material sciences.
 
 ##### General questions about reproducibility
 
