@@ -1,4 +1,4 @@
-### Dissecting computational methods used in a biogeographic study
+### A dissection of computational methods used in a biogeographic study
 
 K.A.S. Mislan   
 eScience Institute  
