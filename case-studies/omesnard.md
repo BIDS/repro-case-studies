@@ -8,13 +8,10 @@
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 We are members of a computational research group led by Prof. [Lorena Barba](http://lorenabarba.com) at the George Washington University in the department of Mechanical and Aerospace Engineering. 
-One of our research projects focuses on studying animal flight by means of unsteady simulations at low/moderate Reynolds numbers, using immersed-boundary methods.
-The work we describe in this case study was executed by the first author, PhD student Olivier Mesnard, but it fits in a broader program of research involving other group members.
 We do our best to accomplish reproducible research and have for years worked to improve our practices to achieve this goal.
-According to the "Reproducibility PI Manifesto," pledged by Barba in 2012, all research code written in the group is under version control and open source, our data is open, and we publish open pre-prints of all our publications.
+According to the "Reproducibility PI Manifesto," pledged by Barba in 2012, all our research code is under version control and open source, our data is open, and we publish open pre-prints of all our publications.
 For the main results in a paper, we prepare file bundles with input and output data, plotting scripts and figure, and deposit them in the [figshare](https://figshare.com/authors/Lorena_A_Barba/97553) repository.
-These conditions all apply to our previously published work in Krishnan et al. (2014), studying the aerodynamics of flying snakes.
-This case study describes what happened when we set out to not just reproduce our previous results in Krishnan et al. (2014), but complete a full replication using different Computational Fluid Dynamics (CFD) codes: a new code developed in our group, an open-source code developed by another group, and an open-source CFD library.
+This case study describes what happened when we set out to complete a full replication of published results from our own group, using different Computational Fluid Dynamics (CFD) codes: a new code developed in our group, an open-source code developed by another group, and an open-source CFD library.
 
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
