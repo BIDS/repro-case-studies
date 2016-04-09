@@ -77,7 +77,8 @@ milling, fabrication, transmutation, and disposal of nuclear material in the
 _nuclear fuel cycle_.
 
 Cyclus is a C++ code base. The configuration and build system is created from a
-combination of Python and CMake and supports both Linux and MacOS operating
+combination of Python and CMake (a crossplatform automatic makefile 
+configuration system) and supports both Linux and MacOS operating
 systems. Our input validation library accepts either xml or json input files.
 The simulator accordingly conducts a simulation which generates an output
 database in either SQL or HDF5 format which can be traversed by a separately
@@ -98,12 +99,13 @@ Unit tests cover code units like functions and are implemented using the
 GoogleTest framework. Integration and regression tests are performed by running
 sample simulations and verifying that results match predictions or previous
 results. A set of standard input files are run, then the output is inspected
-and compared via Nose.
+and compared via Nose, a unit testing framework in Python.
 
 Similarly, API changes must be documented as required by the Cyclus
 documentation CEP. The documentation for the current stable branch and the
 development branch are both provided on the Cyclus website using Doxygen and
-Sphinx.
+Sphinx, which are both automatic documentation systems that rely on the code 
+comments in the C++ and Python code, respectively.
 
 Finally, we use the Google C++ style guide to make our code as consistently
 formatted as possible.
