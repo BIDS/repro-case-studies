@@ -3,7 +3,7 @@
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
-My name is Daniela Ushizima, and much of my research work is in devising machine vision and pattern recognition algorithms as part of software tools for handling image-centric data, especially those arising from the Department of Energy imaging facilities. I am currently a [staff scientist](http://vis.lbl.gov/~daniela) at the Lawrence Berkeley National Laboratory and a [Data Science Fellow](https://bids.berkeley.edu/people/daniela-ushizima) for the Berkeley Institute for Data Science at the University of California, Berkeley. The case study I describe here illustrates the core steps in designing a machine vision algorithm to analyze a set of digital images and organize them according to the desired criteria. There are several image processing and analysis frameworks that encapsulate algorithms; this case study refers to ImageJ, a well-known image analysis tool.
+My name is Daniela Ushizima, and much of my research work is in devising machine vision and pattern recognition algorithms as part of software tools for handling image-centric data, especially those arising from the Department of Energy imaging facilities. I am currently a [Staff Scientist](http://vis.lbl.gov/~daniela) at the Lawrence Berkeley National Laboratory and a [Data Science Fellow](https://bids.berkeley.edu/people/daniela-ushizima) for the Berkeley Institute for Data Science at the University of California, Berkeley. The case study I describe here illustrates the core steps in designing a machine vision algorithm to analyze a set of digital images and organize them according to the desired criteria. There are several image processing and analysis frameworks that encapsulate algorithms; this case study refers to ImageJ, a well-known image analysis tool.
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
@@ -29,7 +29,7 @@ As part of the process, the software tool must detect the regions of the interes
 
 An important step of the data processing is keeping track of the *outputs*. The forth column lists four main outputs of the system: technical reports, scientific papers, documentation about the software tool and educational material about the science problem and algorithm developments. Although the diagram omits output of partial results, they are very common and useful  throughout the design of the analytic software tools.
 
-The fifth column shows the main ways in which *consumers* of the outputs will have access to the research discoveries. In the context of this case study, it indicates the main hubs of information distribution for the project.
+The fifth column shows the main ways in which *consumers* of the outputs will have access to the research discoveries, for example [Github](https://github.com/dani-lbnl/CRIC) and [websites](https://sites.google.com/site/cervicalcancercell/). In the context of this case study, it indicates the main hubs of information distribution for the project.
 
 
 ##### Pain points
