@@ -62,8 +62,10 @@ Much of what I knew I needed to learn on my own, then I met Software Carpentry m
 The major pitfalls to doing reproducible research in image analysis are (a) the use of very simple examples to illustrate applicability of the algorithms, (b) dependency of packages that are not freely available, and (c) absence of documentation that enables understanding how/why the data transformations occur.
 
 4) What do you view as the major incentives for doing reproducible research?
-The ability to replicate the work, reuse code for different applications, work in larger teams, and the potential for broader impact in the area. 
+The ability to replicate the work, reuse code for different applications, work in larger teams, and the potential for broader impact in the area.
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
+
 6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+Among the several options out there, [Software Carpentry](software-carpentry.org) is certainly one of the best resources and the free book [Making Software](http://deca.cuc.edu.cn/Community/cfs-filesystemfile.ashx/__key/CommunityServer.Components.PostAttachments/00.00.00.22.46/Oreilly.Making.Software.Oct.2010.pdf) by A. Oram and G. Wilson.
