@@ -15,11 +15,11 @@ In the context of this case study, the work will be computationally reproducible
 
 ##### Workflow narrative
 
-The workflow diagram follows a data model called SIPOC, which stands for suppliers, inputs, process, outputs, and customers, and correspond to the columns of the table. Here, we adapt SIPOC diagram to better represent our use-case, hence the first column is called sources and the final column repositories. The proposed workflow prioritizes the compartmentalization of different processing steps of the analysis system, and hides potential feedback loops that might occur.
+The workflow diagram follows a data model called SIPOC, which stands for suppliers, inputs, process, outputs, and customers, and correspond to the columns of the table. Here, we adapt SIPOC diagram to better represent our use-case, hence the first column is called sources and the final column represents repositories. The proposed workflow prioritizes the compartmentalization of different processing steps of the analysis system, and hides potential feedback loops that might occur.
 
 This diagram tells the story of work among doctors, pathologists, cytologists, and computer scientists, aiming to design algorithms for improving the analysis of biomedical images. Some of the tasks include increasing the number of fields under scrutiny, speed up cell counting and recognition, comparison among cells, quantitative description of samples, to name a few.
 
-Historically, this use-case begun with brainstorming among pathologists, physicist and software engineers on how to scale computer-aided analysis to the available large datasets of digital images, containing cervical cells. Communication and diagraming were fundamental to understand how to well characterize types of cells and foresee limitations imposed by the datasets, such as cell fragments, magnification and usable area within sample.
+Historically, this use-case begun with brainstorming among pathologists, physicist and software engineers on how to provide scalable computer-aided analysis to the available large datasets of digital images, containing cervical cells. Communication and diagraming were fundamental *sources* of information to understand how to well characterize types of cells and foresee limitations imposed by the datasets, such as cell fragments, magnification and usable area within sample.
 
 In order to develop analysis pathways, the team organized the datasets into three main *input* image sets: simulated, real and curated. A simulated image consists of several clipped real cells collated with different levels of overlapping, which facilitates algorithmic validation since the ground-truth is known a priori. A real image consists in a digital picture of a Pap smear slide, obtained at the light microscope -- these images often contain several types of cervical cells and others (e.g. bacteria, blood), and may be corrupted by noise and other artifacts, such as staining variations, dirt, etc.
 
@@ -29,7 +29,7 @@ As part of the process, the software tool must detect the regions of the interes
 
 An important step of the data processing is keeping track of the *outputs*. The forth column lists four main outputs of the system: technical reports, scientific papers, documentation about the software tool and educational material about the science problem and algorithm developments. Although the diagram omits output of partial results, they are very common and useful  throughout the design of the analytic software tools.
 
-The fifth column shows the main *consumers* of the outputs. In the context of this case study, it indicates the main hubs of information distribution about the project.
+The fifth column shows the main ways in which *consumers* of the outputs will have access to the research discoveries. In the context of this case study, it indicates the main hubs of information distribution for the project.
 
 
 ##### Pain points
