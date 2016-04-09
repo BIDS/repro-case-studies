@@ -46,7 +46,7 @@ The most reproducible part of this project has been the development of code alli
 ##### Key tools
 *If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
 
-An important tool has been ImageJ, a Java-based image processing software program, which was originally developed by Wayne Rasband within NIH circa 1997. Although most of the enclosed plug-ins focus on medical imaging, this framework has been widely used in other applications, such as material sciences.
+An important tool has been ImageJ, a Java-based image processing software program, which was originally developed by Wayne Rasband within NIH circa 1997. Although most of the ImageJ plug-ins focus on medical imaging, this framework has been widely used in other applications, such as material sciences.
 
 ##### General questions about reproducibility
 
@@ -74,4 +74,4 @@ While there are no general rules, some tools can only help one to reproduce work
 
 6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
 
-Among the several options out there, [Software Carpentry](software-carpentry.org) is certainly one of the best resources and the free book [Making Software](http://deca.cuc.edu.cn/Community/cfs-filesystemfile.ashx/__key/CommunityServer.Components.PostAttachments/00.00.00.22.46/Oreilly.Making.Software.Oct.2010.pdf) by A. Oram and G. Wilson.
+Among the several options out there, [Software Carpentry](software-carpentry.org) is certainly one of the best resources and the book [Making Software](http://deca.cuc.edu.cn/Community/cfs-filesystemfile.ashx/__key/CommunityServer.Components.PostAttachments/00.00.00.22.46/Oreilly.Making.Software.Oct.2010.pdf) by A. Oram and G. Wilson.
