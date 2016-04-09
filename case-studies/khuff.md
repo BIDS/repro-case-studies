@@ -120,6 +120,16 @@ metadata about the simulation. It contains:
 - the commit hash of the current version of the Cyclus code
 - and commit hashes for all necessary plugins retrieved from the Cyclus ecosystem.
 
+That database, containing both data and metadata can then be analyzed by the 
+user. When analyzing the databse, a choice is made by the user about how to 
+interact with the data. The Cyclus development team has provided a GUI and a 
+Go library (called CyAn) with which the database (in either SQL or HDF5 format) 
+can be accessed and brought into memory for vizualization and analysis. 
+Additionally, many user-developers have their own set of Python scripts that 
+can do this stage of tasks. Given the universal nature of these database 
+formats, most common scripting languages can be used to extract the data and 
+metadata efficiently, so many options exist. 
+
 In summary, the research workflow in this framework has the following
 steps :
 
