@@ -3,7 +3,7 @@
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
-My name is Daniela Ushizima, and much of my research work is in devising machine vision and pattern recognition algorithms as part of software tools for handling image-centric data, especially those arising from the Department of Energy imaging facilities. I am currently a staff scientist at the Lawrence Berkeley National Laboratory and a Data Science Fellow for the Berkeley Institute for Data Science at the University of California, Berkeley. The case study I describe here illustrates the core steps in designing a machine vision algorithm to analyze a set of digital images and organize them according to the desired criteria. There are several image processing and analysis frameworks that encapsulate algorithms; this case study refers to ImageJ, a well-known image analysis tool.
+My name is Daniela Ushizima, and much of my research work is in devising machine vision and pattern recognition algorithms as part of software tools for handling image-centric data, especially those arising from the Department of Energy imaging facilities. I am currently a [staff scientist](http://vis.lbl.gov/~daniela) at the Lawrence Berkeley National Laboratory and a [Data Science Fellow]() for the Berkeley Institute for Data Science at the University of California, Berkeley. The case study I describe here illustrates the core steps in designing a machine vision algorithm to analyze a set of digital images and organize them according to the desired criteria. There are several image processing and analysis frameworks that encapsulate algorithms; this case study refers to ImageJ, a well-known image analysis tool.
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
@@ -66,10 +66,11 @@ The major pitfalls to doing reproducible research in image analysis are (a) the 
 
 4) What do you view as the major incentives for doing reproducible research?
 
-The ability to replicate the work, reuse code for different applications, work in larger teams, and the potential for broader impact in the area.
+The major incentives for doing reproducible research are the ability to replicate the experiments later, to fix and/or reuse code for different applications, to easily work in larger teams, and the potential for broader impact in the area.
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
+While there are no general rules, some tools can only help one to reproduce work: (a) use version control, (b) practice [software quality assurance](https://en.wikipedia.org/wiki/Software_quality_assurance), (c) keep data samples.
 
 6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
 
