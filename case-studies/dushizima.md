@@ -53,19 +53,24 @@ An important tool has been ImageJ, a Java-based image processing software progra
 *Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
 
 1) Why do you think that reproducibility in your domain is important?
+
 Reproducibility is essential in quantitative microscopic because it is often associated to measurements and quality control.
 
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+
 Much of what I knew I needed to learn on my own, then I met Software Carpentry members and BIDS fellows. Lots of concepts came together more systematically particularly after attending Software Carpentry classes and becoming a instructor myself.
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+
 The major pitfalls to doing reproducible research in image analysis are (a) the use of very simple examples to illustrate applicability of the algorithms, (b) dependency of packages that are not freely available, and (c) absence of documentation that enables understanding how/why the data transformations occur.
 
 4) What do you view as the major incentives for doing reproducible research?
+
 The ability to replicate the work, reuse code for different applications, work in larger teams, and the potential for broader impact in the area.
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
 
 6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+
 Among the several options out there, [Software Carpentry](software-carpentry.org) is certainly one of the best resources and the free book [Making Software](http://deca.cuc.edu.cn/Community/cfs-filesystemfile.ashx/__key/CommunityServer.Components.PostAttachments/00.00.00.22.46/Oreilly.Making.Software.Oct.2010.pdf) by A. Oram and G. Wilson.
