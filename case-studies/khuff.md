@@ -1,8 +1,8 @@
-# Kathryn Huff
+# Developing an Open, Modular Simulation Framework for Nuclear Fuel Cycle Analysis
+
+Author: Kathryn Huff
 
 ## Reproducibility Case Study
-
-## Alpha Stage
 
 ### BACKGROUND
 
@@ -18,9 +18,16 @@ Improving the safety and sustainability of nuclear power requires improved
 nuclear reactor designs, fuel cycle strategies, and waste-disposal concepts.
 The systems are sufficiently complex that breakthrough advancements may emerge
 when modern data methodologies are applied to their simulation. In particular,
-faithful assessments of nuclear reactor response in hypothetical accident
-scenarios require high-fidelity, tightly coupled, time-dependent simulation of
-neutronics, thermal hydraulics, and structural performance.
+faithful assessments of potential nuclear fuel cycles require dynamic, discrete 
+facility, discrete-material simulations of the mining, milling, transmutation, 
+reprocessing, and disposal of nuclear materials as well as the production of 
+energy and movement of capital. 
+
+This case study is an overview of the workflow behind the Cyclus nuclear fuel 
+cycle simulation framework -- a tool for exactly that kind of modeling, 
+simulation, and analysis. The workflow described used to create a software tool 
+that other nuclear engineers can use easily, modify quickly, and contribute to 
+when they need to customize behavior or model a different technology.
 
 **2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.**
 
@@ -70,7 +77,8 @@ milling, fabrication, transmutation, and disposal of nuclear material in the
 _nuclear fuel cycle_.
 
 Cyclus is a C++ code base. The configuration and build system is created from a
-combination of Python and CMake and supports both Linux and MacOS operating
+combination of Python and CMake (a crossplatform automatic makefile 
+configuration system) and supports both Linux and MacOS operating
 systems. Our input validation library accepts either xml or json input files.
 The simulator accordingly conducts a simulation which generates an output
 database in either SQL or HDF5 format which can be traversed by a separately
@@ -91,12 +99,13 @@ Unit tests cover code units like functions and are implemented using the
 GoogleTest framework. Integration and regression tests are performed by running
 sample simulations and verifying that results match predictions or previous
 results. A set of standard input files are run, then the output is inspected
-and compared via Nose.
+and compared via Nose, a unit testing framework in Python.
 
 Similarly, API changes must be documented as required by the Cyclus
 documentation CEP. The documentation for the current stable branch and the
 development branch are both provided on the Cyclus website using Doxygen and
-Sphinx.
+Sphinx, which are both automatic documentation systems that rely on the code 
+comments in the C++ and Python code, respectively.
 
 Finally, we use the Google C++ style guide to make our code as consistently
 formatted as possible.
@@ -111,6 +120,16 @@ metadata about the simulation. It contains:
 - the commit hash of the current version of the Cyclus code
 - and commit hashes for all necessary plugins retrieved from the Cyclus ecosystem.
 
+That database, containing both data and metadata can then be analyzed by the 
+user. When analyzing the databse, a choice is made by the user about how to 
+interact with the data. The Cyclus development team has provided a GUI and a 
+Go library (called CyAn) with which the database (in either SQL or HDF5 format) 
+can be accessed and brought into memory for vizualization and analysis. 
+Additionally, many user-developers have their own set of Python scripts that 
+can do this stage of tasks. Given the universal nature of these database 
+formats, most common scripting languages can be used to extract the data and 
+metadata efficiently, so many options exist. 
+
 In summary, the research workflow in this framework has the following
 steps :
 
@@ -121,7 +140,7 @@ steps :
 - A simulation is defined in json or xml
 - The input file is run and an HDF5 or SQL database results
 - The database is analyzed with a separate GUI, python scripts, or a Go library
-- A collaborative paper is created in LaTeX on github
+- A collaborative paper is created in LaTeX on GitHub
 - All input files contributing to the analysis are contained in the repository holding the document
 
 
@@ -149,7 +168,7 @@ scripts that build, install, and test Cyclus. For this, we use a set of servers
 at the University of Wisconsin called the BatLab. Unfortunately, BatLab has a
 few problems. Because of the proprietary nature of MacOSX, it cannot run truly
 MacOSX instances. It runs, instead, darwin servers that mimic the behavior of
-MacOSX. For this reason, idosyncratic failures apparent in Mavericks and
+MacOSX. For this reason, idiosyncratic failures apparent in Mavericks and
 Yosemite but not Darwin cannot be caught before entering the code-base.
 Additionally, BatLab is somewhat unpredictable and inflexible. Since the
 behavior of BatLab undergoes a lot of churn, our continuous integration suite
@@ -162,19 +181,19 @@ The [Cyclus Enhancement Proposal (CEP)
 strategy](http://fuelcycle.org/cep/cep0.html) was a bright workflow choice
 that was inspired by the analogous strategy in the Python community (PEPs). I
 recommend this to any research group that values strategic planning, consensus,
-and thoughtful development. A discussion of our workflow around these proposals
-[here](http://fuelcycle.org/cep/cep1.html).
+and thoughtful development. A discussion of our workflow around these 
+proposals can be found [here](http://fuelcycle.org/cep/cep1.html).
 
 Fundamentally, a CEP is :
 
 > a design document providing information to the Cyclus community, or describing a new
-> feature or process for Cyclus and related prjects in its ecosystem. The CEP
+> feature or process for Cyclus and related projects in its ecosystem. The CEP
 > should provide a concise technical specification of the feature and a rationale
 > for the feature.
 
 CEPs document major new features, community discussions, and documentation of theory or
 design not captured by the in-code documentation. Because they are maintained
-alongside the webiste source code in a version controlled repository,
+alongside the website source code in a version controlled repository,
 provenance of the discussion surrounding their acceptance is maintained.
 
 ### TOOLBOX [OPTIONAL]
