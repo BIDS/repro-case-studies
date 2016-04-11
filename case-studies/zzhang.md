@@ -80,13 +80,17 @@ It is a fixed format with the image metadata as text and the actual image as bin
 SEP (Source Extraction Python) is the software that detects light source objects from images. 
 It rewrites the SEXtractor software by exposing primitive functionalities through a library interface with both C and Python.
 
-Spark is a popular distributed computing framework in cloud computing. It offers implicit parallelism and the lineage-based
+Apache Spark is a popular distributed computing framework in cloud computing. It offers implicit parallelism and the lineage-based
 fault tolerance through the Resilient Distributed Dataset (RDD) abstraction. Spark is built using the Scala programming language
 which compiles a program that is executable on Java Virtual Machine (JVM). 
 
 JNI (Java Native Interface) provides a method to call existing C libraries inside a Java/Scala program. 
 C and Java/Scala data structures can be used to exchange information between the two runtimes.
 
+Thread safety is an operating system concept that describes the concurrent execution of multiple threads safely manipulating
+shared data structures. 
+
+###### Narrative
 The process begins with team brainstorming of how modern computer software and hardware can accelerate the astronomy image processing pipeline. This requires a wide and also deep understanding of the state-of-the-art research and technical solution. In this research, we gather domain expertise (astronomers), cloud computing expertise and high performance computing expertise. We review the existing work and we think using cloud computing software-hardware stack can improve the overall application performance, but we have no idea by how much it can improve. The research is an exploratory process to implement the idea and quantitatively measure the improvements if there is any.
 
 The Team Brainstorming and Merit Evaluation phase happened back and forth as we keep asking why are we building such a project.
@@ -101,7 +105,7 @@ As we progress with the code, we notice a few other technical barriers:
 4. Thread safety, neither the jFITS library nor the SEP library is thread safe
 5. Load imbalance, scheduler tuning for this particular workload
 
-For each of these technical barriers, we seek solutions for them. The solutions come from three sources: colleague expertise, google, and documents. By isolating the barriers, we were able to focus on a single barrier each time and can quickly verify the solution. The resulting code is stored in Github, and later merged into the project. This process takes about two weeks. I was in charge of the coding, and Kyle, Frank, and Evan provide technical advise.
+For each of these technical barriers, we seek solutions for them. The solutions come from three sources: colleague expertise, google, and documents. By isolating the barriers, we were able to focus on a single barrier each time and can quickly verify the solution. The resulting code is stored in Github, and later merged into the project. This process takes about two weeks. 
 
 The Software Coding and Testing phase takes about three weeks, we managed to integrate the SEP library through Java Native Interface with Spark, thus finally implement Kira. I implemented the code, and wrote the documents to make it convenient for my self to repeatedly run experiments. In the meantime, I prepared four datasets for performance measurements. A 24MB (4 files) dataset for sanity check, a 12GB (2,310 files) dataset for small scale test, a 65GB (111,50 files) for medium scale test and a 1TB (176,938 files) for large scale tests. The datasets were initially stored in NERSC shared file system, later I made a mirroring on EC2 S3 service, as most experiments were run on EC2 where S3 has a better transfer bandwidth to.
 
