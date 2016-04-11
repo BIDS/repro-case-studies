@@ -97,12 +97,17 @@ The Team Brainstorming and Merit Evaluation phase happened back and forth as we 
 Detail questions include: What are the existing solutions? How does the new project make difference in terms of performance and usability? Who are the potential users? This procedure lasts for about two weeks, all members of the Kira project are involved in the discussion. The pros and cons of each existing solution was documented, and later used in the paper.
 
 The System Design phase lays out the programming interface of Kira, the modules and interactions between the modules. In this phase, we also identify some technical barriers of this project. I am listing them below, feel free to contact me if this is hard to understand:
+
 1. Kira I/O, how to make Spark read FITS images
+
 2. Calling C library in Spark, how to make Spark work with existing C code in the SEP library
+
 3. Setting up compilation environment, set Maven to automatically build Kira
 
 As we progress with the code, we notice a few other technical barriers:
+
 4. Thread safety, neither the jFITS library nor the SEP library is thread safe
+
 5. Load imbalance, scheduler tuning for this particular workload
 
 For each of these technical barriers, we seek solutions for them. The solutions come from three sources: colleague expertise, google, and documents. By isolating the barriers, we were able to focus on a single barrier each time and can quickly verify the solution. The resulting code is stored in Github, and later merged into the project. This process takes about two weeks. 
