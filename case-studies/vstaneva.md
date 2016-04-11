@@ -1,11 +1,12 @@
-##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
+##### Title
+Developing and Testing Stochastic Filtering Methods for Tracking Objects in Videos.
 
+##### Introduction
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 
-My name is Valentina Staneva and I am an applied mathematician who develops methods to extract information from data (most of my experience has been working with image data). I am currently a data scientist at the eScience Institute at University of Washington. 
+My name is Valentina Staneva and I work as a data scientist at the eScience Institute at University of Washington. I am an applied mathematician who develops methods to extract information from diverse data sets. Most of my experience is in the domain of image processing and its biomedical applications. This case study describes the workflow of a particular project whose goal was to develop and test new algorithms for tracking objects in videos which aim to preserve the original structure of the objects. This research was done while I was a graduate student at the Center for Imaging Science, at Johns Hopkins University, and was motivated by the task of tracking heart motion in cardiac images. I believe it reflects a typical experience of an applied mathematicians working on biomedical imaging problems.  
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
@@ -15,18 +16,15 @@ My name is Valentina Staneva and I am an applied mathematician who develops meth
 
 (2) "Approximately reproducible" - when a result or similar performance can be generated with similar or different methods than the one proposed on the same or possibly slightly different data. Often in science, the goal is to test a hypothesis and the methods to achieve this do not matter, it is actually better if the same hypothesis is supported through different approaches. Further, the data on which the study was performed might never be observed again, so it is not so important to reproduce the results on these data, but it is important to produce similar results on similar data. We are interested in the robustness of the methods and the conclusions, and a better term may be "robustly reproducible".
 
+This case study directly addresses the first type of reproducibility, but it explores also a bit of the second interpretation.
 
 ##### Workflow diagram
+[Diagram](vstaneva.pdf)
 
 
+##### Workflow narrative
 
-##### Workflow narrative:
-
-I will describe the workflow of a project I did in grad school. It directly addresses the first type of reproducibility, but it explores also a bit of the second interpretation. 
-
-
-
-This work follows more or less standard flow for problems in my field: motivated by an existing algorithm, we aimed to extend it to processing sequences of images (as opposed to a single image). Usually the process involves experimenting with different models of the data and different inference algorithms (intertwined with discussions with my advisor and literature reviews). The cross product of these models and algorithms can be tested on three main types of data sets:
+This work follows a typical flow for problems in my field: motivated by an existing algorithm, we aimed to extend it to processing sequences of images (as opposed to a single image). Usually the process involves experimenting with different models of the data and different inference algorithms (intertwined with discussions with my advisor and literature reviews). The various combinations of these models and algorithms can be tested on three main types of data sets:
 
 - a data set simulated from the assumed model: since the data set is coming from the "correct model", this experiment is mainly testing the performance of the inference algorithms
 
@@ -34,25 +32,31 @@ This work follows more or less standard flow for problems in my field: motivated
 
 - a 'real' data set: a video of a moving object; this tests the applicability of this methodology in practice
 
-This results in exploring quite a lot of different setups and most of the research time is spent at this stage. The work was performed on an account on a university server, which was sequentially backed up. I also used Subversion for version control and stored my files in a Dropbox folder (which has its own version control). Luckily, I never lost a file, even when our server got hacked.
+This results in exploring quite a lot of different setups and most of the research time is spent at this stage (it can take from weeks to several months to implement and test a specific formulation). The work was performed on an account on a university server, which was sequentially backed up. I also used Subversion for version control and stored my files in a Dropbox folder (which has its own version control). Luckily, I never lost a file, even when our server got hacked.
 
-In general the evaluation of these algorithms on real data is difficult. There are no standard testing data sets: and it is hard to design ones as different image sequences describe different processes, and some algorithms perform well in some situations and poorly in other. One usually considers a range of typical tracking hurdles and checks whether a given algorithm can overcome them. Since there is no one final metric to submit this requires storing all the results from all the experiments. In the end I saved all the code, data, experiments and outputs in a folder, which one can use to regenerate the results (on Linux with Matlab: on Windows one would only need to change the slashes in the path directories). 
+In general the evaluation of these algorithms on real data is difficult. There are no standard testing data sets: and it is hard to design ones as different image sequences describe different processes, and some algorithms perform well in some situations and poorly in other. One usually considers a range of typical tracking hurdles and checks whether a given algorithm can overcome them. Since there is no one final metric to submit this requires storing all the results from all the experiments. In the end I saved all the code (written in MATLAB), data, and experiments in a folder, which provides everything necessary to regenerate the results in our manuscript with a few simple commands. When reviewers requested an additional plot to be included in our article, I could easily obtain it from the original data. We also selected a journal which does not prevent us from posting the preprint of the article elsewhere and stored all the supplementary materials on Github. 
 
-The workflow also contains a parallel path in which one studies the mathematical properties of the models and algorithms. The advantage of such an approach is that you can sometimes guarantee the performance (at least on simulated data) even without implementing the algorithms, which makes reproducibility of mathematical research quite easy!
+The workflow also contains a parallel path in which one studies the mathematical properties of the models and algorithms. For example, we aimed to develop algorithms which preserve the topology of the tracked objects, and we proved that our framework ensures that, thus eliminating the need to test this property in multiple cases. Sometimes it is possible to guarantee the performance of algorithms even without implementing them, which makes reproducibility of mathematical research quite easy!
 
 
 ##### Pain points
 *Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them?*
 
 
-1) Privacy: data issues - some of the motivation for this project was driven by the need to process a specific data set of cardiac data and do statistical analysis on the obtained results. I worked directly on processing this data set but during the process there was an a problem and I was advised not to use this data set (even though it was anonymized). I resorted to searching for a public cardiac data set which turned out extremely difficult: a website which aimed to maintain a public database of cardiac images was permanently down as the creator left the field. One good source for public biomedical datasets was MICCAI conference challenges: they contain datasets on which to assess methods for solving very specific problems, so sometimes the datasets were not complete. The data set I obtained for my testing did not contain ground truth relevant to my problem.
+1) Privacy: data issues - some of the motivation for this project was driven by the need to process a specific cardiac data set and perform statistical analysis on the obtained results. I initially tested the algorithms on this data set, however, eventually I was not allowed to use it in my publication due to some privacy concerns. I resorted to searching for a public cardiac data set which turned out extremely difficult to find: a website which aimed to maintain a public database of cardiac images was permanently down as the creator left the field. One good source for public biomedical datasets is [MICCAI](http://www.miccai.org/) conference challenges: they contain datasets on which to assess methods for solving very specific problems. The drawback is that sometimes the data sets are not complete, as they are designed to solve a particular challenge: for example, the data set I obtained from an image segmentation challenge did not contain ground truth relevant to the tracking problem.
 
-4) Volume: (Storage) since I worked with processing video sequences, an issue was simply arising from the size of the produced outputs;  If I generate many experiments: which should be done when dealing with MCMC simulation, I had to store many videos. Since I did not have a ground truth, I could not store just some small measure of mismatch instead of the whole sequence. Github's does not accept files larger than 100MB. This caused difficulty when trying to upload even only the input data to the repository. One of the images sequences was 600MB so it could not be uploaded. Waiting on Github to increase the limit to 1GB in the coming months. 
+2) Volume (Storage): when processing video sequences, an issue simply arises from the size of the produced outputs. If I generate many experiments (which is inevitable when performing MCMC simulation) I have to store many videos. Without a ground truth, I could not store just a small measure of mismatch instead of the whole sequence. Github's policy does not accept files larger than 100MB. This caused difficulty when trying to upload even only the input data to the repository. This makes it hard to keep code and data together and easily accessible.
 
-5) Randomness: working with Monte Carlo simulations results in different outputs every time the algorithms are applied. This requires the extra step of forcing the random number generators producing the same sequence of random numbers. This procedure is not so simple when parallelization is involved: MATLAB (and similar scripting languages) usually do not have control over the order in which the separate threads are started and that results in extra randomness in the output. One solution is to generate all random sequences that would be needed in the parallel threads in advance, but this requires modification of the programs themselves. Working with random outputs makes it hard to generate unit tests: we only have asymptotic results of what the outputs should be, so it is hard to set the confidence intervals for the outputs even with simulated data. 
+3) Randomness: working with Monte Carlo simulations results in different outputs every time the algorithms are applied. This requires the extra step of forcing the random number generators to produce the same sequence of random numbers. This procedure is not so simple when parallelization is involved: MATLAB (and similar scripting languages) usually do not have control over the order in which the separate threads are started and that results in extra randomness in the output. Further, attempting to generate multiple random streams simultaneously results in producing identical sequences of pseudo-random numbers (the seed is based on the current CPU time) which corrupts the Monte Carlo algorithm. One solution is to generate all random sequences that would be needed in the parallel threads in advance, but this requires modification of the programs themselves. Working with random outputs also makes it hard to generate unit tests: we only have asymptotic results of what the outputs should be, so it is difficult to set the confidence intervals for the outputs even with simulated data.
 
-6) Backup: I was using Subversion for version control of this project. I wanted to use the integration with the Nautilus file manager that Subversion was providing. It turned out it was buggy (it was a new feature) and not all commits and adds were recorded through the graphical interfaces: quite dangerous!
+4) Backup: I used Subversion for version control of this project. I wanted to use the integration with the Nautilus file manager that Subversion was providing. It turned out it was buggy (it was a new feature at that time) and not all commits were recorded through the graphical interface: quite dangerous! I learned that it is more reliable to use explicit terminal commands with version control systems.
 
+
+##### Key Benefits
+
+One of the main advantages of this workflow is that all the code was written in one language without resorting to external libraries and toolboxes. Usually core language functionality changes much more rarely than add-on packages, which makes software better sustainable in the long run and across platforms.
+
+Our approach of encoding certain mathematical properties into the developed algorithms also makes the research more robustly reproducible under deviations of the original set-up.
 
 
 ##### General questions about reproducibility
@@ -65,15 +69,15 @@ I find two main reasons for the importance of reproducibility in my domain:
 
 - personal: working with image data is often quite involved, and one does not want to do things twice, but it is often necessary, and in that case it is better to have an automated process to repeat experiments.
 
-- public: there is overabundance of algorithms and studies but it is hard to use them in practice, because there is no simple way to reproduce the results (one usually needs to reimplement the algorithms or redo the studies) So if one wants their research to be useful outside their own group, they should first ensure it is reproducible.
+- public: there is overabundance of algorithms and studies but it is hard to use them in practice, because there is no simple way to reproduce the results (one usually needs to reimplement the algorithms or redo the studies). So if one wants their research to be useful outside their own group, they should first ensure it is reproducible.
 
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
-I have learned by myself. I believe some short reproducibility workshops would have improved my experience substationally (for example, learning about git, virtual environments and light virtual containers). 
+I have been learning by myself. I believe some short reproducibility workshops would have improved my experience substantially (for example, learning about git/Github, virtual environments and light virtual containers).
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
-Working with biomedical data always causes privacy issues and storage issues. Another problem which I did not encounter but I know is persistent in the field is the use of too many external software packages to preprocess the data (some of them are supported only by specific Operating Systems). This makes hard to automate the workflow. 
+Working with biomedical data one often faces privacy and storage challenges. Another problem which I did not encounter but I know is persistent in the field is the use of too many external software packages to preprocess the data: some of them are supported only by specific operating systems, or require manual operation. This makes it challenging to automate the workflow. In an attempt to improve performance on large data sets, researchers often use elaborate C++ programs which are hard to interpret and extend.
 
 
 4) What do you view as the major incentives for doing reproducible research?
@@ -95,12 +99,3 @@ https://github.com/Reproducible-Science-Curriculum
 
 Coursera Class:
 https://www.coursera.org/course/repdata
-
-
-
-
-
-
-
-
-
