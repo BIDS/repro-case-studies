@@ -93,6 +93,8 @@ Amazon S3 is a data storage service provided by Amazon. Users can host there dat
 
 NERSC (National Energy Research Scientific Computing Center) is a high performance computing facility operated by Lawrence Berkeley National Lab. It hosts a few supercomputers and clusters.
 
+SDSS (Sloan Digital Sky Survey) is a large scale sky survey, its data is publicly available online.
+
 Thread safety is an operating system concept that describes the concurrent execution of multiple threads safely manipulating
 shared data structures. 
 
