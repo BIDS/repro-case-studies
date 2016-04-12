@@ -87,6 +87,12 @@ which compiles a program that is executable on Java Virtual Machine (JVM).
 JNI (Java Native Interface) provides a method to call existing C libraries inside a Java/Scala program. 
 C and Java/Scala data structures can be used to exchange information between the two runtimes.
 
+Amazon EC2 (Elastic Compute Cloud) is a public cloud service provided by Amazon. Users can request a number of compute nodes with various hardware and software combination.
+
+Amazon S3 is a data storage service provided by Amazon. Users can host there dataset on S3.
+
+NERSC (National Energy Research Scientific Computing Center) is a high performance computing facility operated by Lawrence Berkeley National Lab. It hosts a few supercomputers and clusters.
+
 Thread safety is an operating system concept that describes the concurrent execution of multiple threads safely manipulating
 shared data structures. 
 
