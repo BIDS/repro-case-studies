@@ -27,18 +27,18 @@ During this process I also document any data cleaning steps I'll need to underta
 I simultaneously start writing code to clean my data using a scripted workflow which also involves mostly R. I sometimes use a bash script or two to pre-process the data using old unix tools like `sed` and `awk` but with recent developments in the R toolkit (`data.table`, `dplyr`, `tidyr`, and `rvest`) I rely less and less on my bash scripts. These scripts are called inside a Make file, which allows me to generate my cleaned datasets at any time with a simple command line call e.g. `make clean_data`. At this time I also start the process of creating a separate library for the project to capture the right versions of my tool dependencies, such that further updates to my computer don't affect the reproducibility of my work. In the case of `R`, I use a library called `packrat` to accomplish this. Once my data are cleaned, I deposit them back at the same identifier on the persistent data repository and include the DOI in the text of my paper.
 
 The data analysis and modeling steps vary based on a project to project basis as some involve simulations on a cluster. For smaller projects, a handful of scripts accomplish this process. If any of my code is reusable in more than one step, I capture these into common functions, and sometimes convert this into a separate package. This allows me to further modularize my code.
-For projects that involve simulations on clusters, I create scripts that work on smaller examples for local testing, with full version that run on HPC and write out my results.
+For projects that involve simulations on clusters, I create scripts that work on smaller examples for local testing, with full version that run on high performance clusters (HPC) and write out my results to disk.
 
-Somewhere along the way, I also begin a Rmarkdown file, i.e. my manuscript, which is merely a markdown file with embedded R code captured inside code fences with some metadata. In addition to including small snippets of code, I am also able to source in larger chunks of code from my scripts without cluttering my document. The manuscript is also rendered from my Makefile frequently. I also include additional code to turn the `Rmarkdown` → `markdown` → `PDF` (using `Pandoc`), which gives me a sense for the how the final manuscript might look line. All of the code, figures, and raw/rendered markdown files are committed to my manuscript's GitHub repository. I (git)ignore large intermediate files that could easily be generated again in the future. As an open scientist, I leave the manuscript publicly accessible in my (or collaborators') GitHub repositories. GitHub now renders both the PDF, and also both the unparsed markdown (RMarkdown) and the markdown files on the browser, allowing anyone to review my work in progress. 
+Somewhere along the way, I also begin a Rmarkdown file, i.e. my manuscript, which is merely a markdown file with embedded R code captured inside code fences with some metadata. In addition to including small snippets of code, I am also able to source in larger chunks of code from my scripts without cluttering my document. The manuscript is also rendered from my Makefile frequently. I also include additional code to turn the `Rmarkdown` → `markdown` → `PDF` (using `Pandoc`), which gives me a sense for the how the final manuscript might look line. All of the code, figures, and raw/rendered markdown files are committed to my manuscript's GitHub repository. I have configured git to ignore large intermediate files that could easily be generated again in the future. As a researcher who practices open science, I leave the manuscript publicly accessible in my (or collaborators') GitHub repositories. GitHub now renders both the PDF, and also both the unparsed markdown (RMarkdown) and the markdown files on the browser, allowing anyone to review my work in progress. 
 
-For citations, I use the `knitcitations` R package to embed DOIs into my text, which are automatically rendered into full parsed citations and a bibliography during the Make process.
+For citations, I use the `knitcitations` R package to embed DOIs into my text, which are automatically rendered into full parsed citations and a bibliography during the Make process. For projects that cite content such as blog posts, I rely on Mendeley's bibliography rather than retrieving citations from Crossref using `knitcitations`.
 
 
 ##### Pain points
 
 My two biggest pain points are black box data, and unscripted steps. Despite my best efforts, some steps (especially when working with novice programmer collaborators) are done using proprietary software and these are hard to automate. During various times I have received old versions because someone forgot to manually repeat a step.
 
-In an ideal world, all my data would be a few simple queries away, allowing me to write concise scripts to retrieve the raw data before analysis. In reality, my data are a hodge podge of manually entered data, sensor derived data (often bulk downloads after a sign up process), and some data retrieved via APIs. I try to ease this process by depositing all of my raw data into either institutional or other repositories so that others can replicate my research.
+In an ideal world, all my data would be a few simple queries away, allowing me to write concise scripts to retrieve the raw data before analysis. In reality, my data are a hodge podge of manually entered data, sensor derived data (often bulk downloads after a sign up process), and some data retrieved via application programming interfaces (API). I try to ease this process by depositing all of my raw data into either institutional or other repositories so that others can replicate my research.
 
 
 ##### Key benefits
@@ -47,6 +47,6 @@ The key benefits are that someone could clone my work and with the right system 
 ##### Key tools 
 
 I've outlined my major tools inline but briefly:
-Programming tools: R, sed, awk, Make, Git, Pandoc
-Services: GitHub, Zenodo, figshare, crossref, Mendeley
+Programming tools: R, Make, Git, Pandoc
+Services: GitHub, Zenodo, figshare, Mendeley
 
