@@ -1,3 +1,6 @@
+##### Title
+Reproducible Workflows For Understanding Large Scale Ecological Effects Of Climate Change
+
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
 
