@@ -1,13 +1,24 @@
+#Enabling Astronomy Image Processing with Cloud Computing using Apache Spark
+
+Author: Zhao Zhang
+
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
-My name is Zhao Zhang, and my area of research is computer science with a concentration on apply computer systems to support scientific applications. The workflow I describe is the process of building Kira, a distributed astronomy image processing pipeline in the cloud environment. We use the SEP library for domain computation, Apache Spark for task coordination and I/O, Apache HDFS for persistent storage.
+I am Zhao Zhang, a joint postdoctoral researcher at AMPLab and Berkeley Institute for Data Science, University of California, Berkeley. 
+The theme of my research is to enable data-driven science with computer systems.
+
+This case study describes the process of building Kira, a distributed astronomy image processing pipeline in the cloud environment. 
+The idea of the Kira project is to explore the applicability of cloud computing based software stack in supporting scientific applications.
+Specifically, we use the SEP (Source Extraction Python) library for domain computation.
+We choose Apache Spark and Hadoop to build the infrastructure of distributed processing and data storage.
+
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
-In the context of my case study, reproducibility has several levels of meanings. The very baseline is that users can compile the source code and pass the tests. Secondly, users should be able to configure the computer cluster so the can repeat the performance in the documents. Since it is impossible for them to repeat the exact number for every single run, a statistical repeat should be fine (average performance with bounded variation). Generally for computer system research that involves data, a public availale data source is necessary for the performance to be reproducible.
+In the context of my case study, reproducibility has several levels of meanings. The very baseline is that users can compile the source code and pass the tests. Secondly, users should be able to configure the computer cluster so the can reproduce the performance in the documents. Since it is impossible to reproduce the exact performance measurement for every single run, a statistical repetition should be fine (average performance with bounded variation). Generally for computer system research that involves data, a public available data source is necessary for the performance to be reproducible.
 
 ##### Workflow diagram
 
@@ -20,7 +31,7 @@ We use Latex and Github repository to keep the system design, it is basically a 
 
 We use a private Github repository to keep track of solutions for technical barriers such as I/O processing, Spark interaction with C program, Spark system parameter configurations and many others.
 
-The whole system is built with multiple programming languages and tools. At the programming language level, we use Scala, Java, and C. At the system level, we use Spark for task coordination, HDFS for persistent storage, SEP library for actual computation.
+The whole system is built with multiple programming languages and tools. At the programming language level, we use Scala, Java, Python, Bash, and C. At the system level, we use Spark for task coordination, HDFS for persistent storage, SEP library for actual computation.
 
 The source code of the project is kept in a public Github repository for open source purpose. 
 
@@ -60,21 +71,54 @@ The paper draft is kept in a private Github repository.
 
 ##### Workflow narrative
 
-The process begins with team brainstorming of how modern computer software and hardware can accelerate the astronomy image processing pipeline. This requires a wide and also deep understanding of the state-of-the-art research and technical solution. In this research, we gather domain expertise (astronomers), cloud computing expertise and high performance computing expertise. We review the existing work and we think using cloud computing software-hardware stack can improve the overall application performance, but we have no idea how much it can improve. The research is an exploratory process to implement the idea and quantitatively measure the improvements if there is any.
+###### Term Definition
+Before explaining the details of the diagram, I will first briefly review the software and systems that are used in this case study.
+
+FITS (Flexible Image Transport System) is a widely adopted image format in the astronomy and cosmology community.
+It is a fixed format with the image metadata as text and the actual image as binary format.
+
+SEP (Source Extraction Python) is the software that detects light source objects from images. 
+It rewrites the SEXtractor software by exposing primitive functionalities through a library interface with both C and Python.
+
+Apache Spark is a popular distributed computing framework in cloud computing. It offers implicit parallelism and the lineage-based
+fault tolerance through the Resilient Distributed Dataset (RDD) abstraction. Spark is built using the Scala programming language
+which compiles a program that is executable on Java Virtual Machine (JVM). 
+
+JNI (Java Native Interface) provides a method to call existing C libraries inside a Java/Scala program. 
+C and Java/Scala data structures can be used to exchange information between the two runtimes.
+
+Amazon EC2 (Elastic Compute Cloud) is a public cloud service provided by Amazon. Users can request a number of compute nodes with various hardware and software combination.
+
+Amazon S3 is a data storage service provided by Amazon. Users can host there dataset on S3.
+
+NERSC (National Energy Research Scientific Computing Center) is a high performance computing facility operated by Lawrence Berkeley National Lab. It hosts a few supercomputers and clusters.
+
+SDSS (Sloan Digital Sky Survey) is a large scale sky survey, its data is publicly available online.
+
+Thread safety is an operating system concept that describes the concurrent execution of multiple threads safely manipulating
+shared data structures. 
+
+###### Narrative
+The process begins with team brainstorming of how modern computer software and hardware can accelerate the astronomy image processing pipeline. This requires a wide and also deep understanding of the state-of-the-art research and technical solution. In this research, we gather domain expertise (astronomers), cloud computing expertise and high performance computing expertise. We review the existing work and we think using cloud computing software-hardware stack can improve the overall application performance, but we have no idea by how much it can improve. The research is an exploratory process to implement the idea and quantitatively measure the improvements if there is any.
 
 The Team Brainstorming and Merit Evaluation phase happened back and forth as we keep asking why are we building such a project.
 Detail questions include: What are the existing solutions? How does the new project make difference in terms of performance and usability? Who are the potential users? This procedure lasts for about two weeks, all members of the Kira project are involved in the discussion. The pros and cons of each existing solution was documented, and later used in the paper.
 
 The System Design phase lays out the programming interface of Kira, the modules and interactions between the modules. In this phase, we also identify some technical barriers of this project. I am listing them below, feel free to contact me if this is hard to understand:
+
 1. Kira I/O, how to make Spark read FITS images
+
 2. Calling C library in Spark, how to make Spark work with existing C code in the SEP library
+
 3. Setting up compilation environment, set Maven to automatically build Kira
 
 As we progress with the code, we notice a few other technical barriers:
+
 4. Thread safety, neither the jFITS library nor the SEP library is thread safe
+
 5. Load imbalance, scheduler tuning for this particular workload
 
-For each of these technical barriers, we seek solutions for them. The solutions come from three sources: colleague expertise, google, and documents. By isolating the barriers, we were able to focus on a single barrier each time and can quickly verify the solution. The resulting code is stored in Github, and later merged into the project. This process takes about two weeks. I was in charge of the coding, and Kyle, Frank, and Evan provide technical advise.
+For each of these technical barriers, we seek solutions for them. The solutions come from three sources: colleague expertise, google, and documents. By isolating the barriers, we were able to focus on a single barrier each time and can quickly verify the solution. The resulting code is stored in Github, and later merged into the project. This process takes about two weeks. 
 
 The Software Coding and Testing phase takes about three weeks, we managed to integrate the SEP library through Java Native Interface with Spark, thus finally implement Kira. I implemented the code, and wrote the documents to make it convenient for my self to repeatedly run experiments. In the meantime, I prepared four datasets for performance measurements. A 24MB (4 files) dataset for sanity check, a 12GB (2,310 files) dataset for small scale test, a 65GB (111,50 files) for medium scale test and a 1TB (176,938 files) for large scale tests. The datasets were initially stored in NERSC shared file system, later I made a mirroring on EC2 S3 service, as most experiments were run on EC2 where S3 has a better transfer bandwidth to.
 
