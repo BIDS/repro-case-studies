@@ -1,3 +1,6 @@
+##### Title
+Detection and classification of cervical cells
+
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
 
