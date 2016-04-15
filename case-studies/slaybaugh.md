@@ -86,28 +86,49 @@ Thus if you have access to the code and the repository with tests, scripts, and 
 
 ##### Pain points
 There are a few pain points: 
-- Getting the documentation right. 
+An annoying one is getting the documentation right. 
 It seems like just using Doxygen is not enough.
 To get something that really is user-manual quality you have to write a lot of things twice, just slightly differently.
 I try to reuse as much as I can, but if things are replicated there is the challenge of maintaining consistency.
-- Ensuring that the version of what is released in the end is actually reproducible.
-This requires the extra step of documenting which version of the code was used (the results should not change in the future, but they might).
+
+A tough one is ensuring that the version of what is released in the end is actually reproducible.
+This requires the extra step of documenting which version of the code was used
+(the results should not change in the future, but it is better to have the
+version clearly written just in case). In principle one can figure this out
+from the repositories, but if everything isn't stored together that becomes
+more challenging. 
 Providing directions about how to run everything and which versions of third party libraries were used is also some extra work. 
-- A final pain point is re-implementing the algorithm from the simple case to the complex case, since the simple code is never really used for anything.
-However, I consider this to be a pretty small issue and I do not actually mind it.
+
+A final pain point is re-implementing the algorithm from the simple case to the complex case, since the simple code is never really used for anything.
+However, this is a pretty small issue since the toy code didn't take long to
+develop. 
 
 
 ##### Key benefits
-The largest key benefit is having confidence in the validity of the data that you publish.
-I think everyone should have a unit testing system.
-I just don't get how anyone can have confidence that they're code is correct without one. 
-The ability to actually rerun a test later and get the same answer as before gives confidence as well because people can check that what you are reporting is actually true.
+The largest benefit of this approach is having confidence in the validity of the data that you publish.
+For me that confidence starts with implementing the methods and their tests at
+the same time.
+I think everyone should have a unit testing system; it is difficult for me to
+see how one could have confidence in the correctness of their software without
+one. I get very nervous about using code that I write if I haven't written
+tests to go with it. 
 
-I also really want everyone to properly comment their code with something like Doxygen so that it is (a) easier to modify later since what is going on is clear and (b) easier to build from because there is a useful application program interface.
+Having an up-to-date application programming interface is also very useful. When
+I'm interfacing or working with a piece of code I wrote a long time ago I
+would not otherwise remember what it did or how to use it. It is also helpful when interfacing
+with parts of the program other people wrote. 
+This extends to proper documentation. I personally can't remember many things.
+I must write them down for future reference. Keeping a user and theory manual means
+not only that users and other developers will know what the code does and why, it means next week I
+will also know what the code does and why. 
 
-The little things at the beginning that I like don't impact reproducibility, but I think they make a useful workflow. 
-Having a repository with little test codes lets you play around with stuff you've already got the next time you're investigating a new algorithm.
-Having a repository with lit review notes is good for remembering past research and speeds up writing.
+I also find that having little bits of experimental code, the low-dimension test pieces I
+write at the beginning, are useful to have on hand. This does not particularly
+impact reproducibility, but it is useful to have chunks of code to start with
+when playing around with new ideas. 
+Similarly, having a repository with literature review notes is good for
+remembering past research, speeds up writing papers and documentation, and
+provides a place to start looking the next time.
 
 
 ##### Key tools
