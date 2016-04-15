@@ -1,3 +1,7 @@
+#### Title 
+Reproducible Computational Science on High Performance Computers;
+a View from Neutron Transport
+
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
 
@@ -52,7 +56,12 @@ As the code approaches completion, I use small test problems to investigate basi
 The small tests are also version controlled--and that can be in the same repository or a separate one.
 
 Once the unit tests are deemed sufficient and, combined with the small tests, everything indicates that code is correct, I finalize documentation. 
-I use Doxygen to comment the code, which is useful for creating an API that can be built with the code.
+I use [Doxygen](http://www.stack.nl/~dimitri/doxygen/) to comment the code.
+Doxygen automatically generates documentation from source code comments when
+those comments are made using particular, simple annotations. Doxygen works for
+languages like C++, Python, Java, and others. 
+Using Doxygen is useful for creating an application program interface quickly
+and easily.
 However, some extra work is often required to get the theory down and provide clearer directions for using the new algorithm.
 All of that is written in LaTeX for incorporation into the user manual. 
 Again, all of these things are version controlled. 
@@ -63,7 +72,7 @@ Once the code is finalized, the unit test and small test results should all be r
 Once there is "finalized" code, it is time to do the real demonstration testing for publication.
 This involves running large test problems that demonstrate performance of the new algorithm for problems of interest as well as comparison to benchmarks to demonstrate correctness. 
 The literature review, algorithm description, and results of the large (and sometimes small) tests will go in the final LaTeX document for journal submission.
-This will also be version controlled, typically in a public GitHub repo.
+This will also be version controlled, typically in a public GitHub repository.
 The idea is that the large test input files will be in the same repository as any scripts required to process data and generate plots, all with corresponding directions. 
 This means that if you have access to the code and the repository you can rerun all the calculations and process the data. 
 
@@ -86,11 +95,11 @@ I think everyone should have a unit testing system.
 I just don't get how anyone can have confidence that they're code is correct without one. 
 The ability to actually rerun a test later and get the same answer as before gives confidence as well because people can check that what you are reporting is actually true.
 
-I also really want everyone to properly comment their code with something like Doxygen so that it is (a) easier to modify later since what is going on is clear and (b) easier to build from because there is a useful API.
+I also really want everyone to properly comment their code with something like Doxygen so that it is (a) easier to modify later since what is going on is clear and (b) easier to build from because there is a useful application program interface.
 
 The little things at the beginning that I like don't impact reproducibility, but I think they make a useful workflow. 
-Having a repo with little test codes lets you play around with stuff you've already got the next time you're investigating a new algorithm.
-Having a repo with lit review notes is good for remembering past research and speeds up writing.
+Having a repository with little test codes lets you play around with stuff you've already got the next time you're investigating a new algorithm.
+Having a repository with lit review notes is good for remembering past research and speeds up writing.
 
 
 ##### Key tools
