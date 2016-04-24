@@ -1,3 +1,7 @@
+##### Title
+
+Developing, testing, and deploying efficient MCMC algorithms for hierarchical models using R
+
 ##### Introduction
 
 *Please answer these introductory questions for your case study in a few sentences.*
