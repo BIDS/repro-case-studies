@@ -1,3 +1,9 @@
+
+##### Title
+
+Using Observational Data and Numerical Modeling to make Scientific Discoveries in Climate Science
+
+
 ##### Introduction
 *Please answer these introductory questions for your case study in a few sentences.*
 
@@ -47,7 +53,7 @@ The very first step in our workflow is to collect all available observational da
 
 The next data set we investigate is the surface winds over the Western Antarctic region.  In exact analogy with the processing of the North Atlantic surface temperatures above, we proceed here to look for long term trends in winds.  We find such a trend and it matches with the North Atlantic Ocean surface temperatures, suggesting one is causing the other.  We claim such a relation based on a formal regression calculation which shows our finding is statistically significant but still does not explain which is the cause and which is the effect.
 
-The next step in the algorithm is to employ a physically based numerical model of the global climate system.  Using such a model, we can impose the observed North Atlantic Ocean surface temperatures in the model, and the model can simulate the response of the global atmosphere to this imposed ocean forcing.  We carry out the simulation and we find that North Atlantic Ocean temperature oscillations drive wind circulation anomalies in Western Antarctica.  This is a very surprising, non-intuitive result.  We also try to model in the opposite sense, and impose surface wind anomalies in Western Antarctica to see if they drive ocean temperature anomalies in the North Atlantic.  The simulation showed that this does not happen.  This gives us some confidence to conclude that the direction of flow of climate change is from the North Atlantic to West Antarctica. 
+The next step in the algorithm is to employ a physically based numerical model of the global climate system.  Using such a model, we can impose the observed North Atlantic Ocean surface temperatures in the model, and the model can simulate the response of the global atmosphere to this imposed ocean forcing.  We carry out the simulation and we find that North Atlantic Ocean temperature oscillations drive wind circulation anomalies in Western Antarctica.  This is a very surprising, non-intuitive result.  We also try to model in the opposite sense, and impose surface wind anomalies in Western Antarctica to see if they drive ocean temperature anomalies in the North Atlantic.  The simulation showed that this does not happen.  This gives us some confidence to conclude that the direction of flow of climate change is from the North Atlantic to West Antarctica.
 
 At this final stage, having made a new discovery in two independent manners, one purely observational and one purely computer modeling, we are ready to report our findings to the scientific community.  This involves a rigorous peer-review process that imposes a number of reproducibility requirements.  A section of the manuscript must be devoted to explaining where all data sets are located and how a reviewer or future reader could access the same data sets we use.  Likewise, we are required to describe the computer model we used and how a future researcher can access the same model.  While the main scientific article is relatively brief (about 4 printed pages), giving the reader the essential information on what we found and how we found it, we also write a supplementary materials section.  This is an exhaustive description of each step we took with our observations and our modeling.
 
@@ -105,26 +111,6 @@ We have nothing special to report here but are aware of efforts in the computer 
 
 *Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
 
-1) Why do you think that reproducibility in your domain is important?
 
-Reproducibility is at the heart of natural science.  Without being able to perform an experiment and achieve a certain result, and then to have an independent scientist reproduce the same results, the research findings are murky.
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
-
-Our publications in high profile journals, such as Science and Nature, demand that we include a methods section in our papers, as well as carefully document the location of all our data sets on the internet.
-
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
-
-Some of the research code developed requires years to master.  Scientific funding and the number of scientists available to do the work is finite.  Therefore not every scientific result can, or should be reproduced.  The most important, paradigm shifting results should, however, be reproduced.
-
-4) What do you view as the major incentives for doing reproducible research?
-
-In the case of climate science, important decisions by world leaders rely on scientific findings.  these finding must be robust and reproducible in order to guide energy use policy.
-
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
-
-Yes, as in our study, we reached the same conclusion using both purely observational data and then independently through a computer simulation.  Finding the same result in two completely independent manners gives us confidence in our findings.
-
-6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
-
-Actually, the reason we are participating in this case study is just for that purpose.  That is, a book that people can read about reproducibility practices.
+Reproducibility is at the heart of natural science.  Without being able to perform an experiment and achieve a certain result, and then to have an independent scientist reproduce the same result, the research finding is murky.  Our publications in high-profile journals, such as Science and Nature, demand that we include a methods section in our papers, as well as carefully document the location of all our data sets on the internet. Some of the research code developed requires years to master.  Scientific funding and the number of scientists available to do the work is finite.  Therefore not every scientific result can, or should be reproduced.  The most important, paradigm shifting results should, however, be reproduced.  In the case of climate science, important decisions by world leaders rely on scientific findings.  These finding must be robust and reproducible in order to guide energy use policy. In our study, we reached the same conclusion using both purely observational data and then independently through a computer simulation of the same phenomenon.  Finding the same result in two completely independent manners gives us confidence in our findings. 
