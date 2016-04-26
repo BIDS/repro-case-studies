@@ -9,7 +9,11 @@ Processing of airborne laser altimetry data using cloud-based Python and relatio
 My name is Anthony Arendt and I hold a joint appointment as a Senior Research Scientist at the Applied Physics Laboratory, and a Research Fellow at the eScience Institute, University of Washington. I am part of a research team that studies the impact of glaciers on rising global sea levels, with a focus on the glaciers of Alaska and northwestern Canada. During the past 20 years my colleagues at the University of Alaska Fairbanks have been measuring the elevation changes of Alaska's glaciers using Light Detection and Ranging (LiDAR) data collected from a small aircraft. Our LiDAR system consists of a laser range finder and Global Positioning System (GPS) that measures the precise elevation along the centerline of the glacier surface. By repeating these observations through time, we estimate total changes in mass of each observed glacier, and then extrapolate these data to unmeasured glaciers based on information acquired from satellite imagery. From this we produce detailed maps of the spatial distribution of glacier mass change and the total contribution of these ice masses to global ocean change.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 During the 20 year duration of the project the data analysis has evolved from manual manipulation of text files, to a semi-automated workflow that integrates Geographic Information System (GIS), relational database and Python tools within a cloud computing framework. Here we describe the workflow which culminated in a recent publication [(Larsen et al., 2015)](http://onlinelibrary.wiley.com/doi/10.1002/2015GL064349/full). Core developers of the software include Evan Burgess, Christian Kienholz, Justin Rich, Anthony Arendt and Christopher Larsen. 
+=======
+During the 20 year duration of the project the data analysis has evolved from manual manipulation of text files, to a semi-automated workflow that integrates GIS, relational database and Python tools within a cloud computing framework. Here we describe the workflow which culminated in a recent publication [(Larsen et al., 2015)](http://onlinelibrary.wiley.com/doi/10.1002/2015GL064349/full). Core developers of the software include Evan Burgess, Christian Kienholz, Justin Rich, Anthony Arendt, Christopher Larsen and Sai Nimmagadda. 
+>>>>>>> parent of c6fbb18... final updates
 =======
 During the 20 year duration of the project the data analysis has evolved from manual manipulation of text files, to a semi-automated workflow that integrates GIS, relational database and Python tools within a cloud computing framework. Here we describe the workflow which culminated in a recent publication [(Larsen et al., 2015)](http://onlinelibrary.wiley.com/doi/10.1002/2015GL064349/full). Core developers of the software include Evan Burgess, Christian Kienholz, Justin Rich, Anthony Arendt, Christopher Larsen and Sai Nimmagadda. 
 >>>>>>> parent of c6fbb18... final updates
@@ -31,7 +35,11 @@ Reproducability is a crucial component of our workflow due to the dynamic nature
 ##### Workflow narrative
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The workflow begins with annual field data collection that produces both GPS positional and LiDAR point cloud data, both in industry standard binary formats. Commercial proprietary software is used to process the data into four dimensional point observations (x, y, z and time), which are then further processed using Generic Mapping Tools ([GMT](http://gmt.soest.hawaii.edu/)) into gridded 10 m digital elevation models. These elevation maps are then subtracted from maps acquired at an earlier time to obtain a change in elevation along the flight line, using Matlab scripts. These results are stored in text files, with the file name describing the glacier name and start and end dates, and are located on a server at the University of Alaska Fairbanks. In a separate step, we assemble satellite imagery and regional digital elevation models for the Alaska region. We use [ArcGIS](https://www.arcgis.com/), a commercial GIS software package, to manually digitize the glacier extent. ArcGIS provides a set of vector manipulation tools that enable our technicians to trace glacier outlines from satellite imagery. ArcGIS commands can also be scripted using the ArcPy library. We automate a series of GIS commands using ArcPy to calculate the distribution of glacier surface area with elevation for each of approximately 27,000 glaciers in Alaska. 
+=======
+The workflow begins with annual field data collection that produces both GPS positional and LiDAR point cloud data, both in  industry standard binary formats. Commercial proprietary software is used to process the data into four dimensional point observations (x, y, z and time), which are then further processed and filtered using Matlab scripts into gridded 10 m digital elevation models. These elevation maps are then differenced with maps from an earlier flight to obtain a change in elevation along the flight line. These results are stored in text files, with the filename describing the glacier name and start and end dates, and are located on a local server at the University of Alaska Fairbanks. In a separate step, we assemble satellite imagery and regional digital elevation models for the Alaska region. We use ArcGIS to manually digitize glacier extent, and Python scripts (using the arcpy library) to calculate the distribution of glacier surface area with elevation for each of approximately 27,000 glaciers in Alaska. 
+>>>>>>> parent of c6fbb18... final updates
 =======
 The workflow begins with annual field data collection that produces both GPS positional and LiDAR point cloud data, both in  industry standard binary formats. Commercial proprietary software is used to process the data into four dimensional point observations (x, y, z and time), which are then further processed and filtered using Matlab scripts into gridded 10 m digital elevation models. These elevation maps are then differenced with maps from an earlier flight to obtain a change in elevation along the flight line. These results are stored in text files, with the filename describing the glacier name and start and end dates, and are located on a local server at the University of Alaska Fairbanks. In a separate step, we assemble satellite imagery and regional digital elevation models for the Alaska region. We use ArcGIS to manually digitize glacier extent, and Python scripts (using the arcpy library) to calculate the distribution of glacier surface area with elevation for each of approximately 27,000 glaciers in Alaska. 
 >>>>>>> parent of c6fbb18... final updates
@@ -40,10 +48,13 @@ The majority of our data processing and analysis occurs on a single Microsoft Az
 
 + _inventory_: polygons of each glacier in Alaska with attributes of surface area, glacier type (whether terminating on land or ocean), name 
 <<<<<<< HEAD
+<<<<<<< HEAD
 + _regional boundaries_: polygons of outlines of mountain ranges or climatic zones over which we perform regional extrapolations
 + _LiDAR_: measurements of elevation and volume changes on surveyed glaciers
 + _extrapolated results_: final estimates of the volume change of every glacier in Alaska
 =======
+=======
+>>>>>>> parent of c6fbb18... final updates
 + _regions_: polygons of outlines of mountain ranges or climatic zones over which we perform regional extrapolations
 + _LiDAR_: stores the altimetry elevation and volume changes on surveyed glaciers
 + _extrapolatedResults_: final estimates of the volume change of every glacier in Alaska
@@ -53,10 +64,14 @@ Each time we have new altimetry observations we run a Python script to:
 + connect via secure FTP to the server in Fairbanks and search for new text files across the directory structure ingest each text file into a Pandas dataframe
 + insert the new data into rows of the _LiDAR_ table via database connections through SQLAlechmey
 + generate simple plots from Pandas to visualize and quality check the ingested datasets. 
+<<<<<<< HEAD
+>>>>>>> parent of c6fbb18... final updates
+=======
 >>>>>>> parent of c6fbb18... final updates
 
 Each time we acquire new altimetry observations we run a Python script to connect via secure FTP to the server in Fairbanks and search for new text files across the directory structure. We use the Python [Pandas](http://pandas.pydata.org/) library as an interface between our text file and RDB data objects. Specifically, once we ingest the data into a Pandas DataFrame, we can employ a series of methods to generate simple plots and export the data directly to our PostgreSQL database. We use similar Python tools to create and update the _inventory_ and _regional boundaries_ tables, for example to accommodate changes in surface area as glaciers retreat. 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 The _LiDAR data object_ is the foundation of all subsequent processing and analysis. The data object is created via a function call with parameters describing a single or a regional grouping of glaciers. Each instance of the data object has predefined attributes enabling users to rapidly acquire elements of the raw data in the _LiDAR_ table. For example, a user can issue a request to the _LiDAR_ table for a specific glacier, returning a data object whose attributes contain that glacier's elevation change, area, and other statistical information. The data object also has several methods that handle the majority of the standard data processing and filtering workflow. These methods include algorithms that carry out unit conversions, normalize the data, calculate statistics and perform mass change calculations for each glacier. To perform these calculations we issue Structured Query Language (SQL) commands to the database from within our Python scripts.  
 
@@ -64,6 +79,8 @@ In a final processing step, we utilize the grouping functionality of the LiDAR o
  
 To analyze results and distribute our findings we host a permanent instance of a Jupyter notebook on our Linux VM and provide access to project team members. The notebooks, as well as the core Python scripts used to generate results, are also located in a github repository. The notebook also contains markdown to provide metadata at each step in the analysis. Collaborators with experience writing SQL code can have direct access to the PostgreSQL database to perform their own queries. Other collaborators more familiar with GIS tools can connecting directly to the geospatially encoded tables to generate their own maps.   
 =======
+=======
+>>>>>>> parent of c6fbb18... final updates
 The _LiDAR Data Object_ is the foundation of all subsequent processing and analysis. The data object is created via a function call with parameters describing a single or a regional grouping of glaciers. Each instance of the data object has predefined attributes enabling users to rapidly acquire elements of the raw data in the _LiDAR_ table. For example, a user can issue a request to the _LiDAR_ table for a specific glacier, returning a data object whose attributes contain that glacier's elevation change, area, and other statistical information, and use this to make plots or perform analysis. The data object also has several methods that handle the majority of the standard data processing and filtering workflow. These methods include:
 
 + _normalizeElevation_: converts from actual to normalized elevation ranges to facilitate comparison between glaciers
@@ -96,12 +113,21 @@ Therefore our collaborators in government and/or those located in Alaska had to 
 
 + we are well positioned to explore our data in ways not previously possible. New collaborators are joining our team and making direct connections to our database, generating complex queries that are exploring what climatic and geometric factors may be driving the glacier mass changes we are observing in the field. Other similar LiDAR observation programs do not provide access to relational databases, limiting researchers' ability to perform spatial and temproal queries. 
 
+<<<<<<< HEAD
+=======
++ we are well positioned to explore our data in ways not previously possible. New collaborators are joining our team and making direct connections to our database, generating complex queries that are exploring what climatic and geometric factors may be driving the glacier mass changes we are observing in the field. Other similar LiDAR observation programs do not provide access to relational databases, limiting researchers' ability to perform spatial and temproal queries. 
+
+>>>>>>> parent of c6fbb18... final updates
 + our approach is helping to minimize blunders in processing and enables all team members to check on each other's work.
 
 ##### Key tools
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Hosting our resources in a cloud environment played a vital role in making our workflow reproducible. The cloud enabled us to co-locate our scripts with the observations, enabling rapid processing and minimizing the need to transfer files. Additionally, using a relational database to store our geospatial datasets provided efficient methods for us to explore a wide range of spatial relationships in our datasets. 
+=======
+Hosting our resources in a cloud environment played a vital role in making our workflow reproducable. We strongly recommend investigating in one of the many cloud hosting environments currently available to researchers. 
+>>>>>>> parent of c6fbb18... final updates
 =======
 Hosting our resources in a cloud environment played a vital role in making our workflow reproducable. We strongly recommend investigating in one of the many cloud hosting environments currently available to researchers. 
 >>>>>>> parent of c6fbb18... final updates
@@ -115,7 +141,11 @@ Glaciology has become highly interdisciplinary in the past decade: oceanographer
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 I learned these techniques through coursework, a visiting scientist appointment at Microsoft Research, and through self-directed learning.
+=======
+I learned these techniques through on-the-job training and classes.
+>>>>>>> parent of c6fbb18... final updates
 =======
 I learned these techniques through on-the-job training and classes.
 >>>>>>> parent of c6fbb18... final updates
