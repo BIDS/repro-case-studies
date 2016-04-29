@@ -209,6 +209,21 @@
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
          transform="scale(0.4,0.4)" />
     </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-3-5-8-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4399-4-3-6-8"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -219,14 +234,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.7670017"
      inkscape:cx="263.05663"
-     inkscape:cy="225.19581"
+     inkscape:cy="268.56405"
      inkscape:document-units="px"
-     inkscape:current-layer="g10705"
+     inkscape:current-layer="layer1"
      showgrid="false"
      units="in"
      width="8.5in"
-     inkscape:window-width="3775"
-     inkscape:window-height="2136"
+     inkscape:window-width="3135"
+     inkscape:window-height="1776"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
@@ -238,7 +253,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -566,7 +581,7 @@
              sodipodi:role="line"
              id="tspan3442"
              x="422.11755"
-             y="895.15234"> </tspan></text>
+             y="895.15234" /></text>
         <rect
            style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:5;stroke-miterlimit:4.19999981;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="rect8253"
@@ -620,53 +635,74 @@
        d="m 390.50717,700.60445 46.79185,0.56564"
        id="path3448-2-7-8-0-9"
        inkscape:connector-curvature="0" />
-    <g
-       id="g10705"
-       transform="translate(-29.996364,-5.4210306)">
-      <flowRoot
-         transform="translate(60.71554,519.415)"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         id="flowRoot4156"
-         xml:space="preserve"><flowRegion
-           id="flowRegion4158"><rect
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-             y="70.714027"
-             x="66.859375"
-             height="28.912157"
-             width="195.1571"
-             id="rect4160" /></flowRegion><flowPara
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-           id="flowPara4162">GitHub repo: by year</flowPara><flowPara
-           id="flowPara4166"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:sans-serif" /><flowPara
-           id="flowPara4168"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:sans-serif" /><flowPara
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-           id="flowPara4164" /></flowRoot>      <text
-         sodipodi:linespacing="125%"
-         id="text4170"
-         y="629.16052"
-         x="128.29773"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-size:17.5px"
-           y="629.16052"
-           x="128.29773"
-           id="tspan4172"
-           sodipodi:role="line">repo layout: Jekyll</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4170-2"
-         y="649.16724"
-         x="126.63065"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-size:17.5px"
-           y="649.16724"
-           x="126.63065"
-           id="tspan4172-2"
-           sodipodi:role="line">archive: figshare</tspan></text>
-    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4156"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(30.719176,513.99397)"><flowRegion
+         id="flowRegion4158"><rect
+           id="rect4160"
+           width="195.1571"
+           height="28.912157"
+           x="66.859375"
+           y="70.714027"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif" /></flowRegion><flowPara
+         id="flowPara4162"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:sans-serif">GitHub repo: by year</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         id="flowPara4166" /><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         id="flowPara4168" /><flowPara
+         id="flowPara4164"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:sans-serif" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="98.301369"
+       y="623.7395"
+       id="text4170"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4172"
+         x="98.301369"
+         y="623.7395"
+         style="font-size:17.5px">repo layout: Jekyll</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="96.634293"
+       y="643.74622"
+       id="text4170-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4172-2"
+         x="96.634293"
+         y="643.74622"
+         style="font-size:17.5px">archive: figshare</tspan></text>
+    <flowRoot
+       transform="translate(-14.456081,569.28848)"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4357"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4359"><rect
+           y="303.81833"
+           x="17.708698"
+           height="148.17484"
+           width="131.55034"
+           id="rect4361" /></flowRegion><flowPara
+         id="flowPara4363"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Helvitica;-inkscape-font-specification:'Helvitica Bold'">Stages 1-3: Data input,</flowPara><flowPara
+         id="flowPara4367"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Helvitica;-inkscape-font-specification:'Helvitica Bold'">processing, &amp; analysis, in R code</flowPara></flowRoot>    <text
+       sodipodi:linespacing="125%"
+       id="text4375"
+       y="941.05042"
+       x="87.820686"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4379"
+         y="941.05042"
+         x="87.820686"
+         sodipodi:role="line" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -701,7 +737,7 @@
          sodipodi:role="line"
          id="tspan10728"
          x="254.06561"
-         y="666.38483"></tspan></text>
+         y="666.38483" /></text>
     <flowRoot
        transform="matrix(0.01279922,-0.99991809,0.99991809,0.01279922,127.75437,850.4399)"
        xml:space="preserve"
