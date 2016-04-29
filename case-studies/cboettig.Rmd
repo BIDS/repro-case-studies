@@ -6,6 +6,8 @@ bibliography: cboettig.bib
 
 ##### Introduction
 
+title: **A Reproducible R Notebook using Docker**
+
 *Please answer these introductory questions for your case study in a few sentences.*
 
 1) Who are you and what is your research field? Include your name,
@@ -30,7 +32,7 @@ with new technology.  Other researchers have frequently told me how they have
 adopted parts of this approach, but rarely in an identical way. 
 
 My general approach to an open lab notebook has been described previously [@Gewin2013, @Mascarelli2014],
-while here I focus on documenting more details of the workflow here. When possible,
+while I focus on documenting more details of the workflow here. When possible,
 I have sought to leverage general-purpose tools rather than custom solutions:
 for instance, I organize project directories using the R package format, as 
 described in @Gentleman2007 and [rrrpkg](https://github.com/ropensci/rrrpkg) project, 
@@ -151,7 +153,7 @@ to run on the (free, public) CI platform.
 
 As the notebook is already organized as a Jekyll repository, just with
 `.Rmd`-formatted posts instead of plain `markdown`, existing tools
-(see `servr`, Table 1). can easily execute the R code and format it as
+(see `servr`, Table 1) can easily execute the R code and format it as
 a new post in the notebook. Jekyll templates make it easy to add semantic metadata to the 
 post automatically including bibliographic information, links to version history,
 commit hash, modification date and so forth. 
