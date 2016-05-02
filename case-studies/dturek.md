@@ -1,10 +1,14 @@
+##### Title
+
+Developing, testing, and deploying efficient MCMC algorithms for hierarchical models using R
+
 ##### Introduction
 
 *Please answer these introductory questions for your case study in a few sentences.*
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
-My name is Daniel Turek, and my area of research is computational statistics and algorithms, generally with application to problems of ecological statistics.  The workflow I describe is the process, from idea inception to publication, of creating an automated procedure to improve the sampling efficiency of Markov chain Monte Carlo (MCMC) sampling.  MCMC is an accessible and commonly used statistical technique for performing inference on hierarchical model structures.
+My name is Daniel Turek, and I'm an Assistant Professor in the Department of Mathematics and Statistics at Williams College.  My area of research is computational statistics and algorithms, frequently with applications in ecological statistics.  The workflow I describe is the process, from idea inception to publication, of creating an automated procedure to improve the sampling efficiency of Markov chain Monte Carlo (MCMC) sampling.  MCMC is an accessible and commonly used statistical technique for performing inference on hierarchical model structures.
 
 2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
@@ -56,7 +60,7 @@ Reproducibility is important so that others may verify the results given in our 
 
 2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
-Mostly through the use of Github, from colleagues at Berkeley, and through general programming experience.  No specific classes or workshops come to mind.
+Mostly through the use of Github, from colleagues at the University of California, Berkeley, and through general programming experience.  No specific classes or workshops come to mind.
 
 3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
