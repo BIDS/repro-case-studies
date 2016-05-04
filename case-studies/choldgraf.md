@@ -2,25 +2,20 @@
 Feature extraction and data wrangling for predictive models of the brain in python
 
 ##### Introduction
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 My name is Chris Holdgraf, I am a senior graduate student with the Helen Wills Neuroscience Institute at UC Berkeley. My thesis work involves using predictive models to understand how auditory regions of the brain respond to acoustic features.
 
 Specifically, I am interested in how experience, learning, and assumptions about the world shape the way that we interact with low level features of sound. This involves a lot of computational work and coding, utilizing a number of packages in the python scientific ecosystem.
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-The discussion in this writeup covers the first 6 months of the project. To that extent, my definition of "reproducibility" means actually being able to reproduce my own results (aka, coding for my future self). I ran into a lot of issues to keep things streamlined and understandable in my own head, which made it difficult to interpret my findings. Obviously this would generalize to other scientists trying to reproduce my analyses and work as well.
-
 ##### Workflow diagram
 
-See attached.
+![Diagram](choldgraf.pdf)
 
 ##### Workflow narrative
 My workflow involves taking raw data from lots of different sources, doing a few steps of munging on each one separately, combining them into a common structured format, and then doing further processing on this data. Here's a general breakdown:
 
-Wrangling raw data
----
+###### Wrangling raw data
+
 The raw data for my work involves electrophysiology signals collected from the brains of surgical patients in several sites across the country. This is challenging because the nature of the data is quite different from one location to another. I often get the neural data in many different formats, and a loose collection of metadata (e.g., sensor locations, names, sampling rates) that can be anything from a PDF of hand-written notes to a structured text file. As such, the first step in my workflow is to wrangle all of this data into some kind of structured format.
 
 First, I put all data into subject-specific folders. Each of these folders has sub-folders for different kinds of data (e.g., "raw", "munged", "meta"). The sub-folders will eventually be populated with data during processing, and the structure is consistent across all subjects so that I can easily parse them with scripts.
@@ -35,22 +30,22 @@ This aggregated CSV has data for all subjects that I have, and makes it much eas
 
 I should note that this is the point where somebody usually suggests using a "proper" database like SQL instead of keeping my data in CSV / FIFF formats. I've found that the overhead added by reformatting my data for something like SQL isn't worth the benefit it would give. If I were to start a new project - particularly with larger datasets - then I would likely consider a more robust data storage solution like SQL.
 
-Cleaning the data
----
+###### Cleaning the data
+
 Once I've created my munged data, I can now use a single script for processing/analyzing all data sets. In the field of cognitive neuroscience, there are common preprocessing techniques that are carried out in order to improve the quality of the data (e.g., a few filtering steps and rejecting channels that are too noisy). I have a `clean_data.py` file that will look through the "munged" folder of each subject, load the data, run the cleaning, and then output the results to the folder `{subject_name}/clean`. This way, I know that any data in the clean folder is ready for further analysis.
 
 At this point, I have cleaned data in each subject's folder, I also have that subject's metadata inserted into a CSV file with all subject information. From now on, I can just load a subject's data file, then load the metadata CSV file for everybody, and query only the rows that belong to the subject that I care about.
 
-Defining a project
----
+###### Defining a project
+
 When I begin analyzing my data to answer a specific question, I create a new project-specific folder that exists alongside my "data" folder. Each project generally entails a number of analyses, and this is a way to keep them all in the same place. The project folder is structured similarly to the "data" folder. It has a sub-fulder for "scripts", for "data", for "results", and for "documents" and any information necessary for publications taht come out of this project.
 
 For example, the first thing I might do is create some python script to extract features of interest.  I will put it in `project_name/script/feature_name/extract_feature.py`. The script assumes that there is data for each subject in the "clean" folder. It will pull the data from "clean", extract whatever feature I'm interested in, and then save the result to the project-specific folder, something like `project_name/data/my_feature/{subject_name}_feature.fif`. I  parse all subject folders and save files in the same manner.
 
 Storing the extracted features for all subjects in a single project-specific data folder makes it much easier to develop scripts/notebooks to further analyze the results, since I don't need to keep track of which features have been extracted for which subjects. I also develop feature extraction scripts using the sun-grid engine (a platform for dividing computation between a cluster of computers) for speeding up my analyses. I can do this relatively easily because the folder structure for each subject is the same.
 
-Running analyses
----
+###### Running analyses
+
 Now that I have a set of features created for each subject, it is time to run analyses and answer questions. These scripts also exist in the project-specific folder, and assume that there is data in the "project_name/data/my_feature/" folder.
 
 A difficulty that I've had is knowing when to keep your analyses in interactive notebooks vs. python scripts. I generally pilot my analysis interactively - this lets me do sanity checks and on-the-fly calculations that help me develop the final analysis. Once I have code that does a specific analysis, I will put it in a .py script.
@@ -63,8 +58,8 @@ When creating actual figures for papers, I like to use software like Adobe Illus
 
 Finally, I use microsoft word to write drafts which I put in the "doc" folder. These pull from the figures I've created in the "fig" folder. Ideally I would use text files here w/ latex, but the people I work with makes this prohibitive.
 
-A general note
----
+###### A general note
+
 This process has been refined many times over the past year, and the original structure looked very different than this. My original file system had code and data living in totally different places. Moreover, it had project-specific scripts and more general utility scripts living in the same place. The goal of this file structure is to keep data and scripts together when they have a natural pairing, and to separate out my more production-ready functions/modules from "hackier" project-specific scripts. Below is a list of some things that I've learned along the way, and that have guided the development of this system:
 
 1. For any data/code that are project-specific, keep these together in the same general file hierarchy.
@@ -98,6 +93,10 @@ Finally, by separating out operations that are true for all projects (e.g., data
 
 ##### Key tools [Optional]
 The two most useful tools that I have found are `Pandas` and `MNE-python`. Pandas made it much easier to embed metadata with the signals that I analyze. It allowed me to store information from lots of subjects in a single CSV file, and treat it as a "database" by using queries on it. `MNE-python` is a package for electrophysiology in neuroscience written in python. When I discovered it, I found that it duplicated many of the functions I had already written, and in general did this much better than I had. Moreover, it has a lot of convenience functions for doing I/O, which up until then was a pain to maintain. By using these two packages, I was able to significantly cut down on the amount of custom-written functions that I used to wrangle my data.
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+The discussion in this writeup covers the first 6 months of the project. To that extent, my definition of "reproducibility" means actually being able to reproduce my own results (aka, coding for my future self). I ran into a lot of issues to keep things streamlined and understandable in my own head, which made it difficult to interpret my findings. Obviously this would generalize to other scientists trying to reproduce my analyses and work as well.
 
 ##### General questions about reproducibility [Optional]
 

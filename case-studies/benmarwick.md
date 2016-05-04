@@ -10,7 +10,9 @@ In the context of this case study, reproducibility refers to computational repro
 
 ##### Workflow diagram
 
-My workflow diagram is enclosed as a PDF. The boxes with a bold outline indicate key steps and tools that enabled computational reproducibility in our project.
+![Diagram](benmarwick.pdf)
+
+The boxes with a bold outline indicate key steps and tools that enabled computational reproducibility in our project.
 
 The editable source file can be found online here: 
 

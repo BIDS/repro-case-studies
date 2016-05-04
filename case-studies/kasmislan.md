@@ -1,15 +1,10 @@
-### A dissection of computational methods used in a biogeographic study
+##### Title
 
-K.A.S. Mislan   
-eScience Institute  
-School of Oceanography  
-University of Washington
+A dissection of computational methods used in a biogeographic study
 
 ##### Introduction
 
 I am an ecophysiologist and my research focuses on organism-environment interactions in the ocean.  In particular, I am interested in forecasting the effects of climate change on marine ecosystems.
-
-Reproducibility means that sufficient descriptive information and resources are provided for someone to be able to repeat the same study. As part of my research as a scientist, I write code to manipulate and visualize large quantities of data to obtain results. I believe that my code should be adapted and made available so that it is usable by others in my field.
 
 I recently published research on the fundamental niche of pelagic animals in the global ocean. The study included a comparison of blood-oxygen binding characteristics of different species obtained from published papers.  Thresholds for blood-oxygen binding characteristics were mapped in the ocean using gridded oceanographic data.  My workflow details my process for obtaining and analyzing data for the project.  In order to increase the reproducibility of the study, code used for the project was put in a long-term archive.
 
@@ -21,7 +16,7 @@ Mislan, K. A. S., Dunne, J. P. and Sarmiento, J. L. (2015). P50 Depth Analysis v
 
 ##### Workflow diagram
 
-![Research Workflow](kasmislan_workflow_v5.pdf)
+![Diagram](kasmislan.pdf)
 
 ##### Workflow narrative
 
@@ -51,6 +46,10 @@ I have always believed that making my code available is important, but, until re
 There are specific instructions on Github for releasing code to Zenodo:  
 
 [https://guides.github.com/activities/citable-code/](https://guides.github.com/activities/citable-code/)  
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+Reproducibility means that sufficient descriptive information and resources are provided for someone to be able to repeat the same study. As part of my research as a scientist, I write code to manipulate and visualize large quantities of data to obtain results. I believe that my code should be adapted and made available so that it is usable by others in my field.
 
 ##### General questions about reproducibility
 

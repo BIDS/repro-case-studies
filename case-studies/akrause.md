@@ -3,21 +3,15 @@
 An analysis of household location choice in major U.S. metropolitan areas using R
 
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 Andy Krause, Lecturer in Property (Real Estate) at the University of Melbourne.  Andy's research focuses on the spatial analysis of real estate markets, particularly in regards to valuation and location. 
 
 Hossein Estiri, Senior Fellow in the Institute of Translational Health Sciences at the University of Washington. Hossein uses data science approaches to study urban energy and health.
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-"Reproducibility" means that a subsequent interested party can openly access the data, code, analytical workflow and data provenance to re-create the research (and ideally produce identical results) WITHOUT consulting the original researcher(s). In this context, "reproducibility" can facilitate the verification of results from a given research project and also accelerate new research discoveries by providing reproducible modules that can be applied in other settings and/or for other purposes.
 
 ##### Workflow diagram
 
-[Diagram](workflowDiagram.pdf)
+![Diagram](akrause.pdf)
 
 ##### Workflow narrative
 
@@ -70,11 +64,13 @@ For us the biggest benefit is efficiency.  The first time we do an analysis it u
 
 ##### Key tools
 
-The RStudio integrated development environment (IDE) and their related Shiny Apps (interactive web applications) have been a huge help in our reproducible research.  If you are an R programmer and want to share your visualizations with non-programmers, we highly recommend these tools from RStudio. Using the IDE allows for easier navigation between multiple scripts, reviewing a history of plots and offering a view of all objects in the current computing environment.  
+The RStudio integrated development environment (IDE) and their related Shiny Apps (interactive web applications) have been a huge help in our reproducible research.  If you are an R programmer and want to share your visualizations with non-programmers, we highly recommend these tools from RStudio. Using the IDE allows for easier navigation between multiple scripts, reviewing a history of plots and offering a view of all objects in the current computing environment.
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+"Reproducibility" means that a subsequent interested party can openly access the data, code, analytical workflow and data provenance to re-create the research (and ideally produce identical results) WITHOUT consulting the original researcher(s). In this context, "reproducibility" can facilitate the verification of results from a given research project and also accelerate new research discoveries by providing reproducible modules that can be applied in other settings and/or for other purposes.
 
 ##### General questions about reproducibility
-
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
 
 1) Why do you think that reproducibility in your domain is important?
 

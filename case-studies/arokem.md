@@ -1,10 +1,7 @@
-# Reproducibility in human neuroimaging research : a practical example from the analysis of diffusion MRI.
+##### Title
+Reproducibility in human neuroimaging research : a practical example from the analysis of diffusion MRI.
 
 ##### Introduction
-
-1) Who are you and what is your research field? Include your name, affiliation,
-discipline, and the background or context of your overall research that is
-necessary specifically to introduce your specific case study.
 
 My name is Ariel Rokem. I am a Data Scientist at the University of Washington
 eScience Institute. My research training and experience have been mostly in the
@@ -15,31 +12,9 @@ using quantitative MRI. A focus of the research program that I started in
 Brian's lab is the application of ideas from statistical learning theory to
 measurements of human white matter with diffusion MRI (dMRI).
 
-2) Define what the term "reproducibility" means to you generally and/or in the
-particular context of your case study.
-
-Reproducibility is a matter of degree, not of kind. It usually depends on the
-availability of code and data from a scientific study, such that only a
-reasonable effort would be required to generate the evidence (numbers and
-visuals) used to support a scientific finding.  
-
-Ideally, a small number of commands at the command line would suffice, but in
-some complex cases, more work could be required. A reasonable amount of effort
-required might be rather extensive, when large amounts of data storage, or large
-amounts of computation are needed.
-
-A higher standard, sometimes called 'replicability' would be to require that the
-same conclusions be reached if another group of researchers were to do the same
-experiments, and implement the same ideas in their analysis.
-
-Reproducibility does not guarantee replicability [Leek and Peng, 2015]. Some may
-even argue that reproducibility and replicability may sometimes be in conflict,
-because implementation errors can be propagated in reproduction, but not in
-replication [Peng2009, Baggerly2005].
-
 ##### Workflow diagram
 
-[Diagram](arokem_edited.pdf)
+![Diagram](arokem.pdf)
 
 ##### Workflow narrative
 
@@ -179,6 +154,27 @@ contained the instructions to run the fitting process with different conditions,
 or on different parts of the same brain. The creation of this module resulted in
 a highly reproducible process. Consequently reuse of elements of this module
 produced benefits in time-saving during the development of the analysis methods.
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+Reproducibility is a matter of degree, not of kind. It usually depends on the
+availability of code and data from a scientific study, such that only a
+reasonable effort would be required to generate the evidence (numbers and
+visuals) used to support a scientific finding.  
+
+Ideally, a small number of commands at the command line would suffice, but in
+some complex cases, more work could be required. A reasonable amount of effort
+required might be rather extensive, when large amounts of data storage, or large
+amounts of computation are needed.
+
+A higher standard, sometimes called 'replicability' would be to require that the
+same conclusions be reached if another group of researchers were to do the same
+experiments, and implement the same ideas in their analysis.
+
+Reproducibility does not guarantee replicability [Leek and Peng, 2015]. Some may
+even argue that reproducibility and replicability may sometimes be in conflict,
+because implementation errors can be propagated in reproduction, but not in
+replication [Peng2009, Baggerly2005].
 
 ##### General questions about reproducibility [Optional]
 

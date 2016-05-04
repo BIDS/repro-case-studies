@@ -4,19 +4,11 @@ Developing, testing, and deploying efficient MCMC algorithms for hierarchical mo
 
 ##### Introduction
 
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
 My name is Daniel Turek, and I'm an Assistant Professor in the Department of Mathematics and Statistics at Williams College.  My area of research is computational statistics and algorithms, frequently with applications in ecological statistics.  The workflow I describe is the process, from idea inception to publication, of creating an automated procedure to improve the sampling efficiency of Markov chain Monte Carlo (MCMC) sampling.  MCMC is an accessible and commonly used statistical technique for performing inference on hierarchical model structures.
-
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-In the context of my case study, reproducibility means that users / reviewers can re-create the results (improvements in MCMC efficiency) presented in our manuscript.  However, the results will not match exactly due to small differences in algorithm runtime.
 
 ##### Workflow diagram
 
-[Diagram](dturek.pdf)
+![Diagram](dturek.pdf)
 
 ##### Workflow narrative
 
@@ -38,8 +30,6 @@ Team members jointly contribute to drafting a manuscript describing our new algo
 
 ##### Pain points
 
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them?*
-
 The iterative process of devising and testing our algorithm is not well-documented or particularly reproducible.  The only saving grace is that Github is used for versioning control, so in theory we could look backwards at previous work, if necessary.  But in practice, the commit messages are short and not very descriptive, since everything is experimental at this point.  No less, there’s basically no documentation accompanying our code.  It would be difficult to actually review previous versions of the algorithm or results, if it were necessary.
 
 In addition, the fact that our set of “reproducible” examples are not perfectly reproducible is a small point of contention.  We are conflicted to call these examples reproducible, since the results presented in our manuscript cannot actually be recreated.  Team members agree that this appears to be unavoidable.  We explain this in the manuscript, and call our results “reproducible” nonetheless.
@@ -48,9 +38,11 @@ For preparation of our manuscript, numerical results are manually typed into a t
 
 ##### Key benefits
 
-*Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example?*
-
 The most notably reproducible aspect of this project is the public repo containing input data and scripts for re-running all analyses appearing in our manuscript.  This includes individual bash scripts for running each particular analysis, as well as a single “master” script which re-runs all analyses.  A reviewer can easily reproduce (to within a small margin of error) all numerical results appearing in the manuscript, and researchers reading the ensuing publication have an easy path forward to using the algorithm themselves.
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+In the context of my case study, reproducibility means that users / reviewers can re-create the results (improvements in MCMC efficiency) presented in our manuscript.  However, the results will not match exactly due to small differences in algorithm runtime.
 
 ##### General questions about reproducibility [Optional]
 

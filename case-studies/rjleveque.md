@@ -3,24 +3,14 @@
 Producing a Journal Article on Probabilistic Tsunami Hazard Assessment
 
 ##### Introduction
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 Randy LeVeque, Professor of Applied Mathematics and one of the core developers of the open source [GeoClaw](http://www.geoclaw.org) software package for modeling tsunamis and other geophysical flows. Recently we have been using this software to study new approaches to probabilistic tsunami hazard assessment (PTHA), in which the goal is to take some probability distribution of possible future earthquakes that might cause large tsunamis and produce a probabilistic hazard map for a particular community, indicating which regions are most at risk and estimating the annual probability of flooding to a given depth at each point.  This is complicated by the fact that the depth of flooding by a particular hypothetical tsunami depends on whether it arrives at low tide or high tide, and we have developed ways to incorporate this uncertainty.
 
 The workflow I will describe relates to a journal publication on this topic.  Much of the research was originally performed as part of a consulting contract funded by a private firm, as part of a broader pilot study funded by the Federal Emergency Management Administration (FEMA).  We used version control for the code developed as part of this project that was initially in a private repository, along with the results of many tsunami simulations.  A final project report based on this work was made available in our institutional repository, but was not published in a journal.  We later improved the description of the methodology and performed additional computational experiments in the process of writing up a portion as a journal article. A variety of different private and public repositories were used in the course of this work, along with several platforms for sharing code, data, and the report and journal article. 
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-There were two distinct aspects of reproducibility important in this work. The original development of new techniques was performed in the context of a project that went on for several years and required running many tsunami simulations with the GeoClaw code for the probabilistic studies, each of which took several hours of computing time and produced large quantities of output data.  During this time frame the GeoClaw software was evolving, along with our methodologies.  GeoClaw is openly developed on the GitHub site https://github.com/clawpack/geoclaw. We needed to be able to compare new results with those computed previously, and be able to identify what changed in the software or our code in between, if necessary.  For this aspect the goal was not to openly share all of our work or the results (nor were we allowed to, due to the nature of the project), but we needed to be able to reproduce results ourselves if necessary and keep the code under version control to identify changes.
-
-The other aspect is that we wanted the particular new method written up in the journal paper to be accompanied by the Python code that implements the method and a sample set of data that was used to produce some of the figures in the paper.  In this context we wanted the figures to be reproducible by a reader using this code, in hopes that this would aid others in understanding the methodology and adapting the code to solve their own problems.
-
-
 ##### Workflow diagram
 
-
-[Diagram](rjleveque.pdf)
-
+![Diagram](rjleveque.pdf)
 
 ##### Workflow narrative
 
@@ -50,16 +40,19 @@ In addition to the test problem for which we shared code, the final paper also c
 
 
 ##### Key benefits
-*Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
 
 This workflow proved to be very valuable for this long-term project in which many parts of the code and methodology were evolving.  The initial project was followed by additional funding for a [Phase II](http://hdl.handle.net/1773/25916), in which the focus was on studying current velocities rather than only flow depth.  This required re-running all the tsunami simulations with a modified version of GeoClaw. Having done all the initial work via scripts archived under Git, it was relatively painless to redo these runs.  In the meantime other changes had also been made to the GeoClaw code, and having both our code and GeoClaw under version control was very useful when comparing results.
 
 ##### Key tools
-*If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
+-
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+There were two distinct aspects of reproducibility important in this work. The original development of new techniques was performed in the context of a project that went on for several years and required running many tsunami simulations with the GeoClaw code for the probabilistic studies, each of which took several hours of computing time and produced large quantities of output data.  During this time frame the GeoClaw software was evolving, along with our methodologies.  GeoClaw is openly developed on the GitHub site https://github.com/clawpack/geoclaw. We needed to be able to compare new results with those computed previously, and be able to identify what changed in the software or our code in between, if necessary.  For this aspect the goal was not to openly share all of our work or the results (nor were we allowed to, due to the nature of the project), but we needed to be able to reproduce results ourselves if necessary and keep the code under version control to identify changes.
+
+The other aspect is that we wanted the particular new method written up in the journal paper to be accompanied by the Python code that implements the method and a sample set of data that was used to produce some of the figures in the paper.  In this context we wanted the figures to be reproducible by a reader using this code, in hopes that this would aid others in understanding the methodology and adapting the code to solve their own problems.
 
 ##### General questions about reproducibility
-
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
 
 1) Why do you think that reproducibility in your domain is important?
 

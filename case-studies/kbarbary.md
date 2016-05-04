@@ -4,13 +4,6 @@ Software for analyzing supernova light curve data for cosmology
 
 ##### Introduction
 
-*Please answer these introductory questions for your case study in a
- few sentences.*
-
-1) Who are you and what is your research field? Include your name,
-affiliation, discipline, and the context of your research program
-necessary to frame your case study.
-
 My name is Kyle Barbary and I am currently a postdoc in the physics
 department and a Data Science Fellow in the Institute for Data Science
 at the University of California, Berkeley. I am an observational
@@ -22,33 +15,9 @@ supernova data from many different surveys targeting different
 distances. The workflow I describe is about the creation of software tools
 used to combine and analyze that data in a uniform way.
 
-
-2) Define what the term "reproducibility" means to you generally
-and/or in the particular context of your case study.
-
-To me, reproducibility has two facets: the availability of usable
-software (preferably under an open-source license), and the
-availability of data (preferably in both raw and reduced
-forms). Together, these should give an outsider the ability to
-reproduce the results of a study from start to finish.
-
-I separate these two aspects because each can be beneficial without
-the other. For example, even without releasing data, it can still be
-quite beneficial to release software. If released under an open-source
-licence, this provides a different flavor of reproducibility - the
-ability to reproduce an algorithm described in a paper and use and
-improve that algorithm in subsequent work.
-
-As a side note, in my domain we often settle for a weaker form of full
-reproducibility, where a "reduced" data product and the software to
-analyze it is released, but not the raw data and not the software to
-go from raw to reduced data.
-
-
 ##### Workflow diagram
 
-[Diagram](kbarbary.pdf)
-
+![Diagram](kbarbary.png)
 
 ##### Workflow narrative
 
@@ -110,11 +79,7 @@ for some time and the API is stable enough to be supported in future
 release versions. This is often a difficult judgement call.
 
 
-## PAIN POINTS
-
-*Describe in detail the steps of a reproducible workflow which you
-consider to be particularly painful. How do you handle these? How do
-you avoid them?*
+##### PAIN POINTS
 
 - **Feature stability:** There is a trade-off between adding some
   feature immediately versus waiting until it is obvious whether to
@@ -131,10 +96,6 @@ you avoid them?*
 
 ##### Key Benefits
 
-*An in depth discussion of ideally one, or possibly a few, sections
-of your workflow that you are particularly proud of and feel are
-particularly important or useful to others.*
-
 The separation of common software functionality into a *library* is
 surprisingly unique in this subfield of supernova cosmology. It is a
 boon for reproducibility: published results can include the
@@ -142,6 +103,27 @@ boon for reproducibility: published results can include the
 version of the SNCosmo library used. The fact that the core software
 is a well-documented library means that readers and practitioners can
 more easily understand the specifics of the algorithms used.
+
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+To me, reproducibility has two facets: the availability of usable
+software (preferably under an open-source license), and the
+availability of data (preferably in both raw and reduced
+forms). Together, these should give an outsider the ability to
+reproduce the results of a study from start to finish.
+
+I separate these two aspects because each can be beneficial without
+the other. For example, even without releasing data, it can still be
+quite beneficial to release software. If released under an open-source
+licence, this provides a different flavor of reproducibility - the
+ability to reproduce an algorithm described in a paper and use and
+improve that algorithm in subsequent work.
+
+As a side note, in my domain we often settle for a weaker form of full
+reproducibility, where a "reduced" data product and the software to
+analyze it is released, but not the raw data and not the software to
+go from raw to reduced data.
 
 
 ##### General questions about reproducibility [Optional]

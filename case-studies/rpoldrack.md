@@ -1,19 +1,14 @@
+##### Title
+Developing a reproducible workflow for large-scale phenotyping
+
+
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
-
-Title: Developing a reproducible workflow for large-scale phenotyping
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 My name is Russell Poldrack, and I am a professor in the Department of Psychology at Stanford University.  My work uses neuroimaging, genomics, and behavioral studies to examine the brain systems involved in decision making and executive control.  Many of our workflows use high-performance computing due to the large data and complex nature of the workflows. This particular case study focuses on analysis of a study known as the "MyConnectome study" (http://www.myconnectome.org), which involved intensive data collection from a single individual over the course of 18 months, including neuroimaging, genomic, metabolomic, and behavioral data.  This large heterogenous dataset raised a number of new challenges for reproducible data analysis.
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-In the context of my case study, "reproducibility" means the ability to exactly reproduce the analysis workflow that was used to obtain the results reported in a manuscript. More generally, I take the term to also encompass the consistency of results across different workflows or datasets.
-
 ##### Workflow diagram
 
-poldrack.pdf
+![Diagram](rpoldrack.pdf)
 
 ##### Workflow narrative
 
@@ -43,6 +38,10 @@ The reproducible workflow provides a number of important benefits. First, it pro
 ##### Key tools
 
 I have used Vagrant (https://www.vagrantup.com/) to allow any user to easily provision a virtual machine that includes all of the necesssary dependencies to run the workflow (see https://github.com/poldrack/myconnectome-vm).
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+In the context of my case study, "reproducibility" means the ability to exactly reproduce the analysis workflow that was used to obtain the results reported in a manuscript. More generally, I take the term to also encompass the consistency of results across different workflows or datasets.
 
 ##### General questions about reproducibility
 

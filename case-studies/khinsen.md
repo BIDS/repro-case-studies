@@ -4,8 +4,6 @@ Problem-specific analysis of Molecular Dynamics trajectories for biomolecules
 
 ##### Introduction
 
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
 My name is [Konrad Hinsen](http://dirac.cnrs-orleans.fr/~hinsen/), and I am a researcher at the [Centre de Biophysique Moléculaire](http://cbm.cnrs-orleans.fr/?lang=en) in Orléans, France. My field of research is molecular biophysics, and in particular the study of the flexibility and dynamics of proteins. All of my work is based on computational approaches, of which the most important ones are [elastic network models](http://dirac.cnrs-orleans.fr/plone/Members/hinsen/elastic-network-models-for-proteins) and [Molecular Dynamics](https://en.wikipedia.org/wiki/Molecular_dynamics) (MD) simulations. Moreover, most of my work concerns the development of computational methods rather than the application of already established methods.
 
 This case study is about the extraction of information from MD simulation trajectories, a very common type of work in my field. MD simulations themselves are relatively standard procedures, performed using one of a handful of well-known software packages. They take a few days to a few weeks on a small parallel computer with a few tens of processors, and produce a so-called trajectory file that is one to ten GB in size. Analyzing these trajectories in order to actually learn something about the system that was simulated is a separate step that is much less standardized, meaning that there is a lot of problem-specific code involved. This code is as much a result of the workflow as the plots of the computed quantities.
@@ -18,15 +16,9 @@ For reproducible and publishable workflows, there are three specific challenges 
 
   3. The distinction between "software packages" and "workflows" is not useful when most of the code being executed is problem-specific. A more appropriate code structure is "well-established techniques implemented in libraries", "problem-specific scripts" and at the top level "coordination of a small number of scripts". It's the last two levels that must be captured for reproducibility.
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-Given that my work is 100% computational, my long-term goal is full reproducibility, starting from a specification of the simulation and ending with the plots that go into a journal article. This goal is unrealistic at the moment because the simulation software packages do not support reproducibility. One problem is the accumulation of numerical roundoff errors, which are insufficiently standardized across processors and compilers to be reproducible. Another problem is the widespread use of random number generators without user control over the random seed.
-
-For this reason, I have been setting myself a more modest goal for this case study: reproducibility of the trajectory analysis step, using the MD simulation trajectories as input as if they were experimental data outside of my control. This is a useful compromise because the development of trajectory analysis techniques is the central scientific topic of this work.
-
 ##### Workflow diagram
 
-[Diagram](khinsen.pdf)
+![Diagram](khinsen.pdf)
 
 ##### Workflow narrative
 
@@ -93,6 +85,13 @@ The key tool in my workflow is the [ActivePapers](http://www.activepapers.org/) 
  - dependency tracking across machines by storing all datasets and their dependency graph in a single HDF5 file that can be copied easily from one machine to another
 
 The only other reproducibility-enabling tool in the workflow is a version control system.
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+Given that my work is 100% computational, my long-term goal is full reproducibility, starting from a specification of the simulation and ending with the plots that go into a journal article. This goal is unrealistic at the moment because the simulation software packages do not support reproducibility. One problem is the accumulation of numerical roundoff errors, which are insufficiently standardized across processors and compilers to be reproducible. Another problem is the widespread use of random number generators without user control over the random seed.
+
+For this reason, I have been setting myself a more modest goal for this case study: reproducibility of the trajectory analysis step, using the MD simulation trajectories as input as if they were experimental data outside of my control. This is a useful compromise because the development of trajectory analysis techniques is the central scientific topic of this work.
+
 
 ##### General questions about reproducibility
 

@@ -1,12 +1,8 @@
-#### Title 
+##### Title 
 Reproducible Computational Science on High Performance Computers;
 a View from Neutron Transport
 
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
 My name is Rachel Slaybaugh and I am an Assistant Professor in the Nuclear Engineering Department at the University of California, Berkeley.
 I study computational methods for neutron transport: numerical methods for solving the Boltzmann equation applied to neutral particle interactions. 
 The methods I study are both deterministic (e.g. finite difference, etc.) and stochastic (Monte Carlo).
@@ -14,18 +10,9 @@ I develop these algorithms for reactor design and analysis, radiation shielding,
 Much of my work has an emphasis on high performance computing. 
 (Tagline: intersection of applied math and computational science, informed by nuclear engineering)
 
-
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-The first way I think of reproducibility is "can I/my lab reproduce the results in my paper exactly?" 
-After that, "can an independent researcher, given that they have legal access to the required data and software, reproduce the results?" 
-Nuclear engineering data and codes are often controlled, so for many projects only researchers within my field will have access to the required data and software. 
-Fortunately, such non-open-source codes are typically available at no cost to researchers through a simple licensing process. 
-
 ##### Workflow diagram
 
-[Diagram](slaybaugh.pdf)
-
+![Diagram](slaybaugh.pdf)
 
 ##### Workflow narrative
 
@@ -130,15 +117,19 @@ Similarly, having a repository with literature review notes is good for
 remembering past research, speeds up writing papers and documentation, and
 provides a place to start looking the next time.
 
-
 ##### Key tools
+
 They key tools I use are Doxygen, git (for version control), LaTeX, and plotting
 and data manipulation tools (usually in Python). 
 
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+The first way I think of reproducibility is "can I/my lab reproduce the results in my paper exactly?" 
+After that, "can an independent researcher, given that they have legal access to the required data and software, reproduce the results?" 
+Nuclear engineering data and codes are often controlled, so for many projects only researchers within my field will have access to the required data and software. 
+Fortunately, such non-open-source codes are typically available at no cost to researchers through a simple licensing process. 
 
 ##### General questions about reproducibility
-
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
 
 1) Why do you think that reproducibility in your domain is important?
 

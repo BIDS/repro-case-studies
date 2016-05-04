@@ -1,22 +1,15 @@
+##### Title
 Using the UNIX Utility Make for Reproducible Neuroimaging Workflow and Quality Assurance of Functional Magnetic Resonance Imaging (fMRI) Data
 
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 We are Tara Madhyastha, Natalie Koh and Mary K. Askren, affiliated with the Integrated Brain Imaging Center (Radiology). In this project, we use functional magnetic resonance imaging (fMRI) to interrogate the  function of the brain in elderly individuals to understand how physiological changes relate to mild cognitive impairment and might be predictive of dementia. Specific challenges to processing fMRI data are that the number of steps involved are complicated and can have significant impact on the results, and to achieve the best results, components from many different software packages must be combined. To do this, we need to structure our own pipelines and quality assurance. Data produced using this workflow are visualized in Bach et al (2016).
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-Reproducibility in this context means that given the specifics of the software versions that we are running, our workflow, and the source data, a scientist can obtain the same results from our data that we can.
-
 ##### Workflow diagram
 
-[Diagram](madhyastha.pdf)
+![Diagram](tmadhyastha.pdf)
 
 ##### Workflow narrative
-*Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures. (500-800 words)*
 
 One of the major advances of systems neuroscience in the last two decades is the discovery that, at rest, the correlations of the blood oxygen level-dependent (BOLD) signal in cortical regions of the brain (measured non-invasively using fMRI) describe large-scale networks. These networks are altered in a variety of psychiatric and neurodegenerative disease; however, accurate measurement of networks is difficult in part because of a variety of artifacts, including subject motion.
 
@@ -37,7 +30,6 @@ Documentation for Makefiles is embedded in our Makefiles either using comments (
 Processing is not currently online because the workflows are too computationally expensive to run on a single multicore server, and we often have to trade off disk storage for processing power when deciding where and how to parallelize. We also lack programming resources to develop web-based interfaces for these pipelines. Writing and running the makefiles is less difficult than determining what they should look like, so web-based sharing of workflows has not been a priority.
 
 ##### Pain points
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
 
 An important part of neuroimaging workflow is checking the quality of automated processing steps. However, when manual corrections are necessary it is less clear how to record them in such a way that they can be completely replicated. We currently maintain a spreadsheet with this information, but clearly corrections introduce problems with reproducibility.
 
@@ -46,20 +38,25 @@ Generating figures for papers can involve significant handwork. For example, to 
 Tools such as Rmarkdown and pandoc (or Sweave, odfweave) allow fabulous integration of statistical analysis and text. However, researchers in many labs rely heavily upon Microsoft Word's "track changes" feature to edit papers, making it difficult to entirely couple paper generation and statistical analysis. Thus, there is an unnatural separation of generation of methods text and tables from assembly and editing of the final paper. 
 
 ##### Key benefits
-*Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
 
 Our workflow is unique compared to state-of-the-art in the neuroimaging field because we use Make to describe dependencies. This ensures that only the parts of the workflow that need to be re-executed (because of a failure, or the change to an intermediate result) will be rerun. Practically, avoiding unnecessary computation time is important in neuroimaging workflows that can take many hours or days to run on small clusters of computers. Using scripts written in languages that do not inherently express dependencies (such as bash or Matlab) it is easy to introduce errors when modifiying scripts to execute only uncompleted work.
 
 There are two key advantages of Make over other neuroimaging workflow systems (such as nipype and LONI Pipeline) which also support a dependency graph model. First, Make does not require the core neuroimaging programs to be "wrapped", or surrounded by interface code, that adds development time to the process of designing a workflow and slows adoption of new versions of software programs as they become incompatable with their wrappers. Second, Make builds the dependency graph implicitly from target files, rather than requiring the graph to be drawn or programmed explicitly. 
 
 ##### Key tools
-*If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
 
-There are two key tools that support reproducibility in our workflows. The first is Make, described above. The second is R Markdown, which we use here in combination with Make to generate complex QA reports including statistics, QA images, and graphs generated using R. In workflows not described we use R Markdown to generate data provenance reports suitable for inclusion in a methods section, combining English text describing the workflow with parameters obtained automatically that include software versions and software and scanner acquisition parameters. 
+There are two key tools that support reproducibility in our workflows. The first is Make, described above. The second is R Markdown, which we use here in combination with Make to generate complex QA reports including statistics, QA images, and graphs generated using R. In workflows not described we use R Markdown to generate data provenance reports suitable for inclusion in a methods section, combining English text describing the workflow with parameters obtained automatically that include software versions and software and scanner acquisition parameters.
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+The first way I think of reproducibility is "can I/my lab reproduce the results in my paper exactly?" 
+After that, "can an independent researcher, given that they have legal access to the required data and software, reproduce the results?" 
+Nuclear engineering data and codes are often controlled, so for many projects only researchers within my field will have access to the required data and software. 
+Fortunately, such non-open-source codes are typically available at no cost to researchers through a simple licensing process. 
+
+Reproducibility in this context means that given the specifics of the software versions that we are running, our workflow, and the source data, a scientist can obtain the same results from our data that we can.
 
 ##### General questions about reproducibility
-
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
 
 1) Why do you think that reproducibility in your domain is important?
 

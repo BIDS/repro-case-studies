@@ -18,17 +18,16 @@ author:
     University of California, Berkeley
 bibliography:
 - 'millmanOttoboniStark.bib'
-title: |
-    Reproducible applied statistics:\
-    Is tagging of therapist-patient interactions reliable? 
-...
 
-Introduction
-============
+##### Title
+    
+Reproducible applied statistics:
+Is tagging of therapist-patient interactions reliable? 
 
-Parts of this text have been adapted from @millman2015thesis.
 
-1.  Who are you and what is your research field?
+##### Introduction
+
+__Parts of this text have been adapted from @millman2015thesis.__
 
 We are three applied statisticians (JM, KO, PS) at UC Berkeley working
 with a domain specialist (NS) at the University of Pennsylvania. Our
@@ -36,80 +35,13 @@ case study involves assessing inter-rater reliability (IRR) of the
 assignment of “tags” applied by human raters to classify interactions
 during therapy sessions with children on the autistic spectrum.
 
-2.  Define what the term “reproducibility” means to you generally and/or
-    in the particular context of your case study.
+<!---
+##### Workflow diagram
 
-In this case study,[^1] *reproducibility* means:
+![ Diagram](millmanOttoboniStark.pdf)
+--->
 
--   *Computational reproducibility and transparency.* We have documented
-    (and scripted) nearly every step of the analysis—from cleaning to
-    coding to code execution—and made the code and documentation
-    publicly available.
-
--   *Scientific reproducibility and transparency.* We documented much of
-    the discussion leading to our decisions to take each step in the
-    analysis. We made the data publicly available in an open format,
-    with an adequate data dictionary.
-
--   *Computational correctness and evidence.* We tested our code
-    thoroughly and in an automated fashion, to have justifiable
-    confidence that the code does what it was intended to do. We made
-    those tests publicly available, so that others can see how we
-    validated our computations.
-
--   *Statistical reproducibility.* We invested time to understand the
-    fundamental problem and the results of our analysis so that we do
-    *not* draw conclusions that are not justified by the data, the
-    manner in which it was acquired, and our domain understanding. We
-    avoided “p-hacking” and other potentially misleading selective
-    reporting, and made all our analyses publicly available.
-
-By keeping all code, text, and data in a public version-controlled
-repository, we have made our well-documented analysis available for
-anyone to examine, check, modify, or reuse. We published the data used
-in our study—both the original anonymized version as well as our cleaned
-version including the commands necessary to produce the cleaned version
-from the anonymized one. In addition to making what we did transparent
-to anyone who is interested, working in this way means that when errors
-are found we can identify how and when those errors were introduced. We
-have written tests for almost all our code, which means we have a high
-level of confidence that as we change our code we will catch any errors
-we might have introduced, and can correct them quickly and easily. And
-since we have automated the process of running our analysis, if errors
-are identified and corrected, it is easy to rerun the entire analysis
-from start to finish.
-
-If you have standard tools (see § [Key tools and practices](#key-tools)) on your computer and
-network access, you can run our complete analysis of the cleaned data by
-typing the following three commands from a Unix shell prompt:
-
-    $ git clone git@github.com:statlab/nsgk.git
-    $ cd nsgk/nsgk
-    $ make
-
-The first command creates a directory `nsgk` in your current working
-directory with a copy of the project repository (i.e., a directory with
-our code, data, and text along with the provenance of these documents).
-This directory contains this document as well as everything needed to
-run our analysis. Inside `nsgk/nsgk` there is a `Makefile`, our analysis
-script `analysis.py`, and the output `results.csv` of that script.
-
-When you enter the command `make`, the following commands will be run:
-
-    virtualenv -p /usr/bin/python2.7 venv
-    venv/bin/pip install --upgrade pip
-    venv/bin/pip install -r requirements.txt
-    venv/bin/python analysis.py
-
-The first command creates a new virtual environment[^2] (`venv`) for
-Python 2.7. Using this new virtual environment (`venv`) the subsequent
-commands respectively upgrade the Python package manager (`pip`) to the
-most recent version, install the necessary Python package dependencies
-(`numpy 1.11.0`, `scipy 0.17.0`, and `permute 0.1a2`), and run the
-analysis script `analysis.py`.
-
-Workflow narrative
-==================
+##### Workflow narrative
 
 Our project arose from a pilot study NS was working on with Dr. Gilbert
 Kliman of the Children’s Psychological Health Center in San Francisco.
@@ -186,8 +118,7 @@ conduct reproducible and collaborative applied statistics research with
 our colleagues. We discuss the software tools and practices briefly in
 § [Key tools and practices](#key-tools) below.
 
-Understand problem (80 hours)
------------------------------
+##### Understand problem (80 hours)
 
 The Kliman-Stark research project sought to identify characteristics of
 effective clinical interactions with children on the autistic spectrum.
@@ -227,8 +158,7 @@ code in an interactive IPython session. This helped ensure that we all
 understood the problem well and it also helped us catch errors (typos as
 well as conceptual misunderstandings).
 
-Get and clean data (13 hours)
------------------------------
+##### Get and clean data (13 hours)
 
 The tag data were collected by NS and raters working at her direction.
 The data comprise ratings of segments of 8 videos by 10 trained raters.
@@ -262,8 +192,7 @@ explanation of what we did to NS to verify that the corrections were
 appropriate. As a result, we provide the cleaned data in our project
 repository as well as a careful account of its provenance.
 
-Design algorithm (25 hours)
----------------------------
+##### Design algorithm (25 hours)
 
 Although the test we eventually implemented was very similar to the
 original test proposed by PS at the start of the project, we (JM, KO,
@@ -322,8 +251,7 @@ PS) used the nonparametric combination (NPC) of tests
 developed a computationally efficient approach to finding the overall
 $p$-value for the NPC test.
 
-Implement algorithm (5 hours)
------------------------------
+##### Implement algorithm (5 hours)
 
 Once we had a blueprint of the algorithm, KO led the implementation
 effort. She did most of the coding; JM and PS reviewed the code and
@@ -344,8 +272,7 @@ KO wrote three functions to implement our general IRR algorithm:
     statistic by combining the $S$ distributions of the IRR partial test
     statistic for each of the $S$ strata.
 
-Analyze data (1 hour)
----------------------
+##### Analyze data (1 hour)
 
 Once we merged KO’s implementation of the general algorithm (including
 tests) into `permute`, KO wrote a short script (about 50 lines of
@@ -371,8 +298,7 @@ analysis script contained only high-level commands:
 
 3.  Save the results to a CSV file
 
-Understand result (20 hours) {#subsec:understand-result}
-----------------------------
+##### Understand result (20 hours) {#subsec:understand-result}
 
 At a high level, even the summary statistics we computed were useful:
 some tags were never applied by any rater to any video. Presumably, the
@@ -406,8 +332,7 @@ eliminate some of the sources of error in the data. Regardless, this
 work has led to a new nonparametric test for inter-rater reliability,
 now available publicly in the `permute` package.
 
-Pain points
-===========
+##### Pain points
 
 Given our different backgrounds and experiences we (JM, KO, PS) each
 found different points in the process challenging. However, for all of
@@ -434,8 +359,7 @@ However, when data have already been entered by hand, there is not much
 that can be done other than being cautious when “fixing” data entry
 errors and recording every aspect of the data cleaning process.
 
-Key benefits
-============
+##### Key benefits
 
 Since @buckheit1995wavelab popularized the idea of computational
 reproducibility, applied statisticians have increasingly embraced
@@ -462,8 +386,7 @@ computational practices provide the following benefits:
     package so that others can discover, check, use, and extend our
     methods.
 
-Key tools and practices {#key-tools}
-=======================
+##### Key tools and practices {#key-tools}
 
 As part of the development of our software package `permute`, we
 invested significant effort in setting up a development infrastructure
@@ -472,8 +395,7 @@ incrementally improved and documented. To this end, we have adopted best
 practices for software development used by successful open source
 projects [@millman2014developing].
 
-Version control and code review
--------------------------------
+##### Version control and code review
 
 We (JM, KO, PS) use Git[^7] as our version control system (VCS) and
 GitHub[^8] as the public hosting service for our official `upstream`
@@ -501,8 +423,7 @@ the code review system in place will make it easier for new people to
 contribute as well as capturing our design discussions and decisions for
 future reference.
 
-Testing and continuous integration
-----------------------------------
+##### Testing and continuous integration
 
 We used the `nose` testing framework for automating our testing
 procedures.[^9] This is the standard testing framework[^10] used by the
@@ -543,8 +464,7 @@ tests. This means that when you review a pull request, you can
 immediately see whether the proposed changes break any tests and whether
 the new code decreases the overall test coverage.
 
-Documentation
--------------
+##### Documentation
 
 We use Sphinx[^12] as our documentation system and have extensive
 developer documentation and the foundation for high-quality user
@@ -559,8 +479,7 @@ called reStructuredText.[^14] This system enables us to easily embed
 references, figures, code that is auto-run during documentation
 generation, as well as mathematics using LaTeX.
 
-Release management
-------------------
+##### Release management
 
 Our development workflow ensures that the official `upstream` repository
 is always stable and ready for use. This means anyone can install our
@@ -630,5 +549,76 @@ in this case study, type the following command from a shell prompt
 
 [^16]: PyPI is the Python equivalent of *The Comprehensive R Archive
     Network* (CRAN).
+    
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
 
-# References
+In this case study,[^1] *reproducibility* means:
+
+-   *Computational reproducibility and transparency.* We have documented
+    (and scripted) nearly every step of the analysis—from cleaning to
+    coding to code execution—and made the code and documentation
+    publicly available.
+
+-   *Scientific reproducibility and transparency.* We documented much of
+    the discussion leading to our decisions to take each step in the
+    analysis. We made the data publicly available in an open format,
+    with an adequate data dictionary.
+
+-   *Computational correctness and evidence.* We tested our code
+    thoroughly and in an automated fashion, to have justifiable
+    confidence that the code does what it was intended to do. We made
+    those tests publicly available, so that others can see how we
+    validated our computations.
+
+-   *Statistical reproducibility.* We invested time to understand the
+    fundamental problem and the results of our analysis so that we do
+    *not* draw conclusions that are not justified by the data, the
+    manner in which it was acquired, and our domain understanding. We
+    avoided “p-hacking” and other potentially misleading selective
+    reporting, and made all our analyses publicly available.
+
+By keeping all code, text, and data in a public version-controlled
+repository, we have made our well-documented analysis available for
+anyone to examine, check, modify, or reuse. We published the data used
+in our study—both the original anonymized version as well as our cleaned
+version including the commands necessary to produce the cleaned version
+from the anonymized one. In addition to making what we did transparent
+to anyone who is interested, working in this way means that when errors
+are found we can identify how and when those errors were introduced. We
+have written tests for almost all our code, which means we have a high
+level of confidence that as we change our code we will catch any errors
+we might have introduced, and can correct them quickly and easily. And
+since we have automated the process of running our analysis, if errors
+are identified and corrected, it is easy to rerun the entire analysis
+from start to finish.
+
+If you have standard tools (see § [Key tools and practices](#key-tools)) on your computer and
+network access, you can run our complete analysis of the cleaned data by
+typing the following three commands from a Unix shell prompt:
+
+    $ git clone git@github.com:statlab/nsgk.git
+    $ cd nsgk/nsgk
+    $ make
+
+The first command creates a directory `nsgk` in your current working
+directory with a copy of the project repository (i.e., a directory with
+our code, data, and text along with the provenance of these documents).
+This directory contains this document as well as everything needed to
+run our analysis. Inside `nsgk/nsgk` there is a `Makefile`, our analysis
+script `analysis.py`, and the output `results.csv` of that script.
+
+When you enter the command `make`, the following commands will be run:
+
+    virtualenv -p /usr/bin/python2.7 venv
+    venv/bin/pip install --upgrade pip
+    venv/bin/pip install -r requirements.txt
+    venv/bin/python analysis.py
+
+The first command creates a new virtual environment[^2] (`venv`) for
+Python 2.7. Using this new virtual environment (`venv`) the subsequent
+commands respectively upgrade the Python package manager (`pip`) to the
+most recent version, install the necessary Python package dependencies
+(`numpy 1.11.0`, `scipy 0.17.0`, and `permute 0.1a2`), and run the
+analysis script `analysis.py`.
+
+##### References

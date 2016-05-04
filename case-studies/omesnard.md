@@ -1,12 +1,10 @@
-*Authors: Olivier Mesnard, Lorena A. Barba*
+##### Authors
+Olivier Mesnard, Lorena A. Barba
 
-*Title: Achieving full replication of our own published CFD results, with four different codes*
+##### Title 
+Achieving full replication of our own published CFD results, with four different codes
 
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
 We are members of a computational research group led by Prof. [Lorena Barba](http://lorenabarba.com) at the George Washington University in the department of Mechanical and Aerospace Engineering. 
 We do our best to accomplish reproducible research and have for years worked to improve our practices to achieve this goal.
 According to the "Reproducibility PI Manifesto," pledged by Barba in 2012, all our research code is under version control and open source, our data is open, and we publish open pre-prints of all our publications.
@@ -14,75 +12,11 @@ For the main results in a paper, we prepare file bundles with input and output d
 This case study describes what happened when we set out to complete a full replication of published results from our own group, using different Computational Fluid Dynamics (CFD) codes: a new code developed in our group, an open-source code developed by another group, and an open-source CFD library.
 
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-The starting point for our understanding of reproducibility is contained in the pledge "Reproducibility PI Manifesto" (Barba, 2012) which includes these steps:
-
-1. teaching group members about reproducibility;
-2. maintaining all code and writing under version-control;
-3. carrying out verification and validation and publishing the results;
-4. for main results in a publication, sharing data, plotting scripts, and figures under CC-BY; 
-5. uploading preprints to arXiv at the time of submission of a paper;
-6. releasing code no later than the time of submission of a paper;
-7. adding a "Reproducibility" statement to each publication;
-8. keeping an up-to-date web presence.
-
-Some of these items have to do with making our research materials and methods open access and discoverable. 
-The core of this pledge is releasing the code, the data, and the analysis/visualization scripts. 
-Already this can be time consuming and demanding.
-Yet, we have come to consider these steps the most basic level of reproducible research.
-On undertaking a full replication study of a previous publication by our research group, we came to realize how much more rigor is required to achieve this, in the context of computational fluid dynamics of unsteady flows.
-We use the term "full replication" in the sense presented by Peng (2011), that is, completing an independent study using new methods to collect new data, arriving in the end at the same scientific findings.
-In computational fluid dynamics, full replication of the findings can involve using a different code that implements the same numerical method, or a code that implements a different numerical method altogether but solves the same mathematical model.
-Because we are solving the Navier-Stokes equations—an unsteady and nonlinear model—certain problem scenarios can present particular challenges to replication.
-
 ##### Workflow diagram
 
-The core of your case study is a diagrammatic workflow sketch, which depicts your the entire pipeline of your workflow. Think of this like a circuit diagram: boxes represent steps, tools, or other disjoint components, and arrows show how outputs of particular steps feed as inputs to others. This diagram will be complemented by a textual narrative.
-
-We recommend the site draw.io for creating this diagram, or you are also welcome to sketch this by hand. While creating your diagram, be sure to consider:
-
-* specialized tools and where they enter your workflow
-* the "state" of the data at each stage
-* collaborators
-* version control repos
-* products produced at various stages (graphics, summaries, etc)
-* databases
-* whitepapers
-* customers
-
-Each of the two example case studies include a workflow diagram you can also use for guidance.
-
-Please save your diagram alongside this completed case study template.
-
-[workflow diagram](omesnard.pdf)
+![Diagram](omesnard.pdf)
 
 ##### Workflow narrative
-
-Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures.
-
-It may be helpful to consider the following questions, where interesting, applicable, and non-obvious from context. For each part of your workflow:
-
-* **Frequency:** How often does the step happen and how long does it take?
-* **Who:** Which members of your team participate (or not)?
-* **Manual/Automated:** Is the step automated or does it involve human intervention (if so, is it recorded)?
-* **Tools:** Which software or online tools are used in the step? How are they used?
-
-In addition to detailing the steps of the workflow, you may wish to consider the following questions about the workflow as a whole:
-
-* **Data:** Is your raw data online?
-   * Is it citeable?
-   * Does the license allow external researchers to publish a replication/confirmation of your published work?
-* **Software:** Is the software online?
-   * Is there documentation?
-   * Are there tests?
-   * Are there example input files alongside the code?
-* **Processing:** Is your data processing workflow online?
-   * Are the scripts documented?
-   * Would an external researcher know what order to run them in?
-   * Would they know what parameters to use?
-
-*(500-800 words)*
 
 Our research lab has developed over the years a consistent workflow that, we believe, leads to reproducible research.
 A previous study coming out of our lab, published in Krishnan et al. (2014), already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
@@ -134,7 +68,6 @@ These packages include the version of the software, the input parameters, inform
 - Taira, K., & Colonius, T. (2007). The immersed boundary method: a projection approach. Journal of Computational Physics, 225(2), 2118-2137.
 
 ##### Pain points
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
 
 A critical ingredient in a reproducible workflow is keeping a detailed, up-to-date, and version-controlled lab notebook.
 It is nearly unthinkable that a proper lab notebook for recording computational experiments could be kept without scripting all steps— pre-processing, running, post-processing—and automaticaly saving command-line inputs. 
@@ -148,7 +81,6 @@ These scripts, however, are essential to deliver reproducible computational expe
 
 
 ##### Key benefits
-*Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
 
 In the field of computational fluid dynamics, it can easily take six months or a year to develop software from scratch for solving a specific fluid-flow scenario.
 On publishing the results, if the authors do not release the code and data used for the study, it leaves any reader hoping to reproduce the results facing a steep time investment.
@@ -160,7 +92,6 @@ For this reason, the minimum level of reproducibility—making code and data ava
 Going beyond sharing code and data, full automation and digital recording of experimental campaigns offer the best guarantee of being able to extract scientific value from computational experiments.
 
 ##### Key tools
-*If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
 
 We use the version-control hosting platform GitHub to support our reproducible workflow. 
 GitHub greatly facilitates collaboration when developing numerical codes and documentation. 
@@ -171,9 +102,29 @@ Progress reports and summaries for discussion in group meetings are best present
 For a digital record of all steps taken in preparing a simulation and running it, bash scripting is essential.
 We also use Travis CI for running automated testing of the codes whenever a change is to be merged into the main repository.
 
-##### General questions about reproducibility
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
 
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
+The starting point for our understanding of reproducibility is contained in the pledge "Reproducibility PI Manifesto" (Barba, 2012) which includes these steps:
+
+1. teaching group members about reproducibility;
+2. maintaining all code and writing under version-control;
+3. carrying out verification and validation and publishing the results;
+4. for main results in a publication, sharing data, plotting scripts, and figures under CC-BY; 
+5. uploading preprints to arXiv at the time of submission of a paper;
+6. releasing code no later than the time of submission of a paper;
+7. adding a "Reproducibility" statement to each publication;
+8. keeping an up-to-date web presence.
+
+Some of these items have to do with making our research materials and methods open access and discoverable. 
+The core of this pledge is releasing the code, the data, and the analysis/visualization scripts. 
+Already this can be time consuming and demanding.
+Yet, we have come to consider these steps the most basic level of reproducible research.
+On undertaking a full replication study of a previous publication by our research group, we came to realize how much more rigor is required to achieve this, in the context of computational fluid dynamics of unsteady flows.
+We use the term "full replication" in the sense presented by Peng (2011), that is, completing an independent study using new methods to collect new data, arriving in the end at the same scientific findings.
+In computational fluid dynamics, full replication of the findings can involve using a different code that implements the same numerical method, or a code that implements a different numerical method altogether but solves the same mathematical model.
+Because we are solving the Navier-Stokes equations—an unsteady and nonlinear model—certain problem scenarios can present particular challenges to replication.
+
+##### General questions about reproducibility
 
 1) Why do you think that reproducibility in your domain is important?
 

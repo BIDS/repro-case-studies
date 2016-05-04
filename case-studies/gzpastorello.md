@@ -4,22 +4,11 @@ Generation of uniform data products for AmeriFlux and FLUXNET
 
 ##### Introduction
 
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
 I'm [Gilberto Pastorello](http://www.gilbertozp.org/), a [Research Scientist](http://crd.lbl.gov/departments/data-science-and-technology/idf/staff/gilberto-pastorello/) at Lawrence Berkeley National Laboratory, doing research on life-cycle management of scientific data, encompassing data and metadata structures and linkages, data quality and data uncertainty quantification, and end-to-end data systems. The part of my work described here involves development of data processing pipelines and data management solutions within the environmental domain. This work is done for the [AmeriFlux](http://ameriflux.lbl.gov/) and [FLUXNET](http://fluxnet.fluxdata.org/) research networks.
-
-
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-For this case study, reproducibility means being able to apply standard methods to process heterogeneous data sets to generate comparable data products. The data sources for our processing are distributed across very different ecosystems, with data acquired, processed, and quality checked by different teams. The data products we generate from these data sets need to be in the same scales and have comparable levels of quality, representativity, etc.
-
-
 
 ##### Workflow diagram
 
 [Diagram](gzpastorello.pdf)
-
-
 
 ##### Workflow narrative
 
@@ -35,6 +24,11 @@ The product merging step reformats the data into common structures and combines 
 
 The pr multiple team members understand and can generate products, it is much more likely that problems will be identified early, questions from external members of the community will be answered more easily, and funding agencies will have documented product releases (data and software), which can be combined with other types of publications in assessments of scientific impact.
 
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+For this case study, reproducibility means being able to apply standard methods to process heterogeneous data sets to generate comparable data products. The data sources for our processing are distributed across very different ecosystems, with data acquired, processed, and quality checked by different teams. The data products we generate from these data sets need to be in the same scales and have comparable levels of quality, representativity, etc.
+
+##### General questions about reproducibility [Optional]
 
 5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 

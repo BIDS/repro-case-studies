@@ -4,25 +4,14 @@ Processing of airborne laser altimetry data using cloud-based Python and relatio
 
 ##### Introduction
 
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
 My name is Anthony Arendt and I hold a joint appointment as a Senior Research Scientist at the Applied Physics Laboratory, and a Research Fellow at the eScience Institute, University of Washington. I am part of a research team that studies the impact of glaciers on rising global sea levels, with a focus on the glaciers of Alaska and northwestern Canada. During the past 20 years my colleagues at the University of Alaska Fairbanks have been measuring the elevation changes of Alaska's glaciers using Light Detection and Ranging (LiDAR) data collected from a small aircraft. Our LiDAR system consists of a laser range finder and Global Positioning System (GPS) that measures the precise elevation along the centerline of the glacier surface. By repeating these observations through time, we estimate total changes in mass of each observed glacier, and then extrapolate these data to unmeasured glaciers based on information acquired from satellite imagery. From this we produce detailed maps of the spatial distribution of glacier mass change and the total contribution of these ice masses to global ocean change.
 
 During the 20 year duration of the project the data analysis has evolved from manual manipulation of text files, to a semi-automated workflow that integrates Geographic Information System (GIS), relational database and Python tools within a cloud computing framework. Here we describe the workflow which culminated in a recent publication [(Larsen et al., 2015)](http://onlinelibrary.wiley.com/doi/10.1002/2015GL064349/full). Core developers of the software include Evan Burgess, Christian Kienholz, Justin Rich, Anthony Arendt and Christopher Larsen. 
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-Reproducibility is a crucial component of our workflow due to the dynamic nature of our monitoring campaign, and the need to constantly update the position and elevation of glaciers as they change in response to climate. We achieve reproducibility through: 
-
-+ maintaining consistency in the input datasets
-+ utilizing a series of scripts to automate data ingest and filtering
-+ storing raw and filtered/processed data in a relational database
-+ generating data objects that handle typical data analysis functions
-+ scripting all manuscript figures in Jupyter notebooks
 
 ##### Workflow diagram
  
-[workflow diagram](arendt.pdf)
+![Diagram](aarendt.pdf)
 
 ##### Workflow narrative
 
@@ -61,6 +50,17 @@ Therefore our collaborators in government and/or those located in Alaska had to 
 ##### Key tools
 
 Hosting our resources in a cloud environment played a vital role in making our workflow reproducible. The cloud enabled us to co-locate our scripts with the observations, enabling rapid processing and minimizing the need to transfer files. Additionally, using a relational database to store our geospatial datasets provided efficient methods for us to explore a wide range of spatial relationships in our datasets. 
+
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+Reproducibility is a crucial component of our workflow due to the dynamic nature of our monitoring campaign, and the need to constantly update the position and elevation of glaciers as they change in response to climate. We achieve reproducibility through: 
+
++ maintaining consistency in the input datasets
++ utilizing a series of scripts to automate data ingest and filtering
++ storing raw and filtered/processed data in a relational database
++ generating data objects that handle typical data analysis functions
++ scripting all manuscript figures in Jupyter notebooks
 
 ##### General questions about reproducibility
 

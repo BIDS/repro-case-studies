@@ -2,19 +2,12 @@
 Detection and classification of cervical cells
 
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 My name is Daniela Ushizima, and much of my research work is in devising machine vision and pattern recognition algorithms as part of software tools for handling image-centric data, especially those arising from the Department of Energy imaging facilities. I am currently a [Staff Scientist](http://vis.lbl.gov/~daniela) at the Lawrence Berkeley National Laboratory and a [Data Science Fellow](https://bids.berkeley.edu/people/daniela-ushizima) for the Berkeley Institute for Data Science at the University of California, Berkeley. The case study I describe here illustrates the core steps in designing a machine vision algorithm to analyze a set of digital images and organize them according to the desired criteria. There are several image processing and analysis frameworks that encapsulate algorithms; this case study refers to [ImageJ](https://imagej.nih.gov/ij/), a powerful image analysis tool.
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-In the context of this case study, the work will be computationally reproducible when the software tools our team builds can also be used by the science domain experts -- these must be able to transform raw data files into quantifiable patterns, obtaining consistent results with previous/tested analyses. Because algorithmic parameters often change from a dataset to another, it can be challenging to get results with the same accuracy, given different datasets.
-
 ##### Workflow diagram
 
-[Diagram](dushizima.pdf)
+![Diagram](dushizima.pdf)
 
 ##### Workflow narrative
 
@@ -36,24 +29,23 @@ The fifth column shows the main ways in which *consumers* of the outputs will ha
 
 
 ##### Pain points
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them?*
 
 The software tool design and testing require intense communication among the team members through reports and presentations. Although part of team used version control, much of the code is still to be made available open-source through Github. In addition to commit messages, which tend to be short, we have also maintained technical reports, developed as a diary of activities -- these are fundamental to keep the whole team synchronized and up to speed. The painful side of diary or electronic lab books is mostly the free form of inputs that may require extra-time to parse.
 
 ##### Key benefits
-*Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
 
 The most reproducible part of this project has been the development of code allied to simulated datasets. This activity improved across the team, particularly due to participation in code competitions organized by our consortium, which forced the whole team to organize data sources and code with eyes on easy re-run by reviewers. Keeping track of advancements in a common digital lab book helped considerably in preparing manuscripts and other technical reports.
 
 
 ##### Key tools
-*If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
 
 An important tool has been ImageJ, a Java-based image processing software program, which was originally developed by Wayne Rasband within NIH circa 1997. Although most of the ImageJ plug-ins focus on medical imaging, this framework has been widely used in other applications, such as material sciences.
 
-##### General questions about reproducibility
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
 
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
+In the context of this case study, the work will be computationally reproducible when the software tools our team builds can also be used by the science domain experts -- these must be able to transform raw data files into quantifiable patterns, obtaining consistent results with previous/tested analyses. Because algorithmic parameters often change from a dataset to another, it can be challenging to get results with the same accuracy, given different datasets.
+
+##### General questions about reproducibility
 
 1) Why do you think that reproducibility in your domain is important?
 

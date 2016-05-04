@@ -1,20 +1,16 @@
 
-# Analyzing cosponsorship data to detect networking patterns in Peruvian legislators
+#####Title
+ Analyzing cosponsorship data to detect networking patterns in Peruvian legislators
 
 ##### Introduction
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 I am José Manuel Magallanes. I am a Senior Data Science Fellow at the eScience Institute of the University of Washington, where I am also a Visiting Professor at the Evans School of Public Policy and Governance (2015 - 2017). Since 2003, I have been Professor of Political Science and Public Policy Methodology at the Catholic University of Peru. My research is related to framing political and policy problems with a computational social science approach. I have dealt with different topics including electoral behavior, public management performance, climate change and social conflict, and Congress's legislators behavior. My contribution for this case will be a research carried out on bill cosponsorship data to detect key players, reveal association patterns, anticipate party splitting and detect tactics to get re-elected. 
 
 I have a BSc in Computer Science (UNMSM - Peru), a MA in Political Science and Public Management (PUCP - Peru), a Phd in Psychology (UNMSM - Peru) and a Phd in Computational Social Science (George Mason University-USA).
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-In general, I consider this term means the level of reconstruction of a research that can be achieved by a person foreign to the researcher / research team via the code and data available in some repository. For me, reproducibility is not only that the foreign person can decompress and run and executable file to see the results, but be able to audit the whole process. The less feedback required by the auditor, the more reproducible a  work is.
 
 ##### Workflow diagram
-![image](DiagramMagallanes_REVISED.pdf)
+![Diagram](jmMagallanes.pdf)
 
 ##### Workflow narrative
 
@@ -136,6 +132,10 @@ I consider the way I worked allowed me to obtain several benefits:
 Latex was a key component in all this research and its reproducibility level. It offers a way to organize the paper and interact with code and data files, including references and plots. This can not be done using Word, as far as I know. Latex is not a common software in social scientists in my country.
 RStudio is also a key ingredient. Its capacity to transform the R chunks and its output (including tables, values and plots) into Latex makes the flow and update of research even better.
 Both Latex and RStudio facilitate reproducibility. Without R, the barrier for producing papers is even higher, but it can be done. It gives you more confidence and save you lots of time to update/edit your manuscript, compare to copy, past or inserting procedures in MsWord. The flow is simply great. 
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+In general, I consider this term means the level of reconstruction of a research that can be achieved by a person foreign to the researcher / research team via the code and data available in some repository. For me, reproducibility is not only that the foreign person can decompress and run and executable file to see the results, but be able to audit the whole process. The less feedback required by the auditor, the more reproducible a  work is.
 
 ##### General questions about reproducibility
 

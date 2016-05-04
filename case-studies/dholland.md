@@ -3,49 +3,15 @@
 
 Using Observational Data and Numerical Modeling to make Scientific Discoveries in Climate Science
 
-
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 My name is David Holland.  I am a Professor of Mathematics and Atmosphere Ocean Science at New York University's Courant Institute.  I study global sea level rise in a changing climate, specifically, how changes in global weather patterns affect the melting of the great ice sheets.
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-"Reproducibility" for me means that someone, anyone, could read my published research, then take the data  sets I have archived on the web and use them to reproduce the results I had in my published paper.
-
 ##### Workflow diagram
 
-The core of your case study is a diagrammatic workflow sketch, which depicts your the entire pipeline of your workflow. Think of this like a circuit diagram: boxes represent steps, tools, or other disjoint components, and arrows show how outputs of particular steps feed as inputs to others. This diagram will be complemented by a textual narrative.
-
-We recommend the site draw.io for creating this diagram, or you are also welcome to sketch this by hand. While creating your diagram, be sure to consider:
-
-* specialized tools and where they enter your workflow
-* the "state" of the data at each stage
-* collaborators
-* version control repos
-* products produced at various stages (graphics, summaries, etc)
-* databases
-* whitepapers
-* customers
-
-Each of the two example case studies include a workflow diagram you can also use for guidance.
-
-Please save your diagram alongside this completed case study template.
+![Diagram](dholland.pdf)
 
 ##### Workflow narrative
-
-
-Referring to your diagram, describe your workflow for this specific project, from soup to nuts. Imagine walking a friend or a colleague through the basic steps, paying particular attention to links between steps. Don't forget to include "messy parts", loops, aborted efforts, and failures.
-
-It may be helpful to consider the following questions, where interesting, applicable, and non-obvious from context. For each part of your workflow:
-
-* **Frequency:** How often does the step happen and how long does it take?
-* **Who:** Which members of your team participate (or not)?
-* **Manual/Automated:** Is the step automated or does it involve human intervention (if so, is it recorded)?
-* **Tools:** Which software or online tools are used in the step? How are they used?
-
 
 The goal of our workflow design is to use observations and computer models to make new discoveries about the natural environment particularly in the context of climate change.  The approach we take in our algorithm design is to generally always look for an interesting phenomena in the observational record first.  If we find it there, then we generally proceed to try to simulate it in a computer model as an independent check on the physical plausibility of the phenomena in question.  In this very specific workflow, we will illustrate our approach for the particular question: does the North Atlantic Ocean drive climate change in Western Antarctica?
 
@@ -57,7 +23,7 @@ The next step in the algorithm is to employ a physically based numerical model o
 
 At this final stage, having made a new discovery in two independent manners, one purely observational and one purely computer modeling, we are ready to report our findings to the scientific community.  This involves a rigorous peer-review process that imposes a number of reproducibility requirements.  A section of the manuscript must be devoted to explaining where all data sets are located and how a reviewer or future reader could access the same data sets we use.  Likewise, we are required to describe the computer model we used and how a future researcher can access the same model.  While the main scientific article is relatively brief (about 4 printed pages), giving the reader the essential information on what we found and how we found it, we also write a supplementary materials section.  This is an exhaustive description of each step we took with our observations and our modeling.
 
-In addition to detailing the steps of the workflow, you may wish to consider the following questions about the workflow as a whole:
+##### Workflow narrative (additional questions)
 
 * **Data:** Is your raw data online?
 
@@ -88,29 +54,22 @@ The numerical climate code is used by a large number of people, it is well docum
 
 To some extent yes, to some extent no.  As mentioned in our published paper, there is a supplementary document.  There is not the actual computer scripts used to perform the regressions nor those to run the numerical climate model.  These could in fact be put on-line if there was a repository for such information.  However, in our estimation, if someone was to try to reproduce our research it would probably be more natural for them to write their own scripts as this has the additional benefit that they might not fall into any error we may have accidentally introduced in our scripts.
 
-
-*(500-800 words)*
-
 ##### Pain points
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them? (200-400 words)*
 
 The most difficult part of reproducing these results is the sheer volume of the data sets involved and the amount of computational storage and time required to complete all these calculations.  Transferring large volumes of data from super computers (where the main code is run) to personal computers (where the analysis is generally performed) is an onerous and time consuming task with many failure points.  Often data transfer is incomplete, storage disks break or fail, and weeks or months of research time is lost.  In such case, one has to simply go back to the start and begin again.
 
 ##### Key benefits
-*Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example? (200-400 words)*
 
 Our approach of independently using observational data and modeling is a stronger approach than that of just using one or the other.  Our approach also is to abandon findings that are contradictory between independent observational data sets as this suggests that the data is of inadequate quality to proceed further with any analysis or conclusion.  In other words, if you find something interesting in analysis of one data set, but not in another similar one, despite the temptation to proceed with the interesting finding, one must acknowledge that the contradiction prevents moving forward.
 
 ##### Key tools
-*If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience. (200-400 words)*
 
 We have nothing special to report here but are aware of efforts in the computer science community to better track the workflow stages of a research project.  In our project, such software would have been beneficial in that our workflow algorithm could be online and a user could click through it and find the scripts and data sets and models we used.
 
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+"Reproducibility" for me means that someone, anyone, could read my published research, then take the data  sets I have archived on the web and use them to reproduce the results I had in my published paper.
 
 ##### General questions about reproducibility
-
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
-
-
 
 Reproducibility is at the heart of natural science.  Without being able to perform an experiment and achieve a certain result, and then to have an independent scientist reproduce the same result, the research finding is murky.  Our publications in high-profile journals, such as Science and Nature, demand that we include a methods section in our papers, as well as carefully document the location of all our data sets on the internet. Some of the research code developed requires years to master.  Scientific funding and the number of scientists available to do the work is finite.  Therefore not every scientific result can, or should be reproduced.  The most important, paradigm shifting results should, however, be reproduced.  In the case of climate science, important decisions by world leaders rely on scientific findings.  These finding must be robust and reproducible in order to guide energy use policy. In our study, we reached the same conclusion using both purely observational data and then independently through a computer simulation of the same phenomenon.  Finding the same result in two completely independent manners gives us confidence in our findings. 

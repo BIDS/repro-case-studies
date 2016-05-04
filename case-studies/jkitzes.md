@@ -3,19 +3,12 @@
 Analyzing bat distributions in a human-dominated landscape with autonomous acoustic detectors and machine learning models
 
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
 My name is Justin Kitzes, and I am a quantitative ecologist who works to develop new theory and data sets for predicting the effects of land use and climate change on biodiversity. I am currently a postdoc in the Energy and Resources Group and a Data Science Fellow in the Institute for Data Science at the University of California, Berkeley. My field work focuses on the ecology and conservation of bats in complex, human-altered landscapes. This case study decribes the use of acoustic detectors, machine learning, and likelihood statistics to examine the effects of three large Northern California highways on bat activity.
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-I consider a study to be (computationally) reproducible when I can send a colleague a zip file containing my raw data and code and he or she can push a single button to create all of the results, tables, and figures in my analysis. It can, of course, be quite challenging to achieve this goal with anything short of the simplest scientific workflows.
-
 ##### Workflow diagram
 
-[Diagram](jkitzes.pdf)
+![Diagram](jkitzes.pdf)
 
 ##### Workflow narrative
 
@@ -32,25 +25,27 @@ As functions for fitting generalized linear mixed models (GLMMs) were not availa
 In addition to the manuscript, a second output of this project was the open source software [BatID](https://github.com/jkitzes/batid), which bundled the classifier object with a browser-based interface to enable non-programmers to automatically classify California bat calls. This software is freely available for download and has been used by researchers in academia, government, and the private sector.
 
 ##### Pain points
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them?*
 
 At the beginning of the workflow, two closed-source graphical programs had to be used, one to convert a proprietary data format to the zero-crossing format and the second (AnalookW) to perform feature extraction on the zero-crossing call files. Both of these steps required parameters to be entered into these programs, which I was careful to document manually, as this information can otherwise easily be lost. AnalookW runs only on Windows, which required me (and any analysts wishing to use my later software BatID) to locate a Windows computer to complete this step. Although I code faster and more accurately in Python, I needed to switch to R for statistical analysis, as the necessary packages were not (and still are not) available for Python. A major headache at the manuscript stage arose because the R statistical functions reported output only as a non-machine-readable text file or as an object, which required me to create the final table, containing coefficients and standard errors for 14 variables across 5 models, by hand.
 
 Once I created and released the BatID software, a problem immediately arose when the scikit-learn package was updated to v0.13, which could not read the classifier object created during my analysis. Additionally, the original BatID package required a user to install a full scientific Python stack, a task that proved difficult for precisely the audience of non-programmers that I was hoping to reach. I eventually used pyinstaller to create a standalone binary executable for Windows, reasoning that users of the software needed a Windows computer anyway in order to run AnalookW as a prior step in the analysis. Creating this distributable binary was not straightforward and took many days of trial-and-error testing and manual tuning.
 
 ##### Key benefits
-*Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want ahem to learn from your example?*
 
 Of all aspects of the analysis, I am particularly happy about the effort that I put in to creating the BatID standalone classifier software. As the many of my colleagues in ecology are non-programmers or novice programmers, I believe that these types of user-friendly tools are critical to advancing the state of science in my field, as well as to supporting the uptake of new methods by non-academic non-profit and agency scientists. I hope that more of my computationally-oriented colleagues will engage in similar activities in the future.
 
 Ironically, of course, in creating a tool for non-programmers, I also created another graphical program that cannot easily be scripted into a workflow such as the one. I attempted to ameliorate this concern in the most recent BatID version by requiring users create a text file containing all parameters, which is read by the program along with the data file, and having the program save all results in the same directory as the parameter file, along with a log file. This at least ensures that there is, by default, some record of the program version, time, and parameters used to process the raw data into classified results tables.
 
 ##### Key tools [Optional]
-*If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience.*
+-
+
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+I consider a study to be (computationally) reproducible when I can send a colleague a zip file containing my raw data and code and he or she can push a single button to create all of the results, tables, and figures in my analysis. It can, of course, be quite challenging to achieve this goal with anything short of the simplest scientific workflows.
 
 ##### General questions about reproducibility [Optional]
 
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
 
 1) Why do you think that reproducibility in your domain is important?
 

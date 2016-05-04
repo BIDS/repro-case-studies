@@ -1,12 +1,9 @@
-#Enabling Astronomy Image Processing with Cloud Computing using Apache Spark
 
-Author: Zhao Zhang
+##### Title
+
+Enabling Astronomy Image Processing with Cloud Computing using Apache Spark
 
 ##### Introduction
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
 I am Zhao Zhang, a joint postdoctoral researcher at AMPLab and Berkeley Institute for Data Science, University of California, Berkeley. 
 The theme of my research is to enable data-driven science with computer systems.
 
@@ -15,16 +12,10 @@ The idea of the Kira project is to explore the applicability of cloud computing 
 Specifically, we use the SEP (Source Extraction Python) library for domain computation.
 We choose Apache Spark and Hadoop to build the infrastructure of distributed processing and data storage.
 
-
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-In the context of my case study, reproducibility has several levels of meanings. The very baseline is that users can compile the source code and pass the tests. Secondly, users should be able to configure the computer cluster so the can reproduce the performance in the documents. Since it is impossible to reproduce the exact performance measurement for every single run, a statistical repetition should be fine (average performance with bounded variation). Generally for computer system research that involves data, a public available data source is necessary for the performance to be reproducible.
-
 ##### Workflow diagram
 
-[Diagram](zzhang.pdf)
+![Diagram](zzhang.pdf)
 
-* specialized tools and where they enter your workflow
 We use Latex and Slides to track the merit evaluation: why do we need a new system for astronomy image processing, what makes it a better system, what lessons can we learn from this research.
 
 We use Latex and Github repository to keep the system design, it is basically a diagram.
@@ -128,7 +119,6 @@ With all of the scripts from Merit Evaluation, System Design, and Source code, w
 
 
 ##### Pain points
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them?*
 
 I will break this down to reproducible results and reproducible research progress.
 
@@ -141,7 +131,6 @@ I will break this down to reproducible results and reproducible research progres
 1.3 Dataset. The astronomy image dataset we use is Sloan Digital Sky Survey Data Release 7, which is publicly accessible. As long as the data hosting service is up running, the dataset is available. We also make a copy of the dataset we used in Amazon S3 service with public accessible permission. The pain point is that we have to pay Amazon for maintaining the 1TB dataset, and eventually we will run out of funding, so instead we have to publish the dataset file list as a text file in the code base.
 
 ##### Key benefits
-*Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example?*
 
 I break this question down to two: non-usable workflow and non-reproducible workflow.
 1, Non-usable workflow. I have seen a couple of projects in astronomy, where the authors conducted study on applying new tools to solve the old problems, but the authors failed to publish their source code along with the paper. This gives up the opportunity for people to build solutions upon their work. For Kira, we make the source code available on Github, so people can extend this code base for more functionalities.
@@ -150,13 +139,14 @@ I break this question down to two: non-usable workflow and non-reproducible work
 
 
 ##### Key tools [Optional]
-*If applicable, provide a detailed description of a particular specialized tool that plays a key role in making your workflow reproducible, if you think that the tool might be of broader interest or relevance to a general audience.*
 
-Github for code management, and Amazon S3 service for data hosting. We built Kira with Apache Spark which is a highly active open source project, so that we do not have the concern of the computing framework is out of maintenance if they run out of funding in academia. 
+Github for code management, and Amazon S3 service for data hosting. We built Kira with Apache Spark which is a highly active open source project, so that we do not have the concern of the computing framework is out of maintenance if they run out of funding in academia.
+
+##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+
+In the context of my case study, reproducibility has several levels of meanings. The very baseline is that users can compile the source code and pass the tests. Secondly, users should be able to configure the computer cluster so the can reproduce the performance in the documents. Since it is impossible to reproduce the exact performance measurement for every single run, a statistical repetition should be fine (average performance with bounded variation). Generally for computer system research that involves data, a public available data source is necessary for the performance to be reproducible.
 
 ##### General questions about reproducibility [Optional]
-
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
 
 1) Why do you think that reproducibility in your domain is important?
 
