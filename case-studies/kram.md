@@ -13,11 +13,6 @@ My name is [Karthik Ram](http://karthik.io) and I am a quantitative food web eco
 In the broadest sense, reproducibility means that I would be able to read a paper in my area of expertise and be able to run another version of the study (and experiments described within) by following the methods and protocols described within that paper. In my specific context, clear instructions would allow me to implement an experimental design/setup using identical organisms and chemical reagents. After the experiment is completed and the data are entered, I would then be able to analyze my data using models and parameters, possibly even reusing code where such methods where implemented. This would allow me to obtain results and compare them to the original.
 
 
-
-##### Workflow diagram
-
-![workflow_karthik](http://i.imgur.com/TCHnDlI.png)
-
 ##### Workflow narrative
 
 Even though this narrative does not describe any specific project that I work on, it captures the general workflow I employ for all my projects. With all of my messy, raw data ready, I spend considerable time on exploratory data analysis during which I generate several visualizations. This process allows me get a sense for any early quality issues with the data and the kinds of steps I will need to employ to make the data usable for analysis. All of the code I use for this process (usually `R`), along with the outputs (rendered markdown and figures using packages such as `ggplot2` and `knitr/rmarkdown`) are committed to a scratch GitHub repository. This allows me to share early insights into my data with my collaborators. This process is highly iterative, and I generate various visualizations (across multiple branches) to gain a better insight into my data. This process takes me a few weeks as I multi task other projects. During this time, project collaborators and various others, including my Twitter followers, provide constructive feedback.
@@ -36,13 +31,13 @@ For citations, I use the `knitcitations` R package to embed DOIs into my text, w
 
 ##### Pain points
 
-My two biggest pain points are black box data, and unscripted steps. Despite my best efforts, some steps (especially when working with novice programmer collaborators) are done using proprietary software and these are hard to automate. During various times I have received old versions because someone forgot to manually repeat a step.
+The two biggest pain points in my research are related to black box data and unscripted data processing steps. I frequently collaborate with researchers who process one or more chunks of data using proprietary, closed sourced software. Quite often, these steps are also not scripted, requiring human intervention to update outputs as input data change. This combination of factors results in out of data versions of one or more pieces of input data simply because there was no automated way to determine what steps needed to be rerun.
 
-In an ideal world, all my data would be a few simple queries away, allowing me to write concise scripts to retrieve the raw data before analysis. In reality, my data are a hodge podge of manually entered data, sensor derived data (often bulk downloads after a sign up process), and some data retrieved via application programming interfaces (API). I try to ease this process by depositing all of my raw data into either institutional or other repositories so that others can replicate my research.
-
+In an ideal world, all my data would be a few simple queries away, allowing me to write concise scripts to retrieve the raw data before analysis. In reality, my data are a hodgepodge of manually entered data, sensor derived data (often bulk downloads after a mandatory sign in step), and other data retrieved via application programming interfaces (API). I try to alleviate the burden for anyone trying to reproduce my results by depositing all of my raw data and associated scripts into either institutional or other repositories so that others can replicate my research.
 
 ##### Key benefits
-The key benefits are that someone could clone my work and with the right system configuration (broadly defined) run my entire workflow, from raw data to cleaned data, simulations and analyses, all the way to manuscript generation and citation formatting in a single step. My work almost always includes a clear `README` file describing the process. The one hurdle is that it requires someone with moderate technical competence to repeat this process.
+
+The key benefits to the approach I have outlined above are that anyone with the right technical skills can clone all of my code from a repository and re-run all the steps necessary to acquire the raw unprocessed data, munge the data, then run all associated statistical analysis and generate the full manuscript as published in a pre-print server or journal. Depending on the complexity of a paper, this could either be a single step, or a series of steps linked together in a Makefile. My work almost always include instructions in a `README` file. 
 
 ##### Key tools 
 
