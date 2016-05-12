@@ -23,6 +23,12 @@ In our functional magnetic resonance imaging (fMRI) experiment we were intereste
 
 The code (written in python) to create new two-tone, Mooney images are available on github.
 
+##### References
+
+Imamoglu F., Kahnt T., Koch C. and Haynes J.-D., Changes in functional connectivity support conscious object recognition, Neuroimage, 63:1909-17, 2013
+
+Nobuyuki Otsu, A threshold selection method from gray-level histograms, IEEE Trans. Sys., Man., Cyber. 9 (1): 62–66, 1979
+
 ##### Pain points
 
 When images are downloaded from an online resource copyright issues can emerge. This can be avoided by downloading images that are licenced as Creative Common. This change is reflected on the latest version controlled pymooney code and new images can be created with such criteria.
