@@ -1,9 +1,9 @@
+---
+title: Enabling Astronomy Image Processing With Cloud Computing Using Apache Spark
+running: Image Processing With Apache Spark
+author: Zhao Zhang
+---
 
-##### Title
-
-Enabling Astronomy Image Processing with Cloud Computing using Apache Spark
-
-##### Introduction
 I am Zhao Zhang, a joint postdoctoral researcher at AMPLab and Berkeley Institute for Data Science, University of California, Berkeley. 
 The theme of my research is to enable data-driven science with computer systems.
 
@@ -12,9 +12,9 @@ The idea of the Kira project is to explore the applicability of cloud computing 
 Specifically, we use the SEP (Source Extraction Python) library for domain computation.
 We choose Apache Spark and Hadoop to build the infrastructure of distributed processing and data storage.
 
-##### Workflow diagram
+# Workflow
 
-![Diagram](zzhang.pdf)
+![Diagram](zzhang.pdf){width=100%}\
 
 We use Latex and Slides to track the merit evaluation: why do we need a new system for astronomy image processing, what makes it a better system, what lessons can we learn from this research.
 
@@ -60,36 +60,32 @@ The paper draft is kept in a private Github repository.
 
 * customers (if any)
 
-##### Workflow narrative
-
-###### Term Definition
 Before explaining the details of the diagram, I will first briefly review the software and systems that are used in this case study.
 
-FITS (Flexible Image Transport System) is a widely adopted image format in the astronomy and cosmology community.
+-   FITS (Flexible Image Transport System) is a widely adopted image format in the astronomy and cosmology community.
 It is a fixed format with the image metadata as text and the actual image as binary format.
 
-SEP (Source Extraction Python) is the software that detects light source objects from images. 
+-   SEP (Source Extraction Python) is the software that detects light source objects from images. 
 It rewrites the SEXtractor software by exposing primitive functionalities through a library interface with both C and Python.
 
-Apache Spark is a popular distributed computing framework in cloud computing. It offers implicit parallelism and the lineage-based
+-   Apache Spark is a popular distributed computing framework in cloud computing. It offers implicit parallelism and the lineage-based
 fault tolerance through the Resilient Distributed Dataset (RDD) abstraction. Spark is built using the Scala programming language
 which compiles a program that is executable on Java Virtual Machine (JVM). 
 
-JNI (Java Native Interface) provides a method to call existing C libraries inside a Java/Scala program. 
+-   JNI (Java Native Interface) provides a method to call existing C libraries inside a Java/Scala program. 
 C and Java/Scala data structures can be used to exchange information between the two runtimes.
 
-Amazon EC2 (Elastic Compute Cloud) is a public cloud service provided by Amazon. Users can request a number of compute nodes with various hardware and software combination.
+-   Amazon EC2 (Elastic Compute Cloud) is a public cloud service provided by Amazon. Users can request a number of compute nodes with various hardware and software combination.
 
-Amazon S3 is a data storage service provided by Amazon. Users can host there dataset on S3.
+-   Amazon S3 is a data storage service provided by Amazon. Users can host there dataset on S3.
 
-NERSC (National Energy Research Scientific Computing Center) is a high performance computing facility operated by Lawrence Berkeley National Lab. It hosts a few supercomputers and clusters.
+-   NERSC (National Energy Research Scientific Computing Center) is a high performance computing facility operated by Lawrence Berkeley National Lab. It hosts a few supercomputers and clusters.
 
-SDSS (Sloan Digital Sky Survey) is a large scale sky survey, its data is publicly available online.
+-   SDSS (Sloan Digital Sky Survey) is a large scale sky survey, its data is publicly available online.
 
-Thread safety is an operating system concept that describes the concurrent execution of multiple threads safely manipulating
+-   Thread safety is an operating system concept that describes the concurrent execution of multiple threads safely manipulating
 shared data structures. 
 
-###### Narrative
 The process begins with team brainstorming of how modern computer software and hardware can accelerate the astronomy image processing pipeline. This requires a wide and also deep understanding of the state-of-the-art research and technical solution. In this research, we gather domain expertise (astronomers), cloud computing expertise and high performance computing expertise. We review the existing work and we think using cloud computing software-hardware stack can improve the overall application performance, but we have no idea by how much it can improve. The research is an exploratory process to implement the idea and quantitatively measure the improvements if there is any.
 
 The Team Brainstorming and Merit Evaluation phase happened back and forth as we keep asking why are we building such a project.
@@ -117,8 +113,7 @@ Performance Measurements and Performance Tuning come in pair and we go back and 
 
 With all of the scripts from Merit Evaluation, System Design, and Source code, we put up together the paper. Writing the paper is a collaborative process. We used a private Github repository to host the paper, and using Pull Request to manage everybody's editing. 
 
-
-##### Pain points
+# Pain points
 
 I will break this down to reproducible results and reproducible research progress.
 
@@ -130,39 +125,40 @@ I will break this down to reproducible results and reproducible research progres
 
 1.3 Dataset. The astronomy image dataset we use is Sloan Digital Sky Survey Data Release 7, which is publicly accessible. As long as the data hosting service is up running, the dataset is available. We also make a copy of the dataset we used in Amazon S3 service with public accessible permission. The pain point is that we have to pay Amazon for maintaining the 1TB dataset, and eventually we will run out of funding, so instead we have to publish the dataset file list as a text file in the code base.
 
-##### Key benefits
+# Key benefits
 
 I break this question down to two: non-usable workflow and non-reproducible workflow.
-1, Non-usable workflow. I have seen a couple of projects in astronomy, where the authors conducted study on applying new tools to solve the old problems, but the authors failed to publish their source code along with the paper. This gives up the opportunity for people to build solutions upon their work. For Kira, we make the source code available on Github, so people can extend this code base for more functionalities.
+
+1. Non-usable workflow. I have seen a couple of projects in astronomy, where the authors conducted study on applying new tools to solve the old problems, but the authors failed to publish their source code along with the paper. This gives up the opportunity for people to build solutions upon their work. For Kira, we make the source code available on Github, so people can extend this code base for more functionalities.
 
 2. Non-reproducible workflow. There was one experiment I read in a paper that I would like to reproduce, and design a new solution for it. However, the experiment was not reproducible due to the software version evolution. During the Kira building process, we particularly care about this issue, we documented the hardware, code base and dataset that are used for the performance measurement, so any user that follow the documented instructions should be able to reproduce the results.
 
-
-##### Key tools [Optional]
+# Key tools
 
 Github for code management, and Amazon S3 service for data hosting. We built Kira with Apache Spark which is a highly active open source project, so that we do not have the concern of the computing framework is out of maintenance if they run out of funding in academia.
 
-##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+# Questions
+
+## What does "reproducibility" mean to you?
 
 In the context of my case study, reproducibility has several levels of meanings. The very baseline is that users can compile the source code and pass the tests. Secondly, users should be able to configure the computer cluster so the can reproduce the performance in the documents. Since it is impossible to reproduce the exact performance measurement for every single run, a statistical repetition should be fine (average performance with bounded variation). Generally for computer system research that involves data, a public available data source is necessary for the performance to be reproducible.
 
-##### General questions about reproducibility [Optional]
-
-1) Why do you think that reproducibility in your domain is important?
+## Why do you think that reproducibility in your domain is important?
 
 As computer system researchers, we build systems assuming people will use them. So it is important that people can follow the instructions in the documents to reproduce the state in which the system works. And it is important that users can reproduce the improvements over existing systems we describe in the paper or documents so they are more likely to adopt our systems. As paper reviewers, it is more convincing if they can reproduce the results in the paper as these are the evidence of the paper's idea.
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 I learned the reproducible practices since the first time I submitted my homework project in college and ever since. I need to write a README file along with my code so the TA can compile and run my code to test if my solution is right. The later research experience follows the same path. 
 
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 I used to design systems on supercomputers, where many people including paper reviewers have no access to. Thus, it is impossible for the research to be reproducible. 
 
 Another major pitfall is due to software version evolving. At the time of writing the paper, some features of a piece of software was working, and the researchers measured and published the numbers. But these numbers are no longer reproducible after a few versions.
 
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
+
 I break this down to reproducible results and reproducible research process.
 
 4.1. (reproducible results) The systems I build are usually to facilitate scientific research. The systems either expedite the execution of computer programs or provide novel functionalities (e.g. failure diagnosis). To make sense about my research, users should be able to see the performance improvement I documented in the paper or documents. They should be able to use the novel functionalities to ease their research. So reproducibility of the systems is the key to prove the system actually works.
@@ -171,10 +167,10 @@ I break this down to reproducible results and reproducible research process.
 My methodology particularly for this research is: 1) a more-or-less valid hypothesis, 2) a performance profile of the existing solution, 3) isolating the technical barriers, 4) solving the technical barriers, 5) build the new solution, 6) performance measurement and tuning. 
 
 
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
 I would recommend for open source software and related publications. The authors should maintain a version of the software for readers to reproduce the results in the paper. These versions and repository should be included in the paper.
 
-6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+## Would you recommend any specific resources for learning more about reproducibility?
 
 I can only think of Github for code management and Amazon S3 for data management right now.

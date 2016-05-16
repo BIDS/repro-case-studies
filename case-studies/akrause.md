@@ -1,19 +1,16 @@
-##### Title 
-
-An analysis of household location choice in major U.S. metropolitan areas using R
-
-##### Introduction
+---
+title: An analysis of household location choice in major U.S. metropolitan areas using R
+running: Household location choice
+author: Andy Krause
+---
 
 Andy Krause, Lecturer in Property (Real Estate) at the University of Melbourne.  Andy's research focuses on the spatial analysis of real estate markets, particularly in regards to valuation and location. 
 
 Hossein Estiri, Senior Fellow in the Institute of Translational Health Sciences at the University of Washington. Hossein uses data science approaches to study urban energy and health.
 
+# Workflow
 
-##### Workflow diagram
-
-![Diagram](akrause.pdf)
-
-##### Workflow narrative
+![Diagram](akrause.pdf){width=100%}\
 
 This research analyzes the household location choices of American households in the largest 50 metropolitan areas in the United States.  Households are broken down by five-year age cohorts (based on the age of the head of the householder) and mapped against the household's distance (census block group level) from the central business district (CBD) of the metropolitan area in which they reside.  In polycentric regions such as Seattle (Tacoma, Bellevue and Everett as alternative CBDs, analyses are conducted on distance to core center as well as secondary centers. An initial paper reporting the results is currently under review.
 
@@ -48,13 +45,13 @@ The analytical process begins by calculating the location quotient distance prof
 
 Data visualization of the results via a variety of different plotting functions follows.   Final results, both tabular and visual, are then combined in an RStudio/Knitr file along with the narrative to create the final document (compiled in LaTeX).  The full data provenance is described and hosted on the code repository via a Markdown file.  Also note that the collaborative website  [Authorea](https://www.authorea.com/users/18208) (which offers git-based tracking and LaTeX support) was used by the authors to write the first draft of the narrative portion of the report.  
 
-##### Pain points
+# Pain points
 
 There are two major steps that we consider particularly painful.  The first is convincing yourself (and co-authors) to take the time to properly document every action and to take the time to fully annotate the analytical workflow.  This can be especially difficult when deadlines arise or when co-authors do not see the value in reproducibility.  The second is the need to write custom functions that are generalizable.  Writing very specific, single use functions can be easy, but are rarely useful in more than a single instance.  Good reproducible research contains flexible functions than can accommodate changes or permutations thereby allowing subsequent users to expand or change your original analysis.  
 
 The current peer-review process also presents a considerable hurdle to reproducibility.  In order to remain anonymous in the review process, we've had to build a set of anonymous code and data repositories and interactive websites for the review process and then switch over to our own repositories after the paper has been accepted. It means a lot of extra work as well as remembering which Github account we are signed into at all times.  Along this line, judging by usage statistics, reviewers have been uninterested in actually examining the hosted code, data or results. 
 
-##### Key benefits
+# Key benefits
 
 For us the biggest benefit is efficiency.  The first time we do an analysis it usually takes longer than it would take other colleagues, but each time after the time savings multiply.  One situation where this is particularly helpful is in responding to peer reviewer comments and requests.  Changes to assumptions or sensitivity tests on parameters can be done in a matter of hours (or minutes), not days or weeks.  This greatly shortens the re-submittal response time.  Related, we constantly find ourselves borrowing old code and re-purposing it, making new analyses easier and faster.  
 
@@ -62,40 +59,40 @@ For us the biggest benefit is efficiency.  The first time we do an analysis it u
 
 (Hossein) Another benefit would be built greater capacity for related research. Beyond the theoretical approach that can be used to study other metropolitan patterns, functions that we built in this research can be applied to facilitate other forms of research using census data. Researchers can adapt these functions to address other purposes. In an ideal scientific world where all research is reproducible, research will be more efficient because of the code that can be shared, re-used, or adapted for research or non-research purposes.
 
-##### Key tools
+# Key tools
 
 The RStudio integrated development environment (IDE) and their related Shiny Apps (interactive web applications) have been a huge help in our reproducible research.  If you are an R programmer and want to share your visualizations with non-programmers, we highly recommend these tools from RStudio. Using the IDE allows for easier navigation between multiple scripts, reviewing a history of plots and offering a view of all objects in the current computing environment.
 
-##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+# Questions
+
+## What does "reproducibility" mean to you?
 
 "Reproducibility" means that a subsequent interested party can openly access the data, code, analytical workflow and data provenance to re-create the research (and ideally produce identical results) WITHOUT consulting the original researcher(s). In this context, "reproducibility" can facilitate the verification of results from a given research project and also accelerate new research discoveries by providing reproducible modules that can be applied in other settings and/or for other purposes.
 
-##### General questions about reproducibility
-
-1) Why do you think that reproducibility in your domain is important?
+## Why do you think that reproducibility in your domain is important?
 
 (Andy) A majority of quantitative analyses in real estate (both academic and professional) is usually duplicated by numerous parties, widely disseminated and frequently updated; all characteristics that benefit from reproducible analyses. Despite these core facts of the discipline, there is very little, if any, discussion on or attempt to create reproducible research in the field. 
 
 (Hossein) In general, the importance of reproducibility in policy-/decision-oriented fields is not clear. It can certainly improve policy research, but one could debate whether or not reproducibility has direct benefits for decision-making.
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 (Andy) My pre-academic background was as part of a team of expert witnesses in litigation support.  In this industry, any analysis that was produced had to be reproducible by the opposition and therefore, my firm was constantly striving to produce more efficiency in their reproducible analyses.  
 
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 (Andy) Two challenges exists in the real estate field.  First, most data is proprietary and expensive and therefore it is hard to share data.  Second, it is a small field that is composed of many senior individuals (both in academia and industry), many of whom are very resistant to change. 
 
 (Hossein) In health sciences the biggest concern is around data privacy. For example, research on individual-level patient information can hardly become fully reproducible, within conventional workflows.
 
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
 
 Doing reproducible research is like installing solar panels in your home. It will cost you at the beginning, but down the road you will get benefits such as time savings, better quality output and the increased opportunity to collaborate/share ideas.  
 
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
 No more manual data cleaning.  Use code.  
 
-6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+## Would you recommend any specific resources for learning more about reproducibility?
 
 For collaboration, if you want to get away from writing in LaTeX, you can try [Authorea](https://www.authorea.com/). If you are in Australia, the [University of Melbourne's Research Platforms](http://blogs.unimelb.edu.au/researchplatforms/) group offers a number of Research Bazaars, Software Carpentry and Reproducibility-related courses and event.  It is open to researchers world-wide.  

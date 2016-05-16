@@ -1,8 +1,8 @@
-##### Title
-
-Developing an Open, Modular Simulation Framework for Nuclear Fuel Cycle Analysis
-
-##### Introduction
+---
+title: Developing an Open, Modular Simulation Framework for Nuclear Fuel Cycle Analysis
+running: Nuclear Fuel Cycle Analysis
+author: Kathryn Huff
+---
 
 I am Kathryn (Katy) Huff, and I am a Nuclear Science and Security Consortium
 postdoctoral scholar in the Nuclear Engineering Department and a Data Science
@@ -25,11 +25,9 @@ simulation, and analysis. The workflow described used to create a software tool
 that other nuclear engineers can use easily, modify quickly, and contribute to 
 when they need to customize behavior or model a different technology.
 
-##### Workflow diagram
+# Workflow
 
-![Diagram](khuff.pdf)
-
-##### Workflow narrative
+![Diagram](khuff.pdf){width=100%}\
 
 I and a group of geographically-dispersed researchers (graduate students and
 professors) collectively develop and maintain an agent-based simulation
@@ -107,7 +105,7 @@ steps :
 
 All of these steps are conducted in the context of git and GitHub.
 
-##### Pain points
+# Pain points
 
 Build systems are painful. In particular, cross platform configuration and
 builds are an enormous time-sink for our research group.  There are a number of reasons for this.
@@ -134,8 +132,7 @@ Additionally, BatLab is somewhat unpredictable and inflexible. Since the
 behavior of BatLab undergoes a lot of churn, our continuous integration suite
 is sometimes rendered completely useless.
 
-
-##### Key benefits
+# Key benefits
 
 The [Cyclus Enhancement Proposal (CEP)
 strategy](http://fuelcycle.org/cep/cep0.html) was a bright workflow choice
@@ -156,7 +153,7 @@ design not captured by the in-code documentation. Because they are maintained
 alongside the website source code in a version controlled repository,
 provenance of the discussion surrounding their acceptance is maintained.
 
-##### Key tools [Optional]
+# Key tools
 
 We use CMake to configure and build our software. Much more human readable than
 the configuration files within the GNU autotools suite, CMake makes our lives
@@ -166,17 +163,15 @@ The continuous integration system, though difficult to implement due to build
 issues, has decreased development time. It would not be possible without CMake,
 GoogleTest, and Nose.
 
-##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+# Questions
+
+## What does "reproducibility" mean to you?
 
 A reproducible research product is one that has been sufficiently documented,
 well-constructed, and preserved for its results to be recreated by some
 external researcher or group.
 
-
-##### General questions about reproducibility [Optional]
-
-
-1) Why do you think that reproducibility in your domain is important?
+## Why do you think that reproducibility in your domain is important?
 
 My domain, nuclear engineering, is one where precision and accuracy are both of
 utmost importance to both human and environmental outcomes. Any conclusions
@@ -184,18 +179,18 @@ drawn by science can only make an impact in the real world if they can meet the
 standards set out by the Nuclear Regulatory Commission. For this,
 reproducibility is paramount.
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 I learned these practices primarily from my advisor, Paul P.H. Wilson at the
 University of Wisconsin, Madison. I also learned from colleagues in The Hacker
 Within, the Scientific Python community, and Software Carpentry.
 
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 One major problem is export control. Making software and data open source is
 restricted by the US Department of Energy, in some cases.
 
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
 
 - **Fear.** The fear of retractions due to faulty software or data can be
   reduced by enforcing transparent reproducible practices, which tend to reduce
@@ -206,4 +201,3 @@ restricted by the US Department of Energy, in some cases.
 - **Ruthless Efficiency.** The automation inherent in reproducible
   workflows, makes tweaking and re-running of simulations and analysis very
   efficient.
-

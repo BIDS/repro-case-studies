@@ -1,16 +1,14 @@
-##### Title
-
-Validating statistical methods to detect data fabrication
-
-##### Introduction
+---
+title: Validating Statistical Methods to Detect Data Fabrication
+running: Data Fabrication
+author: Chris Hartgerink
+---
 
 I am Chris Hartgerink, an applied statistician at Tilburg University specializing in detecting potential data fabrication with statistical methods. As a PhD candidate I pay attention to my workflow in order to increase efficiency and ensure it applies modern tools to improve my research. My case study will revolve around a project where I assess the performance of statistical methods to detect both genuine and fabricated data. In this project, I collect genuine datasets and invite researchers to fabricate datasets, to which I apply statistical methods to detect data fabrication.
 
-##### Workflow diagram
+# Workflow
 
-![Diagram](chartgerink.pdf)
-
-##### Workflow narrative
+![Diagram](chartgerink.pdf){width=100%}\
 
 Statistical methods can be applied to detect potential data fabrication, but their validity is unknown. Simulating how researchers fabricate data is impossible because we simply do not know how researchers actually fabricate. Anecdotal summaries of uncovered misconduct cases do exist but are not generalizable. In order to test the performance of statistical methods in an ecologically valid manner, we invite researchers to fabricate data for a study for which we also have genuine data. With this, we can test the validity of a set of statistical methods to detect data fabrication.
 
@@ -42,46 +40,45 @@ Based on the results, the discussion is drafted and iteratively revised. The dis
 
 The final step, prior to submission of the manuscript, is to ensure that the analyses correspond to the preregistration and that all research files are publicly available. Research has indicated that researchers who preregister analyses frequently report other analyses, indicating that is easy to forget what you actually planned to do at the start. Additionally, I have seen several articles where researchers said they made the research files publicly available, but they forgot to do so. These final checks ensure that results are according to the preregistration plan and can be accessed by others.
 
-##### Pain points
+# Pain points
 
 The part of a reproducible workflow that I consider particularly painful is that of co-piloting analysis scripts. It shows when a researcher is reproducible but also shows it can be relatively complex to make reproducibility easy. It can sometimes take an entire day to check a colleague's analyses. However, as reproducibility increases co-piloting becomes less strenuous. Additionally, knowing the particularities of checking other people their work helps improve your own reproducibility. This is why I go through hoops to make sure *one* file is sufficient to get all the results in the manuscript and that dependencies or datafiles do not cause any trouble.
 
 Another effortful aspect of a reproducible workflow is that the project lead often has to enforce reproducibility. I want my research to be reproducible, so I enforce this in my project. Co-authors need not have the same perspective on this and therefore do not feel responsible for this. As such, you have to ensure that what they do is reproducible as well. If the project has a centralized project lead, this is not a huge problem. However, with more decentralized projects it can cause some difficulty. It requires you to structure the project thoroughly, but requires increasing effort with increasing project complexity (note that increasingly complex projects also have a higher need for reproducibility because of a higher potential for error-making.
 
-##### Key benefits
+# Key benefits
 
 My workflow has actively developed in recent years and this has culminated in analysis scripts that can run everything from the script itself. This requires nothing from the person trying to reproduce the results, except to download the script. It can be quite daunting when a researcher shares ten files and you have to find a way through them. It is not sufficient to be transparent. In order to become reproducible, it is highly important to structure your documents such that others, including your future-self, can understand what is going on.
 
 Version control is a benefit within this reproducible workflow, considering that it goes beyond reproducibility of research results but also ensures reproducibility of the research process. My direct colleagues are starting to realize this as well; it is affirming to hear them stress that it helps them increase efficiency by allowing to retrace their steps. I hope that other colleagues will see the value in that sooner rather than later, (e.g., when their data gets audited).
 
-##### Key tools
+# Key tools
 
 I use a set of tools which all have one thing in common: they are based on open formats that are timeless, inclusive, and can be used by anyone who has a computer. These open formats include the data in clear-text files, but also includes software packages that are open-source, whose code is checked by the open-source and academic community (e.g., `R`, `git`). It seems to me that the use of closed software has proliferated throughout the social sciences (where I operate most of the time) without the realization that it is actually hurting the future of science (e.g., irreproducibility of results), but also hurts current-day science. Not everybody can afford a license to SPSS or Microsoft Office, for example. Why exclude those who do not have those funds? Science is an enterprise that should be all-inclusive and not select on financial wealth of individuals or institutions. I try to reaffirm this principle by ensuring that all the tools I use are open-source and can be used by anyone who wants to.
 
-##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+# Questions
+
+## What does "reproducibility" mean to you?
 
 For me, reproducibility pertains to the reliability of research findings, which both includes direct reproducibility (i.e., can someone else reproduce the results by applying the described method to the same data?) and retest reliability (i.e., if we rerun the study, do we get similar results?). My case study focuses on direct reproducibility, that is, that anyone or a future-me can retrace the steps from the project in such a way that it is understandable and that the results are reliable.
 
-
-##### General questions about reproducibility
-
-1) Why do you think that reproducibility in your domain is important?
+## Why do you think that reproducibility in your domain is important?
 
 Scientists are humans and humans make mistakes. By using reproducible practices, we can discover these mistakes and not be led down a research path that is based on a mistake. It is important in my domain, because we preach that science has to be conducted in a reproducible manner.
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 I got interested in reproducible practices during my master education when my supervisor introduced me to the idea of Open Science. I found myself wondering how to implement it in different stages of the research process, not knowing where to start documenting *during* the research. I learned much from colleagues across the world and across fields with who I discussed ways to be more reproducible (mostly on Twitter, which is a highly valuable resource for researchers).
 
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 Reproducible research is tiresome when you figure out a new way of doing things and then think that your previous work is incomplete. Additionally, not all colleagues are as enthousiastic about reproducibility and this can lead to discussions (also a good thing) that postpone implementing certain practices. It is very important to get everyone on the same page in the initial meeting on how the project will be managed, such that nobody is met with surprises and potential ambivalence at the end. 
 
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
 
 The main incentives for reproducible research is (future) efficiency. When you know that you can revisit projects from years ago and needing at most 30 minutes to find what you are looking for is a major improvement over spending a day looking for that one specific value someone asked about in your email. It also helps revisit previous projects and see what I did, because I frequently unlearn things I require in a new project (e.g., I often forget how to make plots in the `ggplot2` package because I use it too infrequently, and I just reuse code from previous projects).
 
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
 The best practices I recommend any researcher to apply are the following:
 
@@ -90,11 +87,8 @@ The best practices I recommend any researcher to apply are the following:
 3. Have a colleague check your analysis code, it is too easy to make mistakes. Not checking analysis code is comparable to not having co-authors proofread the manuscript.
 4. Try and create an analysis script that can run automatically, downloading all required files and installing its dependencies. Otherwise, other people are likely to fail in reproducing your results, when they cannot get to the dependencies.
 
-6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+## Would you recommend any specific resources for learning more about reproducibility?
 
 I recommend the article by Karthik Ram on using version control in research. It opened my eyes on the use of version control as a project management tool that improves reproducibility at the lowest cost possible. Low threshold version control is available at the OSF, which provides online training tools (see osf.io).
 
 Ram, K. (2013). Git can facilitate greater reproducibility and increased transparency in science. Source Code for Biology and Medicine, 8(1), 7.
-
-### Potential conflicts of interests
-Chris Hartgerink is a Center for Science ambassador.

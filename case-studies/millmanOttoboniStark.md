@@ -1,33 +1,8 @@
 ---
-author:
-- |
-    K. Jarrod Millman (JM)\
-    Division of Biostatistics\
-    University of California, Berkeley
-- |
-    Kellie Ottoboni (KO)\
-    Department of Statistics\
-    University of California, Berkeley
-- |
-    Naomi A. P. Stark (NS)\
-    Department of Philosophy\
-    University of Pennsylvania
-- |
-    Philip B. Stark (PS)\
-    Department of Statistics\
-    University of California, Berkeley
-bibliography:
-- 'millmanOttoboniStark.bib'
-
-##### Title
-    
-Reproducible applied statistics:
-Is tagging of therapist-patient interactions reliable? 
-
-
-##### Introduction
-
-__Parts of this text have been adapted from @millman2015thesis.__
+title: "Reproducible Applied Statistics: Is Tagging of Therapist-Patient Interactions Reliable?"
+running: Tagging Therapist-Patient Interactions
+author: K. Jarrod Millman, Kellie Ottoboni, Naomi A. P. Stark and Philip B. Stark
+---
 
 We are three applied statisticians (JM, KO, PS) at UC Berkeley working
 with a domain specialist (NS) at the University of Pennsylvania. Our
@@ -35,13 +10,9 @@ case study involves assessing inter-rater reliability (IRR) of the
 assignment of “tags” applied by human raters to classify interactions
 during therapy sessions with children on the autistic spectrum.
 
-<!---
-##### Workflow diagram
+# Workflow
 
-![ Diagram](millmanOttoboniStark.pdf)
---->
-
-##### Workflow narrative
+![Diagram](millmanOttoboniStark.pdf){width=100%}\
 
 Our project arose from a pilot study NS was working on with Dr. Gilbert
 Kliman of the Children’s Psychological Health Center in San Francisco.
@@ -84,13 +55,6 @@ person-hours we collectively spent on each aspect of the project. For
 example, if JM, KO, and PS spent an hour together discussing the problem
 in a meeting, then that meeting counts as 3 people hours.
 
-![ Each box corresponds to one aspect of the project. The percentages
-are estimates of the percent of our time spent on each aspect. Edges
-represent influence. `Understand problem` $\to$ `Design algorithm`, for
-instance, corresponds to the fact that we had to understand the problem
-in order to design the correct statistical
-test.](millmanOttoboniStark.pdf)
-
 We did not keep a detailed record of time spent, but our computational
 practices (§ [Key tools and practices](#key-tools)) provide enough detail about who did what when
 that we believe our estimates provide an accurate qualitative account of
@@ -118,7 +82,7 @@ conduct reproducible and collaborative applied statistics research with
 our colleagues. We discuss the software tools and practices briefly in
 § [Key tools and practices](#key-tools) below.
 
-##### Understand problem (80 hours)
+## Understand problem (80 hours)
 
 The Kliman-Stark research project sought to identify characteristics of
 effective clinical interactions with children on the autistic spectrum.
@@ -158,7 +122,7 @@ code in an interactive IPython session. This helped ensure that we all
 understood the problem well and it also helped us catch errors (typos as
 well as conceptual misunderstandings).
 
-##### Get and clean data (13 hours)
+## Get and clean data (13 hours)
 
 The tag data were collected by NS and raters working at her direction.
 The data comprise ratings of segments of 8 videos by 10 trained raters.
@@ -192,7 +156,7 @@ explanation of what we did to NS to verify that the corrections were
 appropriate. As a result, we provide the cleaned data in our project
 repository as well as a careful account of its provenance.
 
-##### Design algorithm (25 hours)
+## Design algorithm (25 hours)
 
 Although the test we eventually implemented was very similar to the
 original test proposed by PS at the start of the project, we (JM, KO,
@@ -201,12 +165,17 @@ which resulted in considerable simplification of the algorithm used to
 implement the test. We also developed a more general terminology (see
 Table 1).
 
-         **NSGK**               **IRR**
-  ----------------------- --------------------
-   183 types of activity        $T$ tags
-         8 videos              $S$ strata
-     40 segments/videos    $N_s$ items/strata
-         10 raters             $R$ raters
+  ---------------------- --------------------
+  NSGK                   IRR
+  ---------------------- --------------------
+  183 types of activity  $T$ tags
+
+  8 videos               $S$ strata
+
+  40 segments/videos     $N_s$ items/strata
+  
+  10 raters              $R$ raters
+  ---------------------- --------------------
 
   : Mapping between terms from our motivating problem (NSGK) and the
   terms used in our general algorithm (IRR).<span
@@ -251,7 +220,7 @@ PS) used the nonparametric combination (NPC) of tests
 developed a computationally efficient approach to finding the overall
 $p$-value for the NPC test.
 
-##### Implement algorithm (5 hours)
+## Implement algorithm (5 hours)
 
 Once we had a blueprint of the algorithm, KO led the implementation
 effort. She did most of the coding; JM and PS reviewed the code and
@@ -272,7 +241,7 @@ KO wrote three functions to implement our general IRR algorithm:
     statistic by combining the $S$ distributions of the IRR partial test
     statistic for each of the $S$ strata.
 
-##### Analyze data (1 hour)
+## Analyze data (1 hour)
 
 Once we merged KO’s implementation of the general algorithm (including
 tests) into `permute`, KO wrote a short script (about 50 lines of
@@ -298,7 +267,7 @@ analysis script contained only high-level commands:
 
 3.  Save the results to a CSV file
 
-##### Understand result (20 hours) {#subsec:understand-result}
+## Understand result (20 hours) {#subsec:understand-result}
 
 At a high level, even the summary statistics we computed were useful:
 some tags were never applied by any rater to any video. Presumably, the
@@ -332,7 +301,7 @@ eliminate some of the sources of error in the data. Regardless, this
 work has led to a new nonparametric test for inter-rater reliability,
 now available publicly in the `permute` package.
 
-##### Pain points
+# Pain points
 
 Given our different backgrounds and experiences we (JM, KO, PS) each
 found different points in the process challenging. However, for all of
@@ -359,7 +328,7 @@ However, when data have already been entered by hand, there is not much
 that can be done other than being cautious when “fixing” data entry
 errors and recording every aspect of the data cleaning process.
 
-##### Key benefits
+# Key benefits
 
 Since @buckheit1995wavelab popularized the idea of computational
 reproducibility, applied statisticians have increasingly embraced
@@ -386,7 +355,7 @@ computational practices provide the following benefits:
     package so that others can discover, check, use, and extend our
     methods.
 
-##### Key tools and practices {#key-tools}
+# Key tools and practices {#key-tools}
 
 As part of the development of our software package `permute`, we
 invested significant effort in setting up a development infrastructure
@@ -395,7 +364,7 @@ incrementally improved and documented. To this end, we have adopted best
 practices for software development used by successful open source
 projects [@millman2014developing].
 
-##### Version control and code review
+## Version control and code review
 
 We (JM, KO, PS) use Git[^7] as our version control system (VCS) and
 GitHub[^8] as the public hosting service for our official `upstream`
@@ -423,7 +392,7 @@ the code review system in place will make it easier for new people to
 contribute as well as capturing our design discussions and decisions for
 future reference.
 
-##### Testing and continuous integration
+## Testing and continuous integration
 
 We used the `nose` testing framework for automating our testing
 procedures.[^9] This is the standard testing framework[^10] used by the
@@ -464,7 +433,7 @@ tests. This means that when you review a pull request, you can
 immediately see whether the proposed changes break any tests and whether
 the new code decreases the overall test coverage.
 
-##### Documentation
+## Documentation
 
 We use Sphinx[^12] as our documentation system and have extensive
 developer documentation and the foundation for high-quality user
@@ -479,7 +448,7 @@ called reStructuredText.[^14] This system enables us to easily embed
 references, figures, code that is auto-run during documentation
 generation, as well as mathematics using LaTeX.
 
-##### Release management
+## Release management
 
 Our development workflow ensures that the official `upstream` repository
 is always stable and ready for use. This means anyone can install our
@@ -549,8 +518,10 @@ in this case study, type the following command from a shell prompt
 
 [^16]: PyPI is the Python equivalent of *The Comprehensive R Archive
     Network* (CRAN).
+
+# Questions
     
-##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+## What does "reproducibility" mean to you?
 
 In this case study,[^1] *reproducibility* means:
 
@@ -621,4 +592,37 @@ most recent version, install the necessary Python package dependencies
 (`numpy 1.11.0`, `scipy 0.17.0`, and `permute 0.1a2`), and run the
 analysis script `analysis.py`.
 
-##### References
+# References
+
+@incollection{buckheit1995wavelab,
+  booktitle={Wavelets and Statistics},
+  editor={Antoniadis, Anestis and Oppenheim, Georges},
+  title={Wavelab and reproducible research},
+  author={Buckheit, Jonathan B. and Donoho, David L.},
+  year={1995},
+  publisher={Springer}
+}
+
+@incollection{millman2014developing,
+  booktitle={Implementing reproducible research},
+  editor={Stodden, Victoria and Leisch, Friedrich and Peng, Roger D.},
+  title={Developing open-source scientific practice},
+  author={Millman, K. Jarrod and P{\'e}rez, Fernando},
+  pages={149--183},
+  year={2014},
+  publisher={Chapman and Hall/CRC}
+}
+
+@mastersthesis{millman2015thesis,
+  title={\texttt{permute}---a {P}ython package for permutation tests and confidence sets},
+  author={Millman, K. Jarrod},
+  year={2015},
+  school={University of California, Berkeley}
+}
+
+@book{pesarin2010permutation,
+  title={Permutation tests for complex data: theory, applications and software.},
+  author={Pesarin, Fortunato and Salmaso, Luigi},
+  year={2010},
+  publisher={John Wiley \& Sons}
+}

@@ -1,22 +1,18 @@
-##### Authors
-Olivier Mesnard, Lorena A. Barba
+---
+title: Achieving Full Replication of our Own Published CFD Results, with Four Different Codes
+running: Replication of Own Results
+author: Olivier Mesnard and Lorena A. Barba
+---
 
-##### Title 
-Achieving full replication of our own published CFD results, with four different codes
-
-##### Introduction
 We are members of a computational research group led by Prof. [Lorena Barba](http://lorenabarba.com) at the George Washington University in the department of Mechanical and Aerospace Engineering. 
 We do our best to accomplish reproducible research and have for years worked to improve our practices to achieve this goal.
 According to the "Reproducibility PI Manifesto," pledged by Barba in 2012, all our research code is under version control and open source, our data is open, and we publish open pre-prints of all our publications.
 For the main results in a paper, we prepare file bundles with input and output data, plotting scripts and figure, and deposit them in the [figshare](https://figshare.com/authors/Lorena_A_Barba/97553) repository.
 This case study describes what happened when we set out to complete a full replication of published results from our own group, using different Computational Fluid Dynamics (CFD) codes: a new code developed in our group, an open-source code developed by another group, and an open-source CFD library.
 
+# Workflow
 
-##### Workflow diagram
-
-![Diagram](omesnard.pdf)
-
-##### Workflow narrative
+![Diagram](omesnard.pdf){width=100%}\
 
 Our research lab has developed over the years a consistent workflow that, we believe, leads to reproducible research.
 A previous study coming out of our lab, published in Krishnan et al. (2014), already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
@@ -61,13 +57,7 @@ To advocate open-science, the manuscript will be first available on arXiv.
 We will also provide, on the repository figshare, a reproducibility package for all simulations and figures reported in the manuscript. 
 These packages include the version of the software, the input parameters, information related to machine architecture, and the necessary scripts to run and post-process the simulation.
 
-*References*:
-- Barba, L. A. (13 December 2012). "Reproducibility PI Manifesto", 10.6084/m9.figshare.104539. Presentation for a talk given at the ICERM workshop "Reproducibility in Computational and Experimental Mathematics". Published on figshare under CC-BY.
-- Bhalla, A. P. S., Bale, R., Griffith, B. E., & Patankar, N. A. (2013). A unified mathematical framework and an adaptive numerical method for fluid–structure interaction with rigid, deforming, and elastic bodies. Journal of Computational Physics, 250, 446-476.
-- Krishnan, A., Socha, J. J., Vlachos, P. P., & Barba, L. A. (2014). Lift and wakes of flying snakes. Physics of Fluids, 26(3), 031901.
-- Taira, K., & Colonius, T. (2007). The immersed boundary method: a projection approach. Journal of Computational Physics, 225(2), 2118-2137.
-
-##### Pain points
+# Pain points
 
 A critical ingredient in a reproducible workflow is keeping a detailed, up-to-date, and version-controlled lab notebook.
 It is nearly unthinkable that a proper lab notebook for recording computational experiments could be kept without scripting all steps— pre-processing, running, post-processing—and automaticaly saving command-line inputs. 
@@ -79,8 +69,7 @@ Another aspect of this project that was very time consuming was becoming familia
 Finally, we also spent considerable time developing automated scripts for analyzing the numerical solutions resulting from different codes (producing different output formats).
 These scripts, however, are essential to deliver reproducible computational experiments.
 
-
-##### Key benefits
+# Key benefits
 
 In the field of computational fluid dynamics, it can easily take six months or a year to develop software from scratch for solving a specific fluid-flow scenario.
 On publishing the results, if the authors do not release the code and data used for the study, it leaves any reader hoping to reproduce the results facing a steep time investment.
@@ -91,7 +80,7 @@ As noted by Leek and Peng (2015), increasing the level of reproducibility of pub
 For this reason, the minimum level of reproducibility—making code and data available—is essential for increasing the confidence on any new scientific claims to knowledge generated computationally.
 Going beyond sharing code and data, full automation and digital recording of experimental campaigns offer the best guarantee of being able to extract scientific value from computational experiments.
 
-##### Key tools
+# Key tools
 
 We use the version-control hosting platform GitHub to support our reproducible workflow. 
 GitHub greatly facilitates collaboration when developing numerical codes and documentation. 
@@ -102,7 +91,9 @@ Progress reports and summaries for discussion in group meetings are best present
 For a digital record of all steps taken in preparing a simulation and running it, bash scripting is essential.
 We also use Travis CI for running automated testing of the codes whenever a change is to be merged into the main repository.
 
-##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+# Questions
+
+## What does "reproducibility" mean to you?
 
 The starting point for our understanding of reproducibility is contained in the pledge "Reproducibility PI Manifesto" (Barba, 2012) which includes these steps:
 
@@ -124,9 +115,7 @@ We use the term "full replication" in the sense presented by Peng (2011), that i
 In computational fluid dynamics, full replication of the findings can involve using a different code that implements the same numerical method, or a code that implements a different numerical method altogether but solves the same mathematical model.
 Because we are solving the Navier-Stokes equations—an unsteady and nonlinear model—certain problem scenarios can present particular challenges to replication.
 
-##### General questions about reproducibility
-
-1) Why do you think that reproducibility in your domain is important?
+## Why do you think that reproducibility in your domain is important?
 
 In computational science, we use simulations and data analysis as tools for the creation and justification of scientific knowledge.
 This process of knowledge creation, as in all science, must also produce evidence to justify itself.
@@ -136,12 +125,12 @@ Codes and data used to publish results should be version-controlled and open-sou
 Donoho and co-authors (2009) mentioned that we develop codes so that they can be used again by strangers and defined strangers as "anyone who doesn't possess our current short-term memory" (including ourselves in some years).
 We believe that reproducible research can also prevent scientists from "reinventing the wheel" by having to re-create complete software stacks to build from previously published work.
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 The group's PI, Prof. Lorena Barba, plays an active role in raising awareness about reproducible research. Incoming students joining our research lab must start by learning the different tools mentioned in the "Reproducibility PI Manifesto".
 The [Software Carpentry Foundation](http://software-carpentry.org/) (through workshops and online ressources) also contributes to educate our group members and improve our workflow to achieve reproducible research.
 
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 Reproducible research can be time-consuming, requiring rigorous methods and organization.
 At various moments during the project, we had to pause and ask ourself if our research was currently reproducible.
@@ -149,19 +138,19 @@ Often, this was prompted by a conversation or questioning during group meetings.
 In that sense, a strong collaborative culture in the research group, and beyond in the wider community of the discipline, are vital to instill reproducibility practices in computational researchers.
 Lack of systematic and widespread educational programs that emphasize reproducible research is a serious obstacle.
 
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
 
 Making your research more reproducible—e.g., providing reproducibility packages along with the manuscript—is a way of showcasing your skills, a medium for communicating research more transparently, and an invitation to give feedback on your work. 
 If the research community is inclined to put more effort in doing reproducible research, it would prevent scientists from reinventing the wheel by rewriting software in order to build from your work.
 In the long run, it saves resources to achive scientific knowledge growth, both at the level of a community and within a research group.
 
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
 Again, we insist that automating all the computational workflow and diligently maintaining a lab notebook are fundamental to record your research.
 We try to avoid GUIs as much as possible and prefer to script everything so that analysis can be automated, reproducible, and recorded.
 This may be time-consuming but surely beneficial in the longer term of a research project.
 
-6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+## Would you recommend any specific resources for learning more about reproducibility?
 
 * Barba, L. A. (13 December 2012). "Reproducibility PI Manifesto", 10.6084/m9.figshare.104539. Presentation for a talk given at the ICERM workshop "Reproducibility in Computational and Experimental Mathematics". Published on figshare under CC-BY.
 * Donoho, D. L., Maleki, A., Rahman, I. U., Shahram, M., & Stodden, V. (2009). Reproducible research in computational harmonic analysis. Computing in Science & Engineering, 11(1), 8-18.
@@ -174,4 +163,11 @@ This may be time-consuming but surely beneficial in the longer term of a researc
 * Software Testing -- Udacity MOOC (https://www.udacity.com/).
 * Stark, P. B. (2015). Science is "show me", not "trust me". [Blog post](http://www.bitss.org/2015/12/31/science-is-show-me-not-trust-me)
 * Vitek, J., & Kalibera, T. (2011, October). Repeatability, reproducibility, and rigor in systems research. In Proceedings of the ninth ACM international conference on Embedded software (pp. 33-38). ACM.
+
+# References
+
+- Barba, L. A. (13 December 2012). "Reproducibility PI Manifesto", 10.6084/m9.figshare.104539. Presentation for a talk given at the ICERM workshop "Reproducibility in Computational and Experimental Mathematics". Published on figshare under CC-BY.
+- Bhalla, A. P. S., Bale, R., Griffith, B. E., & Patankar, N. A. (2013). A unified mathematical framework and an adaptive numerical method for fluid–structure interaction with rigid, deforming, and elastic bodies. Journal of Computational Physics, 250, 446-476.
+- Krishnan, A., Socha, J. J., Vlachos, P. P., & Barba, L. A. (2014). Lift and wakes of flying snakes. Physics of Fluids, 26(3), 031901.
+- Taira, K., & Colonius, T. (2007). The immersed boundary method: a projection approach. Journal of Computational Physics, 225(2), 2118-2137.
 

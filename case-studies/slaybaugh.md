@@ -1,8 +1,10 @@
-##### Title 
-Reproducible Computational Science on High Performance Computers;
-a View from Neutron Transport
+---
+title: "Reproducible Computational Science on High Performance Computers:
+a View from Neutron Transport"
+running: Neutron Transport
+author: Rachel Slaybaugh
+---
 
-##### Introduction
 My name is Rachel Slaybaugh and I am an Assistant Professor in the Nuclear Engineering Department at the University of California, Berkeley.
 I study computational methods for neutron transport: numerical methods for solving the Boltzmann equation applied to neutral particle interactions. 
 The methods I study are both deterministic (e.g. finite difference, etc.) and stochastic (Monte Carlo).
@@ -10,11 +12,9 @@ I develop these algorithms for reactor design and analysis, radiation shielding,
 Much of my work has an emphasis on high performance computing. 
 (Tagline: intersection of applied math and computational science, informed by nuclear engineering)
 
-##### Workflow diagram
+# Workflow
 
-![Diagram](slaybaugh.pdf)
-
-##### Workflow narrative
+![Diagram](slaybaugh.pdf){width=100%}\
 
 I tend to think of my workflow for code development as having three fundamental steps:
   (1) idea generation and refinement,
@@ -71,7 +71,8 @@ Recording of work for journal publication will also be version controlled, typic
 The idea is that, beyond the text writeup, the large test input files will be in the same repository as any scripts required to process data and generate plots, all with corresponding directions. 
 Thus if you have access to the code and the repository with tests, scripts, and results, you can rerun all the calculations and process the data. 
 
-##### Pain points
+# Pain points
+
 There are a few pain points: 
 An annoying one is getting the documentation right. 
 It seems like just using Doxygen is not enough.
@@ -90,8 +91,8 @@ A final pain point is re-implementing the algorithm from the simple case to the 
 However, this is a pretty small issue since the toy code didn't take long to
 develop. 
 
+# Key benefits
 
-##### Key benefits
 The largest benefit of this approach is having confidence in the validity of the data that you publish.
 For me that confidence starts with implementing the methods and their tests at
 the same time.
@@ -117,27 +118,27 @@ Similarly, having a repository with literature review notes is good for
 remembering past research, speeds up writing papers and documentation, and
 provides a place to start looking the next time.
 
-##### Key tools
+# Key tools
 
 They key tools I use are Doxygen, git (for version control), LaTeX, and plotting
 and data manipulation tools (usually in Python). 
 
-##### What does "reproducibility" mean to you in general and/or in the particular context of your case study?
+# Questions
+
+## What does "reproducibility" mean to you?
 
 The first way I think of reproducibility is "can I/my lab reproduce the results in my paper exactly?" 
 After that, "can an independent researcher, given that they have legal access to the required data and software, reproduce the results?" 
 Nuclear engineering data and codes are often controlled, so for many projects only researchers within my field will have access to the required data and software. 
 Fortunately, such non-open-source codes are typically available at no cost to researchers through a simple licensing process. 
 
-##### General questions about reproducibility
-
-1) Why do you think that reproducibility in your domain is important?
+## Why do you think that reproducibility in your domain is important?
 
 The codes that we write are often used to investigate new nuclear systems and make long-term policy or design decisions based on the results. 
 They are also used to study existing nuclear systems. 
 This is important stuff; the codes need to be right and the results need to be verifiable. 
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 - Mentors: my PhD advisers valued reproducible practices and insisted that we used them
 - Student groups: the Hacker Within
@@ -145,21 +146,21 @@ This is important stuff; the codes need to be right and the results need to be v
 - Community exposure: spending time with others who value reproducible practices 
 - Self-study: looking up things I saw people do that looked helpful
 
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 The biggest challenge is legal: only some people can access the codes and data required. 
 A secondary challenge is access: some of the work I do requires high-performance computing that is not readily available to many.
 
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
 
 *Ethical mandate*: I want my work to be right and for others to be able to know that it is right. 
 
 *Impact*: My ideas and products might then be adopted and built upon. 
 
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
 Testing, testing, testing. 
 
-6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+## Would you recommend any specific resources for learning more about reproducibility?
 
 Software Carpentry; the new Scopatz-Huff book.
