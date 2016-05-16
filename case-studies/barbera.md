@@ -1,26 +1,14 @@
-##### Title
+---
+title: The Trade-Off Between Reproducibility and Privacy in the Use of Social Media Data to Study Political Behavior
+running: Social Media and Political Behavior
+author: Pablo Barber\'{a}
+---
 
-The trade-off between reproducibility and privacy in the use of social media data to study political behavior
+My name is Pablo Barber\'{a}, and I am a political scientist who applies computational methods to the study of political and social behavior. I am currently a Moore-Sloan Fellow at the Center for Data Science in New York University, and will join the faculty of the University of Southern California as an Assistant Professor in 2016. The workflow I describe here corresponds to part of my dissertation research, whose aim is to study political polarization on social media websites. In particular, here I focus on the research process that led to an article published in the journal Political Analysis in 2015, which presents a new method to estimate the political ideology of Twitter users based on the structure of their personal networks.
 
-##### Introduction
+# Workflow
 
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
-My name is Pablo Barberá, and I am a political scientist who applies computational methods to the study of political and social behavior. I am currently a Moore-Sloan Fellow at the Center for Data Science in New York University, and will join the faculty of the University of Southern California as an Assistant Professor in 2016. The workflow I describe here corresponds to part of my dissertation research, whose aim is to study political polarization on social media websites. In particular, here I focus on the research process that led to an article published in the journal Political Analysis in 2015, which presents a new method to estimate the political ideology of Twitter users based on the structure of their personal networks.
-
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
-
-A study is reproducible when a researcher external to that particular project, but familiar with the literature and methods, is able to obtain identical results by using the same datasets and following the same procedures as those described as in the research output, be it a published article or book. Researchers should also produce replication code and a lab book with more precise details about the analysis conducted as part of the study. However, this should be in addition to the description of the research process in the publication, since the output of running code may depend on software versions, for example. There is also the possibility that a set of results is not "correct," and simply the product of errors in the code or software bugs. In other words, being able to run a piece of code and obtain identical results as those described in a published output is not a necessary nor a sufficient condition for reproducibility.
-
-When applied to studies that rely on social media data, the concept of reproducibility is slightly more nuanced. The Terms of Service of social networking platforms like Twitter or Facebook restrict the distribution of datasets obtained through their Application Programming Interfaces (APIs) for privacy reasons. These companies have taken steps towards enforcing this requirement, including contacting researchers to request they take down replication datasets, even if they were used for research purposes only. The trade-off between ensuring individual privacy and allowing reproducibility is even more evident when social media datasets are combined with survey data or other individual records, as in the case I describe here. In these instances, reproducing a published study implies the additional steps of querying the API to reconstruct the original dataset and matching it with the individual records, which is inefficient and not always possible. The workflow I describe here represents my best attempt towards addressing these challenges and ensuring that other researchers can reproduce my results.
-
-##### Workflow diagram
-
-[Diagram](barbera.pdf)
-
-##### Workflow narrative
+![Diagram](barbera.pdf){width=100%}\
 
 An important concern in the design of projects involving social media data should be to guarantee that the private records of the individuals in the sample are protected, while ensuring that every step is reproducible. In the analysis described here, I only rely on publicly available information -- in particular, information about Twitter profiles and voting registration records in the state of Ohio, which is used for validation purposes. However, the goal of the project is to infer a sensitive latent trait about each Twitter users -- their ideological position, on a scale from very liberal to very conservative. This is information that most users are not aware could not be inferred based only on their public personal information, which raises the question of whether the concept of informed consent in sharing users' data  -- as defined in the Terms of Service that users accept when they sign up for a Twitter account -- applies in this context as well.
 
@@ -36,16 +24,20 @@ In the data modeling step, the adjacency matrix that represents this network was
 
 After conducting the analysis and validation, the last part of the project consisted on producing a series of tables and figures that summarize the dataset, describe the main results of the paper, and offer a graphical representation of the validation process. All figures and tables were generated using R. Throughout this process, I documented exactly what datasets were required to generate each figure, being careful to ensure that only the code and data available in the public level of the project were required in order to replicate them. These tables and figures were then integrated into the manuscript, written using LaTeX. 
 
-##### Pain points
-
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them?*
+# Pain points
 
 The replication data and replication code were released in different platforms; the code in GitHub, the data in Dataverse. GitHub provides the ability to track changes in the code, and makes it easy to collaborate. Their online interface is easy to use, which reduces the entry costs for other researchers interested in forking the replication materials for their own projects. However, at the moment GitHub does not allow pushing files over 100 MB. Storing smaller files within this limit is not recommended either, since every change to this file is also stored in the repository. Dataverse, on the other hand, provides a free platform to store large files, with some built-in analysis tools, as well as some basic versioning system. However, it lacks the social layer of GitHub, the ability to collaborate, and a good interface to see differences between files using version control. As a result, at the moment there doesn't exist a single platform that combines the advantages of these two.
 
 A problem that is more specific to the workflow described here is the difficulties in ensuring that the anonymization of private records is complete. As described above, replacing the original Twitter user and voter IDs with randomly generated numbers is an approach that in theory ensures anonymity. In practice, however, it might be possible to discover the identity of some of these individuals using only some of the other variables. For example, if there are unique patterns of following behavior in the dataset (e.g. only one individual follows all the political accounts in the dataset except for Barack Obama), another research could succeed at discovering her identity. These are edge cases, which may not occur in the dataset here, but it is a concern if the goal is to guarantee the privacy of all individuals in the sample. Recent developments in the field of cryptography, such as differential privacy, provide promising new methods to improve these research practices.
 
-##### Key benefits
+# Key benefits
 
-*Discuss one or several sections of your workflow that you feel makes your approach better than the "normal" non-reproducible workflow that others might use in your field. What does your workflow do better than the one used by your lesser-skilled colleagues and students, and why? What would you want them to learn from your example?*
+Most published studies that use social media datasets to study human behavior do not provide replication datasets. This is unfortunate because it represents an important obstacle towards ensuring reproducible scientific practices and limits the use of these materials for learning purposes, but it is also understandable, as the restrictive policies of social media companies imply that researchers need to devote a significant amount of time towards ensuring compliance with these policies. My hope is that the workflow described here can become a blueprint for future replication datasets in this field.
 
-Most published studies that use social media datasets to study human behavior do not provide replication datasets. This is unfortunate because it represents an important obstacle towards ensuring reproducible scientific practices and limits the use of these materials for learning purposes, but it is also understandable, as the restrictive policies of social media companies imply that researchers need to devote a significant amount of time towards ensuring compliance with these policies. My hope is that the workflow described here can become a blueprint for future replication datasets in this field. 
+# Questions
+
+## What does "reproducibility" mean to you?
+
+A study is reproducible when a researcher external to that particular project, but familiar with the literature and methods, is able to obtain identical results by using the same datasets and following the same procedures as those described as in the research output, be it a published article or book. Researchers should also produce replication code and a lab book with more precise details about the analysis conducted as part of the study. However, this should be in addition to the description of the research process in the publication, since the output of running code may depend on software versions, for example. There is also the possibility that a set of results is not "correct," and simply the product of errors in the code or software bugs. In other words, being able to run a piece of code and obtain identical results as those described in a published output is not a necessary nor a sufficient condition for reproducibility.
+
+When applied to studies that rely on social media data, the concept of reproducibility is slightly more nuanced. The Terms of Service of social networking platforms like Twitter or Facebook restrict the distribution of datasets obtained through their Application Programming Interfaces (APIs) for privacy reasons. These companies have taken steps towards enforcing this requirement, including contacting researchers to request they take down replication datasets, even if they were used for research purposes only. The trade-off between ensuring individual privacy and allowing reproducibility is even more evident when social media datasets are combined with survey data or other individual records, as in the case I describe here. In these instances, reproducing a published study implies the additional steps of querying the API to reconstruct the original dataset and matching it with the individual records, which is inefficient and not always possible. The workflow I describe here represents my best attempt towards addressing these challenges and ensuring that other researchers can reproduce my results.

@@ -1,19 +1,8 @@
 ---
-title: A Reproducible R Notebook using Docker
+title: A Reproducible R Notebook Using Docker
+running: R Notebook Using Docker
 author: Carl Boettiger
-bibliography: cboettig.bib
 ---
-
-##### Introduction
-
-title: **A Reproducible R Notebook using Docker**
-
-*Please answer these introductory questions for your case study in a few sentences.*
-
-1) Who are you and what is your research field? Include your name,
-affiliation, discipline, and the background or context of your overall
-research that is necessary specifically to introduce your specific
-case study.
 
 [Carl Boettiger](http://carlboettiger.info), [UC Berkeley
 ESPM](http://ourenvironment.ucberkeley.edu)
@@ -21,7 +10,6 @@ ESPM](http://ourenvironment.ucberkeley.edu)
 I'm a theoretical ecologist working on problems of forecasting and
 decision-making in ecological systems. My work involves developing new
 computational and frequently data-intensive approaches to these problems.
-
 
 My workflow seeks to provide a way to capture & reproduce the day-to-day
 to workings of a computational ecologist using freely available platforms
@@ -42,42 +30,17 @@ adopted by others. Rather, I encourage the reader to focus on specific elements
 or modules that look most practical, as others have done. 
 
 
-2) Define what the term "reproducibility" means to you generally and/or
-in the particular context of your case study.
+# Workflow
 
-
-Reproducibility in this context is 'computational reproducibility.'
-It means a good-faith effort to make sure that the analysis can produce
-qualitatively identical results while running on comparable hardware.
-This means certain things do not need to be reproduced: e.g. how long
-the code takes to run may vary by hardware and operating system, but
-this is okay.  Nor am I not concerned with bitwise identical results,
-nor with necessarily reproducing stochastic
-random draws -- rather, I expect conclusions from reproducible results to be robust to
-the details of stochastic seed or choice of random number generator.
-
-I am also concerned that reproducibility is modular -- that individual
-components of the analysis can be reproduced (and thus recombined or
-otherwise modified), and not merely provide a black box that can only
-replicate final outputs without variation or adjustment.
-
-Lastly, I think it is important to identify _who_ should be able to reproduce the analysis.  Like the
-paper itself, the analysis requires a certain degree of expertise to
-understand, and I do not expect that individuals with no familiarity with
-programming, statistics, or scientific process can reproduce the analysis.
-However, I do expect that researchers with some scientific background
-in my area (e.g. the broadest readership of the journal in which it is
-published) and with minimal familiarity with the R language or similar
-computing langauage can reproduce the overall results after suitable
-investment of time and effort in reading the documentation.
-
-### Workflow diagram & narrative
+![Diagram](cboettig.pdf){width=100%}\
 
 A note to the reader: The following description is meant as a high level overview,
 which leans heavily on several powerful and well-developed tools and workflows
 including git/GitHub, docker/DockerHub, `.Rmd`/RStudio, and others.  Table 1 provides
 a concise reference where a reader can learn more about these tools and their
 use.
+
+Table: Tools used in workflow
 
 Tool      | Description / purpose     												  | Website  |
 --------- | --------------------------------------------------- | --------------------- |
@@ -94,8 +57,7 @@ Circle CI | Flexible continuous integration software for executing scripts pushe
 figshare  | Permanent data archiving platform | <http://figshare.com>  |
 zenodo    | Permanent archiving platform (handles code/software well) | <http://zenodo.org>  |
 
-
-####### Interactive workflow
+## Interactive workflow
 
 My daily workflow on an active project simply involves opening a new
 `.Rmd` document with the day's date in my lab notebook.  In this file,
@@ -135,7 +97,7 @@ fully elsewhere [@Boettiger2015].  A Dockerfile in my notebook provides an
 executable recipe for building this computational environment on top of existing,
 general-purpose Docker images maintained by the Rocker project (<https://github.com/rocker-org>).
 
-###### Automated workflow
+## Automated workflow
 
 At regular intervals I "commit" my notebook in `git` and "push" this progress
 to GitHub; a widely used version control system and public repository for 
@@ -164,12 +126,10 @@ and tags in the notebook to associate the post with relevant projects or
 themes, which makes it easier to come back to.  (Figuring out appropriate
 tags is harder than it sounds!)
 
-
 Each year I archive the github repository that contains that year's
 notebook on figshare, adding the DOI badge to the repository's README.
 
-
-###### Project finalization / publication
+## Project finalization / publication
 
 Eventually multiple entries will relate to the same project.  At this
 point, I frequently want to reuse code first developed in a previous
@@ -219,8 +179,7 @@ The reader is encouraged to view any of the real-world examples of this process
 in the repositories of my recent projects, such as <https://github.com/cboettig/nonparametric-bayes>,
 or in the pages of my online lab notebook at <http://carlboettiger.info/lab-notebook>. 
 
-
-##### Workflow narrative
+## Additional questions
 
 * **Frequency:** How often does the step happen and how long does
 it take? 
@@ -241,29 +200,7 @@ intervention (if so, is it recorded)?
 
 See Table 1. 
 
-In addition to detailing the steps of the workflow, you may wish to
-consider the following questions about the workflow as a whole:
-
-* **Data:** Is your raw data online?
-   * Is it citeable?  
-	 * Does the license allow external researchers to publish a replication/confirmation of your published work?
-
-* **Software:** Is the software online?
-   * Is there documentation?  
-	 * Are there tests?  
-	 * Are there example input files alongside the code?
-
-* **Processing:** Is your data processing workflow online?
-   * Are the scripts documented?  
-	 * Would an external researcher know what order to run them in?  
-
-* Would they know what parameters to use?
-
-*(500-800 words)*
-
-##### Pain points *Describe in detail the steps of a reproducible
-workflow which you consider to be particularly painful. How do you handle
-these? How do you avoid them? (200-400 words)*
+# Pain points 
 
 Knowing when to refactor and how to avoid fragile and opaque design. A
 good reproducible workflow should be like good software: built from
@@ -277,13 +214,7 @@ the messiness provides none of the abstraction that makes something more re-usab
 and reliable.  I don't have a good solution for how to do this though -- refactoring 
 is demanding and offers few incentives.   
 
-
-##### Key benefits *Discuss one or several sections of your workflow that
-you feel makes your approach better than the "normal" non-reproducible
-workflow that others might use in your field. What does your workflow do
-better than the one used by your lesser-skilled colleagues and students,
-and why? What would you want them to learn from your example? (200-400
-words)*
+# Key benefits 
 
 A key benefit of this approach is making my work portable and scalable.  By making 
 it easy to reproduce my computational environment and analyses, it suddenly becomes
@@ -295,12 +226,7 @@ ideas often build on old ones, and the dread of having to remember how some old 
 worked in the first place before tinkering with it to explore something new was often
 enough to make me turn to something easier. 
 
-
-##### Key tools *If applicable, provide a detailed description of a
-particular specialized tool that plays a key role in making your workflow
-reproducible, if you think that the tool might be of broader interest
-or relevance to a general audience. (200-400 words)*
-
+# Key tools 
 
 I believe any of the tools mentioned in Table 1 could be of use to a broader audience.
 I have tried to place the more general near the top -- GitHub and Docker address very
@@ -314,56 +240,66 @@ these tools may require both a bigger shift from existing strategies and offer a
 The particular pattern I have used to chain this together with CI, etc, is probably less
 generally applicable, and has a higher learning curve than the afore-mentioned tools. 
 
+# Questions
 
-##### General questions about reproducibility
+## What does "reproducibility" mean to you?
 
-*Please provide short answers (a few sentences each) to these general
-questions about reproducibility and scientific research. Rough ideas
-are appropriate here, as these will not be published with the case
-study. Please feel free to answer all or only some of these questions.*
+Reproducibility in this context is 'computational reproducibility.'
+It means a good-faith effort to make sure that the analysis can produce
+qualitatively identical results while running on comparable hardware.
+This means certain things do not need to be reproduced: e.g. how long
+the code takes to run may vary by hardware and operating system, but
+this is okay.  Nor am I not concerned with bitwise identical results,
+nor with necessarily reproducing stochastic
+random draws -- rather, I expect conclusions from reproducible results to be robust to
+the details of stochastic seed or choice of random number generator.
 
-1) Why do you think that reproducibility in your domain is important?
+I am also concerned that reproducibility is modular -- that individual
+components of the analysis can be reproduced (and thus recombined or
+otherwise modified), and not merely provide a black box that can only
+replicate final outputs without variation or adjustment.
+
+Lastly, I think it is important to identify _who_ should be able to reproduce the analysis.  Like the
+paper itself, the analysis requires a certain degree of expertise to
+understand, and I do not expect that individuals with no familiarity with
+programming, statistics, or scientific process can reproduce the analysis.
+However, I do expect that researchers with some scientific background
+in my area (e.g. the broadest readership of the journal in which it is
+published) and with minimal familiarity with the R language or similar
+computing langauage can reproduce the overall results after suitable
+investment of time and effort in reading the documentation.
+
+## Why do you think that reproducibility in your domain is important?
 
 Reproducibility makes results more reliable, and more importantly,
 makes it easier to extend, test, and build upon existing results. 
 Ultimately this makes it easier for an individual to build on their own
 work and the work of others, making for faster, better science.
 
-2) How or where did you learn the reproducible practices described in
-your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 Independent study of examples, experimentation, and reading, and
 connecting with other researchers sharing similar interests through the
 internet and social media.
 
-3) What do you see as the major pitfalls to doing reproducible research
-in your domain, and do you have any suggestions for working around
-these? Examples could include legal, logistical, human, or technical
-challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 Not a standard practice. In the short-term it takes more time.  It may
 also increase the probability of errors in your work being discovered.
 
-4) What do you view as the major incentives for doing reproducible
-research?
+## What do you view as the major incentives for doing reproducible research?
 
 Making research easier to do.  Reproducible research facilitates
 collaboration, particularly with myself.  It improves my confidence in
 my own results and helps me build more efficiently on work that I have
 already done.
 
-5) Are there any broad reproducibility best practices that you'd recommend
-for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
 Adopting tools that are widely used within my field (and others) for
 reproducibility.  These include: GitHub, Docker, rmarkdown.
 
-6) Would you recommend any specific websites, training courses, or books
-for learning more about reproducibility?
+## Would you recommend any specific resources for learning more about reproducibility?
 
 The documentation linked in Table 1 would be a great place to start on any of the individual tools.  Additionally, see the reproducible research workshop developed by NESCent:
 <https://github.com/Reproducible-Science-Curriculum>
-
-##### References
-
-

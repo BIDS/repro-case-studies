@@ -1,10 +1,8 @@
-# Reproducibility in human neuroimaging research : a practical example from the analysis of diffusion MRI.
-
-##### Introduction
-
-1) Who are you and what is your research field? Include your name, affiliation,
-discipline, and the background or context of your overall research that is
-necessary specifically to introduce your specific case study.
+---
+title: "Reproducibility in human neuroimaging research: a practical example from the analysis of diffusion MRI"
+running: Human neuroimaging research
+author: Ariel Rokem
+---
 
 My name is Ariel Rokem. I am a Data Scientist at the University of Washington
 eScience Institute. My research training and experience have been mostly in the
@@ -15,33 +13,9 @@ using quantitative MRI. A focus of the research program that I started in
 Brian's lab is the application of ideas from statistical learning theory to
 measurements of human white matter with diffusion MRI (dMRI).
 
-2) Define what the term "reproducibility" means to you generally and/or in the
-particular context of your case study.
+# Workflow
 
-Reproducibility is a matter of degree, not of kind. It usually depends on the
-availability of code and data from a scientific study, such that only a
-reasonable effort would be required to generate the evidence (numbers and
-visuals) used to support a scientific finding.  
-
-Ideally, a small number of commands at the command line would suffice, but in
-some complex cases, more work could be required. A reasonable amount of effort
-required might be rather extensive, when large amounts of data storage, or large
-amounts of computation are needed.
-
-A higher standard, sometimes called 'replicability' would be to require that the
-same conclusions be reached if another group of researchers were to do the same
-experiments, and implement the same ideas in their analysis.
-
-Reproducibility does not guarantee replicability [Leek and Peng, 2015]. Some may
-even argue that reproducibility and replicability may sometimes be in conflict,
-because implementation errors can be propagated in reproduction, but not in
-replication [Peng2009, Baggerly2005].
-
-##### Workflow diagram
-
-[Diagram](arokem_edited.pdf)
-
-##### Workflow narrative
+![Diagram](arokem.pdf){width=100%}\
 
 Measurements of dMRI are used as a way to assess the structure of the human
 brain and its connectivity *in vivo*. Many parameters of the measurement are
@@ -138,7 +112,7 @@ Through Dipy, the code in this project is now also distributed widely through
 both Github and the Python Package Index (PYPI), under the permissive BSD
 license.
 
-##### Pain points
+# Pain points
 
 One of the main difficulties encountered was the duration of some of the
 calculations. Some of the models, when fit on the entire brain volume, would
@@ -162,7 +136,7 @@ it might have been better to wait until the end result was an accepted article,
 and only then organize the entiree reproducible workflow that led to this
 result.
 
-##### Key benefits
+# Key benefits
 
 Though sometimes cumbersome and effortful, one of the major benefits of the
 process of producing a reproducible workflow is the level of confidence in the
@@ -170,7 +144,7 @@ results. There is never a doubt about what code is associated with what result,
 because the full chain of evidence is documented in the code leading to that
 result.
 
-##### Key tools [Optional]
+# Key tools
 
 A specific module (`osmosis.parallel`) was developed to deal with submission of
 jobs to parallel execution on the HPC cluster. This module would read in a
@@ -180,9 +154,30 @@ or on different parts of the same brain. The creation of this module resulted in
 a highly reproducible process. Consequently reuse of elements of this module
 produced benefits in time-saving during the development of the analysis methods.
 
-##### General questions about reproducibility [Optional]
+# Questions
 
-1) Why do you think that reproducibility in your domain is important?
+## What does "reproducibility" mean to you?
+
+Reproducibility is a matter of degree, not of kind. It usually depends on the
+availability of code and data from a scientific study, such that only a
+reasonable effort would be required to generate the evidence (numbers and
+visuals) used to support a scientific finding.  
+
+Ideally, a small number of commands at the command line would suffice, but in
+some complex cases, more work could be required. A reasonable amount of effort
+required might be rather extensive, when large amounts of data storage, or large
+amounts of computation are needed.
+
+A higher standard, sometimes called 'replicability' would be to require that the
+same conclusions be reached if another group of researchers were to do the same
+experiments, and implement the same ideas in their analysis.
+
+Reproducibility does not guarantee replicability [Leek and Peng, 2015]. Some may
+even argue that reproducibility and replicability may sometimes be in conflict,
+because implementation errors can be propagated in reproduction, but not in
+replication [Peng2009, Baggerly2005].
+
+## Why do you think that reproducibility in your domain is important?
 
 Human neuroscience is a field which is particularly likely to have an abundance
 of false findings [Ioannidis 2005]: Sample sizes are usually small, particularly
@@ -199,8 +194,7 @@ standards of reproducibility in this case would mean less false findings,
 because at least some of these factors would be ameliorated by a full "chain of
 evidence" to support every finding.
 
-2) How or where did you learn the reproducible practices described in your case
-study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 Many of these practices evolved out of laziness. Early on in grad school, I
 learned that most analyses that are done once, need to be redone, and that
@@ -215,9 +209,7 @@ school. He was not shy about how little of the research in our field he believed
 to be true, and this skepticism inspired me to struggle to be more confident in
 my own research conclusions.
 
-3) What do you see as the major pitfalls to doing reproducible research in your
-domain, and do you have any suggestions for working around these? Examples could
-include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 There are several barriers to wider adoption of reproducible research practices
 in human neuroscience. The first is that there is very little practical cost to
@@ -226,21 +218,20 @@ proportion of false results in the neuroscience literature, and it's more likely
 to be false if it's not reproducible. Since a false positive result is more
 likely to result in a publishable unit, there seem to be incentives in place to not be reproducible, slowing down the progress of the entire field.
 
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
 
 The level of confidence that I have in my results is quite high. That helps me
 sleep well at night.
 
-5) Are there any broad reproducibility best practices that you'd recommend for
-researchers in your field? + 6) Would you recommend any specific websites,
-training courses, or books for learning more about reproducibility?
+## Are there any best practices that you'd recommend for researchers in your field?
+
+## Would you recommend any specific resources for learning more about reproducibility?
 
 There are several papers that provide guidelines for reproducibility with a
 specific focus on neuroimaging. Two recent examples include [Gorgolewski2016]
 and [Pernet2015].
 
-
-##### References
+# References
 
 J.T. Leek and R.D. Peng (2015). Opinion: Reproducible research can still be
 wrong: Adopting a prevention approach. PNAS 112: 1645-1646

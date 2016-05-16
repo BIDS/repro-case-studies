@@ -1,15 +1,8 @@
-##### Title
-
-Software for analyzing supernova light curve data for cosmology
-
-##### Introduction
-
-*Please answer these introductory questions for your case study in a
- few sentences.*
-
-1) Who are you and what is your research field? Include your name,
-affiliation, discipline, and the context of your research program
-necessary to frame your case study.
+---
+title: Software for Analyzing Supernova Light Curve Data for Cosmology
+running: Supernova Light Curve Data
+author: Kyle Barbary
+---
 
 My name is Kyle Barbary and I am currently a postdoc in the physics
 department and a Data Science Fellow in the Institute for Data Science
@@ -22,35 +15,9 @@ supernova data from many different surveys targeting different
 distances. The workflow I describe is about the creation of software tools
 used to combine and analyze that data in a uniform way.
 
+# Workflow
 
-2) Define what the term "reproducibility" means to you generally
-and/or in the particular context of your case study.
-
-To me, reproducibility has two facets: the availability of usable
-software (preferably under an open-source license), and the
-availability of data (preferably in both raw and reduced
-forms). Together, these should give an outsider the ability to
-reproduce the results of a study from start to finish.
-
-I separate these two aspects because each can be beneficial without
-the other. For example, even without releasing data, it can still be
-quite beneficial to release software. If released under an open-source
-licence, this provides a different flavor of reproducibility - the
-ability to reproduce an algorithm described in a paper and use and
-improve that algorithm in subsequent work.
-
-As a side note, in my domain we often settle for a weaker form of full
-reproducibility, where a "reduced" data product and the software to
-analyze it is released, but not the raw data and not the software to
-go from raw to reduced data.
-
-
-##### Workflow diagram
-
-[Diagram](kbarbary.pdf)
-
-
-##### Workflow narrative
+![Diagram](kbarbary.png){width=100%}\
 
 I will describe the development of software for analyzing supernova
 light curve data.  A "light curve" in the parlance of my domain is
@@ -109,12 +76,7 @@ library. This is typically done after features have been user-tested
 for some time and the API is stable enough to be supported in future
 release versions. This is often a difficult judgement call.
 
-
-## PAIN POINTS
-
-*Describe in detail the steps of a reproducible workflow which you
-consider to be particularly painful. How do you handle these? How do
-you avoid them?*
+# Pain points
 
 - **Feature stability:** There is a trade-off between adding some
   feature immediately versus waiting until it is obvious whether to
@@ -128,12 +90,7 @@ you avoid them?*
   produced a few headaches. Automated build services are starting to
   support OS X for free, so this will help.
 
-
-##### Key Benefits
-
-*An in depth discussion of ideally one, or possibly a few, sections
-of your workflow that you are particularly proud of and feel are
-particularly important or useful to others.*
+# Key benefits
 
 The separation of common software functionality into a *library* is
 surprisingly unique in this subfield of supernova cosmology. It is a
@@ -143,10 +100,29 @@ version of the SNCosmo library used. The fact that the core software
 is a well-documented library means that readers and practitioners can
 more easily understand the specifics of the algorithms used.
 
+# Questions
 
-##### General questions about reproducibility [Optional]
+## What does "reproducibility" mean to you?
 
-1) Why do you think that reproducibility in your domain is important?
+To me, reproducibility has two facets: the availability of usable
+software (preferably under an open-source license), and the
+availability of data (preferably in both raw and reduced
+forms). Together, these should give an outsider the ability to
+reproduce the results of a study from start to finish.
+
+I separate these two aspects because each can be beneficial without
+the other. For example, even without releasing data, it can still be
+quite beneficial to release software. If released under an open-source
+licence, this provides a different flavor of reproducibility - the
+ability to reproduce an algorithm described in a paper and use and
+improve that algorithm in subsequent work.
+
+As a side note, in my domain we often settle for a weaker form of full
+reproducibility, where a "reduced" data product and the software to
+analyze it is released, but not the raw data and not the software to
+go from raw to reduced data.
+
+## Why do you think that reproducibility in your domain is important?
 
 Efficiency. Reproducibility makes cosmology research more efficient
  in the following ways:
@@ -165,9 +141,7 @@ Efficiency. Reproducibility makes cosmology research more efficient
   groups. Allowing different groups to reproduce each other's results
   will help resolve such situations more quickly.
 
-
-2) How or where did you learn the reproducible practices described in
-your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 Mainly through working on the AstroPy project, which develops a
 community astronomy Python package. I got involved in AstroPy when it
@@ -178,10 +152,7 @@ continuous integration on multiple platforms.  In short, I learned
 these practices by interacting with more experienced programmers also
 working on the project.
 
-3) What do you see as the major pitfalls to doing reproducible
-research in your domain, and do you have any suggestions for working
-around these? Examples could include legal, logistical, human, or
-technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 In astronomy, like other fields, observers have a desire to carefully
 guard their hard-won data until they have eeked out every possible
@@ -211,9 +182,7 @@ volume. Raw imaging data from an entire survey can be many
 terabytes. Making this data publicly available often requires dedicated
 servers and support staff.
 
-
-4) What do you view as the major incentives for doing reproducible
-research?
+## What do you view as the major incentives for doing reproducible research?
 
 - **Long term project efficiency:** Projects are often carried out over
   multiple generations of grad students and postdocs. Doing things

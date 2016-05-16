@@ -1,28 +1,14 @@
-##### Title
-Developing and Testing Stochastic Filtering Methods for Tracking Objects in Videos.
-
-##### Introduction
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
+---
+title: Developing and Testing Stochastic Filtering Methods for Tracking Objects in Videos
+running: Tracking Objects in Videos
+author: Valentina Staneva
+---
 
 My name is Valentina Staneva and I work as a data scientist at the eScience Institute at University of Washington. I am an applied mathematician who develops methods to extract information from diverse data sets. Most of my experience is in the domain of image processing and its biomedical applications. This case study describes the workflow of a particular project whose goal was to develop and test new algorithms for tracking objects in videos which aim to preserve the original structure of the objects. This research was done while I was a graduate student at the Center for Imaging Science, at Johns Hopkins University, and was motivated by the task of tracking heart motion in cardiac images. I believe it reflects a typical experience of an applied mathematicians working on biomedical imaging problems.  
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
+# Workflow
 
-"Reproducibility" has two meanings for me:
-
-(1) "Exactly reproducible" - when a result can be regenerated exactly as suggested given the same set of inputs and parameters. For example: a manuscript is "exactly reproducible" when one can provide some scripts and environment which with a press of a button (or an explicit set of instructions) can generate all the figures and calculations in the manuscript.
-
-(2) "Approximately reproducible" - when a result or similar performance can be generated with similar or different methods than the one proposed on the same or possibly slightly different data. Often in science, the goal is to test a hypothesis and the methods to achieve this do not matter, it is actually better if the same hypothesis is supported through different approaches. Further, the data on which the study was performed might never be observed again, so it is not so important to reproduce the results on these data, but it is important to produce similar results on similar data. We are interested in the robustness of the methods and the conclusions, and a better term may be "robustly reproducible".
-
-This case study directly addresses the first type of reproducibility, but it explores also a bit of the second interpretation.
-
-##### Workflow diagram
-[Diagram](vstaneva.pdf)
-
-
-##### Workflow narrative
+![Diagram](vstaneva.pdf){width=100%}\
 
 This work follows a typical flow for problems in my field: motivated by an existing algorithm, we aimed to extend it to processing sequences of images (as opposed to a single image). Usually the process involves experimenting with different models of the data and different inference algorithms (intertwined with discussions with my advisor and literature reviews). The various combinations of these models and algorithms can be tested on three main types of data sets:
 
@@ -38,10 +24,7 @@ In general the evaluation of these algorithms on real data is difficult. There a
 
 The workflow also contains a parallel path in which one studies the mathematical properties of the models and algorithms. For example, we aimed to develop algorithms which preserve the topology of the tracked objects, and we proved that our framework ensures that, thus eliminating the need to test this property in multiple cases. Sometimes it is possible to guarantee the performance of algorithms even without implementing them, which makes reproducibility of mathematical research quite easy!
 
-
-##### Pain points
-*Describe in detail the steps of a reproducible workflow which you consider to be particularly painful. How do you handle these? How do you avoid them?*
-
+# Pain points
 
 1) Privacy: data issues - some of the motivation for this project was driven by the need to process a specific cardiac data set and perform statistical analysis on the obtained results. I initially tested the algorithms on this data set, however, eventually I was not allowed to use it in my publication due to some privacy concerns. I resorted to searching for a public cardiac data set which turned out extremely difficult to find: a website which aimed to maintain a public database of cardiac images was permanently down as the creator left the field. One good source for public biomedical datasets is [MICCAI](http://www.miccai.org/) conference challenges: they contain datasets on which to assess methods for solving very specific problems. The drawback is that sometimes the data sets are not complete, as they are designed to solve a particular challenge: for example, the data set I obtained from an image segmentation challenge did not contain ground truth relevant to the tracking problem.
 
@@ -51,19 +34,25 @@ The workflow also contains a parallel path in which one studies the mathematical
 
 4) Backup: I used Subversion for version control of this project. I wanted to use the integration with the Nautilus file manager that Subversion was providing. It turned out it was buggy (it was a new feature at that time) and not all commits were recorded through the graphical interface: quite dangerous! I learned that it is more reliable to use explicit terminal commands with version control systems.
 
-
-##### Key Benefits
+# Key benefits
 
 One of the main advantages of this workflow is that all the code was written in one language without resorting to external libraries and toolboxes. Usually core language functionality changes much more rarely than add-on packages, which makes software better sustainable in the long run and across platforms.
 
 Our approach of encoding certain mathematical properties into the developed algorithms also makes the research more robustly reproducible under deviations of the original set-up.
 
+# Questions
 
-##### General questions about reproducibility
+## What does "reproducibility" mean to you?
 
-*Please provide short answers (a few sentences each) to these general questions about reproducibility and scientific research. Rough ideas are appropriate here, as these will not be published with the case study. Please feel free to answer all or only some of these questions.*
+"Reproducibility" has two meanings for me:
 
-1) Why do you think that reproducibility in your domain is important?
+(1) "Exactly reproducible" - when a result can be regenerated exactly as suggested given the same set of inputs and parameters. For example: a manuscript is "exactly reproducible" when one can provide some scripts and environment which with a press of a button (or an explicit set of instructions) can generate all the figures and calculations in the manuscript.
+
+(2) "Approximately reproducible" - when a result or similar performance can be generated with similar or different methods than the one proposed on the same or possibly slightly different data. Often in science, the goal is to test a hypothesis and the methods to achieve this do not matter, it is actually better if the same hypothesis is supported through different approaches. Further, the data on which the study was performed might never be observed again, so it is not so important to reproduce the results on these data, but it is important to produce similar results on similar data. We are interested in the robustness of the methods and the conclusions, and a better term may be "robustly reproducible".
+
+This case study directly addresses the first type of reproducibility, but it explores also a bit of the second interpretation.
+
+## Why do you think that reproducibility in your domain is important?
 
 I find two main reasons for the importance of reproducibility in my domain:
 
@@ -71,31 +60,29 @@ I find two main reasons for the importance of reproducibility in my domain:
 
 - public: there is overabundance of algorithms and studies but it is hard to use them in practice, because there is no simple way to reproduce the results (one usually needs to reimplement the algorithms or redo the studies). So if one wants their research to be useful outside their own group, they should first ensure it is reproducible.
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 I have been learning by myself. I believe some short reproducibility workshops would have improved my experience substantially (for example, learning about git/Github, virtual environments and light virtual containers).
 
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 Working with biomedical data one often faces privacy and storage challenges. Another problem which I did not encounter but I know is persistent in the field is the use of too many external software packages to preprocess the data: some of them are supported only by specific operating systems, or require manual operation. This makes it challenging to automate the workflow. In an attempt to improve performance on large data sets, researchers often use elaborate C++ programs which are hard to interpret and extend.
 
-
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
 
 I think the incentives should be personal and based on the understanding that this would improve the workflow and this is how research should be done. Unfortunately, the time and efforts spent on creating reproducible research are not very well awarded.
 
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
 Be reproducible every day! It is much easier to perform reproducible research than making your research reproducible (after it was already performed).
 
-
-6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+## Would you recommend any specific resources for learning more about reproducibility?
 
 Some useful resources have been compiled by the eScience Reproducibility working group:
-http://uwescience.github.io/reproducible/
+<http://uwescience.github.io/reproducible/>
 
 Other resources:
-https://github.com/Reproducible-Science-Curriculum
+<https://github.com/Reproducible-Science-Curriculum>
 
 Coursera Class:
-https://www.coursera.org/course/repdata
+<https://www.coursera.org/course/repdata>

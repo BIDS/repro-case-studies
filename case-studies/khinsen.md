@@ -1,10 +1,8 @@
-##### Title
-
-Problem-specific analysis of Molecular Dynamics trajectories for biomolecules
-
-##### Introduction
-
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
+---
+title: Problem-Specific Analysis of Molecular Dynamics Trajectories for Biomolecules
+running: Molecular Dynamics for Biomolecules
+author: Konrad Hinsen
+---
 
 My name is [Konrad Hinsen](http://dirac.cnrs-orleans.fr/~hinsen/), and I am a researcher at the [Centre de Biophysique Moléculaire](http://cbm.cnrs-orleans.fr/?lang=en) in Orléans, France. My field of research is molecular biophysics, and in particular the study of the flexibility and dynamics of proteins. All of my work is based on computational approaches, of which the most important ones are [elastic network models](http://dirac.cnrs-orleans.fr/plone/Members/hinsen/elastic-network-models-for-proteins) and [Molecular Dynamics](https://en.wikipedia.org/wiki/Molecular_dynamics) (MD) simulations. Moreover, most of my work concerns the development of computational methods rather than the application of already established methods.
 
@@ -18,17 +16,9 @@ For reproducible and publishable workflows, there are three specific challenges 
 
   3. The distinction between "software packages" and "workflows" is not useful when most of the code being executed is problem-specific. A more appropriate code structure is "well-established techniques implemented in libraries", "problem-specific scripts" and at the top level "coordination of a small number of scripts". It's the last two levels that must be captured for reproducibility.
 
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
+# Workflow
 
-Given that my work is 100% computational, my long-term goal is full reproducibility, starting from a specification of the simulation and ending with the plots that go into a journal article. This goal is unrealistic at the moment because the simulation software packages do not support reproducibility. One problem is the accumulation of numerical roundoff errors, which are insufficiently standardized across processors and compilers to be reproducible. Another problem is the widespread use of random number generators without user control over the random seed.
-
-For this reason, I have been setting myself a more modest goal for this case study: reproducibility of the trajectory analysis step, using the MD simulation trajectories as input as if they were experimental data outside of my control. This is a useful compromise because the development of trajectory analysis techniques is the central scientific topic of this work.
-
-##### Workflow diagram
-
-[Diagram](khinsen.pdf)
-
-##### Workflow narrative
+![Diagram](khinsen.pdf){width=100%}\
 
 A published example of the workflow described below can be consulted in the form of two code/data packages ([package 1](https://dx.doi.org/10.6084/m9.figshare.808594), [package 2](https://dx.doi.org/10.6084/m9.figshare.808595)) and the [article](http://dx.doi.org/10.1063/1.4823996) describing the study.
 
@@ -70,7 +60,7 @@ Method-development projects tend to be small, involving a handful of people. The
 
 At the end of the project, the ActivePaper file(s) can be published, making all of the code and data available to other researchers. The ActivePaper file contains the complete final state of the project (though not its history), meaning that anyone can continue from that state. An ActivePaper file for a new project can re-use items from already published ActivePaper files through a DOI (Digital Object Identifier), allowing other researchers to build on published computational work. The DOI can also be used for citations in journal articles.
 
-##### Pain points
+# Pain points
 
 The main practical difficulty is that most of today's computational scientists grew up with tools and practices that are not compatible with reproducibility. This is particularly true for the field of molecular simulations, where reproducibly published studies are still rare. Working reproducibly requires adopting new tools and habits, and modifying existing software for integration with reprooducble workflows. There is a permanent temptation to give up reproducibility for faster scientific progress.
 
@@ -80,11 +70,11 @@ A major constraint imposed by the ActivePapers system is that all code must be w
 
 The use of specific tools is rarely sufficient to ensure reproducibility. Tools can only take care of *replicability*, i.e. the technical aspect of tracking all computational dependencies such that a computation can be re-run identically. Reproducibility at the scientific level requires that all steps can easily be understood and verified by fellow scientists. Best practices for reaching this goal remain to be developed. One observation from the applications of the above workflow is the importance of access to intermediate results for human inspection. This suggests an overall structure of many small scripts that each do a well-defined job and communicate via explicitly stored datasets.
 
-##### Key benefits
+# Key benefits
 
 The traditional workflow of changing scripts and running the interactively in a shell is extremely prone to mistakes. The most frequent one is forgetting to re-run a script after its input data has changed because of an update to another script. Before I adopted reproducibility support tools, I regularly found myself looking at a data file and wondering which exact sequence of script executions had produced it. The question typically comes up when writing a paper. Even for today's minimal "materials & methods" sections, it is typically necessary to look up parameters and other choices in the scripts when writing the documentation, and that's often the moment when one discovers what a mess they are. This is no longer an issue when the completely final project state is available for inspection, and guaranteed to be complete and coherent by software tools.
 
-##### Key tools
+# Key tools
 
 The key tool in my workflow is the [ActivePapers](http://www.activepapers.org/) toolset, which was in fact designed specifically for supporting reproducibility in the context of atomistic and molecular simulations. It supports in particular
 
@@ -94,28 +84,35 @@ The key tool in my workflow is the [ActivePapers](http://www.activepapers.org/) 
 
 The only other reproducibility-enabling tool in the workflow is a version control system.
 
-##### General questions about reproducibility
+# Questions
 
-1) Why do you think that reproducibility in your domain is important?
+## What does "reproducibility" mean to you?
+
+Given that my work is 100% computational, my long-term goal is full reproducibility, starting from a specification of the simulation and ending with the plots that go into a journal article. This goal is unrealistic at the moment because the simulation software packages do not support reproducibility. One problem is the accumulation of numerical roundoff errors, which are insufficiently standardized across processors and compilers to be reproducible. Another problem is the widespread use of random number generators without user control over the random seed.
+
+For this reason, I have been setting myself a more modest goal for this case study: reproducibility of the trajectory analysis step, using the MD simulation trajectories as input as if they were experimental data outside of my control. This is a useful compromise because the development of trajectory analysis techniques is the central scientific topic of this work.
+
+## Why do you think that reproducibility in your domain is important?
 
 Most MD simulation studies are so complex that in the absence of reproducibility, it is impossible to be sure what was really computed. Most mistakes do not lead to a recognizably wrong result, but to a somewhat different one that could well be correct.
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 I developed them myself, having found nothing suitable for the specific needs of molecular simulations after a careful survey of existing technology and practices.
 
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 The main challenges are human and social. Most of my colleagues have experienced the problems that non-reproducibility creates, but few are willing to invest the extra effort to do a better job, and many remain unaware of the tools and practices for reproducibility that already exist. Journals in my field generally don't require the publication of software or data, and do not in any way encourage reproducibility. Technical challenges exist in that the most popular software packages do not support reproducibility, but the technical challenges could be met with little effort if there were sufficient motivation in the community.
 
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
+
 
  - Feeling more confident about the correctness of my results.
 
  - Being able to build safely on earlier work (by myself or others)
 
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
 I'd already be happy if publishing software and data became the norm in my field. It's hard to recommend any more elaborate practices before the basics become standard.
 
-6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+## Would you recommend any specific resources for learning more about reproducibility?
