@@ -768,14 +768,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.33"
-     inkscape:cx="389.78115"
-     inkscape:cy="225.34142"
+     inkscape:cx="238.7029"
+     inkscape:cy="190.46888"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1641"
-     inkscape:window-height="1005"
-     inkscape:window-x="39"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
      fit-margin-top="1"
@@ -811,7 +811,7 @@
          y="305.93582"
          id="tspan4150" /></text>
     <rect
-       style="fill:#c8c8c8;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4144"
        width="56.303715"
        height="49.064667"
@@ -840,7 +840,7 @@
        height="49.064667"
        width="56.303715"
        id="rect4925"
-       style="fill:#c8c8c8;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <text
        sodipodi:linespacing="125%"
        id="text4927"
@@ -859,7 +859,7 @@
          x="190.50201"
          sodipodi:role="line">script 4</tspan></text>
     <rect
-       style="fill:#c8c8c8;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect5022"
        width="79.053848"
        height="32.002048"
@@ -951,7 +951,7 @@
          x="116.13803"
          y="235.43164">result 2</tspan></text>
     <rect
-       style="opacity:1;fill:#c8c8c8;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect6295"
        width="56.303715"
        height="49.064667"
@@ -1036,7 +1036,7 @@
        style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5053)"
        sodipodi:nodetypes="cc" />
     <rect
-       style="fill:#c8c8c8;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.50000072;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect10350"
        width="56.303715"
        height="49.064667"
@@ -1152,14 +1152,17 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-32.690582"
-       y="442.55417"
+       x="7.1590443"
+       y="439.54663"
        id="text13919"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan13921"
-         x="-32.690582"
-         y="442.55417">Stage III: Data Analysis</tspan></text>
+         x="7.1590443"
+         y="439.54663"
+         style="font-size:25.00000191px"><tspan
+   style="font-size:22.50000191px"
+   id="tspan4514">Stage III: Data </tspan>Analysis</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.00000024;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.10000002, 0.10000002;stroke-dashoffset:0;stroke-opacity:1"
        id="rect13927"
@@ -1188,5 +1191,15 @@
          sodipodi:role="line"
          id="tspan9083"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.00000095px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle">plot 1</tspan></text>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4506"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion4508"><rect
+           id="rect4510"
+           width="329.3233"
+           height="66.91729"
+           x="-7.5187969"
+           y="385.74258" /></flowRegion><flowPara
+         id="flowPara4512"></flowPara></flowRoot>  </g>
 </svg>
