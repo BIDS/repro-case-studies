@@ -223,8 +223,6 @@ likely to result in a publishable unit, there seem to be incentives in place to 
 The level of confidence that I have in my results is quite high. That helps me
 sleep well at night.
 
-## Are there any best practices that you'd recommend for researchers in your field?
-
 ## Would you recommend any specific resources for learning more about reproducibility?
 
 There are several papers that provide guidelines for reproducibility with a

@@ -106,7 +106,6 @@ The main challenges are human and social. Most of my colleagues have experienced
 
 ## What do you view as the major incentives for doing reproducible research?
 
-
  - Feeling more confident about the correctness of my results.
 
  - Being able to build safely on earlier work (by myself or others)
@@ -114,5 +113,3 @@ The main challenges are human and social. Most of my colleagues have experienced
 ## Are there any best practices that you'd recommend for researchers in your field?
 
 I'd already be happy if publishing software and data became the norm in my field. It's hard to recommend any more elaborate practices before the basics become standard.
-
-## Would you recommend any specific resources for learning more about reproducibility?

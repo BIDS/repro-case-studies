@@ -57,13 +57,3 @@ Reproducibility means that sufficient descriptive information and resources are 
 ## Why do you think that reproducibility in your domain is important?
 
 Reproducibility has long been a central tenet of the scientific research process in my field because data from new studies are compared to data from earlier studies.  Not so long ago, all the data collected during a study were included in published research articles, and the analyses could be easily described in a materials and methods section of the articles.  Recent increases in the quantity of data and the concurrent increase in the complexity of the analyses has made it impossible to include the data itself or the same level of descriptive detail in the materials and methods sections of research articles.  I think that my domain values reproducibility but the current format for publishing research articles is not able to fully accommodate the modern scientific research process.
-
-## How or where did you learn about reproducibility?
-
-## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
-
-## What do you view as the major incentives for doing reproducible research?
-
-## Are there any best practices that you'd recommend for researchers in your field?
-
-## Would you recommend any specific resources for learning more about reproducibility?

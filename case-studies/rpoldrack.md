@@ -63,5 +63,3 @@ I think I primarily learned from negative examples; that is, from seeing other r
 
 - version control
 - data sharing
-
-## Would you recommend any specific resources for learning more about reproducibility?

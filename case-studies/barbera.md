@@ -1,10 +1,10 @@
 ---
 title: The Trade-Off Between Reproducibility and Privacy in the Use of Social Media Data to Study Political Behavior
 running: Social Media and Political Behavior
-author: Pablo Barber\'{a}
+author: Pablo Barberá
 ---
 
-My name is Pablo Barber\'{a}, and I am a political scientist who applies computational methods to the study of political and social behavior. I am currently a Moore-Sloan Fellow at the Center for Data Science in New York University, and will join the faculty of the University of Southern California as an Assistant Professor in 2016. The workflow I describe here corresponds to part of my dissertation research, whose aim is to study political polarization on social media websites. In particular, here I focus on the research process that led to an article published in the journal Political Analysis in 2015, which presents a new method to estimate the political ideology of Twitter users based on the structure of their personal networks.
+My name is Pablo Barberá, and I am a political scientist who applies computational methods to the study of political and social behavior. I am currently a Moore-Sloan Fellow at the Center for Data Science in New York University, and will join the faculty of the University of Southern California as an Assistant Professor in 2016. The workflow I describe here corresponds to part of my dissertation research, whose aim is to study political polarization on social media websites. In particular, here I focus on the research process that led to an article published in the journal Political Analysis in 2015, which presents a new method to estimate the political ideology of Twitter users based on the structure of their personal networks.
 
 # Workflow
 

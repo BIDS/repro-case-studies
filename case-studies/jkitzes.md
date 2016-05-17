@@ -57,7 +57,3 @@ A major challenge in ecology continues to be data sharing and access. Many field
 ## What do you view as the major incentives for doing reproducible research?
 
 I'm not sure that there are any major external incentives in my field -- certainly, in principle, releasing reproducible research could increase the number of researchers who end up citing your manuscript, but this seems somewhat indirect. Some journals, like PLoS, are now mandating that all novel computer code be uploaded as manuscript SI, but it seems that this requirement is not thoroughly checked at this point.
-
-## Are there any best practices that you'd recommend for researchers in your field?
-
-## Would you recommend any specific resources for learning more about reproducibility?

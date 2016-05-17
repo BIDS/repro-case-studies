@@ -49,16 +49,11 @@ I think one of the most important points is recording exactly what version of th
 
 A second point is the actual publishing of raw data and evaluation workflows, allowing any reader to directly inspect all details of the evaluation process -- even those that the authors did not deem important enough (or forgot) to mention in the paper. This is clearly not widespread practice in our field and would be quite desirable in my opinion.
 
-# Key tools
--
-
 # Questions
 
 ## What does "reproducibility" mean to you?
 
 In general, given a publication (in a refereed journal), source codes and raw data (which might be available publicly or in the institute's repositories), an expert from my field should be able to understand, and in principle repeat, every step of the study from the running of the correct version of the simulation code to the final results presented in the published paper.
-
-## Why do you think that reproducibility in your domain is important?
 
 ## How or where did you learn about reproducibility?
 
@@ -73,7 +68,3 @@ Another point is that simulation codes, raw data, and evaluation tools are rarel
 ## What do you view as the major incentives for doing reproducible research?
 
 Apart from research ethics and institutional requirements demanding this, the recording of provenance information can make a researcher's life significantly easier when he/she discovers a discrepancy between different sets of results produced during a single study or in studies by different researchers. (Are the discrepancies caused by differences in the code, different input parameters, or data evaluation?)
-
-## Are there any best practices that you'd recommend for researchers in your field?
-
-## Would you recommend any specific resources for learning more about reproducibility?

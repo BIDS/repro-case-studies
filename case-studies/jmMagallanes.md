@@ -1,10 +1,10 @@
 ---
 title: Analyzing Cosponsorship Data to Detect Networking Patterns in Peruvian Legislators
 running: Networking in Peruvian Legislators
-author: Jos\'e Manuel Magallanes
+author: José Manuel Magallanes
 ---
 
-I am Jos\{\'{e}} Manuel Magallanes. I am a Senior Data Science Fellow at the eScience Institute of the University of Washington, where I am also a Visiting Professor at the Evans School of Public Policy and Governance (2015 - 2017). Since 2003, I have been Professor of Political Science and Public Policy Methodology at the Catholic University of Peru. My research is related to framing political and policy problems with a computational social science approach. I have dealt with different topics including electoral behavior, public management performance, climate change and social conflict, and Congress's legislators behavior. My contribution for this case will be a research carried out on bill cosponsorship data to detect key players, reveal association patterns, anticipate party splitting and detect tactics to get re-elected. 
+I am José Manuel Magallanes. I am a Senior Data Science Fellow at the eScience Institute of the University of Washington, where I am also a Visiting Professor at the Evans School of Public Policy and Governance (2015 - 2017). Since 2003, I have been Professor of Political Science and Public Policy Methodology at the Catholic University of Peru. My research is related to framing political and policy problems with a computational social science approach. I have dealt with different topics including electoral behavior, public management performance, climate change and social conflict, and Congress's legislators behavior. My contribution for this case will be a research carried out on bill cosponsorship data to detect key players, reveal association patterns, anticipate party splitting and detect tactics to get re-elected. 
 
 I have a BSc in Computer Science (UNMSM - Peru), a MA in Political Science and Public Management (PUCP - Peru), a Phd in Psychology (UNMSM - Peru) and a Phd in Computational Social Science (George Mason University-USA).
 
@@ -152,11 +152,3 @@ In general, I consider this term means the level of reconstruction of a research
 ## What do you view as the major incentives for doing reproducible research?
 
 * That it allows you to improve your work.
-
-## Are there any best practices that you'd recommend for researchers in your field?
-
-* I could only share this experience.
-
-## Would you recommend any specific resources for learning more about reproducibility?
-
-* Not now.

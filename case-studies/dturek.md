@@ -59,7 +59,3 @@ In the area of computational statistics, there are not many barriers to reproduc
 ## What do you view as the major incentives for doing reproducible research?
 
 Primarily so that others may actually (and easily) verify our results, if they so choose.
-
-## Are there any best practices that you'd recommend for researchers in your field?
-
-## Would you recommend any specific resources for learning more about reproducibility?

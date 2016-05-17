@@ -79,7 +79,3 @@ Within a research team, major incentives include: increased transparency in meth
 ## Are there any best practices that you'd recommend for researchers in your field?
 
 We recommend development and adherence to standards in geospatial data formats and distribution protocols. 
-
-## Would you recommend any specific resources for learning more about reproducibility?
-
-No specific recommendations.

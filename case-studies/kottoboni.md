@@ -52,10 +52,6 @@ Researchers tend to blame the "reproducibility crisis" on statistics, and in par
 
 I learned some of these practices from other students in my department and the rest were self-taught using resources on the internet.
 
-## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
-
-## What do you view as the major incentives for doing reproducible research?
-
 ## Are there any best practices that you'd recommend for researchers in your field?
 
 Explain every step in the data preprocessing and analysis carefully and thoroughly. Document and comment code liberally. Make code and data publicly available.
