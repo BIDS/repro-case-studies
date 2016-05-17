@@ -1,6 +1,7 @@
 ---
 title: Reproducible Workflows For Understanding Large Scale Ecological Effects Of Climate Change
 running: Ecological Effects of Climate Change
+author: Karthik Ram
 ---
 
 My name is [Karthik Ram](http://karthik.io) and I am a quantitative food web ecologist by training. I received my PhD in 2009 from the University of California, Davis. Since then I've studied the impacts of climate change on the rate at which the landscape greens up in spring time, and the consequent effects on a large mammal food web, among various other projects. The Yellowstone project was my entry into data science, where I was thrust into the challenges of validating (reproducing) someone else's work before continuing on with my own research. During this time I also encountered various pain points, which led me to create my own version control system before I learned of the existence of Git. In my current job I've transitioned from a full-time research scientist to a hybrid role, where I spent part of my time on research activities but the rest on developing tools and workflows to support various stages of a reproducible research workflow which I describe below.
