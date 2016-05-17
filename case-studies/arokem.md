@@ -47,7 +47,7 @@ from other labs.
 
 These preprocessed data are publicly available through the Stanford Libraries
 Stanford Digital Repository (SDR), as two different collections:
-http://purl.stanford.edu/ng782rw8378 and http://purl.stanford.edu/rt034xr8593.
+<http://purl.stanford.edu/ng782rw8378> and <http://purl.stanford.edu/rt034xr8593>.
 Most of the data was licensed under the Creative Commons Atttribution license,
 and a small subset was also released under the Public Domain Dedication License,
 for unencumbered use in methods development.
@@ -253,7 +253,7 @@ Cancer. J Natl Cancer Inst (2005) 97: 307-309.
 
 K.J. Gorgoloewksi and R. Poldrack (2016) A practical guide for improving
 transparency and reproducibility in neuroimaging research.
-http://dx.doi.org/10.1101/039354
+<http://dx.doi.org/10.1101/039354>
 
 Pernet C and Poline, J. B. (2015). Improving functional magnetic resonance
 imaging reproducibility. Gigascience 4: 15. DOI: 10.1186/s13742-015-0055-8

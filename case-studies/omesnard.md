@@ -34,7 +34,7 @@ After many failed attempts, we found that we had to force the fluid to rest ever
 In the end, we can say that the _scientific findings_ of Krishnan et al. (2014) have been replicated, but we still see noticeable differences in the details of the flow characteristics.
 
 The [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) codes are both being developed in our research lab and implement the same immersed-boundary method (Taira and Colonius, 2007).
-The GitHub code repositories include code documentation with [Doxygen](www.doxygen.org), users' documentation (on the GitHub wiki), as well as basic examples and tutorials.
+The GitHub code repositories include code documentation with [Doxygen](http://www.doxygen.org), users' documentation (on the GitHub wiki), as well as basic examples and tutorials.
 cuIBM uses [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on a single CUDA-architecture Graphical Processing Unit (GPU).
 We used cuIBM again to confirm the reproducibility of the published findings in Krishnan et al. (2014).
 It is important to remark that we had to use the _same version_ of the code, with the _same version_ of the linear-algebra library to obtain the same numeric answers as before.
@@ -160,7 +160,7 @@ This may be time-consuming but surely beneficial in the longer term of a researc
 * [Reproducible Research -- Coursera MOOC](https://www.coursera.org/learn/reproducible-research).
 * Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten simple rules for reproducible computational research.
 * [Software Carpentry](http://software-carpentry.org).
-* Software Testing -- Udacity MOOC (https://www.udacity.com/).
+* Software Testing -- [Udacity MOOC](https://www.udacity.com/).
 * Stark, P. B. (2015). Science is "show me", not "trust me". [Blog post](http://www.bitss.org/2015/12/31/science-is-show-me-not-trust-me)
 * Vitek, J., & Kalibera, T. (2011, October). Repeatability, reproducibility, and rigor in systems research. In Proceedings of the ninth ACM international conference on Embedded software (pp. 33-38). ACM.
 

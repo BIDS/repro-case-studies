@@ -98,13 +98,13 @@ The generic practices I'd recommend for researchers in my field include:
 
 ## Would you recommend any specific resources for learning more about reproducibility?
 
-- Software/Data Carpentry: http://software-carpentry.org/ https://github.com/datacarpentry
+- Software/Data Carpentry: <http://software-carpentry.org/> <https://github.com/datacarpentry>
 
-- Reproducible Science Curriculum: https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014
+- Reproducible Science Curriculum: <https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014>
 
-- rOpenSci Reproducible Science Guide:  http://ropensci.github.io/reproducibility-guide/ (and see the 'further readings')
+- rOpenSci Reproducible Science Guide:  <http://ropensci.github.io/reproducibility-guide/> (and see the 'further readings')
 
-- Stodden, V and Miguez, S (2014). Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research. Journal of Open Research Software 2(1):e21, DOI: http://dx.doi.org/10.5334/jors.ay
+- Stodden, V and Miguez, S (2014). Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research. Journal of Open Research Software 2(1):e21, DOI: <http://dx.doi.org/10.5334/jors.ay>
 
 - Gandrud, C. (2013). [Reproducible Research with R and R Studio](https://github.com/christophergandrud/Rep-Res-Book). CRC Press.
 Chicago	
