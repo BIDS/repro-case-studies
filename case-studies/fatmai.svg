@@ -1,153 +1,738 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="1003px" height="837px" viewBox="0 0 1003 837" enable-background="new 0 0 1003 837" xml:space="preserve">
-<g transform="translate(0.5,0.5)">
-	<rect x="0.188" y="158.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<rect x="370.188" y="158.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M120.188,188.59h53.63"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M179.068,188.59l-7,3.5l1.75-3.5l-1.75-3.5L179.068,188.59
-		z"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M301.188,189.59l62.632-0.91"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M369.07,188.61l-6.95,3.6l1.7-3.53l-1.802-3.47
-		L369.07,188.61z"/>
-	<rect x="220.188" y="598.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<rect x="370.188" y="266.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<rect x="121.188" y="698.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<rect x="261.188" y="698.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<ellipse pointer-events="none" fill="#FFFFFF" stroke="#000000" cx="430.188" cy="408.59" rx="60" ry="40"/>
-	<ellipse pointer-events="none" fill="#FFFFFF" stroke="#000000" cx="241.188" cy="190.59" rx="60" ry="40"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M430.188,326.59v35.63"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M430.188,367.47l-3.5-7l3.5,1.75l3.5-1.75L430.188,367.47z
-		"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M280.188,658.59l-93.1,37.61"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M182.228,698.17l5.182-5.87l-0.32,3.9l2.938,2.59
-		L182.228,698.17z"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M430.188,448.59l-143.96,47.99"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M281.248,498.24l5.528-5.54l-0.55,3.88l2.771,2.76
-		L281.248,498.24z"/>
-	<rect x="601.187" y="496.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="130" height="71.087"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M430.188,218.59v41.63"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M430.188,265.47l-3.5-7l3.5,1.75l3.5-1.75L430.188,265.47z
-		"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M430.188,448.59l229.761,46.73"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M665.088,496.37l-7.549,2.028l2.41-3.078l-1.021-3.78
-		L665.088,496.37z"/>
-	<rect x="424.188" y="498.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="69.087"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M430.188,448.59l49.33,45.67"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M483.368,497.83l-7.51-2.19l3.658-1.38l1.092-3.75
-		L483.368,497.83z"/>
-	<rect x="220.188" y="498.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M280.188,658.59l36.44,35.55"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M320.388,697.81l-7.45-2.38l3.69-1.29l1.19-3.72
-		L320.388,697.81z"/>
-	<rect x="47.188" y="598.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M280.188,558.59l-166.8,38.57"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M108.278,598.34l6.03-4.99l-0.92,3.812l2.5,3.01
-		L108.278,598.34z"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M280.188,558.59v33.63"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M280.188,597.47l-3.5-7l3.5,1.75l3.5-1.75L280.188,597.47z
-		"/>
-	<rect x="560.187" y="158.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M490.188,281.59h35v-93h28.633"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M559.07,188.59l-7,3.5l1.75-3.5l-1.75-3.5L559.07,188.59z"
-		/>
-	<rect x="825.187" y="233.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<rect x="825.187" y="307.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<rect x="825.187" y="386.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<rect x="66.187" y="80.59" pointer-events="none" fill="none" width="220" height="30"/>
-	<text transform="matrix(1 0 0 1 79.6257 96.4072)" font-family="'Helvetica-Bold'" font-size="22">Stage I: Data Input</text>
-	<rect x="429.188" y="70.59" pointer-events="none" fill="none" width="220" height="30"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M312.188,152.59v-5c0-3.333-3.332-5-10-5h-135
-		c-6.666,0-10-1.667-10-5v-2.5c0-1.667,0-0.833,0,2.5v2.5c0,1.667-3.333,2.5-10,2.5h-135c-6.666,0-10,1.667-10,5v5"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M690.187,152.59v-5c0-3.333-3.332-5-10-5h-145
-		c-6.666,0-10-1.667-10-5v-2.5c0-1.667,0-0.833,0,2.5v2.5c0,1.667-3.332,2.5-10,2.5h-145c-6.665,0-10,1.667-10,5v5"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M995.187,152.59v-5c0-3.333-3.332-5-10-5h-88
-		c-6.666,0-10-1.667-10-5v-2.5c0-1.667,0-0.833,0,2.5v2.5c0,1.667-3.332,2.5-10,2.5h-88c-6.666,0-10,1.667-10,5v5"/>
-	<rect x="570.187" y="338.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M490.188,311.59h40v80h33.633"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M569.07,391.59l-7,3.5l1.75-3.5l-1.75-3.5L569.07,391.59z"
-		/>
-	<rect x="825.187" y="468.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<rect x="828.187" y="548.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<rect x="825.187" y="157.59" pointer-events="none" fill="#FFFFFF" stroke="#000000" width="120" height="60"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M680.187,178.59H813.82"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M819.07,178.59l-7,3.5l1.75-3.5l-1.75-3.5L819.07,178.59z"
-		/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M690.187,383.59L690.187,383.59"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M690.187,383.59L690.187,383.59L690.187,383.59
-		L690.187,383.59z"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M825.187,168.59H686.558"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M681.308,168.59l7-3.5l-1.75,3.5l1.75,3.5L681.308,168.59z
-		"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M711.187,368.59h5c3.334,0,5-3.333,5-10v-69
-		c0-6.667,1.668-10,5-10h2.5c1.668,0,0.834,0-2.5,0h-2.5c-1.666,0-2.5-3.333-2.5-10v-69c0-6.667-1.666-10-5-10h-5"/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M729.187,279.59h49v-76h40.633"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M824.07,203.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,203.59z"
-		/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M729.187,279.59h49v-1h40.633"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M824.07,278.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,278.59z"
-		/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M729.187,279.59h49v58h40.633"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M824.07,337.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,337.59z"
-		/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M729.187,279.59h49v137h40.633"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M824.07,416.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,416.59z"
-		/>
-	<path pointer-events="none" fill="none" stroke="#000000" stroke-miterlimit="10" d="M729.187,279.59h49v219h40.633"/>
-	<path pointer-events="none" stroke="#000000" stroke-miterlimit="10" d="M824.07,498.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,498.59z"
-		/>
-	<text transform="matrix(1 0 0 1 103.6882 128.9326)" font-family="'Helvetica'" font-size="18">Pre-assessment</text>
-	<text transform="matrix(1 0 0 1 463.6882 128.9326)" font-family="'Helvetica'" font-size="18">Image Generation</text>
-	<text transform="matrix(1 0 0 1 802.6882 125.0898)" font-family="'Helvetica'" font-size="18">Applications/Examples</text>
-	<text transform="matrix(1 0 0 1 13.8035 180.5605)" font-family="'Helvetica'" font-size="14">Web resource:</text>
-	<text transform="matrix(1 0 0 1 13.8035 197.3604)" font-family="'Helvetica'" font-size="14">MRC linguistic </text>
-	<text transform="matrix(1 0 0 1 13.8035 214.1602)" font-family="'Helvetica'" font-size="14">database</text>
-	<text transform="matrix(1 0 0 1 199.8142 180.5605)" font-family="'Helvetica'" font-size="14">Config File:</text>
-	<text transform="matrix(1 0 0 1 199.8142 197.3604)" font-family="'Helvetica'" font-size="14">concreteness</text>
-	<text transform="matrix(1 0 0 1 199.8142 214.1602)" font-family="'Helvetica'" font-size="14">imageability</text>
-	<text transform="matrix(1 0 0 1 386.8157 188.9609)" font-family="'Helvetica'" font-size="14">CSV File:</text>
-	<text transform="matrix(1 0 0 1 386.8157 205.7607)" font-family="'Helvetica'" font-size="14">concrete words</text>
-	<text transform="matrix(1 0 0 1 568.3064 188.9609)" font-family="'Helvetica'" font-size="14">Database:</text>
-	<text transform="matrix(1 0 0 1 568.3064 205.7607)" font-family="'Helvetica'" font-size="14">Online/MongoDB</text>
-	<text transform="matrix(1 0 0 1 394.8079 302.2109)" font-family="'Helvetica'" font-size="14">pyMooney</text>
-	<text transform="matrix(1 0 0 1 829.1462 180.5605)" font-family="'Helvetica'" font-size="14">Visual Awareness</text>
-	<text transform="matrix(1 0 0 1 867.6755 197.3604)" font-family="'Helvetica'" font-size="14">FMRI</text>
-	<text transform="matrix(1 0 0 1 841.9841 214.1602)" font-family="'Helvetica'" font-size="14">Neuroscience</text>
-	<text transform="matrix(1 0 0 1 846.9587 257.2207)" font-family="'Helvetica'" font-size="14">MooneyAuth</text>
-	<text transform="matrix(1 0 0 1 835.2927 274.0205)" font-family="'Helvetica'" font-size="14">Internet Security</text>
-	<text transform="matrix(1 0 0 1 856.4607 334.2188)" font-family="'Helvetica'" font-size="14">Memory</text>
-	<text transform="matrix(1 0 0 1 840.1091 351.0195)" font-family="'Helvetica'" font-size="14">Aha! Moment</text>
-	<text transform="matrix(1 0 0 1 854.7986 416.7139)" font-family="'Helvetica'" font-size="14">Split-brain </text>
-	<text transform="matrix(1 0 0 1 863.74 433.5137)" font-family="'Helvetica'" font-size="14">patients</text>
-	<text transform="matrix(1 0 0 1 854.363 489.9453)" font-family="'Helvetica'" font-size="14">Language </text>
-	<text transform="matrix(1 0 0 1 854.7634 506.7451)" font-family="'Helvetica'" font-size="14">perception</text>
-	<text transform="matrix(1 0 0 1 872.6707 523.5449)" font-family="'Helvetica'" font-size="14">EEG</text>
-	<text transform="matrix(1 0 0 1 867.9314 583.9316)" font-family="'Helvetica'" font-size="14">...</text>
-	<text transform="matrix(1 0 0 1 385.1467 389.7305)" font-family="'Helvetica'" font-size="14">    Config File:</text>
-	<text transform="matrix(1 0 0 1 375.0227 406.5303)" font-family="'Helvetica'" font-size="14">local or image db</text>
-	<text transform="matrix(1 0 0 1 404.5945 423.3301)" font-family="'Helvetica'" font-size="14">license </text>
-	<text transform="matrix(1 0 0 1 396.0325 440.1309)" font-family="'Helvetica'" font-size="14">smoothing</text>
-	<text transform="matrix(1 0 0 1 237.4934 618.7949)" font-family="'Helvetica'" font-size="14">Online image </text>
-	<text transform="matrix(1 0 0 1 249.9348 635.5938)" font-family="'Helvetica'" font-size="14">database: </text>
-	<text transform="matrix(1 0 0 1 225.0417 652.3945)" font-family="'Helvetica'" font-size="14">Download images</text>
-	<text transform="matrix(1 0 0 1 435.9666 510.8164)" font-family="'Helvetica'" font-size="14">Preprocessing:</text>
-	<text transform="matrix(1 0 0 1 451.1453 527.6152)" font-family="'Helvetica'" font-size="14">Grayscale</text>
-	<text transform="matrix(1 0 0 1 461.2595 544.416)" font-family="'Helvetica'" font-size="14">Resize</text>
-	<text transform="matrix(1 0 0 1 449.1902 561.2158)" font-family="'Helvetica'" font-size="14">Smoothing</text>
-	<text transform="matrix(1 0 0 1 620.2302 519.2148)" font-family="'Helvetica'" font-size="14">Thresholding:</text>
-	<text transform="matrix(1 0 0 1 648.2478 536.0156)" font-family="'Helvetica'" font-size="14">local</text>
-	<text transform="matrix(1 0 0 1 643.9607 552.8154)" font-family="'Helvetica'" font-size="14">global</text>
-	<text transform="matrix(1 0 0 1 584.363 356.4121)" font-family="'Helvetica'" font-size="14">Version control </text>
-	<text transform="matrix(1 0 0 1 599.9187 373.2119)" font-family="'Helvetica'" font-size="14">and share:</text>
-	<text transform="matrix(1 0 0 1 600.698 390.0117)" font-family="'Helvetica'" font-size="14">git / github</text>
-	<text transform="matrix(1 0 0 1 67.0334 635.5938)" font-family="'Helvetica'" font-size="14">Local images</text>
-	<text transform="matrix(1 0 0 1 243.9456 527.6152)" font-family="'Helvetica'" font-size="14">Get original</text>
-	<text transform="matrix(1 0 0 1 257.1765 544.416)" font-family="'Helvetica'" font-size="14">images</text>
-	<text transform="matrix(1 0 0 1 168.4104 735.6699)" font-family="'Helvetica'" font-size="14">API</text>
-	<text transform="matrix(1 0 0 1 278.1042 735.6699)" font-family="'Helvetica'" font-size="14">Web-scraping</text>
-	<rect x="391.682" y="80.59" pointer-events="none" fill="none" width="278.498" height="30"/>
-	<text transform="matrix(1 0 0 1 398.8884 96.4072)" font-family="'Helvetica-Bold'" font-size="22">Stage II: Data Processing</text>
-</g>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="1003px"
+   height="837px"
+   viewBox="0 0 1003 837"
+   enable-background="new 0 0 1003 837"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="fatmai.svg"><metadata
+     id="metadata5017"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs5015" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1261"
+     inkscape:window-height="695"
+     id="namedview5013"
+     showgrid="false"
+     inkscape:zoom="0.79750155"
+     inkscape:cx="501.5"
+     inkscape:cy="426.40224"
+     inkscape:window-x="21"
+     inkscape:window-y="66"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g4771" /><g
+     transform="translate(0.5,0.5)"
+     id="g4771"><rect
+       x="0.188"
+       y="158.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4773" /><rect
+       x="370.188"
+       y="158.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4775" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M120.188,188.59h53.63"
+       id="path4777" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M179.068,188.59l-7,3.5l1.75-3.5l-1.75-3.5L179.068,188.59   z"
+       id="path4779" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M301.188,189.59l62.632-0.91"
+       id="path4781" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M369.07,188.61l-6.95,3.6l1.7-3.53l-1.802-3.47   L369.07,188.61z"
+       id="path4783" /><rect
+       x="220.188"
+       y="598.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4785" /><rect
+       x="370.188"
+       y="266.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4787" /><rect
+       x="121.188"
+       y="698.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4789" /><rect
+       x="261.188"
+       y="698.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4791" /><ellipse
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       cx="430.188"
+       cy="408.59"
+       rx="60"
+       ry="40"
+       id="ellipse4793" /><ellipse
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       cx="241.188"
+       cy="190.59"
+       rx="60"
+       ry="40"
+       id="ellipse4795" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M430.188,326.59v35.63"
+       id="path4797" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M430.188,367.47l-3.5-7l3.5,1.75l3.5-1.75L430.188,367.47z   "
+       id="path4799" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M280.188,658.59l-93.1,37.61"
+       id="path4801" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M182.228,698.17l5.182-5.87l-0.32,3.9l2.938,2.59   L182.228,698.17z"
+       id="path4803" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M430.188,448.59l-143.96,47.99"
+       id="path4805" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M281.248,498.24l5.528-5.54l-0.55,3.88l2.771,2.76   L281.248,498.24z"
+       id="path4807" /><rect
+       x="601.187"
+       y="496.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="130"
+       height="71.087"
+       id="rect4809" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M430.188,218.59v41.63"
+       id="path4811" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M430.188,265.47l-3.5-7l3.5,1.75l3.5-1.75L430.188,265.47z   "
+       id="path4813" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M430.188,448.59l229.761,46.73"
+       id="path4815" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M665.088,496.37l-7.549,2.028l2.41-3.078l-1.021-3.78   L665.088,496.37z"
+       id="path4817" /><rect
+       x="424.188"
+       y="498.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="69.087"
+       id="rect4819" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M430.188,448.59l49.33,45.67"
+       id="path4821" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M483.368,497.83l-7.51-2.19l3.658-1.38l1.092-3.75   L483.368,497.83z"
+       id="path4823" /><rect
+       x="220.188"
+       y="498.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4825" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M280.188,658.59l36.44,35.55"
+       id="path4827" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M320.388,697.81l-7.45-2.38l3.69-1.29l1.19-3.72   L320.388,697.81z"
+       id="path4829" /><rect
+       x="47.188"
+       y="598.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4831" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M280.188,558.59l-166.8,38.57"
+       id="path4833" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M108.278,598.34l6.03-4.99l-0.92,3.812l2.5,3.01   L108.278,598.34z"
+       id="path4835" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M280.188,558.59v33.63"
+       id="path4837" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M280.188,597.47l-3.5-7l3.5,1.75l3.5-1.75L280.188,597.47z   "
+       id="path4839" /><rect
+       x="560.187"
+       y="158.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4841" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M490.188,281.59h35v-93h28.633"
+       id="path4843" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M559.07,188.59l-7,3.5l1.75-3.5l-1.75-3.5L559.07,188.59z"
+       id="path4845" /><rect
+       x="825.187"
+       y="233.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4847" /><rect
+       x="825.187"
+       y="307.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4849" /><rect
+       x="825.187"
+       y="386.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4851" /><rect
+       x="66.187"
+       y="80.59"
+       pointer-events="none"
+       fill="none"
+       width="220"
+       height="30"
+       id="rect4853" /><text
+       transform="matrix(1 0 0 1 79.6257 96.4072)"
+       font-family="'Helvetica-Bold'"
+       font-size="22"
+       id="text4855">Stage I: Data Input</text>
+<rect
+       x="429.188"
+       y="70.59"
+       pointer-events="none"
+       fill="none"
+       width="220"
+       height="30"
+       id="rect4857" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M312.188,152.59v-5c0-3.333-3.332-5-10-5h-135   c-6.666,0-10-1.667-10-5v-2.5c0-1.667,0-0.833,0,2.5v2.5c0,1.667-3.333,2.5-10,2.5h-135c-6.666,0-10,1.667-10,5v5"
+       id="path4859" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M690.187,152.59v-5c0-3.333-3.332-5-10-5h-145   c-6.666,0-10-1.667-10-5v-2.5c0-1.667,0-0.833,0,2.5v2.5c0,1.667-3.332,2.5-10,2.5h-145c-6.665,0-10,1.667-10,5v5"
+       id="path4861" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M995.187,152.59v-5c0-3.333-3.332-5-10-5h-88   c-6.666,0-10-1.667-10-5v-2.5c0-1.667,0-0.833,0,2.5v2.5c0,1.667-3.332,2.5-10,2.5h-88c-6.666,0-10,1.667-10,5v5"
+       id="path4863" /><rect
+       x="570.187"
+       y="338.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4865" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M490.188,311.59h40v80h33.633"
+       id="path4867" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M569.07,391.59l-7,3.5l1.75-3.5l-1.75-3.5L569.07,391.59z"
+       id="path4869" /><rect
+       x="825.187"
+       y="468.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4871" /><rect
+       x="828.187"
+       y="548.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4873" /><rect
+       x="825.187"
+       y="157.59"
+       pointer-events="none"
+       fill="#FFFFFF"
+       stroke="#000000"
+       width="120"
+       height="60"
+       id="rect4875" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M680.187,178.59H813.82"
+       id="path4877" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M819.07,178.59l-7,3.5l1.75-3.5l-1.75-3.5L819.07,178.59z"
+       id="path4879" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M690.187,383.59L690.187,383.59"
+       id="path4881" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M690.187,383.59L690.187,383.59L690.187,383.59   L690.187,383.59z"
+       id="path4883" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M825.187,168.59H686.558"
+       id="path4885" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M681.308,168.59l7-3.5l-1.75,3.5l1.75,3.5L681.308,168.59z   "
+       id="path4887" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M711.187,368.59h5c3.334,0,5-3.333,5-10v-69   c0-6.667,1.668-10,5-10h2.5c1.668,0,0.834,0-2.5,0h-2.5c-1.666,0-2.5-3.333-2.5-10v-69c0-6.667-1.666-10-5-10h-5"
+       id="path4889" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M729.187,279.59h49v-76h40.633"
+       id="path4891" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M824.07,203.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,203.59z"
+       id="path4893" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M729.187,279.59h49v-1h40.633"
+       id="path4895" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M824.07,278.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,278.59z"
+       id="path4897" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M729.187,279.59h49v58h40.633"
+       id="path4899" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M824.07,337.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,337.59z"
+       id="path4901" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M729.187,279.59h49v137h40.633"
+       id="path4903" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M824.07,416.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,416.59z"
+       id="path4905" /><path
+       pointer-events="none"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M729.187,279.59h49v219h40.633"
+       id="path4907" /><path
+       pointer-events="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       d="M824.07,498.59l-7,3.5l1.75-3.5l-1.75-3.5L824.07,498.59z"
+       id="path4909" /><text
+       transform="matrix(1 0 0 1 103.6882 128.9326)"
+       font-family="'Helvetica'"
+       font-size="18"
+       id="text4911">Pre-assessment</text>
+<text
+       transform="matrix(1 0 0 1 463.6882 128.9326)"
+       font-family="'Helvetica'"
+       font-size="18"
+       id="text4913">Image Generation</text>
+<text
+       transform="matrix(1 0 0 1 802.6882 125.0898)"
+       font-family="'Helvetica'"
+       font-size="18"
+       id="text4915">Applications/Examples</text>
+<text
+       transform="matrix(1 0 0 1 13.8035 180.5605)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4917">Web resource:</text>
+<text
+       transform="matrix(1 0 0 1 13.8035 197.3604)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4919">MRC linguistic </text>
+<text
+       transform="matrix(1 0 0 1 13.8035 214.1602)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4921">database</text>
+<text
+       transform="matrix(1 0 0 1 199.8142 180.5605)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4923">Config File:</text>
+<text
+       transform="matrix(1 0 0 1 199.8142 197.3604)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4925">concreteness</text>
+<text
+       transform="matrix(1 0 0 1 199.8142 214.1602)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4927">imageability</text>
+<text
+       transform="matrix(1 0 0 1 386.8157 188.9609)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4929">CSV File:</text>
+<text
+       transform="matrix(1 0 0 1 386.8157 205.7607)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4931">concrete words</text>
+<text
+       transform="matrix(1 0 0 1 568.3064 188.9609)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4933">Database:</text>
+<text
+       transform="matrix(1 0 0 1 568.3064 205.7607)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4935">Online/MongoDB</text>
+<text
+       transform="matrix(1 0 0 1 394.8079 302.2109)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4937">pyMooney</text>
+<text
+       transform="matrix(1 0 0 1 829.1462 180.5605)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4939">Visual Awareness</text>
+<text
+       transform="matrix(1 0 0 1 867.6755 197.3604)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4941">FMRI</text>
+<text
+       transform="matrix(1 0 0 1 841.9841 214.1602)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4943">Neuroscience</text>
+<text
+       transform="matrix(1 0 0 1 846.9587 257.2207)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4945">MooneyAuth</text>
+<text
+       transform="matrix(1 0 0 1 835.2927 274.0205)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4947">Internet Security</text>
+<text
+       transform="matrix(1 0 0 1 856.4607 334.2188)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4949">Memory</text>
+<text
+       transform="matrix(1 0 0 1 840.1091 351.0195)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4951">Aha! Moment</text>
+<text
+       transform="matrix(1 0 0 1 854.7986 416.7139)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4953">Split-brain </text>
+<text
+       transform="matrix(1 0 0 1 863.74 433.5137)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4955">patients</text>
+<text
+       transform="matrix(1 0 0 1 854.363 489.9453)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4957">Language </text>
+<text
+       transform="matrix(1 0 0 1 854.7634 506.7451)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4959">perception</text>
+<text
+       transform="matrix(1 0 0 1 872.6707 523.5449)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4961">EEG</text>
+<text
+       transform="matrix(1 0 0 1 867.9314 583.9316)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4963">...</text>
+<text
+       transform="matrix(1 0 0 1 385.1467 389.7305)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4965">    Config File:</text>
+<text
+       transform="matrix(1 0 0 1 375.0227 406.5303)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4967">local or image db</text>
+<text
+       transform="matrix(1 0 0 1 404.5945 423.3301)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4969">license </text>
+<text
+       transform="matrix(1 0 0 1 396.0325 440.1309)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4971">smoothing</text>
+<text
+       transform="matrix(1 0 0 1 237.4934 618.7949)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4973">Online image </text>
+<text
+       transform="matrix(1 0 0 1 249.9348 635.5938)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4975">database: </text>
+<text
+       transform="matrix(1 0 0 1 225.0417 652.3945)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4977">Download images</text>
+<text
+       transform="matrix(1 0 0 1 435.9666 510.8164)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4979">Preprocessing:</text>
+<text
+       transform="matrix(1 0 0 1 451.1453 527.6152)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4981">Grayscale</text>
+<text
+       transform="matrix(1 0 0 1 461.2595 544.416)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4983">Resize</text>
+<text
+       transform="matrix(1 0 0 1 449.1902 561.2158)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4985">Smoothing</text>
+<text
+       transform="matrix(1 0 0 1 620.2302 519.2148)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4987">Thresholding:</text>
+<text
+       transform="matrix(1 0 0 1 648.2478 536.0156)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4989">local</text>
+<text
+       transform="matrix(1 0 0 1 643.9607 552.8154)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4991">global</text>
+<text
+       transform="matrix(1 0 0 1 584.363 356.4121)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4993">Version control </text>
+<text
+       transform="matrix(1 0 0 1 599.9187 373.2119)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4995">and share:</text>
+<text
+       transform="translate(600.698,390.0117)"
+       font-size="14"
+       id="text4997"
+       style="font-size:14px;font-family:Helvetica">git / GitHub</text>
+<text
+       transform="matrix(1 0 0 1 67.0334 635.5938)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text4999">Local images</text>
+<text
+       transform="matrix(1 0 0 1 243.9456 527.6152)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text5001">Get original</text>
+<text
+       transform="matrix(1 0 0 1 257.1765 544.416)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text5003">images</text>
+<text
+       transform="matrix(1 0 0 1 168.4104 735.6699)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text5005">API</text>
+<text
+       transform="matrix(1 0 0 1 278.1042 735.6699)"
+       font-family="'Helvetica'"
+       font-size="14"
+       id="text5007">Web-scraping</text>
+<rect
+       x="391.682"
+       y="80.59"
+       pointer-events="none"
+       fill="none"
+       width="278.498"
+       height="30"
+       id="rect5009" /><text
+       transform="matrix(1 0 0 1 398.8884 96.4072)"
+       font-family="'Helvetica-Bold'"
+       font-size="22"
+       id="text5011">Stage II: Data Processing</text>
+</g></svg>

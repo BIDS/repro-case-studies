@@ -24,11 +24,11 @@ As part of the process, the software tool must detect the regions of the interes
 
 An important step of the data processing is keeping track of the *outputs*. The forth column lists four main outputs of the system: technical reports, scientific papers, documentation about the software tool and educational material about the science problem and algorithm developments. Although the diagram omits output of partial results, they are very common and useful  throughout the design of the analytic software tools.
 
-The fifth column shows the main ways in which *consumers* of the outputs will have access to the research discoveries, for example [Github](https://github.com/dani-lbnl/CRIC) and [websites](https://sites.google.com/site/cervicalcancercell/). In the context of this case study, it indicates the main hubs of information distribution for the project.
+The fifth column shows the main ways in which *consumers* of the outputs will have access to the research discoveries, for example [GitHub](https://github.com/dani-lbnl/CRIC) and [websites](https://sites.google.com/site/cervicalcancercell/). In the context of this case study, it indicates the main hubs of information distribution for the project.
 
 # Pain points
 
-The software tool design and testing require intense communication among the team members through reports and presentations. Although part of team used version control, much of the code is still to be made available open-source through Github. In addition to commit messages, which tend to be short, we have also maintained technical reports, developed as a diary of activities -- these are fundamental to keep the whole team synchronized and up to speed. The painful side of diary or electronic lab books is mostly the free form of inputs that may require extra-time to parse.
+The software tool design and testing require intense communication among the team members through reports and presentations. Although part of team used version control, much of the code is still to be made available open-source through GitHub. In addition to commit messages, which tend to be short, we have also maintained technical reports, developed as a diary of activities -- these are fundamental to keep the whole team synchronized and up to speed. The painful side of diary or electronic lab books is mostly the free form of inputs that may require extra-time to parse.
 
 # Key benefits
 

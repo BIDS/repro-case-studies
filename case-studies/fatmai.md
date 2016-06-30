@@ -19,7 +19,7 @@ images tagged with these concrete words from an online image database (Flickr) i
 
 In our functional magnetic resonance imaging (fMRI) experiment we were interested in the question how brain activity changes when subject's recognize the hidden object versus when they not. The two-tone images do not change over the course of the presentation but subject's perception change over time and this moment in recognition is associated with a change in brain activity, which we wanted to capture. FMRI image acquisition is relatively slow (every 2 seconds). In addition, as fMRI scans are costly, we are limited by time. Hence, for this fMRI experiment I selected 120 Mooney images (resized to have a 400×400 pixel size) that were recognized within 4-10 seconds in the pilot experiment.
 
-The code (written in Python) to create new two-tone, Mooney images are available on github.
+The code (written in Python) to create new two-tone, Mooney images are available on GitHub.
 
 # Pain points
 

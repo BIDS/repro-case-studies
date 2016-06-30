@@ -42,7 +42,7 @@ correction of motion artifacts, alignment to a common coordinate frame, and
 tissue type segmentation. These steps were performed once, at the beginning of
 the study. The code that performs these steps is part of the lab code
 distribution, [`vistasoft`](https://github.com/vistalab/vistasoft), freely
-available through Github. Preprocessing also relied on freely available software
+available through GitHub. Preprocessing also relied on freely available software
 from other labs.
 
 These preprocessed data are publicly available through the Stanford Libraries
@@ -61,7 +61,7 @@ many components of the scipy stack, including `numpy`, `scipy`, `matplotlib`,
 `scikit-learn`. In addition, the code depends on components of the [neuroimaging in Python](https://nipy.org) libraries. Approximately 30% of the module code was
 covered by unit tests, with a particular emphasis on core modules and utility
 functions that were reused. A few end-to-end tests were implemented to track
-regressions. Development of the software was done openly on Github, and it was
+regressions. Development of the software was done openly on GitHub, and it was
 also released under an attribution license.
 
 Scripts using the module code were developed using the IPython notebook. These
@@ -109,7 +109,7 @@ general to accomodate new models, and mechanisms to evaluate their performance
 in fitting dMRI data.
 
 Through Dipy, the code in this project is now also distributed widely through
-both Github and the Python Package Index (PYPI), under the permissive BSD
+both GitHub and the Python Package Index (PYPI), under the permissive BSD
 license.
 
 # Pain points

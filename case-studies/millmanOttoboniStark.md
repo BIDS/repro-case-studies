@@ -310,7 +310,7 @@ necessary struggle to understand the scientific question and the
 experiment well enough to devise an approach to answering the question.
 
 For KO and PS there was a learning curve to master the tools and
-practices. This involved understanding the data model used by Git,
+practices. This involved understanding the data model used by git,
 acquiring habits such as writing tests for all functions and following a
 common style guide, and learning to contribute to the project repository
 indirectly through GitHub’s pull request mechanism. JM was already
@@ -366,7 +366,7 @@ projects [@millman2014developing].
 
 ## Version control and code review
 
-We (JM, KO, PS) use Git[^7] as our version control system (VCS) and
+We (JM, KO, PS) use git[^7] as our version control system (VCS) and
 GitHub[^8] as the public hosting service for our official `upstream`
 repository (<https://github.com/statlab/permute>). Each of us has our
 own copy, or fork, of the `upstream` repository. We each work on our own

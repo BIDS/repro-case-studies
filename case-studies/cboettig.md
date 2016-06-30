@@ -126,7 +126,7 @@ and tags in the notebook to associate the post with relevant projects or
 themes, which makes it easier to come back to.  (Figuring out appropriate
 tags is harder than it sounds!)
 
-Each year I archive the github repository that contains that year's
+Each year I archive the GitHub repository that contains that year's
 notebook on figshare, adding the DOI badge to the repository's README.
 
 ## Project finalization / publication
@@ -134,8 +134,8 @@ notebook on figshare, adding the DOI badge to the repository's README.
 Eventually multiple entries will relate to the same project.  At this
 point, I frequently want to reuse code first developed in a previous
 entry.  This is my signal that it is time to create a new project on
-Github.  (Figuring this out is much harder than it sounds!)  I create a
-new public Github repo using a name that matches a tag in the relevant
+GitHub.  (Figuring this out is much harder than it sounds!)  I create a
+new public GitHub repo using a name that matches a tag in the relevant
 notebook entries.  In the `R/` directory I store functions that provide
 these reusable bits.  For non-trivial functions, I try and develop unit
 tests (in the `/tests` directory) -- these usually come directly from
@@ -148,7 +148,7 @@ either simulate or download and clean the data from external sources.
 Notebook pages do not load these functions as a single package --
 as the package is constantly changing this is unlikely to continue
 to work anyway.  Instead, they source in the script directly from the
-version-explicit links on Github.  (I learned this the hard way). This
+version-explicit links on GitHub.  (I learned this the hard way). This
 avoids the burden of making sure the 'package' is always installable,
 it just serves as a convenient organizational skeleton.
 
@@ -161,7 +161,7 @@ ends in the various pages of the notebook under that category.
 
 Once the work has coalesced around a particular set of ideas and results
 appropriate for a single manuscript, I begin drafting the manuscript as a
-`.Rmd` file in the Github repository, often based on `.Rmd` files from
+`.Rmd` file in the GitHub repository, often based on `.Rmd` files from
 the notebook.  The `rticles` package from RStudio provides a template system
 which makes it easy to render `.Rmd` files into `pdf` articles for various
 journal formats. 
@@ -171,7 +171,7 @@ generated from the `Rmd`) to the arXiv (<http://arxiv.org>) and configure
 the Zenodo permanent archive which connects automatically to GitHub, much
 like a Continuous Integration service.  Zenodo then generates a permanent
 archive with a unique Digital Object Identifier (DOI) every time it detects
-a new 'release' on GitHub.  Github releases are part of the `git` tag system
+a new 'release' on GitHub.  GitHub releases are part of the `git` tag system
 and can be used to signal a new version of software or publication of a paper.
 A DOI badge from Zenodo is then displayed on the GitHub repository. 
 
