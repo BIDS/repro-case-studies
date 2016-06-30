@@ -32,7 +32,7 @@ I should note that this is the point where somebody usually suggests using a "pr
 
 ## Cleaning the data
 
-Once I've created my munged data, I can now use a single script for processing/analyzing all data sets. In the field of cognitive neuroscience, there are common preprocessing techniques that are carried out in order to improve the quality of the data (e.g., a few filtering steps and rejecting channels that are too noisy). I have a `clean_data.py` file that will look through the "munged" folder of each subject, load the data, run the cleaning, and then output the results to the folder `{subject_name}/clean`. This way, I know that any data in the clean folder is ready for further analysis.
+Once I've created my munged data, I can now use a single script for processing/analyzing all datasets. In the field of cognitive neuroscience, there are common preprocessing techniques that are carried out in order to improve the quality of the data (e.g., a few filtering steps and rejecting channels that are too noisy). I have a `clean_data.py` file that will look through the "munged" folder of each subject, load the data, run the cleaning, and then output the results to the folder `{subject_name}/clean`. This way, I know that any data in the clean folder is ready for further analysis.
 
 At this point, I have cleaned data in each subject's folder, I also have that subject's metadata inserted into a CSV file with all subject information. From now on, I can just load a subject's data file, then load the metadata CSV file for everybody, and query only the rows that belong to the subject that I care about.
 
@@ -87,7 +87,7 @@ I don't necessarily have good answers for these issues, and I'm still coming up 
 
 # Key benefits
 
-The biggest benefit of this system is the fact that messy, subject-specific data is quickly turned into a standardized format that is consistent across all of my subjects. This is useful because it means you can write scripts that analyze the entire dataset without doing a lot of extra customization. Moreover, because the structure of the filesystem is the same for everybody (including things like naming conventions), it is easy to find what you want from each data set.
+The biggest benefit of this system is the fact that messy, subject-specific data is quickly turned into a standardized format that is consistent across all of my subjects. This is useful because it means you can write scripts that analyze the entire dataset without doing a lot of extra customization. Moreover, because the structure of the filesystem is the same for everybody (including things like naming conventions), it is easy to find what you want from each dataset.
 
 Another benefit is the fact that I am storing code along with the data that it operates on. Some people feel strongly that this is a bad idea, but I've found it to be useful so long as the within-project folder structure still makes sense. In previous workflows, I had all of my code in one folder, and all of my data in another folder. This often led to confusions where I was unsure which code operated on what data. It also made it more difficult to connect the steps of preprocessing and feature extraction chains. Now, if I want to know all of the things that have been done to a collection of data files, I just need to look into its corresponding "script" folder.
 

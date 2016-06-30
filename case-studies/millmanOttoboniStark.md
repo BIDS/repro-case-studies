@@ -345,7 +345,7 @@ computational practices provide the following benefits:
     to existing code
 
 2.  it makes it easy to modify the analysis when errors are found, to
-    apply the analysis to new data sets, and so on
+    apply the analysis to new datasets, and so on
 
 3.  the process is self-documenting, making it easier to draft a paper
     about the results or to pick up where we left off after working on

@@ -4,7 +4,7 @@ running: Bat Distributions
 author: Justin Kitzes
 ---
 
-My name is Justin Kitzes, and I am a quantitative ecologist who works to develop new theory and data sets for predicting the effects of land use and climate change on biodiversity. I am currently a postdoc in the Energy and Resources Group and a Data Science Fellow in the Institute for Data Science at the University of California, Berkeley. My field work focuses on the ecology and conservation of bats in complex, human-altered landscapes. This case study decribes the use of acoustic detectors, machine learning, and likelihood statistics to examine the effects of three large Northern California highways on bat activity.
+My name is Justin Kitzes, and I am a quantitative ecologist who works to develop new theory and datasets for predicting the effects of land use and climate change on biodiversity. I am currently a postdoc in the Energy and Resources Group and a Data Science Fellow in the Institute for Data Science at the University of California, Berkeley. My field work focuses on the ecology and conservation of bats in complex, human-altered landscapes. This case study decribes the use of acoustic detectors, machine learning, and likelihood statistics to examine the effects of three large Northern California highways on bat activity.
 
 # Workflow
 

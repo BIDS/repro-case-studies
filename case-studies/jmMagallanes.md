@@ -75,7 +75,7 @@ b2. **Organize references**. References are a key component of academic writing.
 
 This process was done entirely by me. This was a continuos process as the paper was written. The desktop version of Zotero was used. The Bibtex was saved in the working folder.
 
-b3. **Update computations and plots**. While data collection and structured data sets were produced in Python, the exploration of the data, the test of hypotheses, and the visualization of results was done in R.
+b3. **Update computations and plots**. While data collection and structured datasets were produced in Python, the exploration of the data, the test of hypotheses, and the visualization of results was done in R.
 I decided to use R for a simple reason: RStudio can combine Latex and R in an easier way than Python via its *sweave* library. Sweave differentiates between text and R code; codes are organized in *chunks* that also can interact with the latex code.
 
 This eased the update of the tables and plots produced by the data, as sweave documents will re run the Rcode and update whatever is needed. This was a crucial part to make this work more reproducible; and also for me, as I could try  different  *layouts* for the network plot and pay closer attention to final appearance of the paper.
