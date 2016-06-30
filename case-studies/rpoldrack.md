@@ -20,7 +20,7 @@ For the neuroimaging data, we developed a set of python functions to extract and
 
 For the transcriptome and metabolomic data, analyses were performed using a set of Rmarkdown scripts executed using R. These analyses included the identification of coexpression networks using the Weighted Gene Coexpression Network Analysis (WGCNA) package; eigengenes identified from these network were then used in subsequent analyses.  The gene networks were annotated using DAVID (<https://david.ncifcrf.gov>).  Metabolomic measures were clustered using affinity propagation, and annotated using IMPALA (<http://impala.molgen.mpg.de>).
 
-The outcomes of each of the foregoing analyses were saved and used to compute timeseries correlations between each of the measures across all domains (for a total of more than 20,000 statistical tests), using the R forecast package.  These are then summarized in a web report generated using Rmarkdown.  Currently the only test is one that compares the results of the full workflow to a set of results cached on S3.  Documentation of the code is minimal.
+The outcomes of each of the foregoing analyses were saved and used to compute time series correlations between each of the measures across all domains (for a total of more than 20,000 statistical tests), using the R forecast package.  These are then summarized in a web report generated using Rmarkdown.  Currently the only test is one that compares the results of the full workflow to a set of results cached on S3.  Documentation of the code is minimal.
 
 After implementing the workflow on a single system, I then implemented it on a virtual machine in order to allow anyone anywhere to run it.  I used the Vagrant software package to provision a virtual machine with all necessary requirements.  Once installed, the user can run the entire workflow with a single command. In addition to running the entire data analysis workflow, the virtual machine also includes a web server that provides access to the results of all of the analyses, along with a data browser for the detailed results.  This system is identical to the one exposed publicly at <http://results.myconnectome.org>.  Documentation for installing and running the software is evolving.
 
@@ -52,14 +52,12 @@ I think I primarily learned from negative examples; that is, from seeing other r
 
 ## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
-- Human subjects issues and concerns about scooping are often raised here, but I think these are red herrings.
-- The primary pitfall is that reproducible research practices make it harder to obtain splashy findings that get high-profile publications.  
+Human subjects issues and concerns about scooping are often raised here, but I think these are red herrings.  The primary pitfall is that reproducible research practices make it harder to obtain splashy findings that get high-profile publications.
 
 ## What do you view as the major incentives for doing reproducible research?
 
-- trust in one's research
+Increasing trust in one's research.
 
 ## Are there any best practices that you'd recommend for researchers in your field?
 
-- version control
-- data sharing
+Using version control software, and open sharing of data.

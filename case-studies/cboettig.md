@@ -67,7 +67,7 @@ At the heart of my workflow is the dynamic documentation tool `knitr`.
 `knitr` is an R package that is tightly integrated into RStudio and 
 R-markdown, or `.Rmd` format it supports for integrating code, documentation,
 equations, figures and other components of research into a single document.
-It's key feature is the ability to "knit" or "execute" the document,
+Its key feature is the ability to "knit" or "execute" the document,
 resulting in the code blocks being run and their output figures, tables, and
 so forth being displayed in the document. Text and code are written together
 in the popular, simple, and flexible markdown format, which is widely recognized
@@ -100,7 +100,7 @@ general-purpose Docker images maintained by the Rocker project (<https://github.
 ## Automated workflow
 
 At regular intervals I "commit" my notebook in `git` and "push" this progress
-to GitHub; a widely used version control system and public repository for 
+to GitHub, a widely used version control system and public repository for 
 code and other digital material.  This triggers the automated build portion
 of my workflow, illustrated in the center of the diagram.  A Continuous 
 Integration platform, or CI (<http://circleci.com> in my case, as the more widely
@@ -192,9 +192,6 @@ See my GitHub commit history for a more realistic answer.
 Though most of my research projects involve others, I am the only 
 researcher committing to my lab notebook, just as we see in paper notebooks.
 The final research product will see more direct involvement by others. 
-
-* **Manual/Automated:** Is the step automated or does it involve human
-intervention (if so, is it recorded)?  
 
 * **Tools:** Which software or online tools are used in the step? How are they used?
 

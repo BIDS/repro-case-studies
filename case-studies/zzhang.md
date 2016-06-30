@@ -16,19 +16,16 @@ We choose Apache Spark and Hadoop to build the infrastructure of distributed pro
 
 ![Diagram](zzhang.pdf){width=100%}\
 
-We use Latex and Slides to track the merit evaluation: why do we need a new system for astronomy image processing, what makes it a better system, what lessons can we learn from this research.
-
-We use Latex and GitHub repository to keep the system design, it is basically a diagram.
+We use Latex and Slides to track the merit evaluation: why do we need a new system for astronomy image processing, what makes it a better system, and what lessons we can we learn from this research.
 
 We use a private GitHub repository to keep track of solutions for technical barriers such as I/O processing, Spark interaction with C program, Spark system parameter configurations and many others.
 
-The whole system is built with multiple programming languages and tools. At the programming language level, we use Scala, Java, Python, Bash, and C. At the system level, we use Spark for task coordination, HDFS for persistent storage, SEP library for actual computation.
+The whole system is built with multiple programming languages and tools. At the programming language level, we use Scala, Java, Python, Bash, and C. At the system level, we use Spark for task coordination, HDFS for persistent storage, and the SEP library for actual computation.
 
-The source code of the project is kept in a public GitHub repository for open source purpose. 
+The source code of the project is kept in a public GitHub repository to make it open source.
 
 The manuscript is being kept in a private GitHub repository since it is under review.
 
-* the "state" of the data at each stage
 In system design phase, we decided to use three datasets four development, testing and performance measurements. But we end up with four datasets.
 A trivial dataset that contains only a few image files is used for development and testing.
 A small dataset (12GB) is used for quick verification at scales.
@@ -37,28 +34,18 @@ A fourth dataset (1TB) is used to show the data processing capacity of the Kira 
 
 All these datasets come from the Sloan Digital Sky Survey. Some of them are from Data Release 2 while some are from Data Release 7. We choose them arbitrarily as we care more about the system capacity rather than the science in this research.
 
-* collaborators
+Our collaborators are: 
 Kyle Barbary, Oliver Zahn, Saul Perlmutter are astronomers.
 Frank Nothaft, Evan Sparks, Michael Franklin, David Patterson are experts about Spark and cloud computing in general.
 Zhao Zhang has rich experience in HPC community and some experience in cloud computing as well as a bit astronomy background.
 
-
-* version control repos
 We use private GitHub repository for manuscript management and public GitHub repository for project management.
 
-
-* products produced at various stages (graphics, summaries, etc)
 We have summaries for Team Brainstorming and Merit Evaluation phase. 
 System Design's output is in the form of figures and is kept in GitHub repository.
 Solutions for Technical Barriers are kept in a private GitHub repository.
 Documents, Source code, system configurations as the products of coding/testing/tuning/measurements are kept in a public GitHub repository.
 The paper draft is kept in a private GitHub repository.
-
-* databases
-
-* whitepapers
-
-* customers (if any)
 
 Before explaining the details of the diagram, I will first briefly review the software and systems that are used in this case study.
 
@@ -111,11 +98,9 @@ The Software Coding and Testing phase takes about three weeks, we managed to int
 
 Performance Measurements and Performance Tuning come in pair and we go back and forth frequently. The key thing in these two steps is that we need a reasonable expected performance before the measurements. If the measurement does not match with our expectation, we need to analyze the reason and tune the system. Our methodology is like this: we started on 1 core on a single machine. We compare the Kira performance against the equivalent implementation to understand the slowdown introduced by Spark and JVM. Then we started to scale up with more cores on the same node, and observe the scaling curve. By doing that we understand the bounding factor of the performance on a single node. Later on, we scale out on multiple nodes by doubling the number of compute nodes in each step and observe the performance scaling. Since Spark hide the scalability complexity in the system, all we need to do here for different scale is to set relevant parameters in the configuration files. The code and documents are kept in GitHub, and the dataset is kept in Amazon S3 service.
 
-With all of the scripts from Merit Evaluation, System Design, and Source code, we put up together the paper. Writing the paper is a collaborative process. We used a private GitHub repository to host the paper, and using Pull Request to manage everybody's editing. 
+With all of the scripts from Merit Evaluation, System Design, and Source code, we put together the paper. Writing the paper is a collaborative process. We used a private GitHub repository to host the paper, and using Pull Request to manage everybody's editing. 
 
 # Pain points
-
-I will break this down to reproducible results and reproducible research progress.
 
 1. (reproducible results) For the results to be reproducible, the readers should be able to tell and access the computers with the same hardware, the code base used particularly for the experiments, the dataset that was used for performance measurements. 
 
@@ -135,7 +120,7 @@ I break this question down to two: non-usable workflow and non-reproducible work
 
 # Key tools
 
-GitHub for code management, and Amazon S3 service for data hosting. We built Kira with Apache Spark which is a highly active open source project, so that we do not have the concern of the computing framework is out of maintenance if they run out of funding in academia.
+GitHub for code management, and Amazon S3 service for data hosting. We built Kira with Apache Spark which is a highly active open source project, so that we do not have the concern of the computing framework is out of maintenance if our academic funding ends.
 
 # Questions
 
@@ -149,7 +134,7 @@ As computer system researchers, we build systems assuming people will use them. 
 
 ## How or where did you learn about reproducibility?
 
-I learned the reproducible practices since the first time I submitted my homework project in college and ever since. I need to write a README file along with my code so the TA can compile and run my code to test if my solution is right. The later research experience follows the same path. 
+I learned the reproducible practices since the first time I submitted my homework project in college and ever since. I need to write a README file along with my code so the teaching assistant could compile and run my code to test if my solution is right. The later research experience follows the same path. 
 
 ## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 

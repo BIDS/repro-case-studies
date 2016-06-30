@@ -14,7 +14,7 @@ The workflow I will describe relates to a journal publication on this topic.  Mu
 
 We first created a new account on the University of Washington (UW) campus computing system dedicated to this project that could be shared by the three collaborators, with sufficient storage for accumulating simulation results (and securely backed up by campus services).  On this account we created a git repository that we could all access via ssh to use as our master repository for developing code, and eventually for writing the project reports.  We did not use GitHub since we wanted a private repository and did not need the web features of GitHub (or Bitbucket) for this phase of the project.
 
-This project required using some large datasets that are openly available from the [National Centers for Environmental Information (NCEI)](https://www.ncei.noaa.gov/), in particular topography and bathymetry data for running the tsunami model and tide gauge data.  We downloaded and archived some of this data on the UW account, but did not put it in the git repository since these did not need to be under version control.  Instead we wrote shell scripts to rsync this data to each collaborator's laptop or other computers as needed. (rsync is a utility on unix-like systems to transfer and synchronize files).  These scripts were kept in the git repository.  Similarly we wrote scripts to rsync simulation results from the computer where the simulation was performed back to this account, along with some metadata.  The new methods being developed for tidal uncertainty were implemented in Python code used for postprocessing the simulation results.  One collaborator was doing most of the simulation runs, on several different computers, while another was developing and testing the postprocessing code, so rsync'ing the necessary data between laptops via the campus account was convenient, as well as insuring that it results were archived as we went along.
+This project required using some large datasets that are openly available from the [National Centers for Environmental Information (NCEI)](https://www.ncei.noaa.gov/), in particular topography and bathymetry data for running the tsunami model and tide gauge data.  We downloaded and archived some of this data on the UW account, but did not put it in the git repository since these did not need to be under version control.  Instead we wrote shell scripts to rsync this data to each collaborator's laptop or other computers as needed. (rsync is a utility on unix-like systems to transfer and synchronize files).  These scripts were kept in the git repository.  Similarly we wrote scripts to rsync simulation results from the computer where the simulation was performed back to this account, along with some metadata.  The new methods being developed for tidal uncertainty were implemented in Python code used for postprocessing the simulation results.  One collaborator was doing most of the simulation runs, on several different computers, while another was developing and testing the postprocessing code, so rsync'ing the necessary data between laptops via the campus account was convenient and insured that it results were archived as we went along.
 
 The shared campus account was also used to host webpages so that the visualizations produced from each simulation could be viewed by all collaborators.  These webpages were also eventually used to share results with the project sponsors and reviewers of our preliminary report.
 
@@ -32,15 +32,13 @@ In addition to the test problem for which we shared code, the final paper also c
 
 # Pain points
 
-  - Using rsync for large datasets worked fine once we figured out a good workflow and scripts, but is not ideal.  A version control system like git that works well for large quantities of data would have been very useful.
+Using rsync for large datasets worked fine once we figured out a good workflow and scripts, but is not ideal.  A version control system like git that works well for large quantities of data would have been very useful.
 
-  - Some data could not be shared and we also had to be careful about sharing preliminary results since emergency managers and the agencies involved are very sensitive about publicizing risk maps for specific communities before they have been properly vetted and agreed on.
+Some data could not be shared and we also had to be careful about sharing preliminary results since emergency managers and the agencies involved are very sensitive about publicizing risk maps for specific communities before they have been properly vetted and agreed on.
 
 # Key benefits
 
 This workflow proved to be very valuable for this long-term project in which many parts of the code and methodology were evolving.  The initial project was followed by additional funding for a [Phase II](http://hdl.handle.net/1773/25916), in which the focus was on studying current velocities rather than only flow depth.  This required re-running all the tsunami simulations with a modified version of GeoClaw. Having done all the initial work via scripts archived under git, it was relatively painless to redo these runs.  In the meantime other changes had also been made to the GeoClaw code, and having both our code and GeoClaw under version control was very useful when comparing results.
-
-# Key tools
 
 # Questions
 

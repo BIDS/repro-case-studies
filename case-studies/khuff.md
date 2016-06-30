@@ -78,10 +78,10 @@ metadata about the simulation. It contains:
 
 - a complete copy of the input file
 - the commit hash of the current version of the Cyclus code
-- and commit hashes for all necessary plugins retrieved from the Cyclus ecosystem.
+- commit hashes for all necessary plugins retrieved from the Cyclus ecosystem
 
-That database, containing both data and metadata can then be analyzed by the 
-user. When analyzing the databse, a choice is made by the user about how to 
+That database, containing both data and metadata, can then be analyzed by the 
+user. When analyzing the database, a choice is made by the user about how to 
 interact with the data. The Cyclus development team has provided a GUI and a 
 Go library (called CyAn) with which the database (in either SQL or HDF5 format) 
 can be accessed and brought into memory for vizualization and analysis. 
@@ -125,7 +125,7 @@ Finally, our continuous integration system relies on our ability to create
 scripts that build, install, and test Cyclus. For this, we use a set of servers
 at the University of Wisconsin called the BatLab. Unfortunately, BatLab has a
 few problems. Because of the proprietary nature of MacOSX, it cannot run truly
-MacOSX instances. It runs, instead, darwin servers that mimic the behavior of
+MacOSX instances. It runs, instead, Darwin servers that mimic the behavior of
 MacOSX. For this reason, idiosyncratic failures apparent in Mavericks and
 Yosemite but not Darwin cannot be caught before entering the code-base.
 Additionally, BatLab is somewhat unpredictable and inflexible. Since the
