@@ -305,7 +305,7 @@ now available publicly in the `permute` package.
 
 Given our different backgrounds and experiences we (JM, KO, PS) each
 found different points in the process challenging. However, for all of
-us the most challenging aspect—and the most time-consuming—was the
+us the most challenging aspect -- and the most time-consuming -- was the
 necessary struggle to understand the scientific question and the
 experiment well enough to devise an approach to answering the question.
 
@@ -551,7 +551,7 @@ In this case study,[^1] *reproducibility* means:
 By keeping all code, text, and data in a public version-controlled
 repository, we have made our well-documented analysis available for
 anyone to examine, check, modify, or reuse. We published the data used
-in our study—both the original anonymized version as well as our cleaned
+in our study -- both the original anonymized version as well as our cleaned
 version including the commands necessary to produce the cleaned version
 from the anonymized one. In addition to making what we did transparent
 to anyone who is interested, working in this way means that when errors

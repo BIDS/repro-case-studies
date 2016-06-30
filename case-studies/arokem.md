@@ -76,10 +76,10 @@ several versions of the article were submitted to the arXiv preprint server,
 while the article underwent peer review.
 
 Most of the computations during the development of the project were conducted on
-a lab multi-core compute server, that was running an IPython notebook server.
+a lab multi-core compute server that was running an IPython notebook server.
 Thus, much of the development of the code was done on a laptop, over a web
 browser, connected to the server. Some procedures described in the paper would
-require an inordinate amount of time, without the access that we had to an HPC
+require an inordinate amount of time without the access that we had to an HPC
 cluster. For example, testing different settings of model regularization
 parameters required fitting the models hundreds of times. Data was accesible to
 the cluster through a mount of the lab RAID. Tasks run on the cluster were
@@ -197,7 +197,7 @@ evidence" to support every finding.
 ## How or where did you learn about reproducibility?
 
 Many of these practices evolved out of laziness. Early on in grad school, I
-learned that most analyses that are done once, need to be redone, and that
+learned that most analyses that are done once eventually need to be redone, and that
 ultimately I would have to do less work, not more, if I had a script that
 generated all my figures for every study that I was doing. This also evolved
 from being rather bad at taking notes about the work I was doing in the lab. I

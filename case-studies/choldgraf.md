@@ -6,7 +6,7 @@ author: Chris Holdgraf
 
 My name is Chris Holdgraf, I am a senior graduate student with the Helen Wills Neuroscience Institute at UC Berkeley. My thesis work involves using predictive models to understand how auditory regions of the brain respond to acoustic features.
 
-Specifically, I am interested in how experience, learning, and assumptions about the world shape the way that we interact with low level features of sound. This involves a lot of computational work and coding, utilizing a number of packages in the python scientific ecosystem.
+Specifically, I am interested in how experience, learning, and assumptions about the world shape the way that we interact with low level features of sound. This involves a lot of computational work and coding, utilizing a number of packages in the Python scientific ecosystem.
 
 # Workflow
 
@@ -20,11 +20,11 @@ The raw data for my work involves electrophysiology signals collected from the b
 
 First, I put all data into subject-specific folders. Each of these folders has sub-folders for different kinds of data (e.g., "raw", "munged", "meta"). The sub-folders will eventually be populated with data during processing, and the structure is consistent across all subjects so that I can easily parse them with scripts.
 
-Next, I have a jupyter notebook that is unique for each person, and is designed to take whatever raw format the data is in and turn it into a standardized version. This is called `munge_{subject_name}.ipynb`, and will output a file that I can use for the rest of my analyses. Jupter notebooks are useful here because each subject is different, and will require a different set of steps to get the data ready. For this reason, I like to have lots of plots that go along with the analysis process, and a record of exactly what code was run to create the munged data for that subject.
+Next, I have a Jupyter notebook that is unique for each person, and is designed to take whatever raw format the data is in and turn it into a standardized version. This is called `munge_{subject_name}.ipynb`, and will output a file that I can use for the rest of my analyses. Jupter notebooks are useful here because each subject is different, and will require a different set of steps to get the data ready. For this reason, I like to have lots of plots that go along with the analysis process, and a record of exactly what code was run to create the munged data for that subject.
 
-Because the data often comes in different formats, I make the output of this step the same format for everyone. I use a great python package for neuroscience electrophysiology called `MNE-python`. This provides a common way of structuring data in order to streamline I/O, processing, and data analysis. I convert all of my raw data into the `.fif` format, which is a standard format for storing electrophysiology data. This means that I can read the data into other platforms (e.g., R or Matlab) fairly easily. The output files are stored in the folder `subject_name/munged`.
+Because the data often comes in different formats, I make the output of this step the same format for everyone. I use a great Python package for neuroscience electrophysiology called `MNE-python`. This provides a common way of structuring data in order to streamline I/O, processing, and data analysis. I convert all of my raw data into the `.fif` format, which is a standard format for storing electrophysiology data. This means that I can read the data into other platforms (e.g., R or Matlab) fairly easily. The output files are stored in the folder `subject_name/munged`.
 
-The final thing I do in this step is look at the metadata files for this subject, double check that all the values inside are correct (this is done with the munging notebook), and then insert them into a "combined" csv file of metadata. I have a python script called `create_combined_meta.py` that will look through all the subject folders, find the metadata files that my munging notebook outputs, and turn them all into a single CSV file.
+The final thing I do in this step is look at the metadata files for this subject, double check that all the values inside are correct (this is done with the munging notebook), and then insert them into a "combined" csv file of metadata. I have a Python script called `create_combined_meta.py` that will look through all the subject folders, find the metadata files that my munging notebook outputs, and turn them all into a single CSV file.
 
 This aggregated CSV has data for all subjects that I have, and makes it much easier to quickly look at information across datasets. To do so, I use `Pandas`. This is a package that lets you represent tabular-style data in memory, and also gives you "database-style" functionality with their objects (e.g., joining two `Pandas` objects with partially-overlapping fields). This simplifies things, because it means that while I have a separate file for each dataset, I have a single combined file across all subjects for their metadata.
 
@@ -40,15 +40,15 @@ At this point, I have cleaned data in each subject's folder, I also have that su
 
 When I begin analyzing my data to answer a specific question, I create a new project-specific folder that exists alongside my "data" folder. Each project generally entails a number of analyses, and this is a way to keep them all in the same place. The project folder is structured similarly to the "data" folder. It has a sub-fulder for "scripts", for "data", for "results", and for "documents" and any information necessary for publications taht come out of this project.
 
-For example, the first thing I might do is create some python script to extract features of interest.  I will put it in `project_name/script/feature_name/extract_feature.py`. The script assumes that there is data for each subject in the "clean" folder. It will pull the data from "clean", extract whatever feature I'm interested in, and then save the result to the project-specific folder, something like `project_name/data/my_feature/{subject_name}_feature.fif`. I  parse all subject folders and save files in the same manner.
+For example, the first thing I might do is create some Python script to extract features of interest.  I will put it in `project_name/script/feature_name/extract_feature.py`. The script assumes that there is data for each subject in the "clean" folder. It will pull the data from "clean," extract whatever feature I'm interested in, and then save the result to the project-specific folder, something like `project_name/data/my_feature/{subject_name}_feature.fif`. I  parse all subject folders and save files in the same manner.
 
-Storing the extracted features for all subjects in a single project-specific data folder makes it much easier to develop scripts/notebooks to further analyze the results, since I don't need to keep track of which features have been extracted for which subjects. I also develop feature extraction scripts using the sun-grid engine (a platform for dividing computation between a cluster of computers) for speeding up my analyses. I can do this relatively easily because the folder structure for each subject is the same.
+Storing the extracted features for all subjects in a single project-specific data folder makes it much easier to develop scripts/notebooks to further analyze the results, since I don't need to keep track of which features have been extracted for which subjects. I also develop feature extraction scripts using the Sun-Grid engine (a platform for dividing computation between a cluster of computers) for speeding up my analyses. I can do this relatively easily because the folder structure for each subject is the same.
 
 ## Running analyses
 
 Now that I have a set of features created for each subject, it is time to run analyses and answer questions. These scripts also exist in the project-specific folder, and assume that there is data in the "project_name/data/my_feature/" folder.
 
-A difficulty that I've had is knowing when to keep your analyses in interactive notebooks vs. python scripts. I generally pilot my analysis interactively - this lets me do sanity checks and on-the-fly calculations that help me develop the final analysis. Once I have code that does a specific analysis, I will put it in a .py script.
+A difficulty that I've had is knowing when to keep your analyses in interactive notebooks vs. Python scripts. I generally pilot my analysis interactively - this lets me do sanity checks and on-the-fly calculations that help me develop the final analysis. Once I have code that does a specific analysis, I will put it in a .py script.
 
 The output of this script then goes into a `project_name/results/my_analysis` folder. They may be in the form of PDFs and SVGs for further inspection, or data files (e.g., CSV) representing model results (such as regression coefficients). For anything consisting of lists, numpy arrays, or simple dataframes, I use the `h5io` package, which is provides a fast way to read/write collections of data to h5 files (another standardized data storage format).
 
@@ -56,7 +56,7 @@ Finally, I use the outputs of the analysis script to create visualizations and d
 
 When creating actual figures for papers, I like to use software like Adobe Illustrator to make sure that my fonts are the proper size, well-spaced, etc. I use visualization notebooks to create vector graphics of my data that have most formatting stripped away (except for the data). This way I can load the plot in Illustrator and tweak it to my liking.
 
-Finally, I use microsoft word to write drafts which I put in the "doc" folder. These pull from the figures I've created in the "fig" folder. Ideally I would use text files here w/ latex, but the people I work with makes this prohibitive.
+Finally, I use Microsoft Word to write drafts which I put in the "doc" folder. These pull from the figures I've created in the "fig" folder. Ideally I would use text files here with latex, but the people I work with makes this prohibitive.
 
 ## A general note
 
@@ -64,12 +64,12 @@ This process has been refined many times over the past year, and the original st
 
 1. For any data/code that are project-specific, keep these together in the same general file hierarchy.
 1. Rather than creating metadata structures that live next to the data, come up with a “master” metadata template, then store entries from every subject in a CSV file that follows this template. Rather than storing data in separate subject files, include an entry with “subject id” in the metadata file so that you can pull out individual subjects in this way.
-1. Utilize other packages whenever possible, particularly with the annoying task of data I/O. In my case, I store all my raw data as ‘.fif’ files, which can be opened easily in python or Matlab with well-supported third party packages. I also use `pandas` and `h5io` to read / write metadata files, which makes it very easy to slice and dice these files for particular entries that I want.
+1. Utilize other packages whenever possible, particularly with the annoying task of data I/O. In my case, I store all my raw data as ‘.fif’ files, which can be opened easily in Python or Matlab with well-supported third party packages. I also use `pandas` and `h5io` to read / write metadata files, which makes it very easy to slice and dice these files for particular entries that I want.
 1. More generally, take a “database” approach to how you store any data. Even though I’m not storing data in a MySQL database per-se, I can still draw inspiration for how this data is organized. Treat data entries as rows, and data features as columns, and then combine / split up the data using pandas database-style syntax (e.g., joins and merges)
-1. Put ad-hoc code in a project-specific folder. Be much pickier about code that you expose in public python modules for any project. If you think a function is worth generalizing, then move it out of the project folder and to its proper module, and document it extensively.
+1. Put ad-hoc code in a project-specific folder. Be much pickier about code that you expose in public Python modules for any project. If you think a function is worth generalizing, then move it out of the project folder and to its proper module, and document it extensively.
 1. Do all coding with automatic PEP8 and PEP257 checkers (this is simple with most graphical text editors). Keep code as clean as possible.
-1. Make a conscious effort to structure python scripts differently from jupyter notebooks. Structure code (and data) such that it lends itself well to scripting, rather than assuming interactive sessions for everything.
-1. Use jupyter notebooks to glance at the data and preliminary results, but move code into scripts as it becomes more refined or complex. This avoids creating a mega notebook with tons of different analyses in it.
+1. Make a conscious effort to structure Python scripts differently from Jupyter notebooks. Structure code (and data) such that it lends itself well to scripting, rather than assuming interactive sessions for everything.
+1. Use Jupyter notebooks to glance at the data and preliminary results, but move code into scripts as it becomes more refined or complex. This avoids creating a mega notebook with tons of different analyses in it.
 1. Structure code so that some scripts live with the data that they operate on. E.g., if you’ve got a script that only operates on a specific collection of data, renames specific columns in that data, and always saves it to another location relative to the original data, then create another folder “script” right next to that data folder. Put all data-specific scripts into this folder. This way, you know that scripts operate with relevant data nearby.
 1. Finally, this is not specific to this project but has been very useful to me. Find opportunities to contribute to other open-source projects. Open pull requests and learn about how to use the code. The back-and-forths and input you get will make you a much better coder, and your codebase / research will greatly benefit from it.
 
@@ -95,7 +95,7 @@ Finally, by separating out operations that are true for all projects (e.g., data
 
 # Key tools
 
-The two most useful tools that I have found are `Pandas` and `MNE-python`. Pandas made it much easier to embed metadata with the signals that I analyze. It allowed me to store information from lots of subjects in a single CSV file, and treat it as a "database" by using queries on it. `MNE-python` is a package for electrophysiology in neuroscience written in python. When I discovered it, I found that it duplicated many of the functions I had already written, and in general did this much better than I had. Moreover, it has a lot of convenience functions for doing I/O, which up until then was a pain to maintain. By using these two packages, I was able to significantly cut down on the amount of custom-written functions that I used to wrangle my data.
+The two most useful tools that I have found are `Pandas` and `MNE-python`. Pandas made it much easier to embed metadata with the signals that I analyze. It allowed me to store information from lots of subjects in a single CSV file, and treat it as a "database" by using queries on it. `MNE-python` is a package for electrophysiology in neuroscience written in Python. When I discovered it, I found that it duplicated many of the functions I had already written, and in general did this much better than I had. Moreover, it has a lot of convenience functions for doing I/O, which up until then was a pain to maintain. By using these two packages, I was able to significantly cut down on the amount of custom-written functions that I used to wrangle my data.
 
 # Questions
 
@@ -109,7 +109,7 @@ Because it's a guiding principle that will make my code more understandable, mai
 
 ## How or where did you learn about reproducibility?
 
-At first it came from teaching a few software carpentry classes and reading things online. Lately, I have gotten a lot of help by contributing to the `MNE-python` project, as I've found that going through the pull request process for a well-maintained project is a great way to learn a lot about coding well.
+At first it came from teaching a few Software Carpentry classes and reading things online. Lately, I have gotten a lot of help by contributing to the `MNE-python` project, as I've found that going through the pull request process for a well-maintained project is a great way to learn a lot about coding well.
 
 ## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
@@ -117,7 +117,7 @@ In my case, legality is a big problem because I'm dealing with medical data that
 
 ## What do you view as the major incentives for doing reproducible research?
 
-Other than the warm fuzzy feeling, I think the biggest advantage is that when you code and organize for other people, you also code/organize for yourself in the future. This makes your life much easier in the long run.
+Other than the warm fuzzy feeling, I think the biggest advantage is that when you code and organize for other people, you also code and organize for yourself in the future. This makes your life much easier in the long run.
 
 ## Are there any best practices that you'd recommend for researchers in your field?
 
@@ -125,4 +125,4 @@ Front-load a lot of thinking/planning before you just start creating scripts and
 
 ## Would you recommend any specific resources for learning more about reproducibility?
 
-Software carpentry is a great one, but most other stuff is just scattered on stack overflow unfortunately. I think that finding a good package that has a sweet-spot of contributors (aka, not so few that you don't get feedback, not so many that it's a huge pain to do anything). Try to contribute something via a pull request and learn from the other people in the community. It will be a great way to learn good coding principles. Finally, find a community around you (at the university, at local companies/hackathons, etc) that shares your interests. Spend time learning and teaching with these people.
+Software Carpentry is a great one, but most other stuff is just scattered on stack overflow unfortunately. I think that finding a good package that has a sweet-spot of contributors (aka, not so few that you don't get feedback, not so many that it's a huge pain to do anything). Try to contribute something via a pull request and learn from the other people in the community. It will be a great way to learn good coding principles. Finally, find a community around you (at the university, at local companies/hackathons, etc) that shares your interests. Spend time learning and teaching with these people.
