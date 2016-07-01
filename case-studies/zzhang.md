@@ -16,7 +16,7 @@ We choose Apache Spark and Hadoop to build the infrastructure of distributed pro
 
 ![Diagram](zzhang.pdf){width=100%}\
 
-We use Latex and Slides to track the merit evaluation: why do we need a new system for astronomy image processing, what makes it a better system, and what lessons we can we learn from this research.
+We use LaTeX and Slides to track the merit evaluation: why do we need a new system for astronomy image processing, what makes it a better system, and what lessons we can we learn from this research.
 
 We use a private GitHub repository to keep track of solutions for technical barriers such as I/O processing, Spark interaction with C program, Spark system parameter configurations and many others.
 

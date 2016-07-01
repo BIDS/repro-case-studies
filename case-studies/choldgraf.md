@@ -56,7 +56,7 @@ Finally, I use the outputs of the analysis script to create visualizations and d
 
 When creating actual figures for papers, I like to use software like Adobe Illustrator to make sure that my fonts are the proper size, well-spaced, etc. I use visualization notebooks to create vector graphics of my data that have most formatting stripped away (except for the data). This way I can load the plot in Illustrator and tweak it to my liking.
 
-Finally, I use Microsoft Word to write drafts which I put in the "doc" folder. These pull from the figures I've created in the "fig" folder. Ideally I would use text files here with latex, but the people I work with makes this prohibitive.
+Finally, I use Microsoft Word to write drafts which I put in the "doc" folder. These pull from the figures I've created in the "fig" folder. Ideally I would use text files here with LaTeX, but the people I work with makes this prohibitive.
 
 ## A general note
 
