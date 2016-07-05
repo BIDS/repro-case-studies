@@ -305,12 +305,12 @@ now available publicly in the `permute` package.
 
 Given our different backgrounds and experiences we (JM, KO, PS) each
 found different points in the process challenging. However, for all of
-us the most challenging aspect—and the most time-consuming—was the
+us the most challenging aspect -- and the most time-consuming -- was the
 necessary struggle to understand the scientific question and the
 experiment well enough to devise an approach to answering the question.
 
 For KO and PS there was a learning curve to master the tools and
-practices. This involved understanding the data model used by Git,
+practices. This involved understanding the data model used by git,
 acquiring habits such as writing tests for all functions and following a
 common style guide, and learning to contribute to the project repository
 indirectly through GitHub’s pull request mechanism. JM was already
@@ -345,7 +345,7 @@ computational practices provide the following benefits:
     to existing code
 
 2.  it makes it easy to modify the analysis when errors are found, to
-    apply the analysis to new data sets, and so on
+    apply the analysis to new datasets, and so on
 
 3.  the process is self-documenting, making it easier to draft a paper
     about the results or to pick up where we left off after working on
@@ -366,7 +366,7 @@ projects [@millman2014developing].
 
 ## Version control and code review
 
-We (JM, KO, PS) use Git[^7] as our version control system (VCS) and
+We (JM, KO, PS) use git[^7] as our version control system (VCS) and
 GitHub[^8] as the public hosting service for our official `upstream`
 repository (<https://github.com/statlab/permute>). Each of us has our
 own copy, or fork, of the `upstream` repository. We each work on our own
@@ -551,7 +551,7 @@ In this case study,[^1] *reproducibility* means:
 By keeping all code, text, and data in a public version-controlled
 repository, we have made our well-documented analysis available for
 anyone to examine, check, modify, or reuse. We published the data used
-in our study—both the original anonymized version as well as our cleaned
+in our study -- both the original anonymized version as well as our cleaned
 version including the commands necessary to produce the cleaned version
 from the anonymized one. In addition to making what we did transparent
 to anyone who is interested, working in this way means that when errors

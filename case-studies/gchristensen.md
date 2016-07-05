@@ -32,7 +32,7 @@ Regarding the data, even though I am very grateful to staff at the Defense Manpo
 
 # Key benefits
 
-I would say that use of specific version control software is relatively new to the social sciences. When I began this work in 2010, I had never heard of Git. I just used the method I learned from my adviser: include the date in the name of files, and every time you make significant changes to a script file (called a ".do file" in Stata), change the date. Using a distributed version control system (DVCS), as I do now, is a significant improvement.  
+I would say that use of specific version control software is relatively new to the social sciences. When I began this work in 2010, I had never heard of git. I just used the method I learned from my adviser: include the date in the name of files, and every time you make significant changes to a script file (called a ".do file" in Stata), change the date. Using a distributed version control system (DVCS), as I do now, is a significant improvement.  
 
 # Key tools
 

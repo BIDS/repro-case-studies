@@ -14,11 +14,11 @@ Hossein Estiri, Senior Fellow in the Institute of Translational Health Sciences 
 
 This research analyzes the household location choices of American households in the largest 50 metropolitan areas in the United States.  Households are broken down by five-year age cohorts (based on the age of the head of the householder) and mapped against the household's distance (census block group level) from the central business district (CBD) of the metropolitan area in which they reside.  In polycentric regions such as Seattle (Tacoma, Bellevue and Everett as alternative CBDs, analyses are conducted on distance to core center as well as secondary centers. An initial paper reporting the results is currently under review.
 
-All data, code and analytical workflow are hosted on-line.  Code and analytical workflow, including analytical script and custom function sets, are written in R and found on the project's [Github Repository](http:/github.com/andykrause/hhLocation).  The complete set of raw data is available through the U.S. Census.  Users wishing to skip the data compiling and/or cleaning steps can download the compiled or cleaned data from the project's [Dataverse Repository](https://dataverse.harvard.edu/dataverse/repHHLoc/).  
+All data, code and analytical workflow are hosted on-line.  Code and analytical workflow, including analytical script and custom function sets, are written in R and found on the project's [GitHub Repository](http:/github.com/andykrause/hhLocation).  The complete set of raw data is available through the U.S. Census.  Users wishing to skip the data compiling and/or cleaning steps can download the compiled or cleaned data from the project's [Dataverse Repository](https://dataverse.harvard.edu/dataverse/repHHLoc/).  
 
 The *hhLocAnalysis.R* file is the main analysis script and the only file that needs to be executed.  Two key path parameters and two key process parameters must be manually set at the beginning of the *hhLocAnalysis.R* script:
 
-1. **codeDir**: Location of the cloned Github code repository
+1. **codeDir**: Location of the cloned GitHub code repository
 2. **dataDir**: Location of the compiled (and/or cleaned) data downloaded from Dataverse
 3. **reBuildData**: Do you want to go through the entire data compilation process?
 4. **reCleanData**: Do you want to re-clean data?
@@ -49,7 +49,7 @@ Data visualization of the results via a variety of different plotting functions 
 
 There are two major steps that we consider particularly painful.  The first is convincing yourself (and co-authors) to take the time to properly document every action and to take the time to fully annotate the analytical workflow.  This can be especially difficult when deadlines arise or when co-authors do not see the value in reproducibility.  The second is the need to write custom functions that are generalizable.  Writing very specific, single use functions can be easy, but are rarely useful in more than a single instance.  Good reproducible research contains flexible functions than can accommodate changes or permutations thereby allowing subsequent users to expand or change your original analysis.  
 
-The current peer-review process also presents a considerable hurdle to reproducibility.  In order to remain anonymous in the review process, we've had to build a set of anonymous code and data repositories and interactive websites for the review process and then switch over to our own repositories after the paper has been accepted. It means a lot of extra work as well as remembering which Github account we are signed into at all times.  Along this line, judging by usage statistics, reviewers have been uninterested in actually examining the hosted code, data or results. 
+The current peer-review process also presents a considerable hurdle to reproducibility.  In order to remain anonymous in the review process, we've had to build a set of anonymous code and data repositories and interactive websites for the review process and then switch over to our own repositories after the paper has been accepted. It means a lot of extra work as well as remembering which GitHub account we are signed into at all times.  Along this line, judging by usage statistics, reviewers have been uninterested in actually examining the hosted code, data or results. 
 
 # Key benefits
 

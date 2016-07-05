@@ -28,14 +28,14 @@ The dataflow graph shows code in rectangles, and "passive" data in rounded boxes
 
 From the point of view of workflow management and reproducibility, the most important distinction among the data items is "human input" (solid outline) vs. "computed data" (dotted outline). It's the human input that represents the scientific model, and thus the main output of this workflow. It consists of code (Python scripts 1 to 4) and numerical parameters (a single one in the diagram), though that distinction is rather arbitrary: every parameter could be turned into a line in a script. Computed data includes the plots that go into the journal article, but also intermediate results. In a fully reproducible workflow, the computed data need not be stored, because it can be recomputed at any time. Nevertheless, it is often preferable to store it explicitly, in particular if recomputation takes a long time. Stored computed data is also more readily available for exploration by scientists who want to gain a better understanding of the method.
 
-The workflow consists of the iterative refinement of the models and methods, which are emphasized by a gray background and a bold outline. The two key tools in processing the workflow are
+The workflow consists of the iterative refinement of the models and methods. The two key tools in processing the workflow are:
 
  - a version control system such as [git](https://git-scm.com/) for keeping track of the changes
  - the [ActivePapers](http://www.activepapers.org/) dependency manager for coordinating the computations
 
 Correspondingly, the state of the project consists of
 
- - a repository under version control, which tracks the changes to the items shown with a gray background as the project advances
+ - a repository under version control, which tracks the changes to the items as the project advances
  - an ActivePaper file, which stores the current state of all data items and the dependency graph
 
 There are two variants of a refinement step: adding a new script or parameter, and modifying existing scripts and parameters. The first kind, which extends the data flow graph, consists of the following user actions:
