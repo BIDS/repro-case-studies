@@ -33,16 +33,18 @@ To analyze results and distribute our findings we host a permanent instance of a
 
 Our team brought together researchers with different backgrounds and approaches to data handling and processing. The processing of raw LiDAR and GPS data is performed by a different group than the one handling the GIS and extrapolation portion of the project, and each uses different software tools. We dealt with this problem by creating standardized files at different stages of the processing chain. For example, the LiDAR/GPS team produced a stack of files processed to the point where they could be used for extrapolation, which were then ingested to the geospatial database. A challenge here is the data are replicated in multiple locations, requiring careful version control. 
 
-Another challenge is that some of our collaborators encountered problems when attempting to connect directly to our cloud computing resources. One issue is that Alaska has limited internet bandwidth so that transfers of data between Alaska and commercial cloud providers is slow. Another challenge is that many US government agencies have firewalls that restrict direct traffic with our cloud database services. 
+Another challenge is that some of our collaborators encountered problems when
+attempting to connect directly to our cloud computing resources. One issue is
+that Alaska has limited internet bandwidth so that transfer of data between Alaska and commercial cloud providers is slow. Another challenge is that many US government agencies have firewalls that restrict direct traffic with our cloud database services. 
 Therefore our collaborators in government and/or those located in Alaska had to set up duplicate versions of our databases, creating challenges with version control and project management. 
 
 # Key benefits
 
-+ our workflow provides a mechanism to continually update our analysis as new data arrive. Our project is funded for several more years, and we are now in a position to regenerate key figures and update sea level estimates every time we acquire new datasets. This will greatly diminish the time it takes for us to provide stakeholders with updated information on the status of Alaska glaciers and their contribution to sea level. Also, our data are uniquely dynamic, and must accommodate not only new data but changes to the base inventory as glacier geometries (area and elevation) change over time. By having all our inventory data in relational tables we can update individual polygons and account for the feedback effects of glacier area on mass balance. 
+Our workflow provides a mechanism to continually update our analysis as new data arrive. Our project is funded for several more years, and we are now in a position to regenerate key figures and update sea level estimates every time we acquire new datasets. This will greatly diminish the time it takes for us to provide stakeholders with updated information on the status of Alaska glaciers and their contribution to sea level. Also, our data are uniquely dynamic, and must accommodate not only new data but changes to the base inventory as glacier geometries (area and elevation) change over time. By having all our inventory data in relational tables we can update individual polygons and account for the feedback effects of glacier area on mass balance. 
 
-+ our workflow provides a stable foundation that can accommodate changes in team composition over time. As students and technicians join and leave the project we can have them use and contribute to a repository of scripts, rather than having to reinvent things from scratch. 
+Our workflow alo provides a stable foundation that can accommodate changes in team composition over time. As students and technicians join and leave the project we can have them use and contribute to a repository of scripts, rather than having to reinvent things from scratch. 
 
-+ we are well positioned to explore our data in ways not previously possible. New collaborators are joining our team and making direct connections to our database, generating complex queries that are exploring what climatic and geometric factors may be driving the glacier mass changes we are observing in the field. Other similar LiDAR observation programs do not provide access to relational databases, limiting researchers' ability to perform spatial and temporal queries. 
+We are well positioned to explore our data in ways not previously possible. New collaborators are joining our team and making direct connections to our database, generating complex queries that are exploring what climatic and geometric factors may be driving the glacier mass changes we are observing in the field. Other similar LiDAR observation programs do not provide access to relational databases, limiting researchers' ability to perform spatial and temporal queries. 
 
 # Key tools
 
@@ -54,11 +56,11 @@ Hosting our resources in a cloud environment played a vital role in making our w
 
 Reproducibility is a crucial component of our workflow due to the dynamic nature of our monitoring campaign, and the need to constantly update the position and elevation of glaciers as they change in response to climate. We achieve reproducibility through: 
 
-+ maintaining consistency in the input datasets
-+ utilizing a series of scripts to automate data ingest and filtering
-+ storing raw and filtered/processed data in a relational database
-+ generating data objects that handle typical data analysis functions
-+ scripting all manuscript figures in Jupyter notebooks
++ Maintaining consistency in the input datasets
++ Utilizing a series of scripts to automate data ingest and filtering
++ Storing raw and filtered/processed data in a relational database
++ Generating data objects that handle typical data analysis functions
++ Scripting all manuscript figures in Jupyter notebooks
 
 ## Why do you think that reproducibility in your domain is important?
 
