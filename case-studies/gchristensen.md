@@ -16,13 +16,24 @@ This project started with the idea, which I got from reading the newspaper, and 
 
 The other half of the main data is deaths of soldiers from Iraq and Afghanistan. I obtained this data from a [public Defense Department website](http://siadapp.dmdc.osd.mil/personnel/CASUALTY/castop.htm), and though I still have, and have archived on Dataverse, the dataset I downloaded and used, perhaps unsurprisingly, the original website is no longer operable. Updated versions of the data are still [available publicly](https://www.dmdc.osd.mil/dcas/pages/casualties.xhtml), however. To merge these data, I used Missouri Census Data Center's [MABLE/Geocorr](http://mcdc.missouri.edu/websas/geocorr12.html) to construct a geographic crosswalk. This uses census geographies, so I used the 2000 Census version, but sadly I don't think I recorded every exact option used when constructing this crosswalk.
 
-I used Stata to merge this data together as well as to do all subsequent statistical analysis. No, Stata is not open source, but it's what most economists use. I did all my work in script (.do) files, and with the 'version' command, theoretically any other user should be able to produce the same results.  The code was version controlled, but only after a fashion by updating script files with the date as part of the file name. Old versions of files just get dumped into an archive folder, where they're kept permanently.
+I used Stata to merge this data together as well as to do all subsequent
+statistical analysis. No, Stata is not open source, but it's what most
+economists use. I did all my work in script (.do) files, and with the 'version'
+command, theoretically any other user should be able to produce the same
+results.  The code was version controlled, but only after a fashion by updating
+script files with the date as part of the file name. Old versions of files just
+got dumped into an archive folder, where they were kept permanently.
 
 The merged data was analyzed using the xtpoisson (poisson) and xtreg (linear) regression algorithms in Stata. Regression tables were output to tab delimited plain text files using the user-written 'outreg2' command, edited in Excel, saved as .pdfs, and then included in the LaTeX file that made up my paper. Clearly, Excel is the antithesis of reproducible, but I didn't change numbers in the tables, just formatting. Next on my to-do list with the paper is to cut out this clunky step and do directly from Stata to LaTeX. I think the only reason I started out this way is because I wasn't comfortable enough with LaTeX to figure it out.
 
 Regression output was by no means complete the first time. I looped back numerous times to add more data from other sources, such as the Bureau of Labor Statistics, the Cenus, ICPSR, etc. This would require updating the merging and analysis code, reformatting tables, and changing the text in the paper that refers to specific output. Unfortunately that process is still ongoing because the paper has yet to be accepted at a journal.
 
-I'd say that my code is fairly well-documented. Reading through it, I hope that other researchers could understand what the code is doing. There isn't yet a readme file but there is one master .do file that should (in theory) be able to reconstruct everything I've done from scratch. Having worked on the project for several years, with a few large breaks  since economics journals can take 6 months to make decisions, so I myself have had to go back and extensively re-examine code that I no longer remembered. Having done that a few times, the code now seems fairly well-documented. This process would have been much easier had I kept a research log. I've had to open dozens of dated versions of the same file to find the last one written before a major change, which would have been much easier with version control or a research log.
+I'd say that my code is fairly well-documented. Reading through it, I hope that
+other researchers could understand what the code is doing. There isn't yet a
+readme file but there is one master .do file that should (in theory) be able to
+reconstruct everything I've done from scratch. Having worked on the project for
+several years, with a few large breaks  since economics journals can take 6
+months to make decisions. I had to go back and extensively re-examine code that I no longer remembered. Having done that a few times, the code now seems fairly well-documented. This process would have been much easier had I kept a research log. I've had to open dozens of dated versions of the same file to find the last one written before a major change, which would have been much easier with version control or a research log.
 
 # Pain points
 
