@@ -12,7 +12,13 @@ I am Chris Hartgerink, an applied statistician at Tilburg University specializin
 
 Statistical methods can be applied to detect potential data fabrication, but their validity is unknown. Simulating how researchers fabricate data is impossible because we simply do not know how researchers actually fabricate. Anecdotal summaries of uncovered misconduct cases do exist but are not generalizable. In order to test the performance of statistical methods in an ecologically valid manner, we invite researchers to fabricate data for a study for which we also have genuine data. With this, we can test the validity of a set of statistical methods to detect data fabrication.
 
-At the beginning of the project, an initial meeting can be used to detail specific aspects of the project. This meeting is crucial to determine and assign responsibilities, start discussion of ethical considerations, and how the project will be conducted. Preferrably, this takes place as an informal meeting with as many members of the project as possible. During this project description I will write from the perspective of the project lead who undertakes the steps described along the next few paragraphs. Several points I typically adress are:
+At the beginning of the project, an initial meeting can be used to detail
+specific aspects of the project. This meeting is crucial to determine and assign
+responsibilities, start discussion of ethical considerations, and how the
+project will be conducted. Preferrably, this takes place as an informal meeting
+with as many members of the project as possible. During this project description
+I will write from the perspective of the project lead who undertakes the steps
+described along the next few paragraphs. Several points I typically address are:
 
 1. Agree that research files will be publicly shared by default and proper arguments are needed to *not* share research files publicly (e.g., ethics committee restraints).
 2. Agree that the publicly shared research files are put in the public domain (licensed Creative Commons 0), to maximize breadth and clarity with respect to reuse rights of the research materials.
@@ -20,7 +26,19 @@ At the beginning of the project, an initial meeting can be used to detail specif
 4. Role assignment (e.g., project lead, fund raiser, analyst, who will check the analyses).
 5. Specifying research project
 
-This initial meeting is followed up by the project-lead with a draft description of the project and an initial draft of the materials to be used. These contents include a technical description of the design, hypotheses and theoretical framework, but also a draft of how the data will be analyzed. This increases transparency in what methods are set out to be applied, and increases accountability amongst authors. Even if these methods seem obvious, explicating them is important because during this process questions often arise that are not so obvious from the start (e.g., are covariates included? Are covariates you want to enter actually measured in the study design?). These drafts are shared and iteratively revised until an outline of the project is agreed upon. The experiment I describe here involves human participants and will need to be submitted to the ethical committee for review. Considering that each university has different procedures, I will not extend on these.
+This initial meeting is followed up by the project-lead with a draft description
+of the project and an initial draft of the materials to be used. These contents
+include a technical description of the design, hypotheses and theoretical
+framework, but also a draft of how the data will be analyzed. This increases
+transparency in what methods are set out to be applied, and increases
+accountability amongst authors. Even if these methods seem obvious, explicating
+them is important because during this process questions often arise that are not
+so obvious from the start (e.g., are covariates included? Are covariates you
+want to enter actually measured in the study design?). These drafts are shared
+and iteratively revised until an outline of the project is agreed upon. The
+experiment I describe here involves human participants and will need to be
+submitted to the ethical committee for review. Considering that each university
+has different procedures, I will not elaborate on these.
 
 Note that the files that are drafted after the meeting are included in a [GitHub](github.com) repository, which allows for version control of the files and is synchronized to an Open Science Framework (OSF; [osf.io](osf.io)) repository. Version control can be compared to track changes for computer files, allowing you to go back in time and view what changes were made and when. With version control a logbook of changes is created, which improves the reproducibility of the research process if anyone is ever interested. My personal experience indicates that this logbook is rarely inspected (except in data audits), but it can serve as a handy reference when somebody asks you when a specific event occurred (e.g., when were the analyses programmed for the first time). Version control is most effective when started immediately after the initial meeting.
 
@@ -28,7 +46,7 @@ The version controlled research files are preregistered after ethics approval is
 
 Following the preregistration, the study is actually conducted. During this time, there is sufficient time to rewrite the preregistration into the introduction and method sections of the manuscript. It is possible to write your preregistration in such a way that it already resembles these sections, but I suggest to be more detailed in the preregistration and subsequently prune it into the manuscript.
 
-When the study has been conducted, the raw data need to be stored in a non-proprietary file format and stored as read-only files. It is important to ensure the file is read-only, so you do not accidentally make adjustments to the file and are able to comply with any data policies that you are subject to. Saving the raw data as a non-proprietary format means that you should not save it as an SPSS, Excel, or other commercial format, but as a clear-text file such as a comma separated value (CSV) file. Clear-text files ensure that the data will remain readable in the future, whereas proprietary file formats might not be.Moreover, with clear-text files other people are not required to acquire commercial software packages to read the data.
+When the study has been conducted, the raw data need to be stored in a non-proprietary file format and stored as read-only files. It is important to ensure the file is read-only, so you do not accidentally make adjustments to the file and are able to comply with any data policies that you are subject to. Saving the raw data as a non-proprietary format means that you should not save it as an SPSS, Excel, or other commercial format, but as a clear-text file such as a comma separated value (CSV) file. Clear-text files ensure that the data will remain readable in the future, whereas proprietary file formats might not be. Moreover, with clear-text files other people are not required to acquire commercial software packages to read the data.
 
 After having safely stored the data, it is time for data to be cleaned in an automated, scripted manner. I typically conduct my data cleaning in `R`. I try not to clean data by hand, because I often forget what I have done; scripted data cleaning prevents this entirely. If I do need to manually clean data, the logbook provided by version control is a safety measure. 
 
@@ -76,7 +94,8 @@ Reproducible research is tiresome when you figure out a new way of doing things 
 
 ## What do you view as the major incentives for doing reproducible research?
 
-The main incentives for reproducible research is (future) efficiency. When you know that you can revisit projects from years ago and needing at most 30 minutes to find what you are looking for is a major improvement over spending a day looking for that one specific value someone asked about in your email. It also helps revisit previous projects and see what I did, because I frequently unlearn things I require in a new project (e.g., I often forget how to make plots in the `ggplot2` package because I use it too infrequently, and I just reuse code from previous projects).
+The main incentive for reproducible research is (future) efficiency. When you
+know that you can revisit projects from years ago and need at most 30 minutes to find what you are looking for is a major improvement over spending a day looking for that one specific value someone asked about in your email. It also helps revisit previous projects and see what I did, because I frequently unlearn things I require in a new project (e.g., I often forget how to make plots in the `ggplot2` package because I use it too infrequently, and I just reuse code from previous projects).
 
 ## Are there any best practices that you'd recommend for researchers in your field?
 
