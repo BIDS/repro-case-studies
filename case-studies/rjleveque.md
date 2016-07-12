@@ -1,7 +1,7 @@
 ---
 title: Producing a Journal Article on Probabilistic Tsunami Hazard Assessment
 running: Probabilistic Tsunami Hazard Assessment
-author: Randy LeVeque
+author: Randall J. LeVeque
 ---
 
 My name is Randy LeVeque and I am a Professor of Applied Mathematics and one of the core developers of the open source [GeoClaw](http://www.geoclaw.org) software package for modeling tsunamis and other geophysical flows. Recently we have been using this software to study new approaches to probabilistic tsunami hazard assessment (PTHA), in which the goal is to take some probability distribution of possible future earthquakes that might cause large tsunamis and produce a probabilistic hazard map for a particular community, indicating which regions are most at risk and estimating the annual probability of flooding to a given depth at each point.  This is complicated by the fact that the depth of flooding by a particular hypothetical tsunami depends on whether it arrives at low tide or high tide, and we have developed ways to incorporate this uncertainty.
