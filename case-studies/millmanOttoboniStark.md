@@ -368,7 +368,7 @@ projects [@millman2014developing].
 
 We (JM, KO, PS) use git[^7] as our version control system (VCS) and
 GitHub[^8] as the public hosting service for our official `upstream`
-repository (<https://github.com/statlab/permute>). Each of us has our
+repository [statlab/permute](<https://github.com/statlab/permute>). Each of us has our
 own copy, or fork, of the `upstream` repository. We each work on our own
 repositories and use the `upstream` repository as our coordination or
 integration repository.
