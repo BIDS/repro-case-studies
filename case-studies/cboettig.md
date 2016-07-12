@@ -4,10 +4,8 @@ running: R Notebook Using Docker
 author: Carl Boettiger
 ---
 
-[Carl Boettiger](http://carlboettiger.info), [UC Berkeley
-ESPM](http://ourenvironment.ucberkeley.edu)
-
-I'm a theoretical ecologist working on problems of forecasting and
+My name is [Carl Boettiger](http://carlboettiger.info). I'm a theoretical ecologist in [UC Berkeley
+ESPM](http://ourenvironment.ucberkeley.edu) working on problems of forecasting and
 decision-making in ecological systems. My work involves developing new
 computational and frequently data-intensive approaches to these problems.
 
