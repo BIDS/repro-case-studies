@@ -4,7 +4,7 @@ running: Image Processing With Apache Spark
 author: Zhao Zhang
 ---
 
-I am Zhao Zhang, a joint postdoctoral researcher at AMPLab and Berkeley Institute for Data Science, University of California, Berkeley. 
+My name is Zhao Zhang, I am a joint postdoctoral researcher at AMPLab and Berkeley Institute for Data Science, University of California, Berkeley. 
 The theme of my research is to enable data-driven science with computer systems.
 
 This case study describes the process of building Kira, a distributed astronomy image processing pipeline in the cloud environment. 
