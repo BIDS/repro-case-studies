@@ -4,7 +4,7 @@ running: Nuclear Fuel Cycle Analysis
 author: Kathryn Huff
 ---
 
-I am Kathryn (Katy) Huff, and I am a Nuclear Science and Security Consortium
+My name is Kathryn (Katy) Huff, and I am a Nuclear Science and Security Consortium
 postdoctoral scholar in the Nuclear Engineering Department and a Data Science
 Fellow with the Berkeley Institute for Data Science.  My research includes
 computational nuclear fuel cycle analysis and computational simulation of
