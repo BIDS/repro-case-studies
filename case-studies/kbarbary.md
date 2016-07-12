@@ -54,13 +54,13 @@ development, where work is centered around an "SNCosmo" GitHub
 organization. Users who follow the development version periodically
 pull changes from the copy of the repository owned by the "SNCosmo"
 organization. We use two services in conjunction with GitHub. First,
-continuous integration is done with <http://travis-ci.org>: every time a
+continuous integration is done with [Travis](<http://travis-ci.org>): every time a
 change is made to the GitHub repository, this service is triggered. It
 builds the library and runs the full suite of unit tests for multiple
 combinations of supported library versions. This allows the developers
 to catch and fix problems before they are reported by users. Second,
 automated documentation builds are done by
-<http://readthedocs.org>. This service builds the library and runs the
+[Read the Docs](<http://readthedocs.org>). This service builds the library and runs the
 documentation builder which produces a set of HTML pages (and also a
 PDF with the same content). This allows users to see the documentation
 for the latest development version immediately if needed.  These two
