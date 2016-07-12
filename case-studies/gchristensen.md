@@ -4,7 +4,7 @@ running: Soldier Deaths
 author: Garret Christensen
 ---
 
-My name is Garret Christensen. I work on questions of program impact evaluation in labor and development economics. I am currently a project scientist at the [Berkeley Initiative for Transparency in the Social Sciences](http://bitss.org) and a fellow at the [Berkeley Institute for Data Science](http://bids.berkeley.edu). I conducted the research described below as part of my dissertation work in economics at UC Berkeley, beginning in 2010.  This research is on the effect of deaths of US soldiers in Iraq and Afghanistan on military recruiting. I use panel data methods with fixed effects to try and identify the causal impact of the death of a US soldier in Iraq or Afghanistan on recruiting in the soldier's home county.
+My name is Garret Christensen.  I am currently a project scientist at the [Berkeley Initiative for Transparency in the Social Sciences](http://bitss.org) and a fellow at the [Berkeley Institute for Data Science](http://bids.berkeley.edu). I work on questions of program impact evaluation in labor and development economics. I conducted the research described below as part of my dissertation work in economics at UC Berkeley, beginning in 2010.  This research is on the effect of deaths of US soldiers in Iraq and Afghanistan on military recruiting. I use panel data methods with fixed effects to try and identify the causal impact of the death of a US soldier in Iraq or Afghanistan on recruiting in the soldier's home county.
 
 # Workflow
 
