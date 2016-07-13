@@ -34,7 +34,7 @@ The final step was to submit the code with the Massachusetts Institute  of Techn
 
 # Pain points
 
-Archiving my code takes additional time.
+My primary pain point is that archiving my code takes additional time after I am ready to submit a scientific paper.  The most time-consuming steps are associated with making the code usable by someone else on their own computer.  As I wrap-up a project, my files are cluttered because I have an exploratory phase as I am analyzing data where I write code that is not ultimately used for the results presented in the paper.  I have to identify and organize the relevant code files.  Then I have to modify filepaths, annotate the code, create test files, and write a README file with instructions for using the code which also takes additional time.  Another pain point is trying to find someone to test the code to make sure that the instructions are comprehensible, and the code runs on other computers and operating systems without errors.  This step requires another person to spend time to help me archive my code.  In the current scientific research system, archived code is not valued as highly as scientific papers so the extra time spent by scientists and code testers to archive code does not directly translate into greater scientific success.  Some academics have hypothesized that papers with archived code are cited more often, but this has not been universally verified.  In my experience, my archived code is limited to a specific analysis and, while the availability of code may increase the confidence of the scientific community in my results, I do not think that my archived code is generating more citations of my scientific papers.
 
 # Key benefits
 
