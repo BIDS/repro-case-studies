@@ -4,10 +4,8 @@ running: R Notebook Using Docker
 author: Carl Boettiger
 ---
 
-[Carl Boettiger](http://carlboettiger.info), [UC Berkeley
-ESPM](http://ourenvironment.ucberkeley.edu)
-
-I'm a theoretical ecologist working on problems of forecasting and
+My name is [Carl Boettiger](http://carlboettiger.info). I'm a theoretical ecologist in [UC Berkeley
+ESPM](http://ourenvironment.ucberkeley.edu) working on problems of forecasting and
 decision-making in ecological systems. My work involves developing new
 computational and frequently data-intensive approaches to these problems.
 
@@ -95,7 +93,7 @@ computers, regardless of architecture.  I believe this has major implications
 for addressing common problems in reproducibility, as I have described more
 fully elsewhere [@Boettiger2015].  A Dockerfile in my notebook provides an
 executable recipe for building this computational environment on top of existing,
-general-purpose Docker images maintained by the Rocker project (<https://github.com/rocker-org>).
+general-purpose Docker images maintained by the [Rocker project](<https://github.com/rocker-org>).
 
 ## Automated workflow
 
@@ -103,8 +101,8 @@ At regular intervals I "commit" my notebook in `git` and "push" this progress
 to GitHub, a widely used version control system and public repository for 
 code and other digital material.  This triggers the automated build portion
 of my workflow, illustrated in the center of the diagram.  A Continuous 
-Integration platform, or CI (<http://circleci.com> in my case, as the more widely
-used platform, Travis, did not support Docker execution until much more 
+Integration platform ([CircleCI](<http://circleci.com>) in my case, as the more widely
+used platform, [Travis](https://travis-ci.org/), did not support Docker execution until much more 
 recently) detects this commit, and begins to execute and assemble my code.
 
 The CI platform begins by pulling down a public image of my computational 
@@ -167,7 +165,7 @@ which makes it easy to render `.Rmd` files into `pdf` articles for various
 journal formats. 
 
 When preparing for submission, I upload a copy of the manuscript (in `tex` format,
-generated from the `Rmd`) to the arXiv (<http://arxiv.org>) and configure
+generated from the `Rmd`) to the [arXiv](<http://arxiv.org>) and configure
 the Zenodo permanent archive which connects automatically to GitHub, much
 like a Continuous Integration service.  Zenodo then generates a permanent
 archive with a unique Digital Object Identifier (DOI) every time it detects

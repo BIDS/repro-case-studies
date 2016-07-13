@@ -4,7 +4,7 @@ running: Methods in a Biogeographic Study
 author: K. A. S. Mislan
 ---
 
-I am an ecophysiologist and my research focuses on organism-environment interactions in the ocean.  In particular, I am interested in forecasting the effects of climate change on marine ecosystems.
+My name is Allison Smith, I am an ecophysiologist and my research focuses on organism-environment interactions in the ocean.  In particular, I am interested in forecasting the effects of climate change on marine ecosystems.
 
 I recently published research on the fundamental niche of pelagic animals in the global ocean. The study included a comparison of blood-oxygen binding characteristics of different species obtained from published papers.  Thresholds for blood-oxygen binding characteristics were mapped in the ocean using gridded oceanographic data.  My workflow details my process for obtaining and analyzing data for the project.  In order to increase the reproducibility of the study, code used for the project was put in a long-term archive.
 

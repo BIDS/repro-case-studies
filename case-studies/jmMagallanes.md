@@ -4,7 +4,7 @@ running: Networking in Peruvian Legislators
 author: José Manuel Magallanes
 ---
 
-I am José Manuel Magallanes. I am a Senior Data Science Fellow at the eScience Institute of the University of Washington, where I am also a Visiting Professor at the Evans School of Public Policy and Governance (2015 - 2017). Since 2003, I have been Professor of Political Science and Public Policy Methodology at the Catholic University of Peru. My research is related to framing political and policy problems with a computational social science approach. I have dealt with different topics including electoral behavior, public management performance, climate change and social conflict, and Congress's legislators behavior. My contribution for this case will be a research carried out on bill cosponsorship data to detect key players, reveal association patterns, anticipate party splitting and detect tactics to get re-elected. 
+My name is José Manuel Magallanes, I am a Senior Data Science Fellow at the eScience Institute of the University of Washington, where I am also a Visiting Professor at the Evans School of Public Policy and Governance (2015 - 2017). Since 2003, I have been Professor of Political Science and Public Policy Methodology at the Catholic University of Peru. My research is related to framing political and policy problems with a computational social science approach. I have dealt with different topics including electoral behavior, public management performance, climate change and social conflict, and Congress's legislators behavior. My contribution for this case will be a research carried out on bill cosponsorship data to detect key players, reveal association patterns, anticipate party splitting and detect tactics to get re-elected. 
 
 I have a BSc in Computer Science (UNMSM - Peru), a MA in Political Science and Public Management (PUCP - Peru), a Phd in Psychology (UNMSM - Peru) and a Phd in Computational Social Science (George Mason University-USA).
 
@@ -60,8 +60,8 @@ a4. **Write the paper**. As expected, this was a manual step. However, as I desc
 
 b1. **Collect Data**. Data collection had two main sources:
 
-1. The Congress webpage (<http://www.congreso.gob.pe/proyectosdeley>). Here, the data had the key information to build the network. 
-2. The INFOGOB webpage (<http://www.infogob.com.pe>). This webpage provided the information needed to organize some attributes of the legislators. 
+1. [The Congress webpage](<http://www.congreso.gob.pe/proyectosdeley>). Here, the data had the key information to build the network. 
+2. [The INFOGOB webpage](<http://www.infogob.com.pe>). This webpage provided the information needed to organize some attributes of the legislators. 
 
 The INFOGOB webpage is organized in such a way that you can download information for different processes. It also helped me get the political history of every legislator.
 
@@ -71,7 +71,7 @@ So, with INFOGOB, I built the attributes of the legislators; and, with the scrap
 
 This process was done entirely by me. It was the first part of the operational research and took around two weeks. The Python version I used was 2.7, and it was installed via Anaconda. I used the Spyder-app graphical user interface (GUI) to do the coding.
 
-b2. **Organize references**. References are a key component of academic writing. In my case, besides papers and books, there was also the need to include webpages, white papers, code, data, and so on. As it common, there are set of references you know you would use when you start writing, but more come along the process as you exchange ideas with colleagues. In this particular aspect, the use of **Zotero** was very important. It allowed to create a BibTex file to be used later during the paper production process. This text will later be integrated into the LatTex document of this work. Automating this process not only helps you recover the right of citing a work, but also gives you the flexibility to later change the style (APA, Chicago, etc - see list here: <https://en.wikipedia.org/wiki/Citation>)a particular publisher will require. This was extremely important as this research could be presented in social sciences or computer-science-related conferences.
+b2. **Organize references**. References are a key component of academic writing. In my case, besides papers and books, there was also the need to include webpages, white papers, code, data, and so on. As it common, there are set of references you know you would use when you start writing, but more come along the process as you exchange ideas with colleagues. In this particular aspect, the use of **Zotero** was very important. It allowed to create a BibTex file to be used later during the paper production process. This text will later be integrated into the LatTex document of this work. Automating this process not only helps you recover the right of citing a work, but also gives you the flexibility to later change the style (APA, Chicago, etc - see [citation list](<https://en.wikipedia.org/wiki/Citation>)) a particular publisher will require. This was extremely important as this research could be presented in social sciences or computer-science-related conferences.
 
 This process was done entirely by me. This was a continuous process as the paper was written. The desktop version of Zotero was used. The BibTex was saved in the working folder.
 
@@ -94,7 +94,7 @@ An additional advantage is the version control power you have when using GutHub,
 
 This process was done entirely by me. This was a continuous process as the paper was written. The GitHub client was used for committing and synchronizing the local repository into GitHub. 
 
-b6. **Provide external user interface**. It was clear during the planing stages that I will need to share my drafts with other colleagues in order to get some feedback and/or discuss further collaboration on this matter. As the paper reflected an step-by-step approach, it would be easier for my colleagues to read the draft paper which included the code chunks, the plot and the tables. For that, I decided to use **ShareLaTeX** (<http://sharelatex.com>), which can collect the files in the GitHub repository and compile the LaTeX document. So, after I updated the GitHub with my last version, I could also ask ShareLaTeX to update its contents based on the latest document version I had recently pushed into GitHub.
+b6. **Provide external user interface**. It was clear during the planing stages that I will need to share my drafts with other colleagues in order to get some feedback and/or discuss further collaboration on this matter. As the paper reflected an step-by-step approach, it would be easier for my colleagues to read the draft paper which included the code chunks, the plot and the tables. For that, I decided to use [ShareLaTeX](<http://sharelatex.com>), which can collect the files in the GitHub repository and compile the LaTeX document. So, after I updated the GitHub with my last version, I could also ask ShareLaTeX to update its contents based on the latest document version I had recently pushed into GitHub.
 
 This process was done entirely by me. However, the drafts were shared when most of the processing was finished. This was a continuous process as the paper was written. The selected users created ShareLaTeX accounts to see the LaTeX generated pdf version of my document. I allowed them to write comments in the LaTeX document using ShareLaTeX itself.
 
