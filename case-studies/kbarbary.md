@@ -17,7 +17,7 @@ used to combine and analyze that data in a uniform way.
 
 # Workflow
 
-![Diagram](kbarbary.png){width=100%}\
+![Diagram](kbarbary.pdf){width=100%}\
 
 I will describe the development of software for analyzing supernova
 light curve data.  A "light curve" in the parlance of my domain is
