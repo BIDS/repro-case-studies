@@ -31,7 +31,7 @@ published in [PLoS One](http://journals.plos.org/plosone/article?id=10.1371/jour
 The project started with the collection of MRI data. Six participants were
 scanned in different experimental conditions. The data were collected in the
 Stanford Center for Neurobiological Imaging (CNI). The CNI has developed the
-Neurobiological Image Management System [Wandell et al. 2015], which captures
+Neurobiological Image Management System [@wandell], which captures
 the data from the scanner, archives it, and exposes a web interface that allows
 researchers to control access to the data, and copy it into the lab's data
 storage, a RAID (redundant array of independent disks) system.
@@ -172,15 +172,15 @@ A higher standard, sometimes called 'replicability' would be to require that the
 same conclusions be reached if another group of researchers were to do the same
 experiments, and implement the same ideas in their analysis.
 
-Reproducibility does not guarantee replicability [Leek and Peng, 2015]. Some may
+Reproducibility does not guarantee replicability [@leek2015]. Some may
 even argue that reproducibility and replicability may sometimes be in conflict,
 because implementation errors can be propagated in reproduction, but not in
-replication [Peng2009, Baggerly2005].
+replication [@peng; @baggerly].
 
 ## Why do you think that reproducibility in your domain is important?
 
 Human neuroscience is a field which is particularly likely to have an abundance
-of false findings [Ioannidis 2005]: Sample sizes are usually small, particularly
+of false findings [@ioan]: Sample sizes are usually small, particularly
 in MRI, which is an expensive experimental technique. The standards of the field
 focus on statistical significance of effects, rather than effect sizes, which
 tend to be small. Though standards limiting the selection of tested
@@ -226,34 +226,7 @@ sleep well at night.
 ## Would you recommend any specific resources for learning more about reproducibility?
 
 There are several papers that provide guidelines for reproducibility with a
-specific focus on neuroimaging. Two recent examples include [Gorgolewski2016]
-and [Pernet2015].
+specific focus on neuroimaging. Two recent examples include @gorgo
+and @pernet.
 
 # References
-
-J.T. Leek and R.D. Peng (2015). Opinion: Reproducible research can still be
-wrong: Adopting a prevention approach. PNAS 112: 1645-1646
-
-B. A. Wandell, A. Rokem, L. M. Perry, G. Schaefer, R. F. Dougherty (2015). Data
-management to support reproducible research. arXiv:1502.06900v1
-
-A. Rokem, J. Yeatman, F. Pestilli, K.N. Kay, A. Mezer, S. van der Walt, B.A.
-Wandell (2015). Evaluating the accuracy of diffusion MRI models in white matter.
-PLoS One, DOI: 10.1371/journal.pone.0123272.
-
-Ioannidis, J.P.A. (2005). Why Most Published Research Findings Are False. PLoS
-Medicine 2: e124-
-
-Roger D. Peng (2009) Reproducible research and *Biostatistics*. Biostat 10:
-405-408
-
-K. A. Baggerly, J. S. Morris, S. R. Edmonson and K. R. Coombes (2005). Signal in
-Noise: Evaluating Reported Reproducibility of Serum Proteomic Tests for Ovarian
-Cancer. J Natl Cancer Inst (2005) 97: 307-309.
-
-K.J. Gorgoloewksi and R. Poldrack (2016) A practical guide for improving
-transparency and reproducibility in neuroimaging research.
-<http://dx.doi.org/10.1101/039354>
-
-Pernet C and Poline, J. B. (2015). Improving functional magnetic resonance
-imaging reproducibility. Gigascience 4: 15. DOI: 10.1186/s13742-015-0055-8

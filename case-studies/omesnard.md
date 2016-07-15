@@ -6,7 +6,7 @@ author: Olivier Mesnard and Lorena A. Barba
 
 We are members of a computational research group led by Prof. [Lorena Barba](http://lorenabarba.com) at the George Washington University in the department of Mechanical and Aerospace Engineering. 
 We do our best to accomplish reproducible research and have for years worked to improve our practices to achieve this goal.
-According to the "Reproducibility PI Manifesto," pledged by Barba in 2012, all our research code is under version control and open source, our data is open, and we publish open pre-prints of all our publications.
+According to the "[Reproducibility PI Manifesto](http://dx.doi.org/10.6084/m9.figshare.104539)," pledged by Barba in 2012, all our research code is under version control and open source, our data is open, and we publish open pre-prints of all our publications.
 For the main results in a paper, we prepare file bundles with input and output data, plotting scripts and figure, and deposit them in the [figshare](https://figshare.com/authors/Lorena_A_Barba/97553) repository.
 This case study describes what happened when we set out to complete a full replication of published results from our own group, using different Computational Fluid Dynamics (CFD) codes: a new code developed in our group, an open-source code developed by another group, and an open-source CFD library.
 
@@ -15,7 +15,7 @@ This case study describes what happened when we set out to complete a full repli
 ![Diagram](omesnard.pdf){width=100%}\
 
 Our research lab has developed over the years a consistent workflow that, we believe, leads to reproducible research.
-A previous study coming out of our lab, published in Krishnan et al. (2014), already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
+A previous study coming out of our lab, published in Krishnan et al. [-@krishnan], already satisfies the criteria of the "Reproducibility PI Manifesto" (Barba, 2012). 
 That work studied the aerodynamics of flying snakes using our code [cuIBM](https://github.com/barbagroup/cuIBM) for solving the Navier-Stokes equations with an immersed-boundary method. 
 The crux of the study was that, for a particular configuration, the snake's cross-section experiences a lift-enhancement.
 Here, we describe our effort to achieve full-replication of the main results, using four different Computational Fluid Dynamics (CFD) codes, including cuIBM.
@@ -29,14 +29,14 @@ Setting the boundary condition at the domain outlet was particularly problematic
 We invested several months of persistent efforts before finally replicating our previous findings (in terms of the lift characteristics) with IcoFOAM. 
 
 We then used [IBAMR](https://github.com/ibamr/ibamr), an open-source software available on GitHub that implements a different immersed-boundary method than cuIBM.
-Bhalla et al. (2013) published a detailed validation of the software, and various examples are included in the code repository.
+Bhalla et al. [-@bhalla] published a detailed validation of the software, and various examples are included in the code repository.
 After many failed attempts, we found that we had to force the fluid to rest everywhere _inside_ the immersed-body, not just at the boundary—this is not an intuitive option with immersed-boundary methods.
-In the end, we can say that the _scientific findings_ of Krishnan et al. (2014) have been replicated, but we still see noticeable differences in the details of the flow characteristics.
+In the end, we can say that the _scientific findings_ of Krishnan et al. [-@krishnan] have been replicated, but we still see noticeable differences in the details of the flow characteristics.
 
-The [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) codes are both being developed in our research lab and implement the same immersed-boundary method (Taira and Colonius, 2007).
+The [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) codes are both being developed in our research lab and implement the same immersed-boundary method [@taira].
 The GitHub code repositories include code documentation with [Doxygen](http://www.doxygen.org), users' documentation (on the GitHub wiki), as well as basic examples and tutorials.
 cuIBM uses [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on a single CUDA-architecture Graphical Processing Unit (GPU).
-We used cuIBM again to confirm the reproducibility of the published findings in Krishnan et al. (2014).
+We used cuIBM again to confirm the reproducibility of the published findings in Krishnan et al. [-@krishnan].
 It is important to remark that we had to use the _same version_ of the code, with the _same version_ of the linear-algebra library to obtain the same numeric answers as before.
 In fact, our first attempts used a newer version of the CUSP library, and failed to replicate the findings!
 In PetIBM, we use the [PETSc](http://www.mcs.anl.gov/petsc/) library to solve the linear systems on a distributed-memory machine.
@@ -165,9 +165,3 @@ This may be time-consuming but surely beneficial in the longer term of a researc
 * Vitek, J., & Kalibera, T. (2011, October). Repeatability, reproducibility, and rigor in systems research. In Proceedings of the ninth ACM international conference on Embedded software (pp. 33-38). ACM.
 
 # References
-
-- Barba, L. A. (13 December 2012). "Reproducibility PI Manifesto", 10.6084/m9.figshare.104539. Presentation for a talk given at the ICERM workshop "Reproducibility in Computational and Experimental Mathematics". Published on figshare under CC-BY.
-- Bhalla, A. P. S., Bale, R., Griffith, B. E., & Patankar, N. A. (2013). A unified mathematical framework and an adaptive numerical method for fluid–structure interaction with rigid, deforming, and elastic bodies. Journal of Computational Physics, 250, 446-476.
-- Krishnan, A., Socha, J. J., Vlachos, P. P., & Barba, L. A. (2014). Lift and wakes of flying snakes. Physics of Fluids, 26(3), 031901.
-- Taira, K., & Colonius, T. (2007). The immersed boundary method: a projection approach. Journal of Computational Physics, 225(2), 2118-2137.
-
