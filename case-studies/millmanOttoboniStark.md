@@ -10,6 +10,9 @@ case study involves assessing inter-rater reliability (IRR) of the
 assignment of “tags” applied by human raters to classify interactions
 during therapy sessions with children on the autistic spectrum.
 
+An extended version of this case study along with the analysis
+script and results can be found at <https://github.com/statlab/nsgk>.
+
 # Workflow
 
 ![Diagram](millmanOttoboniStark.pdf){width=100%}\
@@ -23,7 +26,7 @@ After investigating the problem further, PS emailed JM and KO a one-page
 proposal for a stratified permutation test to assess inter-rater
 reliability using stratified samples. We (JM, KO, PS) had recently begun
 developing a general purpose Python package for permutation tests,
-called `permute`,[^3] based on our collaborations. PS suggested this
+called [`permute`](http://statlab.github.io/permute/), based on our collaborations. PS suggested this
 would be an interesting example to include.
 
 After coming to an initial understanding of NS’s underlying research
@@ -39,7 +42,7 @@ in applied statistics:
 
 -   understand problem
 
--   get and clean data[^4]
+-   get and clean data
 
 -   design algorithm
 
@@ -56,7 +59,7 @@ example, if JM, KO, and PS spent an hour together discussing the problem
 in a meeting, then that meeting counts as 3 people hours.
 
 We did not keep a detailed record of time spent, but our computational
-practices (§ [Key tools and practices](#key-tools)) provide enough detail about who did what when
+practices provide enough detail about who did what when
 that we believe our estimates provide an accurate qualitative account of
 the time demands for each aspect of the project. However, since these
 are only rough estimates, the reader should focus on the relative
@@ -72,7 +75,9 @@ instructive for students and collaborators.
 Since we view computational reproducibility as a cross-cutting concern
 of all project aspects, we have adopted a set of computational
 practices, which we (JM, KO, PS) followed (almost) whenever we were
-working on the project.[^5] These computational practices, described in
+working on the project. Exceptions include that we did not record all of our in-person
+    discussions or whiteboard work. However, we endeavored to record
+    summaries of these activities. These computational practices, described in
 @millman2014developing, are used widely in the open source scientific
 Python community. While developed for managing software contributions,
 these practices are ideal for ensuring computational reproducibility in
@@ -80,7 +85,7 @@ scientific and statistical research. We will illustrate how we leverage
 the software infrastructure and development practices of `permute` to
 conduct reproducible and collaborative applied statistics research with
 our colleagues. We discuss the software tools and practices briefly in
-§ [Key tools and practices](#key-tools) below.
+Key tools and practices below.
 
 ## Understand problem (80 hours)
 
@@ -199,7 +204,7 @@ set of raters to validate or refine the results, reducing the rate of
 “false positives.” On the other hand, incorrectly rejecting tags as
 unreliable could eliminate a potentially useful predictor of successful
 therapeutic outcomes, so the FWER seemed far too stringent a criterion.
-See § [Understand result](#subsec:understand-result) for more discussion.
+See the Understand result section below for more discussion.
 
 Since each of the videos contained different sessions of
 therapist-patient interactions, in general rated by different people, we
@@ -225,7 +230,7 @@ $p$-value for the NPC test.
 Once we had a blueprint of the algorithm, KO led the implementation
 effort. She did most of the coding; JM and PS reviewed the code and
 discussed the implementation. Following our software development
-practices (§ [Key tools and practices](#key-tools)), KO also wrote tests for every function she
+practices, KO also wrote tests for every function she
 implemented. After a few iterations of coding, testing, and review, KO
 finalized our implementation and we merged it into `permute`.
 
@@ -335,10 +340,9 @@ reproducibility, applied statisticians have increasingly embraced
 version control and process automation. Many of our colleagues have made
 the idea of computational reproducibility central in both the classroom
 and the lab. Some ask anyone working with them to follow a set of
-computational practices including version control.[^6]
+computational practices including version control.
 
-However, the computational practices described in this study (see
-§ [Key tools and practices](#key-tools)) go beyond the standard work habits of our colleagues. Our
+However, the computational practices described in this study (see Key tools and practices) go beyond the standard work habits of our colleagues. Our
 computational practices provide the following benefits:
 
 1.  it reduces the number of errors introduced by new code and changes
@@ -366,8 +370,8 @@ projects [@millman2014developing].
 
 ## Version control and code review
 
-We (JM, KO, PS) use git[^7] as our version control system (VCS) and
-GitHub[^8] as the public hosting service for our official `upstream`
+We (JM, KO, PS) use git as our version control system (VCS) and
+GitHub as the public hosting service for our official `upstream`
 repository [statlab/permute](<https://github.com/statlab/permute>). Each of us has our
 own copy, or fork, of the `upstream` repository. We each work on our own
 repositories and use the `upstream` repository as our coordination or
@@ -395,7 +399,7 @@ future reference.
 ## Testing and continuous integration
 
 We used the `nose` testing framework for automating our testing
-procedures.[^9] This is the standard testing framework[^10] used by the
+procedures. This is the standard testing framework used by the
 core packages in the scientific Python ecosystem. Automating testing
 allows us to monitor a proxy for code correctness when making changes as
 well as simplifying the code review process for new code. Without
@@ -426,8 +430,15 @@ employ continuous integration and track our test coverage.
 
 Continuous integration works as follows: Each pull request (as well as a
 new commit to an existing pull request) triggers an automated
-system[^11] to run the full test suite on the updated code. The
-automated system checks whether any of our automated tests fail as well
+system to run the full test suite on the updated code. Specifically, we have configured [Travis CI](<https://travis-ci.org>) and
+    [`coveralls`](<https://coveralls.io>) to be
+    automatically triggered whenever a commit is made to a pull request
+    or the `upstream` master. These systems run the full test suite
+    using different versions of our dependencies (e.g., Python 2.7 and
+    3.4) every time a new commit is made to a repository or a pull is
+    requested. Travis CI checks that all the tests pass, while
+    `coveralls` generates a test coverage report so that we can monitor
+    what parts of our code are checked by a test and which are not. This  system checks whether any of our automated tests fail as well
 as tracks the percentage of our code that is covered by our automated
 tests. This means that when you review a pull request, you can
 immediately see whether the proposed changes break any tests and whether
@@ -435,16 +446,16 @@ the new code decreases the overall test coverage.
 
 ## Documentation
 
-We use Sphinx[^12] as our documentation system and have extensive
+We use Sphinx as our documentation system and have extensive
 developer documentation and the foundation for high-quality user
 documentation. Sphinx is the standard documentation system for Python
 and is used by the core scientific Python packages. We use Python
-docstrings and follow the NumPy docstring standard[^13] to document all
+docstrings and follow the [NumPy docstring standard](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) to document all
 the modules and functions in `permute`. Using Sphinx and some NumPy
 extensions, we have a system for autogenerating the project
 documentation (as HTML or PDF) using the docstrings as well as
 stand-alone text written in a light-weight markdown-like language,
-called reStructuredText.[^14] This system enables us to easily embed
+called [reStructuredText](http://docutils.sourceforge.net/rst.html). This system enables us to easily embed
 references, figures, code that is auto-run during documentation
 generation, as well as mathematics using LaTeX.
 
@@ -454,7 +465,7 @@ Our development workflow ensures that the official `upstream` repository
 is always stable and ready for use. This means anyone can install our
 official upstream master at any time and start using it. We also make
 official releases available as source tarballs and as Python
-built-packages[^15] uploaded to the Python Package Index, or PyPI,[^16]
+built-packages uploaded to the Python Package Index, or PyPI,
 with release announcements posted to our mailing list.
 
 By making official releases whenever we reach an important stage of an
@@ -465,65 +476,11 @@ in this case study, type the following command from a shell prompt
 
     $ pip install permute==0.1a2
 
-[^1]: An extended version of this case study along with the analysis
-    script and results can be found here: <https://github.com/statlab/nsgk>
-
-[^2]: Virtual environments are a way to create isolated Python
-    environments. This allows you to keep the Python dependencies for
-    different projects separate and, thus, allows you to install
-    different version of the same software on your computer.
-
-[^3]: <http://statlab.github.io/permute/>
-
-[^4]: This step generally also requires obtaining a data dictionary,
-    learning how to parse the data format, and so on.
-
-[^5]: Exceptions include that we did not record all of our in-person
-    discussions or whiteboard work. However, we endeavored to record
-    summaries of these activities.
-
-[^6]: For example, see
-    <http://www.stat.berkeley.edu/~epurdom/studentResources.html>.
-
-[^7]: <http://git-scm.com>
-
-[^8]: <https://github.com>
-
-[^9]: <https://nose.readthedocs.org>
-
-[^10]: As `nose` has been in maintenance mode for the last few years,
-    projects are starting to look into newer testing frameworks. We are
-    migrating to `pytest` (<http://pytest.org>). While we may transition
-    to a new testing framework, any system we migrate to will have the
-    same basic features and benefits as `nose`.
-
-[^11]: We have configured Travis CI (<https://travis-ci.org>) and
-    `coveralls` (<https://coveralls.io>) to be
-    automatically triggered whenever a commit is made to a pull request
-    or the `upstream` master. These systems run the full test suite
-    using different versions of our dependencies (e.g., Python 2.7 and
-    3.4) every time a new commit is made to a repository or a pull is
-    requested. Travis CI checks that all the tests pass, while
-    `coveralls` generates a test coverage report so that we can monitor
-    what parts of our code are checked by a test and which are not.
-
-[^12]: <http://sphinx-doc.org>
-
-[^13]: <https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt>
-
-[^14]: <http://docutils.sourceforge.net/rst.html>
-
-[^15]: Currently our code is pure Python, but we release Python wheels.
-    Wheels are the standard built-package format for Python.
-
-[^16]: PyPI is the Python equivalent of *The Comprehensive R Archive
-    Network* (CRAN).
-
 # Questions
     
 ## What does "reproducibility" mean to you?
 
-In this case study,[^1] *reproducibility* means:
+In this case study, *reproducibility* means:
 
 -   *Computational reproducibility and transparency.* We have documented
     (and scripted) nearly every step of the analysis—from cleaning to
@@ -563,7 +520,7 @@ since we have automated the process of running our analysis, if errors
 are identified and corrected, it is easy to rerun the entire analysis
 from start to finish.
 
-If you have standard tools (see § [Key tools and practices](#key-tools)) on your computer and
+If you have standard tools on your computer and
 network access, you can run our complete analysis of the cleaned data by
 typing the following three commands from a Unix shell prompt:
 
@@ -585,7 +542,7 @@ When you enter the command `make`, the following commands will be run:
     venv/bin/pip install -r requirements.txt
     venv/bin/python analysis.py
 
-The first command creates a new virtual environment[^2] (`venv`) for
+The first command creates a new virtual environment (`venv`) for
 Python 2.7. Using this new virtual environment (`venv`) the subsequent
 commands respectively upgrade the Python package manager (`pip`) to the
 most recent version, install the necessary Python package dependencies
@@ -593,36 +550,3 @@ most recent version, install the necessary Python package dependencies
 analysis script `analysis.py`.
 
 # References
-
-@incollection{buckheit1995wavelab,
-  booktitle={Wavelets and Statistics},
-  editor={Antoniadis, Anestis and Oppenheim, Georges},
-  title={Wavelab and reproducible research},
-  author={Buckheit, Jonathan B. and Donoho, David L.},
-  year={1995},
-  publisher={Springer}
-}
-
-@incollection{millman2014developing,
-  booktitle={Implementing reproducible research},
-  editor={Stodden, Victoria and Leisch, Friedrich and Peng, Roger D.},
-  title={Developing open-source scientific practice},
-  author={Millman, K. Jarrod and P{\'e}rez, Fernando},
-  pages={149--183},
-  year={2014},
-  publisher={Chapman and Hall/CRC}
-}
-
-@mastersthesis{millman2015thesis,
-  title={\texttt{permute}---a {P}ython package for permutation tests and confidence sets},
-  author={Millman, K. Jarrod},
-  year={2015},
-  school={University of California, Berkeley}
-}
-
-@book{pesarin2010permutation,
-  title={Permutation tests for complex data: theory, applications and software.},
-  author={Pesarin, Fortunato and Salmaso, Luigi},
-  year={2010},
-  publisher={John Wiley \& Sons}
-}
