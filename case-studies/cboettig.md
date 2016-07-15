@@ -38,13 +38,14 @@ including git/GitHub, docker/DockerHub, `.Rmd`/RStudio, and others.  Table 1 pro
 a concise reference where a reader can learn more about these tools and their
 use.
 
+\sttab{Tools used in workflow}
 Table: Tools used in workflow
 
-Tool      | Description / purpose     												  | Website  |
---------- | --------------------------------------------------- | --------------------- |
-git				| Version control software  													| <https://help.github.com/articles/good-resources-for-learning-git-and-github>  |
-GitHub		| Online repository for sharing code managed with git | <https://github.com> |
-docker		| Containerization software for portable computational environments | <https://docker.com> |
+Tool | Description / purpose | Website |
+------ | -------------------------------------- | ------------- |
+git             | Version control software  | <https://git-scm.org>  |
+GitHub      | Online repository for sharing code managed with git | <https://github.com> |
+docker      | Containerization software for portable computational environments | <https://docker.com> |
 DockerHub | Central hub for building and distributing docker containers | <https://hub.docker.com> |
 RStudio   | IDE for editing R and Rmd files | <https://rstudio.com> |
 Rmd       | Dynamic documentation format for R language | <http://rmarkdown.rstudio.com> |
@@ -54,6 +55,7 @@ jekyll    | Static website generator closely integrated with GitHub | <https://j
 Circle CI | Flexible continuous integration software for executing scripts pushed to GitHub | <https://circleci.com> |
 figshare  | Permanent data archiving platform | <http://figshare.com>  |
 zenodo    | Permanent archiving platform (handles code/software well) | <http://zenodo.org>  |
+\entab{}
 
 ## Interactive workflow
 
@@ -298,3 +300,6 @@ reproducibility.  These include: GitHub, Docker, rmarkdown.
 
 The documentation linked in Table 1 would be a great place to start on any of the individual tools.  Additionally, see the reproducible research workshop developed by NESCent:
 <https://github.com/Reproducible-Science-Curriculum>
+
+# References
+
