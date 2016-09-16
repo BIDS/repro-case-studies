@@ -768,16 +768,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.33"
-     inkscape:cx="238.7029"
+     inkscape:cx="129.68034"
      inkscape:cy="190.46888"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="751"
-     inkscape:window-x="0"
-     inkscape:window-y="1"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1483"
+     inkscape:window-height="1074"
+     inkscape:window-x="1640"
+     inkscape:window-y="127"
+     inkscape:window-maximized="0"
      fit-margin-top="1"
      fit-margin-left="1"
      fit-margin-right="1"
@@ -1152,17 +1152,15 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="7.1590443"
-       y="439.54663"
+       x="56.031227"
+       y="435.03534"
        id="text13919"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan13921"
-         x="7.1590443"
-         y="439.54663"
-         style="font-size:25.00000191px"><tspan
-   style="font-size:22.50000191px"
-   id="tspan4514">Stage III: Data </tspan>Analysis</tspan></text>
+         x="56.031227"
+         y="435.03534"
+         style="font-size:15.00000095px">Stage III: Data Analysis</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.00000024;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.10000002, 0.10000002;stroke-dashoffset:0;stroke-opacity:1"
        id="rect13927"
@@ -1201,5 +1199,5 @@
            height="66.91729"
            x="-7.5187969"
            y="385.74258" /></flowRegion><flowPara
-         id="flowPara4512"></flowPara></flowRoot>  </g>
+         id="flowPara4512" /></flowRoot>  </g>
 </svg>
