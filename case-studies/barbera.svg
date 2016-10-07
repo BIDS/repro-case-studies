@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,8 +40,8 @@
      id="namedview168"
      showgrid="false"
      units="cm"
-     inkscape:zoom="0.90834241"
-     inkscape:cx="248.81436"
+     inkscape:zoom="2.0189329"
+     inkscape:cx="213.40962"
      inkscape:cy="105.80041"
      inkscape:window-x="0"
      inkscape:window-y="1"
@@ -79,7 +79,7 @@
        height="202.49538"
        pointer-events="none"
        id="rect8"
-       style="fill:none;stroke:#000000;stroke-width:0.49389115" />
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
     <rect
        x="125.63541"
        y="209.06573"
@@ -87,7 +87,7 @@
        height="202.49538"
        pointer-events="none"
        id="rect16"
-       style="fill:none;stroke:#000000;stroke-width:0.49389115" />
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
     <rect
        x="2.1626267"
        y="209.06573"
@@ -95,7 +95,7 @@
        height="202.49538"
        pointer-events="none"
        id="rect24"
-       style="fill:none;stroke:#000000;stroke-width:0.49389115" />
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
     <rect
        x="7.1167693"
        y="288.10355"
@@ -187,14 +187,14 @@
        inkscape:connector-curvature="0"
        style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
     <path
-       d="m 344.73124,248.95239 4.29147,0 1.6887,0"
+       d="m 344.73124,248.95239 8.73451,0 3.43705,0"
        stroke-miterlimit="10"
        pointer-events="none"
        id="path100"
        inkscape:connector-curvature="0"
-       style="fill:none;stroke:#000000;stroke-width:0.3255395;stroke-miterlimit:10" />
+       style="fill:none;stroke:#000000;stroke-width:0.46442974;stroke-miterlimit:10" />
     <path
-       d="m 353.08892,248.95239 -3.45724,1.72862 0.86431,-1.72862 -0.86431,-1.72862 z"
+       d="m 359.08892,248.95239 -3.45724,1.72862 0.86431,-1.72862 -0.86431,-1.72862 z"
        stroke-miterlimit="10"
        pointer-events="none"
        id="path102"
@@ -262,14 +262,14 @@
        inkscape:connector-curvature="0"
        style="fill:#ffffff;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
     <path
-       d="m 370.92026,330.91875 0,0.55065 18.58929,0 0,-61.23128"
+       d="m 370.94031,330.90817 0,0.55046 21.02575,0 0,-61.20966"
        stroke-miterlimit="10"
        pointer-events="none"
        id="path156"
        inkscape:connector-curvature="0"
-       style="fill:none;stroke:#000000;stroke-width:0.4821195;stroke-miterlimit:10" />
+       style="fill:none;stroke:#000000;stroke-width:0.51265162;stroke-miterlimit:10" />
     <path
-       d="m 389.21628,268.61368 1.72862,3.45724 -1.72862,-0.86431 -1.72862,0.86431 z"
+       d="m 391.94049,267.62306 1.72862,3.45724 -1.72862,-0.86431 -1.72862,0.86431 z"
        stroke-miterlimit="10"
        pointer-events="none"
        id="path158"
@@ -438,7 +438,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle">Data</flowPara><flowPara
          id="flowPara3604"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle">modeling</flowPara></flowRoot>    <flowRoot
-       transform="translate(296.59188,291.23696)"
+       transform="translate(294.59188,291.23696)"
        style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="flowRoot3606"
        xml:space="preserve"><flowRegion
@@ -471,12 +471,12 @@
        height="38.081711"
        width="70.050552"
        y="228.68993"
-       x="353.67612" />
+       x="359.67612" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot3630"
        style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(-4.5,200.90158)"><flowRegion
+       transform="translate(5.5,200.90158)"><flowRegion
          id="flowRegion3632"><rect
            id="rect3634"
            width="56.049004"
@@ -499,7 +499,7 @@
            x="7.0061255"
            y="195.47234"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Helvetica Bold';-inkscape-font-specification:'Helvetica Bold, '" /></flowRegion><flowPara
-         id="flowPara3650"></flowPara><flowPara
+         id="flowPara3650" /><flowPara
          id="flowPara3652">Stage</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
