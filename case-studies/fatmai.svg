@@ -36,11 +36,11 @@
      inkscape:window-height="695"
      id="namedview5013"
      showgrid="false"
-     inkscape:zoom="1.6012397"
-     inkscape:cx="290.69245"
+     inkscape:zoom="1.6043671"
+     inkscape:cx="142.50318"
      inkscape:cy="185.20871"
      inkscape:window-x="21"
-     inkscape:window-y="112"
+     inkscape:window-y="135"
      inkscape:window-maximized="0"
      inkscape:current-layer="g4771"
      units="cm"
@@ -252,7 +252,7 @@
        x="25.960527"
        y="534.84937"
        style="font-size:9.61105251px;font-family:Helvetica-Bold"><tspan
-         style="font-size:12.5px"
+         style="font-size:12.5px;-inkscape-font-specification:'Helvetica Bold';font-family:Helvetica;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
          id="tspan3614">Stage I: Data Input</tspan></text>
 <rect
        x="189.93565"
@@ -366,9 +366,9 @@
        font-size="22"
        id="text5011"
        x="181.7047"
-       y="534.78223"
+       y="534.84937"
        style="font-size:9.61105251px;font-family:Helvetica-Bold"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
          id="tspan3616">Stage II: Data Processing</tspan></text>
 <flowRoot
        xml:space="preserve"
