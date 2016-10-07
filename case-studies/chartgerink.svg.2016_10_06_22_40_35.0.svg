@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,11 +41,11 @@
      id="namedview146"
      showgrid="false"
      units="cm"
-     inkscape:zoom="1.1194111"
-     inkscape:cx="208.22947"
-     inkscape:cy="67.908324"
+     inkscape:zoom="2.1709791"
+     inkscape:cx="304.53696"
+     inkscape:cy="33.092263"
      inkscape:window-x="0"
-     inkscape:window-y="46"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:current-layer="g6" />
   <defs
@@ -52,6 +53,14 @@
   <g
      transform="translate(0.5,-144.33467)"
      id="g6">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.53740323"
+       id="rect3758"
+       pointer-events="none"
+       height="164.56111"
+       width="128.7632"
+       y="152.78386"
+       x="153.6926" />
     <rect
        x="311.32736"
        y="152.7756"
@@ -83,6 +92,47 @@
        inkscape:connector-curvature="0"
        style="fill:#000000;stroke:#000000;stroke-width:0.51593286;stroke-miterlimit:10" />
     <rect
+       x="71.719261"
+       y="217.26474"
+       width="41.274632"
+       height="31.471905"
+       pointer-events="none"
+       id="rect26"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.51593286" />
+    <rect
+       x="9.8073149"
+       y="218.2966"
+       width="51.593288"
+       height="21.153248"
+       pointer-events="none"
+       id="rect34"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.51593286" />
+    <g
+       transform="matrix(0.51593286,0,0,0.51593286,14.708669,225.26169)"
+       id="g36">
+      <switch
+         id="switch38">
+        <foreignObject
+           style="overflow:visible;"
+           pointer-events="all"
+           width="78"
+           height="12"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 79px; white-space: nowrap; text-align: center;">
+            <xhtml:div
+               style="display:inline-block;text-align:inherit;text-decoration:inherit;">Conduct study</xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="39"
+           y="12"
+           font-size="12px"
+           id="text40"
+           style="font-size:12px;font-family:Helvetica;text-anchor:middle;fill:#000000">Conduct study</text>
+      </switch>
+    </g>
+    <rect
        x="329.00125"
        y="258.64972"
        width="88.76339"
@@ -112,48 +162,34 @@
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#000000;stroke-width:0.45533305;stroke-miterlimit:10" />
     <path
-       d="m 154.50947,235.32238 -3.61152,1.80577 0.90287,-1.80577 -0.90287,-1.80577 z"
+       d="m 152.50947,235.32238 -3.61152,1.80577 0.90287,-1.80577 -0.90287,-1.80577 z"
        stroke-miterlimit="10"
        pointer-events="none"
        id="path92"
        inkscape:connector-curvature="0"
        style="fill:#000000;stroke:#000000;stroke-width:0.51593286;stroke-miterlimit:10" />
     <path
-       d="m 286.0379,235.32238 21.96312,0"
+       d="m 284.0379,235.32238 21.96312,0"
        stroke-miterlimit="10"
        pointer-events="none"
        id="path94"
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#000000;stroke-width:0.43958876;stroke-miterlimit:10" />
     <path
-       d="m 310.70967,235.32238 -3.61154,1.80577 0.90289,-1.80577 -0.90289,-1.80577 z"
+       d="m 308.70967,235.32238 -3.61154,1.80577 0.90289,-1.80577 -0.90289,-1.80577 z"
        stroke-miterlimit="10"
        pointer-events="none"
        id="path96"
        inkscape:connector-curvature="0"
        style="fill:#000000;stroke:#000000;stroke-width:0.51593286;stroke-miterlimit:10" />
     <rect
-       x="154.92406"
-       y="152.78529"
-       width="130.15573"
-       height="164.55821"
+       x="329.00125"
+       y="211.79341"
+       width="88.76339"
+       height="34.180626"
        pointer-events="none"
-       id="rect10"
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.54029655" />
-    <path
-       d="m 215.83477,200.02775 0,11.35505"
-       stroke-miterlimit="10"
-       pointer-events="none"
-       id="path128"
-       inkscape:connector-curvature="0"
-       style="fill:none;stroke:#000000;stroke-width:0.41731414;stroke-miterlimit:10" />
-    <path
-       d="m 215.83477,214.09145 -1.80577,-3.61154 1.80577,0.90289 1.80577,-0.90289 z"
-       stroke-miterlimit="10"
-       pointer-events="none"
-       id="path130"
-       inkscape:connector-curvature="0"
-       style="fill:#000000;stroke:#000000;stroke-width:0.51593286;stroke-miterlimit:10" />
+       id="rect3685"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.59702307" />
     <path
        d="m 341.38188,220.706 -21.89619,-35.67676 q -2.69833,-4.39575 2.461,-4.49377 l 9.27131,-0.18057"
        stroke-miterlimit="10"
@@ -178,31 +214,19 @@
          sodipodi:role="line"
          x="338.14554"
          y="267.88983"
-         id="tspan3484"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Ensure research </tspan><tspan
+         id="tspan3484">Ensure research </tspan><tspan
          sodipodi:role="line"
          x="338.14554"
          y="278.82733"
-         id="tspan3488"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">files are publicly </tspan><tspan
+         id="tspan3488">files are publicly </tspan><tspan
          sodipodi:role="line"
          x="338.14554"
          y="289.76483"
-         id="tspan3500"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">available </tspan><tspan
+         id="tspan3500">available </tspan><tspan
          sodipodi:role="line"
          x="338.14554"
          y="300.70233"
-         id="tspan3492"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal" /></text>
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.59702307"
-       id="rect3502"
-       pointer-events="none"
-       height="34.180626"
-       width="88.76339"
-       y="211.62001"
-       x="329.00125" />
+         id="tspan3492" /></text>
     <text
        sodipodi:linespacing="125%"
        id="text3504"
@@ -213,18 +237,15 @@
          id="tspan3512"
          y="221.03352"
          x="338.14554"
-         sodipodi:role="line"
-         style="-inkscape-font-specification:Helveitca;font-family:Helveitca;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Co-pilot research</tspan><tspan
+         sodipodi:role="line">Co-pilot research</tspan><tspan
          y="231.97102"
          x="338.14554"
          sodipodi:role="line"
-         id="tspan3530"
-         style="-inkscape-font-specification:Helveitca;font-family:Helveitca;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">results by </tspan><tspan
+         id="tspan3530">results by </tspan><tspan
          y="242.90852"
          x="338.14554"
          sodipodi:role="line"
-         id="tspan3532"
-         style="-inkscape-font-specification:Helveitca;font-family:Helveitca;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">co-author</tspan></text>
+         id="tspan3532">co-author</tspan></text>
     <rect
        style="opacity:0;fill:none;fill-opacity:0.203125;stroke:#c200ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect3515"
@@ -252,7 +273,7 @@
          y="236.81577" /></text>
     <rect
        x="329.00125"
-       y="166.42509"
+       y="165.79341"
        width="88.76339"
        height="34.180626"
        pointer-events="none"
@@ -268,18 +289,15 @@
          id="tspan3546"
          sodipodi:role="line"
          x="334.14554"
-         y="175.03352"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Write up analyses </tspan><tspan
+         y="175.03352">Write up analyses </tspan><tspan
          sodipodi:role="line"
          x="334.14554"
          y="185.97102"
-         id="tspan3553"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">and results</tspan><tspan
+         id="tspan3553">and results</tspan><tspan
          sodipodi:role="line"
          x="334.14554"
          y="196.90852"
-         id="tspan3555"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">using RMarkdown</tspan></text>
+         id="tspan3555">using RMarkdown</tspan></text>
     <rect
        style="opacity:0;fill:none;fill-opacity:0.203125;stroke:#c200ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect3558"
@@ -324,7 +342,7 @@
            x="321.51392"
            y="153.67366"
            style="-inkscape-font-specification:'Helveitca Bold';font-family:Helveitca;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:10px;" /></flowRegion><flowPara
-         id="flowPara3582" /></flowRoot>    <flowRoot
+         id="flowPara3582"></flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3584"
        style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Helveitca;font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Helveitca;font-stretch:normal;font-variant:normal;"><flowRegion
@@ -335,7 +353,7 @@
            x="319.21082"
            y="154.13428"
            style="-inkscape-font-specification:Helveitca;font-family:Helveitca;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></flowRegion><flowPara
-         id="flowPara3590" /></flowRoot>    <text
+         id="flowPara3590"></flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="316.69888"
@@ -351,217 +369,170 @@
        sodipodi:linespacing="125%"
        id="text3596"
        y="311.37827"
-       x="159.93001"
+       x="155.93001"
        style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
          y="311.37827"
-         x="159.93001"
+         x="155.93001"
          id="tspan3598"
-         sodipodi:role="line">Stage II: Data Processing</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.35541072;stroke-miterlimit:10"
-       inkscape:connector-curvature="0"
-       id="path3611"
+         sodipodi:role="line">Stage III: Data Processing</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.59702307"
+       id="rect3667"
        pointer-events="none"
-       stroke-miterlimit="10"
-       d="m 373.13707,200.45573 0,8.23614" />
-    <path
-       d="m 373.21418,211.42418 -1.80577,-3.61154 1.80577,0.90289 1.80577,-0.90289 z"
-       stroke-miterlimit="10"
-       pointer-events="none"
-       id="path3615"
-       inkscape:connector-curvature="0"
-       style="fill:#000000;stroke:#000000;stroke-width:0.51593286;stroke-miterlimit:10" />
-    <path
-       d="m 372.56129,246.28759 0,8.23614"
-       stroke-miterlimit="10"
-       pointer-events="none"
-       id="path3617"
-       inkscape:connector-curvature="0"
-       style="fill:none;stroke:#000000;stroke-width:0.35541072;stroke-miterlimit:10" />
+       height="34.180626"
+       width="88.76339"
+       y="258.64972"
+       x="329.00125" />
     <path
        style="fill:#000000;stroke:#000000;stroke-width:0.51593286;stroke-miterlimit:10"
        inkscape:connector-curvature="0"
-       id="path3619"
+       id="path3673"
        pointer-events="none"
        stroke-miterlimit="10"
-       d="m 372.6384,257.25604 -1.80577,-3.61154 1.80577,0.90289 1.80577,-0.90289 z" />
+       d="m 329.09011,180.5336 -3.58057,1.87284 0.87193,-1.82123 -0.93901,-1.79029 z" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3675"
+       y="267.88983"
+       x="338.14554"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan3677"
+         y="267.88983"
+         x="338.14554"
+         sodipodi:role="line">Ensure research </tspan><tspan
+         id="tspan3679"
+         y="278.82733"
+         x="338.14554"
+         sodipodi:role="line">files are publicly </tspan><tspan
+         id="tspan3681"
+         y="289.76483"
+         x="338.14554"
+         sodipodi:role="line">available </tspan><tspan
+         id="tspan3683"
+         y="300.70233"
+         x="338.14554"
+         sodipodi:role="line" /></text>
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:0.59702307"
-       id="rect3403"
+       id="rect3502"
        pointer-events="none"
        height="34.180626"
        width="88.76339"
-       y="166.42509"
-       x="175.50362" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text3405"
-       y="187.66521"
-       x="186.6479"
-       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         id="tspan3411"
-         y="187.66521"
-         x="186.6479"
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica">Anonymize data</tspan></text>
-    <rect
-       x="174.4557"
-       y="213.62001"
-       width="88.76339"
-       height="34.180626"
-       pointer-events="none"
-       id="rect3418"
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.59702307" />
+       y="211.79341"
+       x="329.00125" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="183.59999"
-       y="222.86012"
-       id="text3420"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan3426"
-         sodipodi:role="line"
-         x="183.59999"
-         y="222.86012"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Safely store raw</tspan><tspan
-         sodipodi:role="line"
-         x="183.59999"
-         y="233.79762"
-         id="tspan3433"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">data online and </tspan><tspan
-         sodipodi:role="line"
-         x="183.59999"
-         y="244.73512"
-         id="tspan3435"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">offline</tspan></text>
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.59702307"
-       id="rect3446"
-       pointer-events="none"
-       height="34.180626"
-       width="88.76339"
-       y="260.95966"
-       x="174.94293" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text3448"
-       y="276.19977"
-       x="188.08722"
-       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         id="tspan3456"
-         y="276.19977"
-         x="188.08722"
-         sodipodi:role="line"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Scripted data </tspan><tspan
-         y="287.13727"
-         x="188.08722"
-         sodipodi:role="line"
-         id="tspan3471"
-         style="-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">cleaning</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.35541072;stroke-miterlimit:10"
-       inkscape:connector-curvature="0"
-       id="path3458"
-       pointer-events="none"
-       stroke-miterlimit="10"
-       d="m 218.50298,248.59755 0,8.23614" />
-    <path
-       d="m 218.58009,259.566 -1.80577,-3.61154 1.80577,0.90289 1.80577,-0.90289 z"
-       stroke-miterlimit="10"
-       pointer-events="none"
-       id="path3460"
-       inkscape:connector-curvature="0"
-       style="fill:#000000;stroke:#000000;stroke-width:0.51593286;stroke-miterlimit:10" />
-    <rect
-       x="8.1090841"
-       y="165.16174"
-       width="88.76339"
-       height="34.180626"
-       pointer-events="none"
-       id="rect3473"
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.59702307" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="21.253372"
-       y="186.40186"
-       id="text3475"
+       x="338.14554"
+       y="221.03352"
+       id="text3687"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="21.253372"
-         y="186.40186"
-         id="tspan3477"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica">Preregistration</tspan></text>
+         x="338.14554"
+         y="221.03352"
+         id="tspan3689">Co-pilot research</tspan><tspan
+         id="tspan3691"
+         sodipodi:role="line"
+         x="338.14554"
+         y="231.97102">results by </tspan><tspan
+         id="tspan3693"
+         sodipodi:role="line"
+         x="338.14554"
+         y="242.90852">co-author</tspan></text>
     <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.46177548"
-       id="rect3483"
-       pointer-events="none"
-       height="34.315872"
-       width="52.893021"
-       y="220.05006"
-       x="7.4097829" />
+       y="192.84509"
+       x="317.71741"
+       height="15.959726"
+       width="8.1427174"
+       id="rect3695"
+       style="opacity:0;fill:none;fill-opacity:0.203125;stroke:#c200ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <rect
-       x="64.260757"
-       y="220.05006"
-       width="52.893021"
-       height="34.315872"
-       pointer-events="none"
-       id="rect3485"
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.46177548" />
-    <text
+       y="195.93933"
+       x="318.85739"
+       height="0.48856306"
+       width="0.81427175"
+       id="rect3697"
+       style="opacity:0;fill:none;fill-opacity:0.203125;stroke:#c200ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="192.51938"
+       x="315.76315"
+       height="15.796872"
+       width="10.829814"
+       id="rect3709"
+       style="opacity:0;fill:none;fill-opacity:0.203125;stroke:#c200ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="194.63649"
+       x="317.31027"
+       height="0.48856306"
+       width="1.384262"
+       id="rect3711"
+       style="opacity:0;fill:none;fill-opacity:0.203125;stroke:#c200ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="191.29797"
+       x="315.35602"
+       height="18.239687"
+       width="13.84262"
+       id="rect3713"
+       style="opacity:0;fill:none;fill-opacity:0.203125;stroke:#c200ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <flowRoot
+       transform="matrix(0.58721019,0.80943449,-0.80943449,0.58721019,139.57598,-10.374931)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3715"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3717"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           y="-31.035631"
+           x="263.01495"
+           height="14.279271"
+           width="42.377193"
+           id="rect3719" /></flowRegion><flowPara
+         id="flowPara3721">Revise</flowPara></flowRoot>    <text
        sodipodi:linespacing="125%"
-       id="text3487"
-       y="236.40186"
-       x="15.253371"
-       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="236.40186"
-         x="15.253371"
-         sodipodi:role="line"
-         id="tspan3491"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica">Conduct</tspan><tspan
-         y="247.33936"
-         x="15.253371"
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica"
-         id="tspan3495">study</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="66.304916"
-       y="230.08508"
-       id="text3497"
-       sodipodi:linespacing="125%"><tspan
-         id="tspan3501"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica"
-         sodipodi:role="line"
-         x="66.304916"
-         y="230.08508">Write</tspan><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica"
-         sodipodi:role="line"
-         x="66.304916"
-         y="241.02258"
-         id="tspan3505">introduction</tspan><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica"
-         sodipodi:role="line"
-         x="66.304916"
-         y="251.96008"
-         id="tspan3507">and methods</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="21.930008"
+       id="text3723"
        y="311.37827"
-       id="text3509"
+       x="316.69888"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
+         y="311.37827"
+         x="316.69888"
+         id="tspan3725"
+         sodipodi:role="line">Stage III: Data Analysis</tspan></text>
+    <rect
+       x="174.23238"
+       y="166.71466"
+       width="88.76339"
+       height="34.180626"
+       pointer-events="none"
+       id="rect3727"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.59702307" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="185.37666"
+       y="185.95477"
+       id="text3729"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan3511"
-         x="21.930008"
-         y="311.37827"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'">Stage I: Data Input</tspan></text>
+         x="185.37666"
+         y="185.95477"
+         id="tspan3735">Anonymize data</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.51593286;stroke-miterlimit:10"
+       inkscape:connector-curvature="0"
+       id="path3760"
+       pointer-events="none"
+       stroke-miterlimit="10"
+       d="m 64.277439,239.6221 0,10.14839 0,-2.57966 0,7.20243" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.51593286;stroke-miterlimit:10"
+       inkscape:connector-curvature="0"
+       id="path3762"
+       pointer-events="none"
+       stroke-miterlimit="10"
+       d="m 140.49327,269.47883 -1.80576,-3.61152 1.80576,0.90288 1.80577,-0.90288 z" />
   </g>
 </svg>
