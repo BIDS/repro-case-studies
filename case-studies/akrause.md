@@ -4,9 +4,7 @@ running: Household location choice
 author: Andy Krause
 ---
 
-Andy Krause, Lecturer in Property (Real Estate) at the University of Melbourne.  Andy's research focuses on the spatial analysis of real estate markets, particularly in regards to valuation and location. 
-
-Hossein Estiri, Senior Fellow in the Institute of Translational Health Sciences at the University of Washington. Hossein uses data science approaches to study urban energy and health.
+I am Andy Krause, a Lecturer in Property (Real Estate) at the University of Melbourne. My research focuses on the spatial analysis of real estate markets, particularly in regards to valuation and location. This work was completed with my colleague, Hossein Estiri, Senior Fellow in the Institute of Translational Health Sciences at the University of Washington. Hossein uses data science approaches to study urban energy and health.
 
 # Workflow
 
