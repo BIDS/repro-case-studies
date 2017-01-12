@@ -1,10 +1,10 @@
 ---
 title: "pyMooney: Generating a Database of Two-Tone, Mooney Images"
 running: pyMooney
-author: Fatma İmamoğlu
+author: Fatma Deniz
 ---
 
-My name is Fatma İmamoğlu, I am a postdoctoral fellow at the [International Computer Science Institute](http://www.icsi.berkeley.edu/icsi/), [Helen Wills Neuroscience Institute](neuroscience.berkeley.edu) and a Data Science fellow at the [Berkeley Institute for Data Science](https://bids.berkeley.edu/). 
+My name is Fatma Deniz, I am a postdoctoral fellow at the [International Computer Science Institute](http://www.icsi.berkeley.edu/icsi/), [Helen Wills Neuroscience Institute](neuroscience.berkeley.edu) and a Data Science fellow at the [Berkeley Institute for Data Science](https://bids.berkeley.edu/). 
 
 I work on computational neuroscience. The current case study will only describe one part of my usual research pipeline, i.e., stimulus generation. Every successful neuroscience experiment needs to run several pilot experiments to create the best stimulus that is suitable for one or several questions that the researcher is asking for. Hence, this step is usually tedious, where different parameters are tested until a final set of stimulus is used in the experiment. In order to build upon the work a researcher has already conducted or to create new experiments (with new hypothesis) using the same stimulus set, it is very important to have access to the stimulus that has been used, or to create new stimulus with the same parameters or algorithmic procedure.
 
