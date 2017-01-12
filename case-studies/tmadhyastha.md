@@ -1,5 +1,5 @@
 ---
-title: Using the UNIX Utility Make for Reproducible Neuroimaging Workflow and Quality Assurance of Functional Magnetic Resonance Imaging (fMRI) Data
+title: A Reproducible Neuroimaging Workflow and Quality Assurance of Functional Magnetic Resonance Imaging (fMRI) Data
 running: Reproducible Neuroimaging Workflow
 author: Tara Madhyastha, Natalie Koh and Mary K. Askren
 ---

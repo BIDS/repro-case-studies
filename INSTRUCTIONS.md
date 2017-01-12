@@ -21,13 +21,13 @@ For more information about the project goals or framework, contact Justin Kitzes
 
 A case study describes the computational workflow that you used to complete a single well-defined research output (e.g., a manuscript or equivalent). A case study specifically should not describe a lab, a person, a concept, or a general hardware/software stack. It should be an example of a concrete research activity, not a reflection. The goal is to capture your web of practices surrounding a specific research pipeline and its associated benefits and challenges.
 
-Broadly, there are two types of topics that may be the subject of case studies. The first is a manuscript or equivalent "traditional" publication. The second is a piece of software that you have developed as part of your research. In both cases, the case study should describe the workflow used to create the final product. Examples of a [publication-based case study](case-studies/jkitzes.md) and a [software-based case study](case-studies/dturek.md) are included in this repository for your reference.
+Broadly, there are two levels of case studies that are appropriate for submission. The first is a "high level" case study that describes all three major steps of a research pipeline, including data collection, data cleaning, and data analysis. The second is a "low level" case study that focuses in on one or two of these stpes in more detail. Examples of a [high-level case study](case-studies/jkitzes.md) and a [low-level case study](case-studies/dturek.md) are included in this repository for your reference.
 
 When choosing a subject for your case study, __think small and concrete__. For a sense of scale, a case study should cover research representing approximately 6 months to 1 year of work for a single researcher. If your projects tend to be large or complex, you may choose to focus on only a portion of a larger project for your case study. If you do not have a single project that you feel would be useful to share, you can describe an "idealized" workflow that combines features of several different real projects, although we are particularly interested in hearing about projects that were partially successful or that involved significant difficulties.
 
 ## Case Study Instructions
 
-The case studies should be written using markdown. To help you complete your case study, we have provided a template that will guide you through a series of standard short answer questions. To complete your case study, simply open [this template](https://raw.githubusercontent.com/BIDS/repro-case-studies/master/template.md), save a copy of the template with a file name consisting of your first initial and last name (e.g. ``alovelace.md``), and replace the sections labeled ``[Answer]`` with your responses. Length suggestions are provided for each question. You may also wish to refer to the two sample case studies ([publication-based](case-studies/jkitzes.md) and [software-based](case-studies/dturek.md)) for guidance.
+The case studies should be written using Markdown. To help you complete your case study, we have provided a template that will guide you through a series of standard short answer questions. To complete your case study, simply open [this template](https://raw.githubusercontent.com/BIDS/repro-case-studies/master/template.md), save a copy of the template with a file name consisting of your first initial and last name (e.g. ``alovelace.md``), and replace all of the instructions with your responses. Length suggestions are provided for each section. You may also wish to refer to the two sample case studies ([high-level](case-studies/jkitzes.md) and [low-level](case-studies/dturek.md)) for guidance.
 
 In summary, the core of the case study is a visual diagram showing your workflow with an accompanying narrative description. You'll also be asked for additional detail on specific pain points (portions of the reproducible workflow that were failed, incomplete, or particularly challenging), key achievements, and key tools. Several general questions on your views of reproducibility will complete the case study.  
 
@@ -45,23 +45,14 @@ Here are the steps to submit a case study as a pull request:
 
 - Clone that repository onto your local machine using git. 
 
-- Two examples are provided in the ``case-studies`` directory. These are at ``case-studies/jkitzes.md`` and ``case-studies/dturek.md``. Associated workflow diagrams are in the corresponding pdf files.
+- Two examples are provided in the `case-studies` directory. These are at `case-studies/jkitzes.md` and `case-studies/dturek.md`. Associated workflow diagrams are in the corresponding pdf files.
 
-- Copy the template.md file into the ``case-studies`` directory, and name this file with your first initial and last name (e.g. ``alovelace.md``) 
+- Copy the `template.md` file into the `case-studies` directory, and name this file with your first initial and last name (e.g. `alovelace.md`) 
 
 - Open the file and respond to each question. Experience has shown that it is easiest to answer the questions in the order presented.
 
-- Add an image file (preferably PDF) containing your workflow diagram.
+- Add an image file(s) containing your workflow diagram as instructed in the template.
 
 - Please do not modify any files other than your case study.
 
 - Once you are ready to submit your case study, file a [pull request](https://help.github.com/articles/using-pull-requests/) on GitHub.
-
-## Previewing your Case Study
-
-We can recommend three ways to view your case study document.
-
-1. [Commit and push your changes](http://readwrite.com/2013/10/02/github-for-beginners-part-2) to your GitHub fork. Then open a browser and navigate 
-  to ``https://github.com/YOURUSERNAME/repro-case-studies/case-studies/YOURFILENAME.md`` 
-2. Open it on your computer with an application like [Atom](https://atom.io/)
-3. Install Pandoc and, in your ``case-studies`` directory, run ``pandoc YOURFILENAME.md -o YOURFILENAME.pdf``
