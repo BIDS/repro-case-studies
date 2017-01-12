@@ -16,20 +16,23 @@
 \tikzstyle{eda} = [diamond, draw,
     minimum width={width("``Lab notebook''") + 1cm},
     align = center, 
-    minimum height={width("``Lab notebook''") + 1cm}]
+    minimum height={width("``Lab notebook''") + 1cm},
+    style={font=\Large\fontfamily{phv}\selectfont}]
 \tikzstyle{analysis} = [circle, draw, 
     minimum width={width("Preprocessing") + 1cm},
     align = center, 
-    minimum height={width("Document") + 1cm}]
+    minimum height={width("Document") + 1cm},
+    style={font=\Large\fontfamily{phv}\selectfont}]
 \tikzstyle{docs} = [rectangle, draw,
     minimum width={width("KnitR Document") + 1cm},
     align = center, 
-    minimum height={width("KnitR Document") - 1cm}]
+    minimum height={width("KnitR Document") - 1cm},
+    style={font=\Large\fontfamily{phv}\selectfont}]
 \tikzstyle{label} = [rectangle, draw=none,
     minimum width={width("KnitR Document") + 1cm},
     align = center, 
     minimum height={width("KnitR Document") - 1cm},
-    style={font=\Huge\fontfamily{phv}\selectfont}]
+    style={font=\Large\fontfamily{phv}\selectfont}]
 %\tikzstyle{line} = [draw, -latex', line width = 2pt, >=stealth reversed]
 \tikzstyle{arrow} = [draw, thick,->,>=to, line width = 2pt]
 \tikzset{every node/.append style={font=\large\fontfamily{phv}\selectfont}}
@@ -45,8 +48,8 @@
 \begin{tikzpicture}[node distance = 4.5cm, auto]
     % Place nodes
     \node [eda] (brainstorm) {Brainstorm};
-    \node [eda, above of=brainstorm] (labnb) {``Lab notebook''};
-    \node [eda, below of=brainstorm] (data) {Data collection};
+    \node [eda, above of=brainstorm] (labnb) {``Lab \\ notebook''};
+    \node [eda, below of=brainstorm] (data) {Data \\ collection};
     \node [analysis, right of=data, node distance = 6cm] (prepro) {Preprocessing};
     \node [analysis, right of=brainstorm, node distance = 6cm] (algorithm) {Develop \\algorithms};
     \node [docs, above of=algorithm] (algopack) {R package \\ on GitHub};
@@ -75,8 +78,8 @@
     \path [arrow] (viz) -- (rmd);
     \path [arrow] (rmd) -- (analysisrepo);
     \path [arrow] (rmd) -- (decide);
-    \path [arrow, dashed] (decide) -- node {yes} (manu);
-    \path [arrow, dashed] (decide.south)  |- node [near start] {no} (0,-7)  -- (data.south) ;'
+    \path [arrow, dashed] (decide) -- node {\Large yes} (manu);
+    \path [arrow, dashed] (decide.south)  |- node [near start] {\Large no} (0,-7)  -- (data.south) ;'
     % Draw boxes
      \draw[thick] ($(algopack.north west)+(-6,1)$)  rectangle ($(latexdoc.south east)+(-6,-0.5)$);
     \draw[thick]     ($(algopack.north west)+(-0.5,1)$) rectangle ($(latexdoc.south east)+(0.5, -0.5)$);
