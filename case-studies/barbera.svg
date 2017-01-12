@@ -1,2 +1,540 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="883px" height="414px" version="1.1" content="%3CmxGraphModel%20dx%3D%221136%22%20dy%3D%22921%22%20grid%3D%221%22%20gridSize%3D%2210%22%20guides%3D%221%22%20tooltips%3D%221%22%20connect%3D%221%22%20arrows%3D%221%22%20fold%3D%221%22%20page%3D%221%22%20pageScale%3D%221%22%20pageWidth%3D%22900%22%20pageHeight%3D%22431%22%20background%3D%22%23ffffff%22%20math%3D%220%22%20shadow%3D%220%22%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%2247%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2022px%26quot%3B%26gt%3B%26lt%3Bb%26gt%3BStage%20III%3A%20Data%20Analysis%26lt%3B%2Fb%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D1%3BfillColor%3Dnone%3BfontSize%3D13%3BverticalAlign%3Dbottom%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22580%22%20y%3D%2210%22%20width%3D%22310%22%20height%3D%22410%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2246%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2022px%26quot%3B%26gt%3B%26lt%3Bb%26gt%3BStage%20II%3A%20Data%20Processing%26lt%3B%2Fb%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D1%3BfillColor%3Dnone%3BfontSize%3D13%3BverticalAlign%3Dbottom%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22260%22%20y%3D%2210%22%20width%3D%22310%22%20height%3D%22410%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%228%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2022px%26quot%3B%26gt%3B%26lt%3Bb%26gt%3BStage%20I%3A%20Data%20Input%26lt%3B%2Fb%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D1%3BfillColor%3Dnone%3BfontSize%3D13%3BverticalAlign%3Dbottom%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%2210%22%20width%3D%22240%22%20height%3D%22410%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2256%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2018px%26quot%3B%26gt%3BPrivate%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D2%3BfillColor%3Dnone%3BfontSize%3D15%3BverticalAlign%3Dbottom%3Balign%3Dleft%3BspacingLeft%3D10%3Bdashed%3D1%3BdashPattern%3D1%201%3BspacingBottom%3D3%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2220%22%20y%3D%22170%22%20width%3D%22860%22%20height%3D%22200%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2255%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2018px%26quot%3B%26gt%3BPublic%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D2%3BfillColor%3Dnone%3BfontSize%3D15%3BverticalAlign%3Dtop%3Balign%3Dleft%3BspacingLeft%3D10%3Bdashed%3D1%3BdashPattern%3D1%201%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2220%22%20y%3D%2220%22%20width%3D%22860%22%20height%3D%22140%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2217%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D15%3BstrokeWidth%3D1%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%223%22%20target%3D%225%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3BData%26amp%3Bnbsp%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3Bcollection%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2260%22%20y%3D%2243%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2225%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0%3BentryY%3D0.5%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%225%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22280%22%20y%3D%22257%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22219%22%2F%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22257%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%225%22%20value%3D%22Twitter%20dataset%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2256%22%20y%3D%22189%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2227%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0%3BentryY%3D0.5%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%227%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22280%22%20y%3D%22257%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22299%22%2F%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22257%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%227%22%20value%3D%22Voter%20registration%20records%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2256%22%20y%3D%22269%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2231%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3BexitX%3D1%3BexitY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2239%22%20target%3D%2214%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22379.41176470588243%22%20y%3D%22103%22%20as%3D%22sourcePoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2236%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3BentryX%3D0%3BentryY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2214%22%20target%3D%2240%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22590.5882352941176%22%20y%3D%22103%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2214%22%20value%3D%22Anonymized%20dataset%20for%20analysis%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22420%22%20y%3D%2261%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2237%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3BexitX%3D1%3BexitY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2240%22%20target%3D%2234%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22699.4117647058824%22%20y%3D%22103%22%20as%3D%22sourcePoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2230%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0.5%3BentryY%3D1%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2216%22%20target%3D%2239%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22330%22%20y%3D%22145%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22480%22%20y%3D%22190%22%2F%3E%3CmxPoint%20x%3D%22330%22%20y%3D%22190%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2254%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0%3BentryY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2216%22%20target%3D%2241%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22620%22%20y%3D%22257%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2216%22%20value%3D%22Merged%20individual-level%20dataset%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22420%22%20y%3D%22227%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2228%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20target%3D%2216%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22379.41176470588243%22%20y%3D%22257%22%20as%3D%22sourcePoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2234%22%20value%3D%22Tables%20and%20Figures%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22750%22%20y%3D%2261%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2238%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3BData%26amp%3Bnbsp%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3Bmatching%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22280%22%20y%3D%22210%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2239%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3BData%26amp%3Bnbsp%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3Bcleaning%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22274%22%20y%3D%2243%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2240%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3BData%26amp%3Bnbsp%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3Bmodeling%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22604%22%20y%3D%2243%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2250%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0.5%3BentryY%3D1%3BexitX%3D1%3BexitY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2241%22%20target%3D%2234%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22852%22%20y%3D%22257.5%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22810%22%20y%3D%22258%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2241%22%20value%3D%22Validation%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22660%22%20y%3D%22209%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="571" y="1" width="310" height="410" fill="none" stroke="#000000" pointer-events="none"/><g transform="translate(603.5,382.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="243" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 13px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 243px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 22px"><b>Stage III: Data Analysis</b></font></div></div></foreignObject><text x="122" y="19" fill="#000000" text-anchor="middle" font-size="13px" font-family="Helvetica">&lt;font style="font-size: 22px"&gt;&lt;b&gt;Stage III: Data Analysis&lt;/b&gt;&lt;/font&gt;</text></switch></g><rect x="251" y="1" width="310" height="410" fill="none" stroke="#000000" pointer-events="none"/><g transform="translate(272.5,382.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="265" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 13px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 265px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 22px"><b>Stage II: Data Processing</b></font></div></div></foreignObject><text x="133" y="19" fill="#000000" text-anchor="middle" font-size="13px" font-family="Helvetica">&lt;font style="font-size: 22px"&gt;&lt;b&gt;Stage II: Data Processing&lt;/b&gt;&lt;/font&gt;</text></switch></g><rect x="1" y="1" width="240" height="410" fill="none" stroke="#000000" pointer-events="none"/><g transform="translate(23.5,382.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="193" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 13px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 195px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 22px"><b>Stage I: Data Input</b></font></div></div></foreignObject><text x="97" y="19" fill="#000000" text-anchor="middle" font-size="13px" font-family="Helvetica">&lt;font style="font-size: 22px"&gt;&lt;b&gt;Stage I: Data Input&lt;/b&gt;&lt;/font&gt;</text></switch></g><rect x="11" y="161" width="860" height="200" rx="30" ry="30" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="2 2" pointer-events="none"/><g transform="translate(23.5,334.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="56" height="19" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: nowrap;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 18px">Private</font></div></div></foreignObject><text x="28" y="17" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="11" y="11" width="860" height="140" rx="21" ry="21" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="2 2" pointer-events="none"/><g transform="translate(23.5,18.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="49" height="19" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 50px; white-space: nowrap;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 18px">Public</font></div></div></foreignObject><text x="25" y="17" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 107 129 L 107 173.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 107 178.88 L 103.5 171.88 L 107 173.63 L 110.5 171.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 107 34 L 163 81.5 L 107 129 L 51 81.5 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(74.5,63.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="63" height="34" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 63px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 15px">Data </font><div><font style="font-size: 15px">collection</font></div></div></div></foreignObject><text x="32" y="25" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 167 210 L 220.88 210 L 220.88 247.65 L 265.1 247.65" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 270.35 247.65 L 263.35 251.15 L 265.1 247.65 L 263.35 244.15 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="47" y="180" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(57.5,200.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="97" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 99px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Twitter dataset</div></div></foreignObject><text x="49" y="16" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">Twitter dataset</text></switch></g><path d="M 167 290 L 220.88 290 L 220.88 247.65 L 265.1 247.65" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 270.35 247.65 L 263.35 251.15 L 265.1 247.65 L 263.35 244.15 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="47" y="260" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(47.5,271.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="34" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Voter registration records</div></div></foreignObject><text x="59" y="25" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">Voter registration records</text></switch></g><path d="M 377.35 81.76 L 397.35 81.76 L 404.63 81.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 409.88 81.76 L 402.88 85.26 L 404.63 81.76 L 402.88 78.26 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 531 81.76 L 563.24 81.76 L 588.63 81.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 593.88 81.76 L 586.88 85.26 L 588.63 81.76 L 586.88 78.26 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="411" y="52" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(411.5,54.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="52" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Anonymized dataset for analysis</div></div></foreignObject><text x="59" y="34" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">Anonymized dataset for analysis</text></switch></g><path d="M 706.76 81.76 L 726.76 81.76 L 734.63 81.76" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 739.88 81.76 L 732.88 85.26 L 734.63 81.76 L 732.88 78.26 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 471.47 218 L 471.47 180.59 L 320.88 180.59 L 320.88 135.19" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 320.88 129.94 L 324.38 136.94 L 320.88 135.19 L 317.38 136.94 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 531 247.65 L 591.47 247.65 L 645.1 247.65" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 650.35 247.65 L 643.35 251.15 L 645.1 247.65 L 643.35 244.15 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="411" y="218" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(411.5,220.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="52" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Merged individual-level dataset</div></div></foreignObject><text x="59" y="34" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">Merged individual-level dataset</text></switch></g><path d="M 370.41 248 L 404.63 248" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 409.88 248 L 402.88 251.5 L 404.63 248 L 402.88 244.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="741" y="52" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(741.5,63.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="34" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Tables and Figures</div></div></foreignObject><text x="59" y="25" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">Tables and Figures</text></switch></g><path d="M 327 201 L 383 248.5 L 327 296 L 271 248.5 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(295.5,230.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="61" height="34" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 61px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 15px">Data </font><div><font style="font-size: 15px">matching</font></div></div></div></foreignObject><text x="31" y="25" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 321 34 L 377 81.5 L 321 129 L 265 81.5 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(292.5,63.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="55" height="34" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 57px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 15px">Data </font><div><font style="font-size: 15px">cleaning</font></div></div></div></foreignObject><text x="28" y="25" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 651 34 L 707 81.5 L 651 129 L 595 81.5 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(619.5,63.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="61" height="34" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 61px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 15px">Data </font><div><font style="font-size: 15px">modeling</font></div></div></div></foreignObject><text x="31" y="25" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 763.24 247.65 L 763.24 248.82 L 800.88 248.82 L 800.88 118.72" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 800.88 113.47 L 804.38 120.47 L 800.88 118.72 L 797.38 120.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 707 200 L 763 247.5 L 707 295 L 651 247.5 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(673.5,238.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="65" height="16" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 15px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 65px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Validation</div></div></foreignObject><text x="33" y="16" fill="#000000" text-anchor="middle" font-size="15px" font-family="Helvetica">Validation</text></switch></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="12.28cm"
+   height="6cm"
+   version="1.1"
+   content="%3CmxGraphModel%20dx%3D%221136%22%20dy%3D%22921%22%20grid%3D%221%22%20gridSize%3D%2210%22%20guides%3D%221%22%20tooltips%3D%221%22%20connect%3D%221%22%20arrows%3D%221%22%20fold%3D%221%22%20page%3D%221%22%20pageScale%3D%221%22%20pageWidth%3D%22900%22%20pageHeight%3D%22431%22%20background%3D%22%23ffffff%22%20math%3D%220%22%20shadow%3D%220%22%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%2247%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2022px%26quot%3B%26gt%3B%26lt%3Bb%26gt%3BStage%20III%3A%20Data%20Analysis%26lt%3B%2Fb%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D1%3BfillColor%3Dnone%3BfontSize%3D13%3BverticalAlign%3Dbottom%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22580%22%20y%3D%2210%22%20width%3D%22310%22%20height%3D%22410%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2246%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2022px%26quot%3B%26gt%3B%26lt%3Bb%26gt%3BStage%20II%3A%20Data%20Processing%26lt%3B%2Fb%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D1%3BfillColor%3Dnone%3BfontSize%3D13%3BverticalAlign%3Dbottom%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22260%22%20y%3D%2210%22%20width%3D%22310%22%20height%3D%22410%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%228%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2022px%26quot%3B%26gt%3B%26lt%3Bb%26gt%3BStage%20I%3A%20Data%20Input%26lt%3B%2Fb%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D1%3BfillColor%3Dnone%3BfontSize%3D13%3BverticalAlign%3Dbottom%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%2210%22%20width%3D%22240%22%20height%3D%22410%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2256%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2018px%26quot%3B%26gt%3BPrivate%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D2%3BfillColor%3Dnone%3BfontSize%3D15%3BverticalAlign%3Dbottom%3Balign%3Dleft%3BspacingLeft%3D10%3Bdashed%3D1%3BdashPattern%3D1%201%3BspacingBottom%3D3%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2220%22%20y%3D%22170%22%20width%3D%22860%22%20height%3D%22200%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2255%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2018px%26quot%3B%26gt%3BPublic%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeColor%3D%23000000%3BstrokeWidth%3D2%3BfillColor%3Dnone%3BfontSize%3D15%3BverticalAlign%3Dtop%3Balign%3Dleft%3BspacingLeft%3D10%3Bdashed%3D1%3BdashPattern%3D1%201%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2220%22%20y%3D%2220%22%20width%3D%22860%22%20height%3D%22140%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2217%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D15%3BstrokeWidth%3D1%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%223%22%20target%3D%225%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3BData%26amp%3Bnbsp%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3Bcollection%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2260%22%20y%3D%2243%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2225%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0%3BentryY%3D0.5%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%225%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22280%22%20y%3D%22257%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22219%22%2F%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22257%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%225%22%20value%3D%22Twitter%20dataset%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2256%22%20y%3D%22189%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2227%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0%3BentryY%3D0.5%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%227%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22280%22%20y%3D%22257%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22299%22%2F%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22257%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%227%22%20value%3D%22Voter%20registration%20records%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2256%22%20y%3D%22269%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2231%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3BexitX%3D1%3BexitY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2239%22%20target%3D%2214%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22379.41176470588243%22%20y%3D%22103%22%20as%3D%22sourcePoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2236%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3BentryX%3D0%3BentryY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2214%22%20target%3D%2240%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22590.5882352941176%22%20y%3D%22103%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2214%22%20value%3D%22Anonymized%20dataset%20for%20analysis%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22420%22%20y%3D%2261%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2237%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3BexitX%3D1%3BexitY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2240%22%20target%3D%2234%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22699.4117647058824%22%20y%3D%22103%22%20as%3D%22sourcePoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2230%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0.5%3BentryY%3D1%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2216%22%20target%3D%2239%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22330%22%20y%3D%22145%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22480%22%20y%3D%22190%22%2F%3E%3CmxPoint%20x%3D%22330%22%20y%3D%22190%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2254%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0%3BentryY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2216%22%20target%3D%2241%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22620%22%20y%3D%22257%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2216%22%20value%3D%22Merged%20individual-level%20dataset%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22420%22%20y%3D%22227%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2228%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20edge%3D%221%22%20parent%3D%221%22%20target%3D%2216%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22379.41176470588243%22%20y%3D%22257%22%20as%3D%22sourcePoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2234%22%20value%3D%22Tables%20and%20Figures%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3BspacingTop%3D-1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22750%22%20y%3D%2261%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2238%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3BData%26amp%3Bnbsp%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3Bmatching%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22280%22%20y%3D%22210%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2239%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3BData%26amp%3Bnbsp%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3Bcleaning%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22274%22%20y%3D%2243%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2240%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3BData%26amp%3Bnbsp%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%26quot%3B%26gt%3Bmodeling%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22604%22%20y%3D%2243%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2250%22%20value%3D%22%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BstartArrow%3Dnone%3BstartFill%3D0%3BendArrow%3Dclassic%3BendFill%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BstrokeWidth%3D1%3BfontSize%3D15%3BentryX%3D0.5%3BentryY%3D1%3BexitX%3D1%3BexitY%3D0.5%3B%22%20edge%3D%221%22%20parent%3D%221%22%20source%3D%2241%22%20target%3D%2234%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22852%22%20y%3D%22257.5%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22810%22%20y%3D%22258%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2241%22%20value%3D%22Validation%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D0%3Bglass%3D0%3BstrokeWidth%3D1%3BfontSize%3D15%3BfillColor%3D%23ffffff%3BstrokeColor%3D%23000000%3Bspacing%3D2%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22660%22%20y%3D%22209%22%20width%3D%22112%22%20height%3D%2295%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="barbera.svg">
+  <metadata
+     id="metadata170">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     id="namedview168"
+     showgrid="false"
+     units="cm"
+     inkscape:zoom="1.5865333"
+     inkscape:cx="261.77808"
+     inkscape:cy="105.80041"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6" />
+  <defs
+     id="defs4" />
+  <g
+     transform="translate(0.5,-200.90158)"
+     id="g6">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.60869223"
+       id="rect3642"
+       pointer-events="none"
+       ry="5.7122564"
+       rx="5.2537918"
+       height="38.081711"
+       width="70.050552"
+       y="339.12332"
+       x="23.382107" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.60869223"
+       id="rect3578"
+       pointer-events="none"
+       ry="5.7122564"
+       rx="5.2537918"
+       height="38.081711"
+       width="70.050552"
+       y="230.9176"
+       x="198.53525" />
+    <rect
+       x="283.6723"
+       y="209.05748"
+       width="148.08034"
+       height="202.51189"
+       pointer-events="none"
+       id="rect8"
+       style="fill:none;stroke:#000000;stroke-width:0.98348993;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       x="125.63541"
+       y="209.06573"
+       width="153.10626"
+       height="202.49538"
+       pointer-events="none"
+       id="rect16"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       x="2.1626267"
+       y="209.06573"
+       width="118.53387"
+       height="202.49538"
+       pointer-events="none"
+       id="rect24"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       x="7.114511"
+       y="288.10129"
+       width="420.9386"
+       height="104.97993"
+       rx="14.683905"
+       ry="15.74699"
+       pointer-events="none"
+       id="rect32"
+       style="fill:none;stroke:#000000;stroke-width:1.013744;stroke-dasharray:1.01374402, 1.01374402" />
+    <rect
+       x="7.0993447"
+       y="214.00247"
+       width="420.96893"
+       height="69.149132"
+       rx="10.279474"
+       ry="10.372371"
+       pointer-events="none"
+       id="rect40"
+       style="fill:none;stroke:#000000;stroke-width:0.98341119;stroke-dasharray:0.9834112, 0.9834112" />
+    <path
+       d="m 54.51508,272.28381 0,22.04236"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path48"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 54.51508,296.9191 -1.72862,-3.45724 1.72862,0.86431 1.72862,-0.86431 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path50"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 54.51508,225.36415 27.65791,23.45983 -27.65791,23.45983 -27.6579,-23.45983 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path52"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 84.14855,312.28899 30.88643,0 0,18.59501 25.34888,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path60"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.53209066;stroke-miterlimit:10" />
+    <path
+       d="m 135.1922,330.884 -3.45723,1.72862 0.86431,-1.72862 -0.86431,-1.72862 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path62"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 93.490051,351.80029 21.480179,0 0,-20.91629 17.62905,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path72"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.44373196;stroke-miterlimit:10" />
+    <path
+       d="m 182.03856,248.95239 9.87782,0 3.59553,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path84"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 198.10484,248.95239 -3.45724,1.72862 0.86431,-1.72862 -0.86431,-1.72862 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path86"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 269.37414,248.95239 11.13262,0 8.76729,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path88"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.4129684;stroke-miterlimit:10" />
+    <path
+       d="m 290.98081,248.95239 -3.45724,1.72862 0.86431,-1.72862 -0.86431,-1.72862 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path90"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 344.73124,248.95239 8.73451,0 3.43705,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path100"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.46442974;stroke-miterlimit:10" />
+    <path
+       d="m 359.08892,248.95239 -3.45724,1.72862 0.86431,-1.72862 -0.86431,-1.72862 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path102"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 234.50818,316.24012 0,-18.47646 -79.015,0 0,-22.42266"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path104"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.50906396;stroke-miterlimit:10" />
+    <path
+       d="m 155.56468,272.94268 1.72862,3.45724 -1.72862,-0.86431 -1.72861,0.86431 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path106"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 263.92493,330.884 29.8656,0 26.48739,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path108"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 322.87084,330.884 -3.45723,1.72862 0.86431,-1.72862 -0.86431,-1.72862 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path110"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 184.61095,331.05686 10.67329,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path120"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.39248654;stroke-miterlimit:10" />
+    <path
+       d="m 198.10484,331.05686 -3.45724,1.72862 0.86431,-1.72862 -0.86431,-1.72862 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path122"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 163.17114,307.84397 27.6579,23.45983 -27.6579,23.45983 -27.65791,-23.45983 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path132"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10"
+       d="M 156.31836 24.462891 L 128.66211 47.921875 L 156.31836 71.382812 L 183.97656 47.921875 L 156.31836 24.462891 z "
+       transform="translate(-0.5,200.90158)"
+       id="path140" />
+    <path
+       d="m 319.19187,225.36415 27.65791,23.45983 -27.65791,23.45983 -27.6579,-23.45983 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path148"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 370.94031,330.90817 0,0.55046 21.02575,0 0,-61.20966"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path156"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.51265162;stroke-miterlimit:10" />
+    <path
+       d="m 391.94049,267.62306 1.72862,3.45724 -1.72862,-0.86431 -1.72862,0.86431 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path158"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <path
+       d="m 350.84978,307.35008 27.6579,23.45983 -27.6579,23.45983 -27.65791,-23.45983 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path160"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.49389115;stroke-miterlimit:10" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3498"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-2.0569168,289.64584)"><flowRegion
+         id="flowRegion3500"><rect
+           id="rect3502"
+           width="60.719757"
+           height="13.233793"
+           x="12.455335"
+           y="-73.095818"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3504">Public</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3506"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-0.5,200.90158)"><flowRegion
+         id="flowRegion3508"><rect
+           id="rect3510"
+           width="45.929047"
+           height="30.359879"
+           x="31.916794"
+           y="33.552986"
+           style="font-size:8.75px" /></flowRegion><flowPara
+         id="flowPara3512"
+         style="text-align:center;text-anchor:middle;-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Data</flowPara><flowPara
+         id="flowPara3514"
+         style="text-align:center;text-anchor:middle;-inkscape-font-specification:Helvetica;font-family:Helvetica;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">collection</flowPara></flowRoot>    <rect
+       x="22.603649"
+       y="298.64349"
+       width="70.050552"
+       height="38.081711"
+       rx="5.2537918"
+       ry="5.7122564"
+       pointer-events="none"
+       id="rect3640"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.60869223" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3516"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(1.5,206.90158)"><flowRegion
+         id="flowRegion3518"><rect
+           id="rect3520"
+           width="61.498207"
+           height="21.796833"
+           x="27.246044"
+           y="104.3927"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3522">Twitter dataset</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3524"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-5.2784584,210.68616)"><flowRegion
+         id="flowRegion3526"><rect
+           id="rect3528"
+           width="71.618172"
+           height="36.587543"
+           x="26.467587"
+           y="137.86641"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara3532">Voter registration</flowPara><flowPara
+         id="flowPara3534">records</flowPara></flowRoot>    <flowRoot
+       transform="translate(2.6138336,451.00215)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3538"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3540"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           y="-73.095818"
+           x="12.455335"
+           height="13.233793"
+           width="60.719757"
+           id="rect3542" /></flowRegion><flowPara
+         id="flowPara3544">Private</flowPara></flowRoot>    <flowRoot
+       transform="translate(100.59188,203.23696)"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3546"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3548"><rect
+           style="font-size:8.75px"
+           y="33.552986"
+           x="31.916794"
+           height="30.359879"
+           width="45.929047"
+           id="rect3550" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         id="flowPara3552">Data</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         id="flowPara3554">cleaning</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3556"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(108.59188,285.23696)"><flowRegion
+         id="flowRegion3558"><rect
+           id="rect3560"
+           width="45.929047"
+           height="30.359879"
+           x="31.916794"
+           y="33.552986"
+           style="font-size:8.75px" /></flowRegion><flowPara
+         id="flowPara3562"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle">Data</flowPara><flowPara
+         id="flowPara3564"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle">matching</flowPara></flowRoot>    <flowRoot
+       transform="translate(178.04109,129.06799)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3566"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3568"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           y="104.3927"
+           x="27.246044"
+           height="33.473705"
+           width="60.719746"
+           id="rect3570" /></flowRegion><flowPara
+         id="flowPara3574">Anonymized dataset for analysis</flowPara></flowRoot>    <rect
+       x="198.72986"
+       y="314.21265"
+       width="70.050552"
+       height="38.081711"
+       rx="5.2537918"
+       ry="5.7122564"
+       pointer-events="none"
+       id="rect3582"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.60869223" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3584"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(178.04109,211.06799)"><flowRegion
+         id="flowRegion3586"><rect
+           id="rect3588"
+           width="60.719746"
+           height="33.473705"
+           x="27.246044"
+           y="104.3927"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3590">Merged</flowPara><flowPara
+         id="flowPara3592">individual-level</flowPara><flowPara
+         id="flowPara3594">dataset</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3596"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(262.59188,201.23696)"><flowRegion
+         id="flowRegion3598"><rect
+           id="rect3600"
+           width="45.929047"
+           height="30.359879"
+           x="31.916794"
+           y="33.552986"
+           style="font-size:8.75px" /></flowRegion><flowPara
+         id="flowPara3602"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle">Data</flowPara><flowPara
+         id="flowPara3604"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle">modeling</flowPara></flowRoot>    <flowRoot
+       transform="translate(294.59188,291.23696)"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3606"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3608"><rect
+           style="font-size:8.75px"
+           y="33.552986"
+           x="31.916794"
+           height="30.359879"
+           width="45.929047"
+           id="rect3610" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         id="flowPara3614">Validation</flowPara></flowRoot>    <flowRoot
+       transform="translate(337.79403,135.95416)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3620"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3622"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           y="104.3927"
+           x="27.246044"
+           height="21.796833"
+           width="61.498207"
+           id="rect3624" /></flowRegion><flowPara
+         id="flowPara3626">Twitter dataset</flowPara></flowRoot>    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.58944649"
+       id="rect3628"
+       pointer-events="none"
+       ry="5.7151432"
+       rx="4.924325"
+       height="38.100956"
+       width="65.657661"
+       y="228.6803"
+       x="359.6665" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3630"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(1.5,200.90158)"><flowRegion
+         id="flowRegion3632"><rect
+           id="rect3634"
+           width="56.049004"
+           height="23.353752"
+           x="368.21082"
+           y="34.331444"
+           style="font-size:8.75px" /></flowRegion><flowPara
+         id="flowPara3636"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica">Tables and</flowPara><flowPara
+         id="flowPara3638"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica">Figures</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3644"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:'Helvetica Bold';-inkscape-font-specification:'Helvetica Bold, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-0.5,200.90158)"><flowRegion
+         id="flowRegion3646"><rect
+           id="rect3648"
+           width="112.09801"
+           height="13.233793"
+           x="7.0061255"
+           y="195.47234"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Helvetica Bold';-inkscape-font-specification:'Helvetica Bold, '" /></flowRegion><flowPara
+         id="flowPara3650" /><flowPara
+         id="flowPara3652">Stage</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="7.5245037"
+       y="407.27231"
+       id="text3654"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3656"
+         x="7.5245037"
+         y="407.27231"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:'Helvetica Bold';-inkscape-font-specification:'Helvetica Bold, Bold'">Stage I: Data Input</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3658"
+       y="407.27231"
+       x="131.86243"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:'Helvetica Bold';-inkscape-font-specification:'Helvetica Bold, Bold'"
+         y="407.27231"
+         x="131.86243"
+         id="tspan3660"
+         sodipodi:role="line">Stage II: Data Processing</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="287.86243"
+       y="407.27231"
+       id="text3662"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3664"
+         x="287.86243"
+         y="407.27231"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:'Helvetica Bold';-inkscape-font-specification:'Helvetica Bold, Bold'">Stage III: Data Analysis</tspan></text>
+  </g>
+</svg>

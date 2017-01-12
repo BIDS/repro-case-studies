@@ -1,3 +1,545 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1035px" height="535px" version="1.1" content="%3Cmxfile%20userAgent%3D%22Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_11_3)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F51.0.2704.84%20Safari%2F537.36%22%20version%3D%225.5.2.3%22%20editor%3D%22www.draw.io%22%20type%3D%22google%22%3E%3Cdiagram%3E7RxJc%2BI689fkGMrGC%2FiYbebN4VVNTQ7z3ukrBxxwjReebUIyv35aUrctyTaY2E7CFzgA1tISvau7xYV1Ez9%2FzfzN%2Bu90GUQXU2P5fGHdXkynM8%2BGd9bwIhqc6Uw0rLJwKZqMquE%2B%2FB2IRpNat%2BEyyLFNNBVpGhXhRm1cpEkSLAoFop9l6U4d9phGuCo2bPwVrVg13C%2F8iFonTtX%2BM1wWa9E%2Bd3AR1v5XEK7WuLZpGtjz4C9%2BrbJ0m%2BCKF1PrC3%2BJ7tgnWDg%2BX%2FvLdCc1WXeA2CxNATL7Fj%2FfBBFDroa4vHih3V5Y1%2BsijuDBhK%2B8%2B0vLZPy5%2ByfDr8uCRMFqGzzoYhOe%2FGhL8KZuBFOvH1OAIK%2Fk%2Frdlv4l3XOac5FcwwDQ3z%2FDB1wZCQd8O8cp6kzSLfViQJsO3Ffu8L%2FwMwIulYHtiNdFX%2B4mA4g37Gj%2BvGLdOHqN0t1gDgEkRZHGY%2BEWasY2FUXSTRuz7bZImMOM6L7L0V0CNQEqDv8oeYg0LWgD2MgS0SaNvbu4cIHzVdxtmwK5hmvAlMjaX40NZwfQsBo%2B13%2BOPYKSRqMS7hNCYzVRDOj8FWRGgUPImpOLXII2DInuBIdRrI8ejxM5QYHcV85vEemuJ8S2SOpS4VQm54hr4gozTzERWKxPlGz9pZ6IujAKYjZiGmLp%2BvIHn5CFnHxLriDWIdUTzMnzSm%2FpvJX3Ig%2BzJZ%2BTn3fs2AM0NexhlW0u%2F8I%2FcTWf54rA%2Fu2SRZUDJMh1UmpJolYZPFi0SwT6ihXb4aNGS9LPRRT9jfxQmwSX9Bj57ymbXhTIBKm%2B5WA4qhuNue5HGmy2YjCOVyUCyPO5vi4ULd1YDY6kBx5qTU7nHxDpeXQ%2FMBzCx7rB6oIWpjvXivgfZY5bGb6QFBtp0FqyyIM8Zj53FZTyraU41cZnOEchbyMv8nc41P5qYSz3cfEihyMNVEj6GC58RHI66IwlGsAg5bj79YU11KW0Dj1CyaJjIw7JouChSfUQDJU4RDY2CXbHUlWJakKIzRvN0my1wT7hLiBusAjq7iqZgqQSD6ljPgghObU9qxKgJhXzqVZb5bBYN2KRhUuQS5O%2BsoSLm1FD1nAmoUskhIFbEKbfWiV5mU4xGIxhDAREmiB7S3V3VcM0boGOdZuFvQD3IPzQmsIF%2FoNUANY2P%2F%2FJHj5GEP4N5D2Gj4DBDO2t8Dgs2hQ%2BA72I8nw5P%2BuiPyEQoUjITkQU6yEVIbovMWGnWyM7JwktnRll4y8ZW1qvx1ozilaQobO1MKX4czpLjfDog15lYnsqollluncAJxNTAHSsSlqOuZGNwajCRGDPilKSt5k%2BTOtD2BPn9bcrUReYmnBOSJLYksyNzJR0t%2BpgUsylM0VtFvbECIe0GGs32FA3nze0WHSdpUYPPqdSo7bH1GvXoa1UVYvmgphpSEZFR06d0VTy1iQOpGMdATUhq2BMIa9uH5aE4kHjMBDbbxjsGYpvGu0JO2sbbZKZL%2BOK5dbynanYLxbczfFfYrdbxrgZ%2FLvDVSicP7WC5fwV%2Bf5WNFmEQlX1caOxVJz8%2BrRb2jJnQ7gkfNp30xkxRvBMiMNgIOd3X%2FfYRsyPvhBEtCdMDF%2Bco0zFBWapLIDNFLu6hGNMMzWsvr%2Be1QdkuXugLlE%2BcpBtqaW6ojVg65IaieetDkKGj5AMpmZ9ZWASX281pJct%2BBPk2Yh7YSNorXWxjzmafW4N5VlmrdKwOIw%2Byj8gQ3A%2BWWPqWPAV5Ea78Arwtw4%2Fg7ARVPiyEd1KpJt1TZCY7h9PcSDK1gY7sfwXv%2FtxSVeaQ6PRjN%2BWeGsyQi6fEXrnapuhU%2F4BtFZ5QghMi7rA%2FNuFBiFoJTpSPpxC0JR0lh0LQ0p9DIQ3RVguR2Bra0EoFgXaDHvUxMjFWPSA7g4f5wez9KLV2cpr0nCMd92inpT4sOm4pOVJUtYoKx8BdHxU%2Ba08wnHDgogYF6v7DR0DMEPGs047ptNbTnTGjQwGp9rnLIJ8Ne6Pj7PT21pgupkDKlAjFWQ45vZCp6q8xm%2BL7Q1YpfFgfVnLMZ2plhMEzgA2ueSe3l2xQ18IECCUo5L90zYk5c%2B2Z4czn4CRalNEaoU5hrkX9IH02YWtOPdvke3idx%2BxSiS2BhWKLPWAH8qdnkO5V5UhJ%2FfX2j2djxo1PtHrB1aoXLEp2v0H1AuUCRqHHHdwj7EiQ8zW3DuFSCq5UNUxvd8%2BNtNE54SNLrq1RxKlTZCzJxZqGPmXeYA4afFy4ngpGd2p8E4NueXbXuIJ7fy952O73NtNJwr8qqCi9DQLtRxBogMcF0IV5DdeMHhB2iK6wIw6XS%2B427daQXLrf%2BNxr2IHeYBcVYTRTHsybgnEBjyUMT3ly%2BeiOOMXp5HtxFo6RKQ%2FVVf0p37%2FA%2FwDlkfR0Nf5Me4X2tqtWwTYSn%2FyzwYnfHmAcivhIfT0A8H37EIX5%2BswEqH7VmrQ31QAmld2fwkWGrmc4V69qhBPlkUexgyA6H740QGUAduDjVm3DnlKp2L%2Fy0Gg6b508o2hFA86ey%2BZteD8AojujaBf9IO4xDqNoG54PfNGGGPH%2FiVFMw9KiGRRX6s4ph2F0T4FqkMrz28C8Ut8y1jcPxyxNHuiJM4t%2BlQ3qJo7llYMgurJKDRAWpA%2FNKbV1sHB%2BOEY5oQuXnbWKlmqw6DhwhFI5BKKzTtEA2WTvh1Yp%2BobVGxX9GYX%2BQ%2Bakb1H1Zq3ZXD1UXNreiBcsXbzWUxWKaVqm8wVLiiJrRTiDJyf0dTC2NhwXjlK9dmJ3%2Bcor0HiXb%2B4efZdPrlbrXK5G0RXyoEkGKNA5hgQYrpJT0%2BRh5k0o2cbyiK%2F0%2BzzHmWAaUqyj%2BWYTKadn6IZgIMnxyBDTqsApeyVavy594AadR3anQt3e8XO6NVvCVy5J18dTml77P5Xu8PffSJy7KnytLLCBcdQQoIX7e6UmgsfqTzPF8OqvSa27Pw%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E" resource="https://www.draw.io/?state=%7B%22ids%22:%5B%220B2j7xPHqc9Q9ak5ZTEd1Sm5EdVE%22%5D,%22action%22:%22open%22,%22userId%22:%22103405868566967347196%22%7D#G0B2j7xPHqc9Q9ak5ZTEd1Sm5EdVE" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><path d="M 107.73 2 L 154.27 2 C 174.55 2 191 8.72 191 17 C 191 25.28 174.55 32 154.27 32 L 107.73 32 C 87.45 32 71 25.28 71 17 C 71 8.72 87.45 2 107.73 2 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(119.5,11.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="23" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 11px ; font-weight: normal">Start</font></div></div></foreignObject><text x="12" y="11" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 67.18 83.54 C 69.63 79.44 73.61 77.05 77.81 77.15 L 224.52 77.15 C 227.87 77.1 231.07 77.81 233.16 79.07 C 235.25 80.33 235.99 81.99 235.15 83.54 L 194.75 147.46 C 192.3 151.56 188.32 153.95 184.12 153.85 L 35.29 153.85 C 32.33 153.61 29.71 152.78 28.09 151.56 C 26.47 150.34 25.99 148.85 26.79 147.46 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(98.5,96.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="65" height="37" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal">Collect </span><div><span style="font-weight: normal">observational</span></div><div><span style="font-weight: normal">data</span></div></div></div></foreignObject><text x="33" y="24" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 495.68 8.8 C 497.54 4.53 500.55 2.05 503.73 2.16 L 614.81 2.16 C 617.34 2.11 619.77 2.84 621.35 4.15 C 622.93 5.46 623.49 7.18 622.86 8.8 L 592.27 75.2 C 590.41 79.47 587.4 81.95 584.22 81.84 L 471.53 81.84 C 469.29 81.59 467.31 80.73 466.08 79.46 C 464.85 78.2 464.5 76.65 465.1 75.2 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(521.5,23.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="44" height="37" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-size: 10px ; font-weight: normal ; line-height: 12px">Construct</span><div><span style="font-size: 10px ; font-weight: normal ; line-height: 12px">computer </span></div><div><span style="font-size: 10px ; font-weight: normal ; line-height: 12px">model</span></div></div></div></foreignObject><text x="22" y="24" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 69.68 212.8 C 71.54 208.53 74.55 206.05 77.73 206.16 L 188.81 206.16 C 191.34 206.11 193.77 206.84 195.35 208.15 C 196.93 209.46 197.49 211.18 196.86 212.8 L 166.27 279.2 C 164.41 283.47 161.4 285.95 158.22 285.84 L 45.53 285.84 C 43.29 285.59 41.31 284.73 40.08 283.46 C 38.85 282.2 38.5 280.65 39.1 279.2 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(94.5,233.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="47" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-size: 10px ; line-height: 12px ; font-weight: normal">Perfrom</span><div><span style="font-size: 10px ; line-height: 12px ; font-weight: normal">regression</span></div></div></div></foreignObject><text x="24" y="18" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 125 328 L 184 360.5 L 125 393 L 66 360.5 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(96.5,348.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="56" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 11px ; font-weight: normal">Regression</font><div><span style="font-size: 10px ; line-height: 12px ; font-weight: normal">significant?</span></div></div></div></foreignObject><text x="28" y="18" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 131 32 L 131 48 Q 131 58 131 63.38 L 131 68.76" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 131 74.76 L 127 66.76 L 131 68.76 L 135 66.76 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 184 361 L 271 361 Q 281 361 281 351 L 281 331.24" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 281 325.24 L 285 333.24 L 281 331.24 L 277 333.24 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(195.5,344.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="12" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal">no</span></div></div></foreignObject><text x="6" y="11" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 131 392 L 423 392 Q 433 392 433 382 L 433 51 Q 433 41 443 41 L 470.76 41" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 476.76 41 L 468.76 45 L 470.76 41 L 468.76 37 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 484.18 126.63 C 486.04 122.47 489.05 120.05 492.23 120.16 L 603.31 120.16 C 605.84 120.1 608.27 120.82 609.85 122.1 C 611.43 123.37 611.99 125.05 611.36 126.63 L 580.77 191.37 C 578.91 195.53 575.9 197.95 572.72 197.84 L 460.03 197.84 C 457.79 197.6 455.81 196.76 454.58 195.53 C 453.35 194.29 453 192.78 453.6 191.37 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(508.5,140.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="48" height="37" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal ; line-height: 12px"><font style="font-size: 11px">Compare </font></span><div><span style="font-weight: normal ; line-height: 12px"><font style="font-size: 11px">model to</font></span></div><div><span style="font-weight: normal ; line-height: 12px"><font style="font-size: 11px">data</font></span></div></div></div></foreignObject><text x="24" y="24" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><g transform="translate(165.5,377.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="17" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal">yes</span></div></div></foreignObject><text x="9" y="11" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 857.5 127.39 C 857.5 125.43 858.35 123.55 859.88 122.16 C 861.4 120.78 863.46 120 865.61 120 L 1008.39 120 C 1010.54 120 1012.6 120.78 1014.12 122.16 C 1015.65 123.55 1016.5 125.43 1016.5 127.39 L 1016.5 201.28 C 990.87 192.56 962.63 192.56 937 201.28 C 911.37 210 883.13 210 857.5 201.28 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(917.5,152.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="38" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-size: 10px ; font-weight: normal ; line-height: 12px">Write-up</span><div><span style="font-size: 10px ; font-weight: normal ; line-height: 12px">Results</span></div></div></div></foreignObject><text x="19" y="18" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 206 272.01 C 230.18 278.03 256.82 278.03 281 272.01 C 305.18 266 331.82 266 356 272.01 L 356 322.98 C 331.82 316.96 305.18 316.96 281 322.98 C 256.82 328.99 230.18 328.99 206 322.98 L 206 272.01 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(232.5,285.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="97" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-size: 10px ; line-height: 12px ; font-weight: normal">Investigate alternative</span><div><span style="font-size: 10px ; line-height: 12px ; font-weight: normal"> dataset</span></div></div></div></foreignObject><text x="49" y="18" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 281 272 L 281 256 Q 281 246 271 246 L 190.24 246" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 184.24 246 L 192.24 242 L 190.24 246 L 192.24 250 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 532.5 241 L 589 273 L 532.5 305 L 476 273 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(502.5,260.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="59" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal">Comparison</span><div><span style="font-weight: normal">significant</span></div></div></div></foreignObject><text x="30" y="18" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 624 173.78 C 648.18 182.57 674.82 182.57 699 173.78 C 723.18 164.99 749.82 164.99 774 173.78 L 774 248.2 C 749.82 239.42 723.18 239.42 699 248.2 C 674.82 256.99 648.18 256.99 624 248.2 L 624 173.78 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(670.5,192.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="56" height="37" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><div><div><span style="font-weight: normal ; line-height: 12px"><font style="font-size: 11px">Modify </font></span></div><div><span style="font-weight: normal ; line-height: 12px"><font style="font-size: 11px">model </font></span></div><div><span style="font-weight: normal ; line-height: 12px"><font style="font-size: 11px">parameters</font></span></div></div></div></div></foreignObject><text x="28" y="24" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 710 167 L 710 160.41 Q 710 153.82 700 153.82 L 611.24 153.82" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 605.24 153.82 L 613.24 149.82 L 611.24 153.82 L 613.24 157.82 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(595.5,255.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="12" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal">no</span></div></div></foreignObject><text x="6" y="11" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><path d="M 925.73 243 L 972.27 243 C 992.55 243 1009 249.72 1009 258 C 1009 266.28 992.55 273 972.27 273 L 925.73 273 C 905.45 273 889 266.28 889 258 C 889 249.72 905.45 243 925.73 243 Z" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(938.5,252.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="20" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal">End</span></div></div></foreignObject><text x="10" y="11" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><g transform="translate(570.5,289.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="17" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 25, 51); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal">yes</span></div></div></foreignObject><text x="9" y="11" fill="#001933" text-anchor="middle" font-size="11px" font-family="Helvetica" font-weight="bold">[Not supported by viewer]</text></switch></g><g transform="translate(10.5,496.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="216" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 45px; max-width: 231px; width: 218px; white-space: normal; word-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 22px">Stage I: Data Analysis</font></div></div></foreignObject><text x="108" y="18" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;font style="font-size: 22px"&gt;Stage I: Data Analysis&lt;/font&gt;</text></switch></g><g transform="translate(392.5,496.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="236" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 45px; max-width: 243px; width: 238px; white-space: normal; word-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 22px">Stage II: Model Analysis</font></div></div></foreignObject><text x="118" y="18" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;font style="font-size: 22px"&gt;Stage II: Model Analysis&lt;/font&gt;</text></switch></g><g transform="translate(829.5,496.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="172" height="24" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; overflow: hidden; max-height: 45px; max-width: 231px; width: 174px; white-space: normal; word-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 22px">Stage III:  Publish</font></div></div></foreignObject><text x="86" y="18" fill="#000000" text-anchor="middle" font-size="11px" font-family="Helvetica">&lt;font style="font-size: 22px"&gt;Stage III: &amp;nbsp;Publish&lt;/font&gt;</text></switch></g><path d="M 533 196 L 533 212 Q 533 222 533 227.38 L 533 232.76" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 533 238.76 L 529 230.76 L 533 232.76 L 537 230.76 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 531 82 L 531 98 Q 531 108 531 113.38 L 531 118.76" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 531 124.76 L 527 116.76 L 531 118.76 L 535 116.76 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 960 198 L 960 214 Q 960 224 960 229.38 L 960 234.76" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 960 240.76 L 956 232.76 L 960 234.76 L 964 232.76 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 131 159 L 131 175 Q 131 185 131 190.38 L 131 195.76" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 131 201.76 L 127 193.76 L 131 195.76 L 135 193.76 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 124 286 L 124 302 Q 124 312 124 317.38 L 124 322.76" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 124 328.76 L 120 320.76 L 124 322.76 L 128 320.76 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 592 274 L 694 274 Q 704 274 704 264.12 L 704 254.24" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 704 248.24 L 708 256.24 L 704 254.24 L 700 256.24 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 532.82 304.94 L 825 304.94 Q 835 304.94 835 294.94 L 835 174 Q 835 164 842.88 164 L 850.76 164" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 856.76 164 L 848.76 168 L 850.76 164 L 848.76 160 Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="12.28cm"
+   height="8cm"
+   version="1.1"
+   content="%3Cmxfile%20userAgent%3D%22Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_11_3)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F51.0.2704.84%20Safari%2F537.36%22%20version%3D%225.5.2.3%22%20editor%3D%22www.draw.io%22%20type%3D%22google%22%3E%3Cdiagram%3E7RxJc%2BI689fkGMrGC%2FiYbebN4VVNTQ7z3ukrBxxwjReebUIyv35aUrctyTaY2E7CFzgA1tISvau7xYV1Ez9%2FzfzN%2Bu90GUQXU2P5fGHdXkynM8%2BGd9bwIhqc6Uw0rLJwKZqMquE%2B%2FB2IRpNat%2BEyyLFNNBVpGhXhRm1cpEkSLAoFop9l6U4d9phGuCo2bPwVrVg13C%2F8iFonTtX%2BM1wWa9E%2Bd3AR1v5XEK7WuLZpGtjz4C9%2BrbJ0m%2BCKF1PrC3%2BJ7tgnWDg%2BX%2FvLdCc1WXeA2CxNATL7Fj%2FfBBFDroa4vHih3V5Y1%2BsijuDBhK%2B8%2B0vLZPy5%2ByfDr8uCRMFqGzzoYhOe%2FGhL8KZuBFOvH1OAIK%2Fk%2Frdlv4l3XOac5FcwwDQ3z%2FDB1wZCQd8O8cp6kzSLfViQJsO3Ffu8L%2FwMwIulYHtiNdFX%2B4mA4g37Gj%2BvGLdOHqN0t1gDgEkRZHGY%2BEWasY2FUXSTRuz7bZImMOM6L7L0V0CNQEqDv8oeYg0LWgD2MgS0SaNvbu4cIHzVdxtmwK5hmvAlMjaX40NZwfQsBo%2B13%2BOPYKSRqMS7hNCYzVRDOj8FWRGgUPImpOLXII2DInuBIdRrI8ejxM5QYHcV85vEemuJ8S2SOpS4VQm54hr4gozTzERWKxPlGz9pZ6IujAKYjZiGmLp%2BvIHn5CFnHxLriDWIdUTzMnzSm%2FpvJX3Ig%2BzJZ%2BTn3fs2AM0NexhlW0u%2F8I%2FcTWf54rA%2Fu2SRZUDJMh1UmpJolYZPFi0SwT6ihXb4aNGS9LPRRT9jfxQmwSX9Bj57ymbXhTIBKm%2B5WA4qhuNue5HGmy2YjCOVyUCyPO5vi4ULd1YDY6kBx5qTU7nHxDpeXQ%2FMBzCx7rB6oIWpjvXivgfZY5bGb6QFBtp0FqyyIM8Zj53FZTyraU41cZnOEchbyMv8nc41P5qYSz3cfEihyMNVEj6GC58RHI66IwlGsAg5bj79YU11KW0Dj1CyaJjIw7JouChSfUQDJU4RDY2CXbHUlWJakKIzRvN0my1wT7hLiBusAjq7iqZgqQSD6ljPgghObU9qxKgJhXzqVZb5bBYN2KRhUuQS5O%2BsoSLm1FD1nAmoUskhIFbEKbfWiV5mU4xGIxhDAREmiB7S3V3VcM0boGOdZuFvQD3IPzQmsIF%2FoNUANY2P%2F%2FJHj5GEP4N5D2Gj4DBDO2t8Dgs2hQ%2BA72I8nw5P%2BuiPyEQoUjITkQU6yEVIbovMWGnWyM7JwktnRll4y8ZW1qvx1ozilaQobO1MKX4czpLjfDog15lYnsqollluncAJxNTAHSsSlqOuZGNwajCRGDPilKSt5k%2BTOtD2BPn9bcrUReYmnBOSJLYksyNzJR0t%2BpgUsylM0VtFvbECIe0GGs32FA3nze0WHSdpUYPPqdSo7bH1GvXoa1UVYvmgphpSEZFR06d0VTy1iQOpGMdATUhq2BMIa9uH5aE4kHjMBDbbxjsGYpvGu0JO2sbbZKZL%2BOK5dbynanYLxbczfFfYrdbxrgZ%2FLvDVSicP7WC5fwV%2Bf5WNFmEQlX1caOxVJz8%2BrRb2jJnQ7gkfNp30xkxRvBMiMNgIOd3X%2FfYRsyPvhBEtCdMDF%2Bco0zFBWapLIDNFLu6hGNMMzWsvr%2Be1QdkuXugLlE%2BcpBtqaW6ojVg65IaieetDkKGj5AMpmZ9ZWASX281pJct%2BBPk2Yh7YSNorXWxjzmafW4N5VlmrdKwOIw%2Byj8gQ3A%2BWWPqWPAV5Ea78Arwtw4%2Fg7ARVPiyEd1KpJt1TZCY7h9PcSDK1gY7sfwXv%2FtxSVeaQ6PRjN%2BWeGsyQi6fEXrnapuhU%2F4BtFZ5QghMi7rA%2FNuFBiFoJTpSPpxC0JR0lh0LQ0p9DIQ3RVguR2Bra0EoFgXaDHvUxMjFWPSA7g4f5wez9KLV2cpr0nCMd92inpT4sOm4pOVJUtYoKx8BdHxU%2Ba08wnHDgogYF6v7DR0DMEPGs047ptNbTnTGjQwGp9rnLIJ8Ne6Pj7PT21pgupkDKlAjFWQ45vZCp6q8xm%2BL7Q1YpfFgfVnLMZ2plhMEzgA2ueSe3l2xQ18IECCUo5L90zYk5c%2B2Z4czn4CRalNEaoU5hrkX9IH02YWtOPdvke3idx%2BxSiS2BhWKLPWAH8qdnkO5V5UhJ%2FfX2j2djxo1PtHrB1aoXLEp2v0H1AuUCRqHHHdwj7EiQ8zW3DuFSCq5UNUxvd8%2BNtNE54SNLrq1RxKlTZCzJxZqGPmXeYA4afFy4ngpGd2p8E4NueXbXuIJ7fy952O73NtNJwr8qqCi9DQLtRxBogMcF0IV5DdeMHhB2iK6wIw6XS%2B427daQXLrf%2BNxr2IHeYBcVYTRTHsybgnEBjyUMT3ly%2BeiOOMXp5HtxFo6RKQ%2FVVf0p37%2FA%2FwDlkfR0Nf5Me4X2tqtWwTYSn%2FyzwYnfHmAcivhIfT0A8H37EIX5%2BswEqH7VmrQ31QAmld2fwkWGrmc4V69qhBPlkUexgyA6H740QGUAduDjVm3DnlKp2L%2Fy0Gg6b508o2hFA86ey%2BZteD8AojujaBf9IO4xDqNoG54PfNGGGPH%2FiVFMw9KiGRRX6s4ph2F0T4FqkMrz28C8Ut8y1jcPxyxNHuiJM4t%2BlQ3qJo7llYMgurJKDRAWpA%2FNKbV1sHB%2BOEY5oQuXnbWKlmqw6DhwhFI5BKKzTtEA2WTvh1Yp%2BobVGxX9GYX%2BQ%2Bakb1H1Zq3ZXD1UXNreiBcsXbzWUxWKaVqm8wVLiiJrRTiDJyf0dTC2NhwXjlK9dmJ3%2Bcor0HiXb%2B4efZdPrlbrXK5G0RXyoEkGKNA5hgQYrpJT0%2BRh5k0o2cbyiK%2F0%2BzzHmWAaUqyj%2BWYTKadn6IZgIMnxyBDTqsApeyVavy594AadR3anQt3e8XO6NVvCVy5J18dTml77P5Xu8PffSJy7KnytLLCBcdQQoIX7e6UmgsfqTzPF8OqvSa27Pw%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E"
+   resource="https://www.draw.io/?state=%7B%22ids%22:%5B%220B2j7xPHqc9Q9ak5ZTEd1Sm5EdVE%22%5D,%22action%22:%22open%22,%22userId%22:%22103405868566967347196%22%7D#G0B2j7xPHqc9Q9ak5ZTEd1Sm5EdVE"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="dholland.svg">
+  <metadata
+     id="metadata188">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1265"
+     inkscape:window-height="717"
+     id="namedview186"
+     showgrid="false"
+     units="cm"
+     inkscape:zoom="0.88521784"
+     inkscape:cx="310.95919"
+     inkscape:cy="141.66514"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g6" />
+  <defs
+     id="defs4" />
+  <g
+     transform="translate(0.5,-251.03546)"
+     id="g6">
+    <path
+       d="m 32.756771,268.57817 28.241619,0 c 12.306418,0 22.288686,3.23411 22.288686,7.21901 0,3.9849 -9.982268,7.21901 -22.288686,7.21901 l -28.241619,0 c -12.306418,0 -22.288687,-3.23411 -22.288687,-7.21901 0,-3.9849 9.982269,-7.21901 22.288687,-7.21901 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path8"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.62123621;stroke-miterlimit:10" />
+    <path
+       d="m 18.249736,305.60903 c 1.06648,-1.78472 2.79896,-2.82507 4.6272,-2.78154 l 63.86228,0 c 1.45824,-0.0218 2.85119,0.28729 3.76096,0.83576 0.90977,0.54848 1.23188,1.27107 0.86624,1.94578 l -17.58596,27.82412 c -1.06648,1.78471 -2.79896,2.82507 -4.6272,2.78154 l -64.7851105,0 c -1.28847,-0.10447 -2.42895,-0.46577 -3.13413,-0.99683 -0.70518004,-0.53106 -0.91412004,-1.17965 -0.56588004,-1.78471 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path16"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.30588806;stroke-miterlimit:10" />
+    <path
+       d="m 204.77408,273.075 c 0.80965,-1.85871 2.11989,-2.93825 3.50413,-2.89036 l 48.35268,0 c 1.1013,-0.0218 2.15907,0.296 2.84684,0.86624 0.68777,0.57023 0.93153,1.31894 0.6573,2.02412 l -13.31571,28.90366 c -0.80965,1.85871 -2.11989,2.93825 -3.50413,2.89036 l -49.05351,0 c -0.97506,-0.10882 -1.83695,-0.48318 -2.37236,-1.036 -0.53542,-0.54847 -0.68777,-1.22318 -0.42659,-1.85436 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path24"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.30588806;stroke-miterlimit:10" />
+    <path
+       d="m 19.337976,361.87539 c 0.80965,-1.85871 2.1199,-2.93825 3.50414,-2.89037 l 48.35268,0 c 1.1013,-0.0218 2.15907,0.29601 2.84683,0.86624 0.68777,0.57024 0.93154,1.31895 0.6573,2.02413 l -13.3157,28.90366 c -0.80965,1.85871 -2.1199,2.93824 -3.50414,2.89036 l -49.0535104,0 c -0.97506,-0.10882 -1.83694,-0.48318 -2.3723601,-1.036 -0.53541,-0.54848 -0.68777,-1.22318 -0.42659,-1.85436 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path32"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.30588806;stroke-miterlimit:10" />
+    <path
+       d="m 46.030336,283.17387 0,6.96474 q 0,4.35296 0,6.69485 l 0,2.34189"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path48"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 46.030336,301.78713 -1.74119,-3.48237 1.74119,0.87059 1.74118,-0.87059 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path50"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 77.89575,429.98556 30.02262,0 q 3.45088,0 3.45088,-5.58262 l 0,-11.03127"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path52"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.87783682;stroke-miterlimit:10" />
+    <path
+       d="m 111.32473,410.82008 1.74118,3.48236 -1.74118,-0.87059 -1.74119,0.87059 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path54"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 42.83516,456.43115 129.85245,0 q 4.44701,0 4.44701,-4.82317 l 0,-159.64651 q 0,-4.82317 4.447,-4.82317 l 12.34488,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path62"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.92625248;stroke-miterlimit:10" />
+    <path
+       d="m 196.53828,287.09153 -3.48237,1.74119 0.87059,-1.74119 -0.87059,-1.74118 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path64"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 199.76817,324.36593 c 0.80966,-1.81083 2.1199,-2.86425 3.50414,-2.81636 l 48.35268,0 c 1.1013,-0.0261 2.15907,0.28729 2.84684,0.84447 0.68776,0.55283 0.93153,1.28412 0.65729,1.97189 l -13.3157,28.18107 c -0.80965,1.81083 -2.11989,2.86424 -3.50414,2.81636 l -49.0535,0 c -0.97507,-0.10447 -1.83695,-0.47012 -2.37237,-1.00553 -0.53541,-0.53977 -0.68777,-1.19707 -0.42659,-1.81083 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path66"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.30588806;stroke-miterlimit:10" />
+    <path
+       d="m 362.27289,324.69676 c 0,-0.85318 0.37,-1.67154 1.036,-2.2766 0.66165,-0.60071 1.55836,-0.94024 2.49425,-0.94024 l 62.15156,0 c 0.93589,0 1.8326,0.33953 2.49425,0.94024 0.666,0.60506 1.036,1.42342 1.036,2.2766 l 0,32.16402 c -11.15663,-3.79578 -23.44939,-3.79578 -34.60603,0 -11.15664,3.79578 -23.4494,3.79578 -34.60603,0 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path80"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.30588806;stroke-miterlimit:10" />
+    <path
+       d="m 73.157158,383.57905 c 12.942575,3.04824 27.201902,3.04824 40.144492,0 12.94258,-3.04318 27.2019,-3.04318 40.14448,0 l 0,25.80882 c -12.94258,-3.04825 -27.2019,-3.04825 -40.14448,0 -12.94259,3.04318 -27.201917,3.04318 -40.144492,0 l 0,-25.80882 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path88"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.56181788;stroke-miterlimit:10" />
+    <path
+       d="m 111.37178,383.08876 0,-4.24257 q 0,-2.65161 -4.36344,-2.65161 l -35.239172,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path96"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.68029815;stroke-miterlimit:10" />
+    <path
+       d="m 69.205496,376.32722 3.48236,-1.74119 -0.87059,1.74119 0.87059,1.74118 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path98"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 220.42037,373.79701 36.21393,25.07295 -36.21393,25.07296 -36.21395,-25.07296 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path100"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2.1259973;stroke-miterlimit:10" />
+    <path
+       d="m 260.63126,344.89014 c 10.52546,3.82625 22.12175,3.82625 32.64721,0 10.52545,-3.82625 22.12174,-3.82625 32.6472,0 l 0,32.39473 c -10.52546,-3.8219 -22.12175,-3.8219 -32.6472,0 -10.52546,3.82625 -22.12175,3.82625 -32.64721,0 l 0,-32.39473 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path108"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.30588806;stroke-miterlimit:10" />
+    <path
+       d="m 298.06672,341.93883 0,-2.8686 q 0,-2.8686 -4.35296,-2.8686 l -38.63687,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path116"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 252.46511,336.20163 3.48237,-1.74118 -0.87059,1.74118 0.87059,1.74119 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path118"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 390.9456,375.48113 23.92941,0 c 10.42734,0 18.88541,7.19245 18.88541,16.05457 0,8.86211 -8.45807,16.05455 -18.88541,16.05455 l -23.92941,0 c -10.42733,0 -18.88541,-7.19244 -18.88541,-16.05455 0,-8.86212 8.45808,-16.05457 18.88541,-16.05457 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path126"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2.22550011;stroke-miterlimit:10" />
+    <path
+       d="m 221.01933,354.56242 0,6.96473 q 0,4.35296 0,6.69486 l 0,2.34189"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path158"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 221.01933,373.17568 -1.74119,-3.48237 1.74119,0.87059 1.74118,-0.87059 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path160"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 220.14873,304.93867 0,6.96474 q 0,4.35296 0,6.69485 l 0,2.34189"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path162"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 220.14873,319.55193 -1.74118,-3.48237 1.74118,0.87059 1.74119,-0.87059 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path164"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 402.89073,355.43301 0,6.96474 q 0,4.35296 0,6.69485 l 0,2.34189"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path166"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 402.89073,374.04627 -1.74119,-3.48237 1.74119,0.87059 1.74118,-0.87059 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path168"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 46.030336,338.45646 0,6.96474 q 0,4.35296 0,6.69485 l 0,2.3419"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path170"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 46.030336,357.06972 -1.74119,-3.48237 1.74119,0.8706 1.74118,-0.8706 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path172"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 42.983256,393.73906 0,3.52289 q 0,2.2018 0,3.38637 l 0,1.18456"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path174"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:0.61917222;stroke-miterlimit:10" />
+    <path
+       d="m 42.983256,404.35232 -1.74118,-3.48237 1.74118,0.87059 1.74119,-0.87059 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path176"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 254.79272,398.59646 36.9865,0 q 3.62612,0 3.62612,-9.4166 l 0,-9.41658"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path178"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.17576349;stroke-miterlimit:10" />
+    <path
+       d="m 295.45495,377.30228 1.74118,3.48237 -1.74118,-0.87059 -1.74119,0.87059 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path180"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <path
+       d="m 220.14218,424.20005 127.91886,0 q 4.37808,0 4.37808,-5.91864 l 0,-71.58009 q 0,-5.91864 3.44994,-5.91864 l 3.44993,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path182"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.01808298;stroke-miterlimit:10" />
+    <path
+       d="m 361.95077,340.63294 -3.48237,1.74119 0.87059,-1.74119 -0.87059,-1.74118 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path184"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-width:0.87059206;stroke-miterlimit:10" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3518"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(85.354574,311.27772)"><flowRegion
+         id="flowRegion3520"><rect
+           id="rect3522"
+           width="62.131599"
+           height="33.32513"
+           x="-62.69643"
+           y="-8.0997725"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3524">Collect observational</flowPara><flowPara
+         id="flowPara3526">data</flowPara></flowRoot>    <flowRoot
+       transform="translate(99.354575,279.27772)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3528"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3530"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           y="-8.0997725"
+           x="-62.69643"
+           height="33.32513"
+           width="62.131599"
+           id="rect3532" /></flowRegion><flowPara
+         id="flowPara3536">Start</flowPara></flowRoot>    <flowRoot
+       transform="translate(83.354574,373.27772)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3540"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3542"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           y="-8.0997725"
+           x="-62.69643"
+           height="33.32513"
+           width="62.131599"
+           id="rect3544" /></flowRegion><flowPara
+         id="flowPara3548">Perform</flowPara><flowPara
+         id="flowPara3552">regression</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3554"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(139.39383,394.29579)"><flowRegion
+         id="flowRegion3556"><rect
+           id="rect3558"
+           width="88.678734"
+           height="24.852638"
+           x="-62.69643"
+           y="-8.0997725"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3562">Investigate</flowPara><flowPara
+         id="flowPara3566">alternative dataset</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3568"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(82.438068,427.24233)"><flowRegion
+         id="flowRegion3570"><rect
+           id="rect3572"
+           width="62.131599"
+           height="33.32513"
+           x="-62.69643"
+           y="-8.0997725"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3576">Regression</flowPara><flowPara
+         id="flowPara3674">significant?</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3580"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-1.6296654,266.96144)"><flowRegion
+         id="flowRegion3582"><rect
+           id="rect3584"
+           width="28.357191"
+           height="19.171059"
+           x="81.876396"
+           y="169.17741" /></flowRegion><flowPara
+         id="flowPara3586">yesåye</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3588"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-1.6296654,266.96144)"><flowRegion
+         id="flowRegion3590"><rect
+           id="rect3592"
+           width="25.982306"
+           height="9.884573"
+           x="82.465576"
+           y="161.06763"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3594"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="108.51271"
+       y="453.84436"
+       id="text3596"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3598"
+         x="108.51271"
+         y="453.84436"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica">yes</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3600"
+       y="423.25104"
+       x="83.095238"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+         y="423.25104"
+         x="83.095238"
+         id="tspan3602"
+         sodipodi:role="line">no</tspan></text>
+    <flowRoot
+       transform="translate(269.07722,278.52716)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3604"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3606"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           y="-8.0997725"
+           x="-62.69643"
+           height="33.32513"
+           width="62.131599"
+           id="rect3608" /></flowRegion><flowPara
+         id="flowPara3612">Construct</flowPara><flowPara
+         id="flowPara3616">computer </flowPara><flowPara
+         id="flowPara3618">model</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3620"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(267.07722,330.52716)"><flowRegion
+         id="flowRegion3622"><rect
+           id="rect3624"
+           width="62.131599"
+           height="33.32513"
+           x="-62.69643"
+           y="-8.0997725"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3630">Compare</flowPara><flowPara
+         id="flowPara3637">model to</flowPara><flowPara
+         id="flowPara3639">data</flowPara></flowRoot>    <flowRoot
+       transform="translate(328.58437,357.84293)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3641"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3643"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           y="-8.0997725"
+           x="-62.69643"
+           height="33.32513"
+           width="62.131599"
+           id="rect3645" /></flowRegion><flowPara
+         id="flowPara3651">Modify model</flowPara><flowPara
+         id="flowPara3660">parameters</flowPara></flowRoot>    <flowRoot
+       transform="translate(260.56915,397.28454)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3662"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3664"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+           y="-8.0997725"
+           x="-62.69643"
+           height="33.32513"
+           width="62.131599"
+           id="rect3666" /></flowRegion><flowPara
+         id="flowPara3668">Comparison</flowPara><flowPara
+         id="flowPara3670">significant?</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:2.1259973;stroke-miterlimit:10"
+       inkscape:connector-curvature="0"
+       id="path3672"
+       pointer-events="none"
+       stroke-miterlimit="10"
+       d="m 43.088082,404.94998 36.21393,25.07295 -36.21393,25.07296 -36.2139503,-25.07296 z" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3676"
+       y="421.09381"
+       x="289.04016"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+         y="421.09381"
+         x="289.04016"
+         id="tspan3678"
+         sodipodi:role="line">yes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="269.21426"
+       y="395.29324"
+       id="text3680"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3682"
+         x="269.21426"
+         y="395.29324"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica">no</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3684"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(445.62881,334.6779)"><flowRegion
+         id="flowRegion3686"><rect
+           id="rect3688"
+           width="62.131599"
+           height="33.32513"
+           x="-62.69643"
+           y="-8.0997725"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3692">Write-up </flowPara><flowPara
+         id="flowPara3696">results</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3698"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(455.61674,393.50528)"><flowRegion
+         id="flowRegion3700"><rect
+           id="rect3702"
+           width="62.131599"
+           height="33.32513"
+           x="-62.69643"
+           y="-8.0997725"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica" /></flowRegion><flowPara
+         id="flowPara3704">End</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="11.92632"
+       y="475.14639"
+       id="text3706"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3708"
+         x="11.92632"
+         y="475.14639"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'">Stage I: Data Input &amp; </tspan><tspan
+         sodipodi:role="line"
+         x="11.92632"
+         y="489.20889"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
+         id="tspan3714">Stage II: Data Processing</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3710"
+       y="489.20889"
+       x="206.22878"
+       style="font-style:normal;font-weight:normal;font-size:8.75px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
+         y="489.20889"
+         x="206.22878"
+         id="tspan3712"
+         sodipodi:role="line">Stage III: Data Analysis</tspan></text>
+  </g>
+</svg>
