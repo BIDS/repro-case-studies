@@ -1,8 +1,11 @@
 ---
-title: A Reproducible Neuroimaging Workflow and Quality Assurance of Functional Magnetic Resonance Imaging (fMRI) Data
+title: A Reproducible Neuroimaging Workflow using the Automated Build Tool "make"
 running: Reproducible Neuroimaging Workflow
 author: Tara Madhyastha, Natalie Koh and Mary K. Askren
 ---
+
+<!-- original title: A Reproducible Neuroimaging Workflow and Quality Assurance of Functional Magnetic Resonance Imaging (fMRI) Data -->
+
 
 We are Tara Madhyastha, Natalie Koh and Mary K. Askren, affiliated with the Integrated Brain Imaging Center (Radiology). In this project, we use functional magnetic resonance imaging (fMRI) to interrogate the  function of the brain in elderly individuals to understand how physiological changes relate to mild cognitive impairment and might be predictive of dementia. Specific challenges to processing fMRI data are that the number of steps involved are complicated and can have significant impact on the results, and to achieve the best results, components from many different software packages must be combined. To do this, we need to structure our own pipelines and quality assurance. Data produced using this workflow are visualized in @bach.
 
