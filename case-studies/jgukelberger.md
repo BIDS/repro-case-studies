@@ -1,12 +1,12 @@
 ---
 title: Developing and Analyzing Exact-Diagonalization Simulations for Quantum Many-Body Systems and Creating a Provenance-Rich Publication from the Results
 running: Quantum Many-Body Systems
-author: Jan Gukelberger
+author: Jan Gukelberger and Matthias Troyer
 ---
 
 My name is Jan Gukelberger, I am a computational condensed-matter physicist, who recently completed his PhD at the Institute for Theoretical Physics, ETH Zurich. This case study describes a project I worked on during my first year as a PhD student (2010-2011). This case study was conducted together with my advisor, Matthias Troyer.
 
-Broadly speaking, the project's goal was to characterize a family of quantum many-body model systems. A specific model is described by a large matrix, the Hamiltonian, and its physical properties can be deduced from the lowest-lying eigenvalues (energies) and the corresponding eigenvectors (quantum states). Therefore I wrote a C++ program that would build the Hamiltonian matrix for a given set of model parameters, run an iterative diagonalization algorithm, and output the corresponding properties. Analysis of the results produced by this program for different parameters yielded a deeper understanding of studied model family and corroborated analytical results obtained by colleagues. The analytical and numerical results were finally published together in [Phys. Rev. B 85, 045414 (2012)](dx.doi.org/10.1103/PhysRevB.85.045414).
+Broadly speaking, the project's goal was to characterize a family of quantum many-body model systems. A specific model is described by a large matrix, the Hamiltonian, and its physical properties can be deduced from the lowest-lying eigenvalues (energies) and the corresponding eigenvectors (quantum states). Therefore I wrote a C++ program that would build the Hamiltonian matrix for a given set of model parameters, run an iterative diagonalization algorithm, and output the corresponding properties. Analysis of the results produced by this program for different parameters yielded a deeper understanding of the studied model family and corroborated analytical results obtained by colleagues. The analytical and numerical results were finally published together in [Phys. Rev. B 85, 045414 (2012)](http://dx.doi.org/10.1103/PhysRevB.85.045414).
 
 # Workflow
 
@@ -37,7 +37,7 @@ Apart from the non-trivial publishing process, the main pain points during the s
 
 When now inspecting the "reproducible publication" on the APS server, three years after publication, some mid- to long-term issues become obvious, because both the used software and the publisher's infrastructure is evolving:
    
-   * The instructions we provided in the supplementary materials section accompanying the article do not work out of the box with the current VisTrails version: In the most recent stable VisTrails release (2.2), the ALPS package seems to be broken and needs to be patched with the latest (not-yet-realeased) ALPS version. Otherwise initialization of the ALPS package fails and the workflow cannot be executed.
+   * The instructions we provided in the supplementary materials section accompanying the article do not work out of the box with the current VisTrails version: In the most recent stable VisTrails release (2.2), the ALPS package seems to be broken and needs to be patched with the latest (not-yet-released) ALPS version. Otherwise initialization of the ALPS package fails and the workflow cannot be executed.
    * The APS journals were not able to guarantee a long-term stable location for supplementary material. In fact, the URL has already changed, such that the workflows fail to fetch the raw data from the APS server, unless the URL is fixed manually in each workflow. For one specific example, the original location <http://prb.aps.org/epaps/PRB/v85/i4/e045414/dyl_ladder_gap.zip> has been changed to <http://journals.aps.org/prb/supplemental/10.1103/PhysRevB.85.045414/dyl_ladder_gap.zip>.
      Also, the cause of the error is not easy to fix for the uninitiated, because the DownloadFile module actually succeeds (it downloads the html file shown at the old URL), but the subsequent UnzipDirectory module fails with the message "BadZipFile: File is not a zip file".
 
