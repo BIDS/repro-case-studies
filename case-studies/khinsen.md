@@ -35,7 +35,7 @@ The workflow consists of the iterative refinement of the models and methods. The
 
 Correspondingly, the state of the project consists of
 
- - a repository under version control, which tracks the changes to the items as the project advances
+ - a repository under version control, which tracks the changes to the "human input" items as the project advances
  - an ActivePaper file, which stores the current state of all data items and the dependency graph
 
 There are two variants of a refinement step: adding a new script or parameter, and modifying existing scripts and parameters. The first kind, which extends the data flow graph, consists of the following user actions:
@@ -72,7 +72,7 @@ The use of specific tools is rarely sufficient to ensure reproducibility. Tools 
 
 # Key benefits
 
-The traditional workflow of changing scripts and running the interactively in a shell is extremely prone to mistakes. The most frequent one is forgetting to re-run a script after its input data has changed because of an update to another script. Before I adopted reproducibility support tools, I regularly found myself looking at a data file and wondering which exact sequence of script executions had produced it. The question typically comes up when writing a paper. Even for today's minimal "materials & methods" sections, it is typically necessary to look up parameters and other choices in the scripts when writing the documentation, and that's often the moment when one discovers what a mess they are. This is no longer an issue when the completely final project state is available for inspection, and guaranteed to be complete and coherent by software tools.
+The traditional workflow of changing scripts and running the interactively in a shell is extremely prone to mistakes. The most frequent one is forgetting to re-run a script after its input data has changed because of an update to another script. Before I adopted reproducibility support tools, I regularly found myself looking at a data file and wondering which exact sequence of script executions had produced it. The question typically comes up when writing a paper. Even for today's minimal "materials & methods" sections, it is typically necessary to look up parameters and other choices in the scripts when writing the documentation, and that's often the moment when one discovers what a mess they are. This is no longer an issue when the complete final project state is available for inspection, and guaranteed to be complete and coherent by software tools.
 
 # Key tools
 
