@@ -35,17 +35,18 @@ Apart from the non-trivial publishing process, the main pain points during the s
    * Version management was harder because viewing differences between versions was not as easy as looking at the diff file for a Python script.
    * This also made the synchronization of workflows between different machines (e.g. laptop and workstation) less straightforward.
 
-When now inspecting the "reproducible publication" on the APS server, three years after publication, some mid- to long-term issues become obvious, because both the used software and the publisher's infrastructure is evolving. Continuous maintenance of the published instructions and workflows would be needed in order to keep up with the changes:
+When now inspecting the "reproducible publication" on the APS server, three years after publication, some mid- to long-term issues become obvious, because both the used software and the publisher's infrastructure is evolving. Continuous testing and maintenance of the published instructions and workflows would be needed in order to keep up with the changes:
    
    * The instructions we provided in the supplementary materials section accompanying the article do not work out of the box with the current VisTrails version: In the most recent stable VisTrails release at the time of writing (2.2), the ALPS package is broken and needs to be patched with the latest (not-yet-released) ALPS version. Otherwise initialization of the ALPS package fails and the workflow cannot be executed.
    * The APS journals were not able to guarantee a long-term stable location for supplementary material. In fact, the URL has already changed, such that the workflows fail to fetch the raw data from the APS server, unless the URL is fixed manually in each workflow. For one specific example, the original location <http://prb.aps.org/epaps/PRB/v85/i4/e045414/dyl_ladder_gap.zip> has been changed to <http://journals.aps.org/prb/supplemental/10.1103/PhysRevB.85.045414/dyl_ladder_gap.zip>.
      Also, the cause of the error is not easy to fix for the uninitiated, because the DownloadFile module actually succeeds (it downloads the html file shown at the old URL), but the subsequent UnzipDirectory module fails with the message "BadZipFile: File is not a zip file".
+     Hence we, the authors, need to prepare new workflows with adapted URLs and send them to the publisher for replacing the original ones whenever their infrastructure changes.
 
 For these reasons I would now prefer to publish a self-contained archive containing the raw data and a script with minimal dependencies in a wide-spread language, such as Python, which reruns the analysis and reproduces the figures. This would be more robust with respect to changes in the publisher's infrastructure. Also, backwards compatibility issues might be expected to be solvable more easily in the long run for scripts in a wide-spread language, compared to special purpose solutions like VisTrails/ALPS (no matter how professional and helpful the developers of the software may be at the moment).
 
 # Key benefits
 
-I think one of the most important points is recording exactly what version of the simulation code was run with what kind of input parameters. This excludes some of the worst cases of "non-reproducible results" and should definitely be a standard practice. (I cannot judge how established this practice is in our field because code and log files are rarely published.)
+One of the most important points is recording exactly what version of the simulation code was run with what kind of input parameters. This excludes some of the worst cases of "non-reproducible results" and should definitely be a standard practice. (I cannot judge how established this practice is in our field because code and log files are rarely published.)
 
 A second point is the actual publishing of raw data and evaluation workflows, allowing any reader to directly inspect all details of the evaluation process -- even those that the authors did not deem important enough (or forgot) to mention in the paper. This is clearly not widespread practice in our field and would be quite desirable in my opinion.
 
