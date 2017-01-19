@@ -38,6 +38,8 @@ including git/GitHub, docker/DockerHub, `.Rmd`/RStudio, and others.  Table 1 pro
 a concise reference where a reader can learn more about these tools and their
 use.
 
+<!-- The Gitbook online version of the book uses a version of this table stored in an associated HTML file. That file must be kept manually in sync with any changes in the table below. -->
+
 \sttab{Tools used in workflow}
 Table: Tools used in workflow
 
