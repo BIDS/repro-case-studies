@@ -34,8 +34,6 @@ Of all aspects of the analysis, I am particularly happy about the effort that I 
 
 Ironically, of course, in creating a tool for non-programmers, I also created another graphical program that cannot easily be scripted into a workflow such as the one. I attempted to ameliorate this concern in the most recent BatID version by requiring users create a text file containing all parameters, which is read by the program along with the data file, and having the program save all results in the same directory as the parameter file, along with a log file. This at least ensures that there is, by default, some record of the program version, time, and parameters used to process the raw data into classified results tables.
 
-# Key tools
-
 # Questions
 
 ## What does "reproducibility" mean to you?
