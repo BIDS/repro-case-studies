@@ -170,6 +170,11 @@ which resulted in considerable simplification of the algorithm used to
 implement the test. We also developed a more general terminology (see
 Table 1).
 
+<!-- The Gitbook online version of the book uses a version of this table stored in an associated HTML file. That file must be kept manually in sync with any changes in the table below. -->
+
+\sttab{Mapping between terms from our motivating problem (NSGK) and the
+  terms used in our general algorithm (IRR)}
+
   ---------------------- --------------------
   NSGK                   IRR
   ---------------------- --------------------
@@ -183,8 +188,9 @@ Table 1).
   ---------------------- --------------------
 
   : Mapping between terms from our motivating problem (NSGK) and the
-  terms used in our general algorithm (IRR).<span
-  data-label="table:mapping"></span>
+  terms used in our general algorithm (IRR).
+
+\entab{}
 
 We decided to assess rater reliability in identifying (i.e., tagging)
 each of the 183 types of activity separately, because they are of
