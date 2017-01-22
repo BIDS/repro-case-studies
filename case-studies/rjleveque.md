@@ -56,6 +56,10 @@ In natural hazards modeling, the simulation results may be used by engineers or 
 
 ## How or where did you learn about reproducibility?
 
+My interest in the topic came out of frustration with the publications in
+numerical analysis (including my own) where it was impossible to reproduce
+published results or fully understand the implementation of new algorithms
+they describe.
 I became proficient with git initially through involvement in open source software projects.
 
 ## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
@@ -77,6 +81,9 @@ I became proficient with git initially through involvement in open source softwa
   - Using version control of some sort is the single most important first step.
 
   - Make a habit of cleaning up code used to produce final results so that it's well documented and all the necessary steps are clearly laid out. Then run through them from scratch if possible to insure that it works. Even if you don't plan to share it with others, your future self will thank you.
+
+  - If you do share code and/or data, do so in an archival repository that
+    issues a DOI, and attach a license.
 
 ## Would you recommend any specific resources for learning more about reproducibility?
 
