@@ -28,9 +28,10 @@ Our first tries led to inconsistent results and we had to replace the mesh-gener
 Setting the boundary condition at the domain outlet was particularly problematic, and made more difficult by lack of documentation for the type of boundary condition we needed.
 We invested several months of persistent efforts before finally replicating our previous findings (in terms of the lift characteristics) with IcoFOAM. 
 
-We then used [IBAMR](https://github.com/ibamr/ibamr), an open-source software available on GitHub that implements a different immersed-boundary method than cuIBM.
-Bhalla et al. [-@bhalla] published a detailed validation of the software, and various examples are included in the code repository.
-After many failed attempts, we found that we had to force the fluid to rest everywhere _inside_ the immersed-body, not just at the boundary—this is not an intuitive option with immersed-boundary methods.
+We then used [IBAMR](https://github.com/ibamr/ibamr), an open-source library hosted on GitHub that provides several numerical methods for immersed bodies.
+One of them is specifically designed for non-deforming bodies, which is our situation.
+Bhalla et al. [-@bhalla] published a detailed validation of this method, and some examples are included in the code repository.
+After many failed attempts, we found that this method requires forcing the fluid to rest everywhere _inside_ the immersed-body, not just at the boundary—this is not an intuitive option with immersed-boundary methods.
 In the end, we can say that the _scientific findings_ of Krishnan et al. [-@krishnan] have been replicated, but we still see noticeable differences in the details of the flow characteristics.
 
 The [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) codes are both being developed in our research lab and implement the same immersed-boundary method [@taira].
