@@ -50,7 +50,7 @@ Reproducibility is essential in quantitative microscopic because it can guarante
 
 ## How or where did you learn about reproducibility?
 
-Much of what I knew I needed to learn on my own, then I met Software Carpentry members and BIDS fellows. Lots of concepts came together more systematically particularly after attending Software Carpentry classes and becoming a instructor myself.
+Flow charts and code documentation improved grades during college, and their absence meant punishment. The tech-industry introduced me to version control, and [TortoiseSVN](https://tortoisesvn.net/docs/nightly/TortoiseSVN_en/tsvn-preface-development.html) and I started working together with several colleagues. Other tools came along the way, such as [git](https://git-scm.com/), [Atlassian](https://www.atlassian.com/software) tools, but after entering BIDS, reproduciblity learning turned into an more fun activity. Lots of concepts came together more systematically, particularly after attending Software Carpentry classes and becoming a instructor myself.
 
 ## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
@@ -58,7 +58,7 @@ The major pitfalls to doing reproducible research in image analysis are (a) the 
 
 ## What do you view as the major incentives for doing reproducible research?
 
-The major incentives for doing reproducible research are the ability to replicate the experiments later, to fix and/or reuse code for different applications, to easily work in larger teams, and the potential for broader impact in the area.
+The major incentives for doing reproducible research are the ability to replicate the experiments later, to fix and/or reuse code for different applications, to easily work in larger teams, and the potential for a broader impact, even with the help of collaborators you never heard of.
 
 ## Are there any best practices that you'd recommend for researchers in your field?
 
