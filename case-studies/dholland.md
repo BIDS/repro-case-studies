@@ -1,7 +1,7 @@
 ---
 title: Using Observational Data and Numerical Modeling to make Scientific Discoveries in Climate Science
 running: Climate Science
-author: David Holland
+author: David Holland and Denise Holland
 ---
 
 My name is David Holland.  I am a Professor of Mathematics and Atmosphere Ocean Science at New York University's Courant Institute.  I study global sea level rise in a changing climate, specifically, how changes in global weather patterns affect the melting of the great ice sheets.
