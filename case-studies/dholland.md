@@ -4,7 +4,7 @@ running: Climate Science
 author: David Holland and Denise Holland
 ---
 
-My name is David Holland.  I am a Professor of Mathematics and Atmosphere Ocean Science at New York University's Courant Institute.  I study global sea level rise in a changing climate, specifically, how changes in global weather patterns affect the melting of the great ice sheets.
+My name is David Holland. I am a Professor of Mathematics and Atmosphere Ocean Science at New York University's Courant Institute.  I study global sea level rise in a changing climate, specifically, how changes in global weather patterns affect the melting of the great ice sheets, with Denise Holland, who is the Field and Logistics Manager for our field research program.
 
 # Workflow
 
@@ -20,35 +20,18 @@ The next step in the algorithm is to employ a physically based numerical model o
 
 At this final stage, having made a new discovery in two independent manners, one purely observational and one purely computer modeling, we are ready to report our findings to the scientific community.  This involves a rigorous peer-review process that imposes a number of reproducibility requirements.  A section of the manuscript must be devoted to explaining where all datasets are located and how a reviewer or future reader could access the same datasets we use.  Likewise, we are required to describe the computer model we used and how a future researcher can access the same model.  While the main scientific article is relatively brief (about 4 printed pages), giving the reader the essential information on what we found and how we found it, we also write a supplementary materials section.  This is an exhaustive description of each step we took with our observations and our modeling.
 
+The original data sources that we used for ocean temperatures and atmospheric winds are on-line and available through national climate data repositories.  The numerical modeling code is available on-line through national climate modeling centers.
+The regression calculations and the numerical simulations we preformed are very large and are not stored on-line but are archived at NYHU on hard disks off-line. 
+The regression code is standard and available at many repositories such as part of Matlab.  It is well documented, well tested, with many examples.
+The numerical climate code is used by a large number of people, it is well documented, well tested, with many examples.
+There are no restrictions on other researchers replicating or confirming our work.  We warmly welcome such activity.
 
-* **Data:** Is your raw data online?
-
-Yes, the original data sources that we used for ocean temperatures and atmospheric winds are on-line and available through national climate data repositories.  The numerical modeling code is available on-line through national climate modeling centers.
-The regression calculations and the numerical simulations we preformed are very large and are not stored on-line but are archived at NYHU on hard disks off-line.
-
-   * Is it citeable?
+As mentioned in our published paper, there is a supplementary document that includes details about the data processing workflow.  There is not the actual computer scripts used to perform the regressions nor those to run the numerical climate model.  These could in fact be put on-line if there was a repository for such information.  However, in our estimation, if someone was to try to reproduce our research it would probably be more natural for them to write their own scripts as this has the additional benefit that they might not fall into any error we may have accidentally introduced in our scripts.
 
 Our published work is citeable as:
 Li, Xichen, David M. Holland, Edwin P. Gerber, and Changhyun Yoo. "Impacts of the north and tropical Atlantic Ocean on the Antarctic Peninsula and sea ice." Nature 505, no. 7484 (2014): 538-542.
 
-   * Does the license allow external researchers to publish a replication/confirmation of your published work?
 
-There are no restrictions on other researchers replicating or confirming our work.  We warmly welcome such activity.
-
-* **Software:** Is the software online?
-   * Is there documentation?
-   * Are there tests?
-   * Are there example input files alongside the code?
-
-The regression code is standard and available at many repositories such as part of Matlab.  It is well documented, well tested, with many examples.
-The numerical climate code is used by a large number of people, it is well documented, well tested, with many examples.
-
-* **Processing:** Is your data processing workflow online?
-   * Are the scripts documented?
-   * Would an external researcher know what order to run them in?
-   * Would they know what parameters to use?
-
-To some extent yes, to some extent no.  As mentioned in our published paper, there is a supplementary document.  There is not the actual computer scripts used to perform the regressions nor those to run the numerical climate model.  These could in fact be put on-line if there was a repository for such information.  However, in our estimation, if someone was to try to reproduce our research it would probably be more natural for them to write their own scripts as this has the additional benefit that they might not fall into any error we may have accidentally introduced in our scripts.
 
 # Pain points
 
