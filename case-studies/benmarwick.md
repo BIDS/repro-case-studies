@@ -6,7 +6,7 @@ author: Ben Marwick
 
 My name is Ben Marwick, and I am an Associate Professor of archaeology in the Department of Anthropology at the University of Washington, and a Senior Research Scientist at the University of Wollongong. My research interests include human-environment adaptations during the Pleistocene in Southeast Asia and Australia. My colleagues and I work with stone artefacts, organic and geological remains to understand past human behaviours and their environmental contexts. My narrative here describes one recent project from the initial concept to a specific publication (Clarkson et al. 2015), but the details below are typical of my experience with several projects focused on understanding prehistoric hunter-gatherer behaviour (cf. Marwick et al. 2016; 2017). 
 
-In the context of this case study, reproducibility refers to computational reproducibility, which means enabling other researchers and students to combine the code and data that we produce to obtain the same statistical results and data visualizations that we present in our publication. I also expect that the code could be used for empirical reproducibility, where our code is applied to a new dataset to generate substantively similar results to our published results. I have explored these definitions, and the principles that motivate my selection of tools, in more detail in Marwick (2016.)
+In the context of this case study, reproducibility refers to computational reproducibility, which means enabling other researchers and students to combine the code and data that we produce to obtain the same statistical results and data visualizations that we present in our publication. I also expect that the code could be used for empirical reproducibility, where our code is applied to a new dataset to generate substantively similar results to our published results. I have explored these definitions, and the principles that motivate my selection of tools, in more detail in Marwick (2016).
 
 # Workflow
 
@@ -18,7 +18,7 @@ The boxes with a bold outline indicate key steps and tools that enabled computat
 
 https://drive.draw.io/#G0B06w3axv7XKTZW5UdksxMlZkYVU -->
 
-One recent project I was involved in aimed to excavate Madjebebe rockshelter, a well-known archaeological site in northern Australia. The purpose of the excavations was to test the findings of previous excavations in the 1990s that uncovered controversial early evidence for human occupation of Australia. The project was initiated with consultation with stakeholders, including Aboriginal traditional owners of the archaeological site, and a grant application written in Microsoft Word and circulated among the team by email.
+One recent project I was involved in aimed to excavate Madjedbebe rockshelter, a well-known archaeological site in northern Australia. The purpose of the excavations was to test the findings of previous excavations in the 1990s that uncovered controversial early evidence for human occupation of Australia. The project was initiated with consultation with stakeholders, including Aboriginal traditional owners of the archaeological site, and a grant application written in Microsoft Word and circulated among the team by email.
 
 The archaeological excavation was conducted with standard modern techniques. These include a combination of direct digital capture of artefact and feature provenance with a total station, digital photography and GIS, and hand-written paper notes using structured site recording forms. These data from these forms was later entered into an Excel spreadsheet.
 
