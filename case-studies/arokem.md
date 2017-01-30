@@ -1,6 +1,6 @@
 ---
-title: "Reproducibility in human neuroimaging research: a practical example from the analysis of diffusion MRI"
-running: Human neuroimaging research
+title: "Reproducibility in Human Neuroimaging Research: A Practical Example from the Analysis of Diffusion MRI"
+running: Human Neuroimaging Research
 author: Ariel Rokem
 ---
 

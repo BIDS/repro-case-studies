@@ -1,6 +1,6 @@
 ---
-title: An analysis of household location choice in major U.S. metropolitan areas using R
-running: Household location choice
+title: An Analysis of Household Location Choice in Major U.S. Metropolitan Areas Using R
+running: Household Location Choice
 author: Andy Krause
 ---
 
