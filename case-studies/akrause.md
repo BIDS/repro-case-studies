@@ -1,7 +1,7 @@
 ---
 title: An Analysis of Household Location Choice in Major U.S. Metropolitan Areas Using R
 running: Household Location Choice
-author: Andy Krause
+author: Andy Krause and Hossein Estiri
 ---
 
 I am Andy Krause, a Lecturer in Property (Real Estate) at the University of Melbourne. My research focuses on the spatial analysis of real estate markets, particularly in regards to valuation and location. This work was completed with my colleague, Hossein Estiri, Research Fellow at Harvard Medical School. Hossein uses data science approaches to study urban energy and health.
