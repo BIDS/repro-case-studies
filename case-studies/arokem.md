@@ -102,11 +102,10 @@ with, and not easy to extend beyond the models that we tested. During the work
 on this project, I became involved in an open-source project, which develops
 Python software for the analysis of dMRI data: [Dipy](http://dipy.org). The main
 ideas in `osmosis` were eventually ported into Dipy, accomodating the
-application programming interfact (API), documentation and testing requirements
-of that project. Furthermore, the prediction and cross-validation API
-implemented in Dipy that I implemented in `Dipy` is designed to be sufficiently
-general to accomodate new models, and mechanisms to evaluate their performance
-in fitting dMRI data.
+application programming interface (API), documentation and testing requirements
+of that project. Furthermore, the prediction and cross-validation API that I
+implemented in `Dipy` is designed to be sufficiently general to accomodate new
+models, and mechanisms to evaluate their performance in fitting dMRI data.
 
 Through Dipy, the code in this project is now also distributed widely through
 both GitHub and the Python Package Index (PYPI), under the permissive BSD
