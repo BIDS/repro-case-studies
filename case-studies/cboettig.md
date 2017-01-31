@@ -181,23 +181,10 @@ The reader is encouraged to view any of the real-world examples of this process
 in the repositories of my recent projects, such as <https://github.com/cboettig/nonparametric-bayes>,
 or in the pages of my online lab notebook at <http://carlboettiger.info/lab-notebook>. 
 
-## Additional questions
-
-* **Frequency:** How often does the step happen and how long does
-it take? 
-
-Frequency is highly variable -- from many commits a day to gaps of months. 
-See my GitHub commit history for a more realistic answer. 
-
-* **Who:** Which members of your team participate (or not)?
-
-Though most of my research projects involve others, I am the only 
+The frequency of these steps is highly variable -- from many commits a day to gaps of months. 
+See my GitHub commit history for a more realistic answer. In addition, although most of my research projects involve others, I am the only 
 researcher committing to my lab notebook, just as we see in paper notebooks.
 The final research product will see more direct involvement by others. 
-
-* **Tools:** Which software or online tools are used in the step? How are they used?
-
-See Table 1. 
 
 # Pain points 
 
