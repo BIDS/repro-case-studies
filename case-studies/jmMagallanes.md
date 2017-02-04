@@ -1,12 +1,8 @@
 ---
-
 title: Analyzing Cosponsorship Data to Detect Networking Patterns in Peruvian Legislators
 running: Networking in Peruvian Legislators
-
 author: José Manuel Magallanes
-
 ---
-
 
 My name is José Manuel Magallanes, I am a Senior Data Science Fellow at the eScience Institute of the University of Washington, where I am also a Visiting Professor at the Evans School of Public Policy and Governance (2015 - 2017). Since 2003, I have been Professor of Political Science and Public Policy Methodology at the Catholic University of Peru. My research is related to framing political and policy problems with a computational social science approach. I have dealt with different topics including electoral behavior, public management performance, climate change and social conflict, and legislators behavior. My contribution for this case will be a research carried out on bill cosponsorship data to detect key players, reveal association patterns, anticipate party splitting and detect tactics to get re-elected. 
 
