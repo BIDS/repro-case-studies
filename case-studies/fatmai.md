@@ -26,7 +26,7 @@ When images are downloaded from an online resource copyright issues can emerge. 
 
 # Key benefits
 
-The main benefit of this part of a larger experiment is that these images are now available for further research. The images are currently used in 30 different experiments ranging from clinical set-ups, human memory experiments [Kizilirmak et al. 2016], vision research, and latest internet security applications [Castelluci et al. 2017].
+The main benefit of this part of a larger experiment is that these images are now available for further research. The images are currently used in 30 different experiments ranging from clinical set-ups, human memory experiments [@kizilirmak2016generation], vision research, and latest internet security applications [@castelluccia2017towards].
 
 # Key tools
 
@@ -52,31 +52,6 @@ In neuroscience the main pitfalls are sharing human subject data and the resista
 
 ## What do you view as the major incentives for doing reproducible research?
 
-I think reproducible research allows faster progress in a researcher's own domain and makes interdisciplinary projects possible. To see that your own research is further used not only in your own domain but also across domains is very rewarding. It opens up possibilites for new collaborations. For example, I collaborated in two new projects that recently got published by making my stimulus available [Castelluci et al. 2017 and Kizilirmak et al. 2016].
+I think reproducible research allows faster progress in a researcher's own domain and makes interdisciplinary projects possible. To see that your own research is further used not only in your own domain but also across domains is very rewarding. It opens up possibilites for new collaborations. For example, I collaborated in two new projects that recently got published by making my stimulus available [@kizilirmak2016generation, castelluccia2017towards].
 
 # References
-
-
-Castelluccia, C., Duermuth, M., Golla, M., & Deniz, F. (2017, February). Towards Implicit Visual Memory-Based Authentication. In Network and Distributed System Security Symposium (NDSS).
-
-@inproceedings{castelluccia2017towards,
-  title={Towards Implicit Visual Memory-Based Authentication},
-  author={Castelluccia, Claude and Duermuth, Markus and Golla, Maximilian and Deniz, Fatma},
-  booktitle={Network and Distributed System Security Symposium (NDSS)},
-  year={2017}
-}
-
-
-Kizilirmak, J. M., da Silva, J. G. G., Imamoglu, F., & Richardson-Klavehn, A. (2016). Generation and the subjective feeling of “aha!” are independently related to learning from insight. Psychological research, 80(6), 1059-1074.
-Chicago	
-
-@article{kizilirmak2016generation,
-  title={Generation and the subjective feeling of “aha!” are independently related to learning from insight},
-  author={Kizilirmak, Jasmin M and da Silva, Joana Galvao Gomes and Imamoglu, Fatma and Richardson-Klavehn, Alan},
-  journal={Psychological research},
-  volume={80},
-  number={6},
-  pages={1059--1074},
-  year={2016},
-  publisher={Springer}
-}
