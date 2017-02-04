@@ -1,10 +1,14 @@
 ---
+
 title: Analyzing Cosponsorship Data to Detect Networking Patterns in Peruvian Legislators
 running: Networking in Peruvian Legislators
+
 author: José Manuel Magallanes
+
 ---
 
-My name is José Manuel Magallanes, I am a Senior Data Science Fellow at the eScience Institute of the University of Washington, where I am also a Visiting Professor at the Evans School of Public Policy and Governance (2015 - 2017). Since 2003, I have been Professor of Political Science and Public Policy Methodology at the Catholic University of Peru. My research is related to framing political and policy problems with a computational social science approach. I have dealt with different topics including electoral behavior, public management performance, climate change and social conflict, and Congress's legislators behavior. My contribution for this case will be a research carried out on bill cosponsorship data to detect key players, reveal association patterns, anticipate party splitting and detect tactics to get re-elected. 
+
+My name is José Manuel Magallanes, I am a Senior Data Science Fellow at the eScience Institute of the University of Washington, where I am also a Visiting Professor at the Evans School of Public Policy and Governance (2015 - 2017). Since 2003, I have been Professor of Political Science and Public Policy Methodology at the Catholic University of Peru. My research is related to framing political and policy problems with a computational social science approach. I have dealt with different topics including electoral behavior, public management performance, climate change and social conflict, and legislators behavior. My contribution for this case will be a research carried out on bill cosponsorship data to detect key players, reveal association patterns, anticipate party splitting and detect tactics to get re-elected. 
 
 I have a BSc in Computer Science (UNMSM - Peru), a MA in Political Science and Public Management (PUCP - Peru), a Phd in Psychology (UNMSM - Peru) and a Phd in Computational Social Science (George Mason University-USA).
 
@@ -30,27 +34,27 @@ b. Automated Stages:
 
 ## A. Manual Stages	 
 
-a1. **Defining the research problem.** There was an interest in the political science community in Peru to learn more on the dynamics of their National Congress. There were some particular facts that had been discussed in academia and in the media that called our attention:
+a1. **Defining the research problem.** There has been an interest in the political science community in Peru to learn more on the dynamics of their National Congress. Particularly, Peruvian scholars and pundits have been discussing some particular phenomena affecting the congress dynamics:
 
-* The low re-election rate of legislators the previous two elections (20%).
+* The low re-election rate of legislators the previous two elections (~20%).
 * The fact that some legislators migrated to other parties during their mandate (party switching).
-* The fact that parties that have a good share of seats, end up splitting their seats (It is worth keeping in mind that Peru has a multiparty system).
+* The fact that parties that had a good share of seats, ended up splitting their seats (It is worth keeping in mind that Peru has a multiparty system).
 
-The fact that some scholars in the USA were using bill cosponsorship data as a proxy to understand some of these issues motivated me to follow a similar approach.
+Some scholars in the USA have using bill cosponsorship data as a proxy to understand some of these issues, so I decided to follow a similar approach. However, the complexity of the Peruvian case was higher than the bipartisan American Congress, but the data was less available in the Peruvian case; as this work used one Congress data while there are only five Congress periods available on-line as webpages (no API and no data to download).
 
-This stage was done only once. I was the only one in charge. No particular tools were used in this stage.
+This stage was done only once. I was the only one in charge to define the research questions (no co-authors); however, some colleagues participated in informal exchanges of ideas. No particular computational tool was used in this stage.
 
 a2. **Designing the Research plan**. This stage identified the main authors that have worked similar research problems before. The key ingredient in all cases was bill cosponsorship. However, most hypotheses were not the same I had, due to the different political regimes that researchers were focusing on. But, in all cases, bill cosponsorship was considered a good proxy to understand legislator's associative patterns. From this stage it was clear that:
 
-* We will need to write code to extract the information from the Congress of Peru website, as the data is not available for download by any means. This process, also known as *web scraping*, is in charge getting poorly structured data and make it available for further computational or statistical analysis.
-* To test the hypothesis, the information of a complete Congress will be needed (five years).
-* The information from the bill cosponsorship will need to be complemented with the Archives of the National Jury of Elections. There, personal information on every legislator is available. This information was shared, so no code was need to collect it.
-* There will be a need for graph or social network techniques.
-* The budget available will require the use of free tools.
-* There will be a need to share the findings with other scholars.
-* This research could be combined with other efforts in another similar countries. So there was a need to organize efficiently the process so that the data and the code could be reused.
+* We would need to write code to extract the information from the Congress of Peru website, as the data was not available for download by any means. This process, also known as *web scraping*, collects poorly structured data from webpages, and gives them a structure that could be used in further computational or statistical analysis.
+* To test the hypothesis, the information of a complete Congress would be needed (five years).
+* The information from the bills  would need to be complemented with the archives of the National Jury of Elections. There, personal information on every legislator is available. This information was downloaded.
+* There would be a need for graph or social network techniques.
+* The budget available would require the use of free tools.
+* There would be a need to share the findings with other scholars.
+* This research could be combined with other efforts in another similar countries. There was a need to organize efficiently the process, so that the data and the code could be reused.
 
-This stage was done only once. I was the only one in charge. No particular tools were used in this stage.
+This stage was done only once. I was the only one in charge to define the research plan. No particular computational tool was used in this stage.
 
 a3. **Review of the literature**. This step allowed me to identify similar cases and organize my basic set of references. The references were continuously updated along the process. I was in charge of updating, but also got some recommendations from the users I shared my drafts with.
 
@@ -58,20 +62,20 @@ a4. **Write the paper**. As expected, this was a manual step. However, as I desc
 
 ## B. Automated Stages	 
 
-b1. **Collect Data**. Data collection had two main sources:
+b1. **Collect Data**. Data was collected from two main sources:
 
-1. [The Congress webpage](<http://www.congreso.gob.pe/proyectosdeley>). Here, the data had the key information to build the network. 
-2. [The INFOGOB webpage](<http://www.infogob.com.pe>). This webpage provided the information needed to organize some attributes of the legislators. 
+1. [The Congress webpage](<http://www.congreso.gob.pe/proyectosdeley>). This website has a webpage for every bill proposed. The webpage has detailed metadata on each bill, including the authors (legislators), which represent the nodes of the network. 
+2. [The INFOGOB webpage](<http://www.infogob.com.pe>). This webpage provided the information needed to organize some attributes of the legislators (nodes). 
 
 The INFOGOB webpage is organized in such a way that you can download information for different processes. It also helped me get the political history of every legislator.
 
-The webpage of the Congress was much different. The information needed is visible as webpages, but they do not offer a download service or a mechanism to get the data (known as API - Application Program Interface) in a structured way. For this reason, a code for scraping the website was needed. The code was written in Python, relying mainly on the *beautiful soup* package. There were some extra code to clean the values collected.
+The webpage of the Congress was much different. The information needed is visible as webpages, but they do not offer a download service or a mechanism to get the data (known as API - Application Program Interface) in a structured way. For this reason, a code for scraping the website was needed. The code was written in Python, relying mainly on the *beautiful soup* package. I created some extra code to 'clean' the values collected.
 
-So, with INFOGOB, I built the attributes of the legislators; and, with the scraped data, I built the network. Both data merged using Python to explore the network and the node attributes using Python's *Networkx*. The merged file was saved as a GraphMl file and also as a two separate file of edges and nodes, which will ease exporting into R. 
+So, with INFOGOB, I built the attributes of the legislators; and, with the scraped data, I built the network. Both data sets were merged using Python's *Networkx*. The merged file was saved as a GraphMl file and also as a two separate file of edges and nodes, which will ease exporting into R. 
 
-This process was done entirely by me. It was the first part of the operational research and took around two weeks. The Python version I used was 2.7, and it was installed via Anaconda. I used the Spyder-app graphical user interface (GUI) to do the coding.
+This process was done entirely by me. It was the first part of the operational research and took around two weeks. The Python version I used was 2.7, and it was installed via Anaconda. I used the Spyder graphical user interface (GUI) to do the coding.
 
-b2. **Organize references**. References are a key component of academic writing. In my case, besides papers and books, there was also the need to include webpages, white papers, code, data, and so on. As it common, there are set of references you know you would use when you start writing, but more come along the process as you exchange ideas with colleagues. In this particular aspect, the use of **Zotero** was very important. It allowed to create a BibTex file to be used later during the paper production process. This text will later be integrated into the LatTex document of this work. Automating this process not only helps you recover the right of citing a work, but also gives you the flexibility to later change the style (APA, Chicago, etc - see [citation list](<https://en.wikipedia.org/wiki/Citation>)) a particular publisher will require. This was extremely important as this research could be presented in social sciences or computer-science-related conferences.
+b2. **Organize references**. References are a key component of academic writing. In my case, besides papers and books, there was also the need to include webpages, white papers, code, data, and so on. As it is common, there are set of references you know you would use when you start writing, but more come along the process as you exchange ideas with colleagues. In this particular aspect, the use of **Zotero** was very important. It allowed to create a BibTex file to be used later during the paper production process. This text will later be integrated into the LatTex document of this work. Automating this process not only helps you recover the right of citing a work, but also gives you the flexibility to later change the style (APA, Chicago, etc - see [citation list](<https://en.wikipedia.org/wiki/Citation>)) a particular publisher will require. This was extremely important as this research could be presented in social sciences or computer-science-related conferences.
 
 This process was done entirely by me. This was a continuous process as the paper was written. The desktop version of Zotero was used. The BibTex was saved in the working folder.
 
@@ -82,7 +86,7 @@ This eased the update of the tables and plots produced by the data, as sweave do
 
 This process was done entirely by me. This was a repetitive process as the paper was written. A Rnw file was produced using RStudio, which also produced a LaTeX file. 
 
-b4. **Produce and update Paper**.  RStudio integrated my writing, the bibliography file, and the tables and plots generated using R into a LaTeX document, which finally will produce a pdf document (RStudio, via *knitr*, instead of *sweave*, can produce also an html document) . Any change in whatever part of the main document or any of the files used was updated in the final product automatically. 
+b4. **Produce and update Paper**.  RStudio integrated my writing, the bibliography file, and the tables and plots generated using R into a LaTeX document, which finally would produce a pdf document (RStudio, via *knitr*, instead of *sweave*, can produce also an html document) . Any change in whatever part of the main document or any of the files used was updated in the final product automatically. 
 
 It is very important to keep in mind that sweave allows LaTeX users to customize all the details in the document, which includes code highlighting or hiding, among other possibilities. I could even present the Python code inside the document as needed. 
 
@@ -151,4 +155,6 @@ If the data you are using is public, I see *less* problem. When the data is not,
 
 ## What do you view as the major incentives for doing reproducible research?
 
-That it allows you to improve your work.
+
+The main incentives for me are project organization and  ,m.l/. That is, reproducibility requires order, some structure to your work; then, you need to find a way to organize writing, code, files, and so on. I believe that LATEX enables reproducibility too, as it can interact seamlessly with other software elements, as shown in my work here.
+Auditability is important as it increases your credibility in the research community, mainly because anybody can follow closely what and how you did your work.
