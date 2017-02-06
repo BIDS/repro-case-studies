@@ -41,7 +41,7 @@ use.
 <!-- The Gitbook online version of the book uses a version of this table stored in an associated HTML file. That file must be kept manually in sync with any changes in the table below. -->
 
 \sttab{Tools used in workflow}
-Table: Tools used in workflow
+Table 1: Tools used in workflow
 
 Tool | Description / purpose | Website |
 ------ | -------------------------------------- | ------------- |
@@ -57,6 +57,7 @@ jekyll    | Static website generator closely integrated with GitHub | <https://j
 Circle CI | Flexible continuous integration software for executing scripts pushed to GitHub | <https://circleci.com> |
 figshare  | Permanent data archiving platform | <http://figshare.com>  |
 zenodo    | Permanent archiving platform (handles code/software well) | <http://zenodo.org>  |
+
 \entab{}
 
 ## Interactive workflow

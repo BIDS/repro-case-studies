@@ -172,8 +172,8 @@ Table 1).
 
 <!-- The Gitbook online version of the book uses a version of this table stored in an associated HTML file. That file must be kept manually in sync with any changes in the table below. -->
 
-\sttab{Mapping between terms from our motivating problem (NSGK) and the
-  terms used in our general algorithm (IRR)}
+\sttab{Mapping between terms from our motivating problem (NSGK) and the terms used in our general algorithm (IRR)}
+Table 1: Mapping between terms from our motivating problem (NSGK) and the terms used in our general algorithm (IRR)
 
   ---------------------- --------------------
   NSGK                   IRR
@@ -186,9 +186,6 @@ Table 1).
   
   10 raters              $R$ raters
   ---------------------- --------------------
-
-  : Mapping between terms from our motivating problem (NSGK) and the
-  terms used in our general algorithm (IRR).
 
 \entab{}
 
