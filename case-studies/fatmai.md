@@ -52,6 +52,6 @@ In neuroscience the main pitfalls are sharing human subject data and the resista
 
 ## What do you view as the major incentives for doing reproducible research?
 
-I think reproducible research allows faster progress in a researcher's own domain and makes interdisciplinary projects possible. To see that your own research is further used not only in your own domain but also across domains is very rewarding. It opens up possibilites for new collaborations. For example, I collaborated in two new projects that recently got published by making my stimulus available [@kizilirmak2016generation, castelluccia2017towards].
+I think reproducible research allows faster progress in a researcher's own domain and makes interdisciplinary projects possible. To see that your own research is further used not only in your own domain but also across domains is very rewarding. It opens up possibilites for new collaborations. For example, I collaborated in two new projects that recently got published by making my stimulus available [@kizilirmak2016generation, @castelluccia2017towards].
 
 # References
