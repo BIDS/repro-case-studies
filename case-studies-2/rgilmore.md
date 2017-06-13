@@ -1,3 +1,4 @@
+---
 AuthorName: Andrea R. Seisler and Rick O. Gilmore  
 Affiliation: Penn State University  
 WorkflowTitle: Developing R Code for the Processing and Analysis of Optic Flow Data  
@@ -5,6 +6,7 @@ WorkflowDiagramURL:
 Discipline: Developmental Psychology/Cognitive Neuroscience    
 Software: Databrary, GitHub, R  
 DOI_URL:
+---
 
 ##### Introduction
 
