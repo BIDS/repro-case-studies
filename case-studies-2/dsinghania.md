@@ -9,7 +9,7 @@ Research by definition means repeated systematic investigation which means testi
 
 # Workflow diagram
 
-See [Figure](https://github.com/dbsinghania/repro-case-studies/blob/master/FlowDiagram.pdf)
+See [Figure](dsinghania.pdf)
 
 # Workflow narrative
 
