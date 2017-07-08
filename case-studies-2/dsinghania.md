@@ -43,8 +43,6 @@ My next suggestion is about transferring results from Stata. Never copy and past
 
 I haven't used version control yet since I got introduced to it recently. It's very useful and I intend to use it more often. I believe that I am good at archiving my old files and working the new ones in a separate folder, but we can't really trust human error. When tools like github and the Open Science Framework are available, why take risk?
 
-# Key tools
-
 # General questions about reproducibility
 
 ## Why do you think that reproducibility in your domain is important?
