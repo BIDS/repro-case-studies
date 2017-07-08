@@ -50,19 +50,24 @@ The second tool that we want to highlight is the statistical programming package
 
 # General questions about reproducibility
 
-1. __Why do you think that reproducibility in your domain is important?__
+## Why do you think that reproducibility in your domain is important?
+
   Political scientists learn from empirical experience. If
   contributions to our field are not transparent enough to be
   reproduced, then nothing will be learned from them. However,
   reproducibility covers both data generation and analysis.
   The Garbage-In-Garbage-Out principle applies to all studies
   that fail on either side of the equation.
-2. __How or where did you learn the reproducible practices described in your case study?__
+  
+## How or where did you learn the reproducible practices described in your case study?
+
   Some practices we use are standard and should be
   taught in every introductory methods class. Others we learned
   from more tech savvy colleagues. Magic happened once we put
   the two together.
-3. __What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.__
+  
+## What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+
   We see two major pitfalls. First, political
   scientists often receive strong training in qualitative or
   quantitative methods, but not in basic data management.
@@ -76,11 +81,15 @@ The second tool that we want to highlight is the statistical programming package
   level of reproducibility the provision of replication
   packages containing raw data, data management and analysis
   scripts should be made mandatory.
-4. __What do you view as the major incentives for doing reproducible research?__
+  
+## What do you view as the major incentives for doing reproducible research?
+
   Political scientists learn from experience. Reproducible
   research establishes a baseline against which to compare
   future analyses and thus secures scientific progress.
-5. __Are there any broad reproducibility best practices that you'd recommend for researchers in your field?__
+  
+## Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+
   Never change your raw data file. Stay away from the GUI.
   Have at least one notebook detailing the evolution of
   your analysis. Always comment your code or field notes.
