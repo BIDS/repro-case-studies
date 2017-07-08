@@ -8,7 +8,7 @@ Software: Databrary, GitHub, R
 DOI_URL:
 ---
 
-##### Introduction
+# Introduction
 
 1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
 
@@ -18,11 +18,11 @@ My name is Andrea Seisler and I am the lab manager for the Brain Development Lab
 
 Reproducibility means that the processing of a dataset can be carried out multiple times by many users using the same workflow/code and get the same results. It also means that as more data is collected a few commands can be run to update the results based on the increased number of data sets.
 
-##### Workflow diagram
+# Workflow diagram
 
 [Workflow Diagram](rgilmore.pdf)
 
-##### Workflow narrative
+# Workflow narrative
 
 This study examined how sensitive child observers were to patterns of visual motion (optic flow) that differed in terms of their overall pattern and speed. The study extends one we had previously carried out with adults (http://doi.org/10.17910/B7V88T), and is part of a series of studies on this same theme (e.g., http://doi.org/10.17910/B7QG6W).
 
@@ -48,42 +48,42 @@ The data cleaning/file merging workflow consists of a series of steps. First, in
 
 A similar workflow is utilized for multiple studies in this lab including EEG and other behavioral studies. The combination of Databrary, GitHub and R makes it easy to create a workflow for a particular type of data and reproduce it as more data are collected. This makes data sharing and analyses an ongoing process, and not something that is saved up until the end of a study. This makes writing abstracts and papers less cumbersome.  
 
-##### Pain points
+# Pain points
 
 The data transfer to Databrary can be time consuming. The output datafiles are stored locally in a folder for the CSV files and another folder for the .mp4 files. Uploading data (.mp4 and .csv) to Databrary has to happen manually as Databrary does not currently reorder files by file name. The .csv data also needs to be uploaded to Box/GitHub manually.
 
 It's relatively easy to update the participant metadata file by exporting the data from Databrary as a .csv. From there the unnecessary columns for a particular analysis (e.g. Race, Ethnicity, Task name) can be dropped, leaving only the participant ID, test date, day age, and gender columns.
 
-##### Key benefits
+# Key benefits
 
 R contains many commands (e.g. *merge*, *lapply*, *Reduce*) which make it efficient to complete actions on multiple datasets at a time and to easily add datasets to the analyses as they are collected. We regularly 'borrow' a script used for one purpose and reuse it for a new study. By automating the data file manipulation steps, we reduce the likelihood of errors.
 
-##### Key tools
+# Key tools
 
 Databrary allows for all of our data to be stored or referenced (e.g. GitHub, publications) in one place, and it encourages us to upload data as it is collected. This upload-as-you-go work flow is less cumbersome than post hoc data curation. Databrary volumes can be kept private to our research group until they are complete and we are ready to share the data with other researchers. Our practice is to share once we have presented our work in public or had a paper submitted for publication. Once a dataset is shared, the Databrary system creates a DOI for the dataset. This makes the dataset searchable by other researchers.
 
-##### General questions about reproducibility
+# General questions about reproducibility
 
-1) Why do you think that reproducibility in your domain is important?
+## Why do you think that reproducibility in your domain is important?
 
 Reproducibility is essential because if another researcher cannot reproduce our workflow and get the same results then the initial results may be incorrect.
 
-2) How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
 
 Self-teaching through online training and book learning.
 
-3) What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
 
 Ensuring that everything on GitHub can be forked and rerun by another user. We have also begun collecting videos (with permission) of our entire experimental protocols. We think that all social and behavioral scientists should do the same in order to improve the accuracy of documentation about experimental procedures.
 
-4) What do you view as the major incentives for doing reproducible research?
+## What do you view as the major incentives for doing reproducible research?
 
 It upholds scientific ideals.
 
-5) Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
 
 Automate as much as possible. Document, document, document. Start today.
 
-6) Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+## Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
 
 R Coding and R Markdown training: https://www.rstudio.com/online-learning/
