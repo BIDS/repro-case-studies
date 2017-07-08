@@ -1,20 +1,16 @@
 ---
-AuthorName: Andrea R. Seisler and Rick O. Gilmore  
+author: Andrea R. Seisler and Rick O. Gilmore  
 Affiliation: Penn State University  
-WorkflowTitle: Developing R Code for the Processing and Analysis of Optic Flow Data  
+title: Developing R Code for the Processing and Analysis of Optic Flow Data  
+running: Optic Flow Data
 WorkflowDiagramURL:  
 Discipline: Developmental Psychology/Cognitive Neuroscience    
 Software: Databrary, GitHub, R  
-DOI_URL:
 ---
 
 # Introduction
 
-1) Who are you and what is your research field? Include your name, affiliation, discipline, and the background or context of your overall research that is necessary specifically to introduce your specific case study.
-
 My name is Andrea Seisler and I am the lab manager for the Brain Development Laboratory run by Dr. Rick Gilmore at Penn State University. I have a background in biomedical engineering with a focus on imaging. In the last few years I have been assisting Dr. Gilmore with data collection, processing, analysis and publication of various behavioral and EEG based optic flow studies.
-
-2) Define what the term "reproducibility" means to you generally and/or in the particular context of your case study.
 
 Reproducibility means that the processing of a dataset can be carried out multiple times by many users using the same workflow/code and get the same results. It also means that as more data is collected a few commands can be run to update the results based on the increased number of data sets.
 
