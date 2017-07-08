@@ -1,5 +1,8 @@
-All or Nothing! Public Goods Provision under Partial versus Full Decentralization in Indonesia
-===============================================
+---
+title: All or Nothing! Public Goods Provision under Partial versus Full Decentralization in Indonesia
+running: Public Goods in Indonesia
+author: Deepak Singhania
+---
 
 # Introduction
 
