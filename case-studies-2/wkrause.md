@@ -1,3 +1,9 @@
+---
+title: Maintaining a Reproducible Database of Political Competition
+running: Political Database 
+author: Werner Krause and Dag Tanneberg
+---
+
 # Introduction
 
 Our names are Werner Krause and Dag Tanneberg. We graduated in Political Science with a focus on Comparative Politics. Currently, we are pursuing our doctoral degrees at the research department "Democracy and Democratization" located at the WZB Berlin Social Science Center, Germany.
