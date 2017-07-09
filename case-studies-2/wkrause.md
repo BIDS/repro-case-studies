@@ -1,5 +1,5 @@
 ---
-title: Maintaining a Reproducible Database of Political Competition
+title:  Maintaining a Reproducible Database on Political Parties, Elections, and Governments
 running: Political Database 
 author: Werner Krause and Dag Tanneberg
 ---
