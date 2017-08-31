@@ -4,6 +4,8 @@ running: Political Database
 author: Werner Krause and Dag Tanneberg
 ---
 
+> This chapter appears only in the online appendix of the book _The Practice of Reproducible Research_. Please cite this online version of the book as: Kitzes, J., Turek, D., & Deniz, F. (Eds.). (2018). The Practice of Reproducible Research: Case Studies and Lessons from the Data-Intensive Sciences [Online Version]. Retrieved from http://practicereproducibleresearch.org.
+
 Our names are Werner Krause and Dag Tanneberg. We graduated in Political Science with a focus on Comparative Politics. Currently, we are pursuing our doctoral degrees at the research department "Democracy and Democratization" located at the WZB Berlin Social Science Center, Germany.
 
 Much of the research at our department revolves around political competition, elections, and the dynamics of democratic government. In the mid-1990s senior fellows of our department decided to set up a permanent infrastructure offering data on elections and governments to all department members in a standardized and easily accessible format. Originally, the data were used to observe and analyze the consolidation processes in the then still young Eastern and Middle European democracies. The project has since grown into a database that includes more than eighty countries around the world between 1945 and today. 
@@ -14,7 +16,7 @@ Back in 2011 and 2008 we were recruited as research assistants to continue this 
 
 Broadly speaking, we define reproducibility as the responsibility to provide sufficient detail on scientific research such that others using the same data and methods will be able to replicate published results. Those may be single statistics, graphs, tables or even entire articles. Results that cannot be reproduced are neither open to critique nor revision - they are unscientific.
 
-In the context of our database reproducibility becomes even more demanding. Since the quality of the data stored in our database affects numerous ongoing projects in- _and_ outside of our department every single piece of information should be reproducible. The challenge is thus to make the acquisition and coding of primary data as transparent to others as the standardized output we provide for secondary analyses.
+In the context of our database reproducibility becomes even more demanding. Since the quality of the data stored in our database affects numerous ongoing projects in and outside of our department every single piece of information should be reproducible. The challenge is thus to make the acquisition and coding of primary data as transparent to others as the standardized output we provide for secondary analyses.
 
 # Workflow
 

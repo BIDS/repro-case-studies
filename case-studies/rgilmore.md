@@ -4,6 +4,8 @@ running: Optic Flow Data
 author: Andrea R. Seisler and Rick O. Gilmore  
 ---
 
+> This chapter appears only in the online appendix of the book _The Practice of Reproducible Research_. Please cite this online version of the book as: Kitzes, J., Turek, D., & Deniz, F. (Eds.). (2018). The Practice of Reproducible Research: Case Studies and Lessons from the Data-Intensive Sciences [Online Version]. Retrieved from http://practicereproducibleresearch.org.
+
 My name is Andrea Seisler and I am the lab manager for the Brain Development Laboratory run by Dr. Rick Gilmore at Penn State University. I have a background in biomedical engineering with a focus on imaging. In the last few years I have been assisting Dr. Gilmore with data collection, processing, analysis and publication of various behavioral and EEG based optic flow studies.
 
 Reproducibility means that the processing of a dataset can be carried out multiple times by many users using the same workflow/code and get the same results. It also means that as more data is collected a few commands can be run to update the results based on the increased number of data sets.
