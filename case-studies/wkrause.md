@@ -4,8 +4,6 @@ running: Political Database
 author: Werner Krause and Dag Tanneberg
 ---
 
-# Introduction
-
 Our names are Werner Krause and Dag Tanneberg. We graduated in Political Science with a focus on Comparative Politics. Currently, we are pursuing our doctoral degrees at the research department "Democracy and Democratization" located at the WZB Berlin Social Science Center, Germany.
 
 Much of the research at our department revolves around political competition, elections, and the dynamics of democratic government. In the mid-1990s senior fellows of our department decided to set up a permanent infrastructure offering data on elections and governments to all department members in a standardized and easily accessible format. Originally, the data were used to observe and analyze the consolidation processes in the then still young Eastern and Middle European democracies. The project has since grown into a database that includes more than eighty countries around the world between 1945 and today. 
@@ -20,7 +18,7 @@ In the context of our database reproducibility becomes even more demanding. Sinc
 
 # Workflow
 
-![Workflow diagram of our database](./wkrause.pdf)
+![Diagram](wkrause.pdf){width=100%}\
 
 Our team consists of one research assistant, two junior researchers, and one senior fellow. The research assistant is responsible for coding and entering the data. Moreover, she performs some baseline consistency checks. The junior researchers oversee both automated consistency checks and data processing. The senior fellow supervises the project. We confront three basic challenges when collecting, coding, and processing data: a) to reduce coding errors, b) to maintain a high degree of intercoder reliability, and c) to provide transparency on the entire decision-making process. Each is discussed in the following.
 
@@ -54,48 +52,48 @@ The key tool of our workflow is the _PostgreSQL_ database which allows us to eff
 
 The second tool that we want to highlight is the statistical programming package _R_. In contrast to most other software alternatives _R_ is free. Although _R_ has a steep learning curve, it is an excellent tool for data mining and analysis. Moreover, _R_ enables us to process data and perform consistency checks automatically. Another important feature of _R_ is that existing code can quickly be changed. For instance, additional summary statistics can easily be added to the datasets that we provide. Finally, _R_ packages such as _knitr_ and _shiny_ complement our workflow. These packages allow us to create periodic reports on the dataset and to provide members of our department easy access to the data. 
 
-# General questions about reproducibility
+# Questions
 
 ## Why do you think that reproducibility in your domain is important?
 
-  Political scientists learn from empirical experience. If
-  contributions to our field are not transparent enough to be
-  reproduced, then nothing will be learned from them. However,
-  reproducibility covers both data generation and analysis.
-  The Garbage-In-Garbage-Out principle applies to all studies
-  that fail on either side of the equation.
-  
-## How or where did you learn the reproducible practices described in your case study?
+Political scientists learn from empirical experience. If
+contributions to our field are not transparent enough to be
+reproduced, then nothing will be learned from them. However,
+reproducibility covers both data generation and analysis.
+The Garbage-In-Garbage-Out principle applies to all studies
+that fail on either side of the equation.
 
-  Some practices we use are standard and should be
-  taught in every introductory methods class. Others we learned
-  from more tech savvy colleagues. Magic happened once we put
-  the two together.
-  
-## What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## How or where did you learn about reproducibility?
 
-  We see two major pitfalls. First, political
-  scientists often receive strong training in qualitative or
-  quantitative methods, but not in basic data management.
-  It is not unheard of that graduate students
-  merge datasets row by row in Excel. Much would be gained
-  if Political Science curriculae would teach key
-  data management skills. Second, our field rewards
-  productivity, not thoroughness. We finish one project and
-  quickly move on, leaving procedures of data generation and
-  analysis poorly documented. To ensure at least a minimal
-  level of reproducibility the provision of replication
-  packages containing raw data, data management and analysis
-  scripts should be made mandatory.
+Some practices we use are standard and should be
+taught in every introductory methods class. Others we learned
+from more tech savvy colleagues. Magic happened once we put
+the two together.
+  
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
+
+We see two major pitfalls. First, political
+scientists often receive strong training in qualitative or
+quantitative methods, but not in basic data management.
+It is not unheard of that graduate students
+merge datasets row by row in Excel. Much would be gained
+if Political Science curriculae would teach key
+data management skills. Second, our field rewards
+productivity, not thoroughness. We finish one project and
+quickly move on, leaving procedures of data generation and
+analysis poorly documented. To ensure at least a minimal
+level of reproducibility the provision of replication
+packages containing raw data, data management and analysis
+scripts should be made mandatory.
   
 ## What do you view as the major incentives for doing reproducible research?
 
-  Political scientists learn from experience. Reproducible
-  research establishes a baseline against which to compare
-  future analyses and thus secures scientific progress.
+Political scientists learn from experience. Reproducible
+research establishes a baseline against which to compare
+future analyses and thus secures scientific progress.
   
-## Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
-  Never change your raw data file. Stay away from the GUI.
-  Have at least one notebook detailing the evolution of
-  your analysis. Always comment your code or field notes.
+Never change your raw data file. Stay away from the GUI.
+Have at least one notebook detailing the evolution of
+your analysis. Always comment your code or field notes.

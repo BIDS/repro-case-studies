@@ -1,24 +1,16 @@
 ---
-author: Andrea R. Seisler and Rick O. Gilmore  
-Affiliation: Penn State University  
 title: Developing R Code for the Processing and Analysis of Optic Flow Data  
 running: Optic Flow Data
-WorkflowDiagramURL:  
-Discipline: Developmental Psychology/Cognitive Neuroscience    
-Software: Databrary, GitHub, R  
+author: Andrea R. Seisler and Rick O. Gilmore  
 ---
-
-# Introduction
 
 My name is Andrea Seisler and I am the lab manager for the Brain Development Laboratory run by Dr. Rick Gilmore at Penn State University. I have a background in biomedical engineering with a focus on imaging. In the last few years I have been assisting Dr. Gilmore with data collection, processing, analysis and publication of various behavioral and EEG based optic flow studies.
 
 Reproducibility means that the processing of a dataset can be carried out multiple times by many users using the same workflow/code and get the same results. It also means that as more data is collected a few commands can be run to update the results based on the increased number of data sets.
 
-# Workflow diagram
+# Workflow
 
-[Workflow Diagram](rgilmore.pdf)
-
-# Workflow narrative
+![Diagram](rgilmore.pdf){width=100%}\
 
 This study examined how sensitive child observers were to patterns of visual motion (optic flow) that differed in terms of their overall pattern and speed. The study extends one we had previously carried out with adults (http://doi.org/10.17910/B7V88T), and is part of a series of studies on this same theme (e.g., http://doi.org/10.17910/B7QG6W).
 
@@ -58,17 +50,17 @@ R contains many commands (e.g. *merge*, *lapply*, *Reduce*) which make it effici
 
 Databrary allows for all of our data to be stored or referenced (e.g. GitHub, publications) in one place, and it encourages us to upload data as it is collected. This upload-as-you-go work flow is less cumbersome than post hoc data curation. Databrary volumes can be kept private to our research group until they are complete and we are ready to share the data with other researchers. Our practice is to share once we have presented our work in public or had a paper submitted for publication. Once a dataset is shared, the Databrary system creates a DOI for the dataset. This makes the dataset searchable by other researchers.
 
-# General questions about reproducibility
+# Questions
 
 ## Why do you think that reproducibility in your domain is important?
 
 Reproducibility is essential because if another researcher cannot reproduce our workflow and get the same results then the initial results may be incorrect.
 
-## How or where did you learn the reproducible practices described in your case study? Mentors, classes, workshops, etc.
+## How or where did you learn about reproducibility?
 
 Self-teaching through online training and book learning.
 
-## What do you see as the major pitfalls to doing reproducible research in your domain, and do you have any suggestions for working around these? Examples could include legal, logistical, human, or technical challenges.
+## What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 Ensuring that everything on GitHub can be forked and rerun by another user. We have also begun collecting videos (with permission) of our entire experimental protocols. We think that all social and behavioral scientists should do the same in order to improve the accuracy of documentation about experimental procedures.
 
@@ -76,10 +68,10 @@ Ensuring that everything on GitHub can be forked and rerun by another user. We h
 
 It upholds scientific ideals.
 
-## Are there any broad reproducibility best practices that you'd recommend for researchers in your field?
+## Are there any best practices that you'd recommend for researchers in your field?
 
 Automate as much as possible. Document, document, document. Start today.
 
-## Would you recommend any specific websites, training courses, or books for learning more about reproducibility?
+## Would you recommend any specific resources for learning more about reproducibility?
 
 R Coding and R Markdown training: https://www.rstudio.com/online-learning/
